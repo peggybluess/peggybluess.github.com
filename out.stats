@@ -8,7 +8,7 @@ ghc-prim:                43953
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:9175
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:67445
 integer-gmp:             43731
-main:                    886909
+main:                    901911
 mtl_JY14bYun6zF5fM4QvBys8Y:3322
 rando_BGCws8tUQkr039P1bRdShk:27250
 stm_7VsGm7OgW5p80mcVvYsEXN:5194
@@ -142,15 +142,15 @@ main
     Internal.FFI:                       6870
     Internal.Perch:                     92540
     Internal.Type:                      5542
-    Main:                               36802
+    Main:                               38255
     Transient.Backtrack:                43095
     Transient.Base:                     1
     Transient.EVars:                    6379
     Transient.Indeterminism:            25360
-    Transient.Internals:                201170
-    Transient.Logged:                   28245
+    Transient.Internals:                214626
+    Transient.Logged:                   28330
     Transient.Move:                     137908
-    Transient.Move.Utils:               24281
+    Transient.Move.Utils:               24289
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          3322
@@ -179,5 +179,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 449868
+packed metadata: 453152
 
