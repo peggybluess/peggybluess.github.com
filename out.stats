@@ -8,10 +8,10 @@ conta_5w3UY4chXx62LVUOUrXeRm:30463
 deeps_IA8DgGbqfWcHYE0vChdRyn:834
 ghc-prim:                12449
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
-ghcjs_6LCoASkomRd5zOm8KREKDL:19723
+ghcjs_6LCoASkomRd5zOm8KREKDL:20981
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    41269
+main:                    41270
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3254
 
@@ -105,7 +105,7 @@ ghcjs_5HiAdRCvzl46JZ7C0Yh4P8
     GHCJS.Prim.Internal:                776
 
 ghcjs_6LCoASkomRd5zOm8KREKDL
-    Internal.Perch:                     18608
+    Internal.Perch:                     19866
     Internal.Type:                      1115
 
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf
@@ -119,7 +119,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               41269
+    Main:                               41270
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -130,5 +130,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 191344
+packed metadata: 191685
 
