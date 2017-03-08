@@ -7,7 +7,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 body{"margin:10px;padding:5px"}
 
 .leftpane{width:30%;padding-top:3%;float:left}
-.gallery{width:30%; height:50%;padding:1%;float:left}
+.gallery{width:27%; padding-left:15%;float:left}
 
 #left{position:absolute;top:90%;left:40%}
 #right{position:absolute;top:90%;left:75%}
