@@ -25748,7 +25748,7 @@ function h$$EZ()
 function h$$EY()
 {
   h$bh();
-  var a = h$ustra("color:black;margin-bottom:0px");
+  var a = h$ustra("color:black;margin-bottom:0px;font-weight:700;font-size:20px");
   h$l2(a, h$ghcjszuAgbsMYFADwwH7Jh1O1ePkfZCDataziJSStringzizdfIsStringJSString);
   return h$ap_1_1_fast();
 };
