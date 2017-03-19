@@ -1,7 +1,7 @@
 code size summary per package:
 
 1CXGpQj0vFL2TZr87D4szJ:  85372
-KkNR5Zh6nVELmOa1H3rG7P:  213381
+KkNR5Zh6nVELmOa1H3rG7P:  213395
 base:                    422988
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1064
 conta_5w3UY4chXx62LVUOUrXeRm:30463
@@ -11,7 +11,7 @@ ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_6LCoASkomRd5zOm8KREKDL:20527
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    44065
+main:                    45466
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3254
 
@@ -22,7 +22,7 @@ code size per module:
     Transient.Internals:                85372
 
 KkNR5Zh6nVELmOa1H3rG7P
-    GHCJS.HPlay.View:                   213381
+    GHCJS.HPlay.View:                   213395
 
 base
     Control.Exception.Base:             8241
@@ -119,7 +119,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               44065
+    Main:                               45466
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -130,5 +130,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 190949
+packed metadata: 191140
 
