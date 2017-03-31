@@ -1,5 +1,5 @@
 {-# LANGUAGE NoMonomorphismRestriction, CPP #-}
-import Transient.Internals
+import Transient.Base
 import Transient.Move
 
 import GHCJS.HPlay.View hiding (map,head)
@@ -68,24 +68,37 @@ main=  do
 #endif
   runBody $ Widget $  do
    setRData $ Current (0,0,"")
+
+   insertStyles
+
+   panels
+
+   -- any event in the left pane or the navigation buttons refresh the gallery
+   leftPane   <|> choosePhoto  <|> return ()
+
+   -- since the gallery refresing code below is downstream in the monad
+   renderGallery
+
+
+insertStyles=
    liftIO $ addHeader $ link ! atr (fs "rel") (fs "stylesheet")
                              ! href (fs "./fotos.css") -- "http://www.w3schools.com/lib/w3.css")
 
---   liftIO $ forElems_ (fs "body") $ this ! style_ (fs "margin:10px;padding:10px")
+-- | the skeleton of the app
+panels= do
    render $ rawHtml $ do
          h2 ! style_ (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA ALONSO"
          h4 ! style (fs "margin-top:0px") $ "Photography"
-   render $ rawHtml $ do
+
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ noHtml
          div ! id (fs "gallery") ! clas (fs "gallery") $ noHtml
 
-   -- any event in the left pane or the navigation buttons refresh the gallery
-   render $ at (fs "#leftpane") Insert $ leftPane  <++ br <|> choosePhoto  <|> return ()
-
-   -- since the gallery refresing code below is downstream in the monad
+renderGallery= do
    render $ at (fs "#gallery") Insert gallery
+   forward            -- click in the gallery render the next photo recursively
+   renderGallery
 
-leftPane= do
+leftPane= render $ at (fs "#leftpane") Insert $ do
    rawHtml $ do
       h3 ! style (fs "color:black") $ "Works"
       div ! id (fs "projects") $ noHtml
@@ -93,6 +106,7 @@ leftPane= do
       br
       h3 ! style (fs "color:black") $ "Bio"
       h3 ! style (fs "color:black") $ "Contact"
+      br
 
    at (fs "#projects")  Insert $ do
      Current (n,_,_) <- Widget $ getRData <|> return (Current (0,0,""))
@@ -115,15 +129,19 @@ instance Monoid Int where
 
 style_= atr (fs "style")
 
+-- | display the current image. it stop and continue when the image is clicked (OnClick)
 gallery = do
   Current (n,m,classMove) <- Widget $ getRData <|> return (Current (0,0,""))
   let proj=(projects !!n)
-  rawHtml $ do
-        img ! clas (fs classMove)
+
+  -- preload next photo
+  rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
+                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+
+  img ! clas (fs classMove)
                 ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                 ! style_ (fs "width:100%")
-        img ! style (fs "visibility: hidden;width:0px;height:0px")
-                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+           `pass` OnClick
 
 
 lengthImages pro= (projects !! pro) & trd & length
@@ -134,21 +152,26 @@ rightst= "w3-animate-right"
 
 left = do
 
-    wlink "left" (fs "<") ! clas (fs "w3-btn-floating")
-                          ! id (fs "left")
-    Current (n,m,_) <- Widget $ getRData <|> return (Current (0,0,""))
-    Widget $ setRData . Current $
+    render $ wlink "left" (fs "<") ! clas (fs "w3-btn-floating")  ! id (fs "left")
+    backward
+
+
+backward= do
+    Current (n,m,_) <-  getRData <|> return (Current (0,0,""))
+    setRData . Current $
        if m == 0
          then  let n'= length projects -1
                  in if n == 0 then (n',lengthImages n' -1, leftst) else (n-1,lengthImages (n-1)-1, leftst)
          else (n,m-1, leftst)
 
 right= do
+    render $ wlink "left" (fs ">") ! clas (fs "w3-btn-floating")  ! id (fs "right")
 
-    wlink "left" (fs ">") ! clas (fs "w3-btn-floating")
-                          ! id (fs "right")
-    Current (n,m,_) <- Widget $ getRData <|> return (Current (0,0,rightst))
-    Widget $ setRData . Current $
+    forward
+
+forward=  do
+    Current (n,m,_) <- getRData <|> return (Current (0,0,rightst))
+    setRData . Current $
        if m == lengthImages n - 1
          then if n == length projects - 1 then (0,0,rightst) else (n+1,0, rightst)
          else (n, m+1, rightst)
