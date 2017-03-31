@@ -11,15 +11,15 @@ import Prelude hiding (div,id)
 import Data.IORef
 import Control.Monad.IO.Class
 import Data.Typeable
-
+import Control.Monad(when)
 import System.Directory
 
-type Projects = [(String,[String])]
+type Projects = [(String,String,[String])]
 
 projects=
 #include "content"
    :: Projects
---projects= [("landscapes",
+--projects= [("landscapes","",
 --               ["http://agocorona.github.io/roadmap-to-landscapes-finance.jpg"
 --               ,"http://feelgrafix.com/data/landscape/landscape-15.jpg"
 --              ,"https://upload.wikimedia.org/wikipedia/commons/e/e4/Stourhead_garden.jpg"]),
@@ -34,6 +34,9 @@ data Current= Current (Project,Photo, Style)
 
 newtype Ref a = Ref (IORef a)
 
+-- | An state reference that can be updated (similar to STRef in the state monad)
+--
+-- Initialized the first time it is set.
 setRData:: Typeable a => a -> TransIO ()
 setRData x= do
      Ref ref <- getSData
@@ -60,7 +63,7 @@ main=  do
   -- Just generates the Ccontent" file
   prs <- liftIO $ getDirectoryContents files >>= filterdir
   projects <- liftIO $ mapM (\f -> (getDirectoryContents $ files ++ "/" ++ f) >>= filterdir)  prs
-  liftIO $ writeFile "content" $ "\t"++ (show $ zip (reverse prs) projects)
+  liftIO $ writeFile "content" $ "\t"++ (show $ zip3 (reverse prs) "" projects)
 
 #endif
   runBody $ Widget $  do
@@ -76,8 +79,10 @@ main=  do
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ noHtml
          div ! id (fs "gallery") ! clas (fs "gallery") $ noHtml
 
-   render $ at (fs "#leftpane") Insert $ leftPane  <++ br
-                                          <|> choosePhoto <|> return ()
+   -- any event in the left pane or the navigation buttons refresh the gallery
+   render $ at (fs "#leftpane") Insert $ leftPane  <++ br <|> choosePhoto  <|> return ()
+
+   -- since the gallery refresing code below is downstream in the monad
    render $ at (fs "#gallery") Insert gallery
 
 leftPane= do
@@ -86,13 +91,21 @@ leftPane= do
       div ! id (fs "projects") $ noHtml
       br
       br
-      br
       h3 ! style (fs "color:black") $ "Bio"
       h3 ! style (fs "color:black") $ "Contact"
 
    at (fs "#projects")  Insert $ do
-     project <-  mconcat [wlink project (h4 project) | (project,_) <- projects]
-     Widget $ setRData $ Current (fromJust $ findIndex (==project) $ map fst projects,0,"")
+     Current (n,_,_) <- Widget $ getRData <|> return (Current (0,0,""))
+
+     project <-  mconcat [wlink project (h4 project) <++ ptext n n'  txt | ((project,txt,_),n') <- zip projects [0..]]
+     Widget $ setRData $ Current (fromJust $ findIndex (==project) $ map fst' projects,0,"")
+
+   where
+   ptext n n' txt=   when (n==n') $ p ! atr "align" (fs "justify") $  txt
+
+fst' (x, _, _)= x
+snd' (_, x, _)= x
+trd  (_, _, x)= x
 
 choosePhoto=  left <|> right
 
@@ -107,13 +120,13 @@ gallery = do
   let proj=(projects !!n)
   rawHtml $ do
         img ! clas (fs classMove)
-                ! src (fs $ "./"++files++"/"++(proj & fst)++ "/"++ ( proj & snd) !! m)
+                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                 ! style_ (fs "width:100%")
         img ! style (fs "visibility: hidden;width:0px;height:0px")
-                ! src (fs $ "./"++files++"/"++(proj & fst)++ "/"++ ( proj & snd) !! (m+1))
+                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
 
 
-lengthImages pro= (projects !! pro) & snd & length
+lengthImages pro= (projects !! pro) & trd & length
 
 clas= atr (fs "class")
 leftst= "w3-animate-left"
