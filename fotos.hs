@@ -1,5 +1,5 @@
 {-# LANGUAGE NoMonomorphismRestriction, CPP #-}
-import Transient.Internals
+import Transient.Base
 import Transient.Move
 
 import GHCJS.HPlay.View hiding (map,head)
@@ -30,7 +30,8 @@ projects=
 type Style=  String
 type Project = Int
 type Photo= Int
-data Current= Current (Project,Photo, Style)
+type OnDisplay= (Project,Photo, Style)
+data Current= Current OnDisplay
 
 newtype Ref a = Ref (IORef a)
 
@@ -58,50 +59,77 @@ filterdir= return . filter ((/= '.') . head)
 
 fs= fromString
 main=  do
-  -- TODO poner panel de fotos peque¤as
+  -- when compiled with ghc, will generate the "content" by reading the content of "files"
 #ifndef ghcjs_HOST_OS
-  -- Just generates the Ccontent" file
+  -- Just generates the "content" file
   prs <- liftIO $ getDirectoryContents files >>= filterdir
   projects <- liftIO $ mapM (\f -> (getDirectoryContents $ files ++ "/" ++ f) >>= filterdir)  prs
   liftIO $ writeFile "content" $ "\t"++ (show $ zip3 (reverse prs) "" projects)
 
 #endif
+
   runBody $ Widget $  do
    setRData $ Current (0,0,"")
+
+   insertStyles
+
+   panels
+
+   -- any event in the left pane or the navigation buttons refresh the gallery
+   chooseProject   <|> choosePhoto   <|> return ()
+
+   -- since the gallery refresing code below is downstream in the monad
+
+   renderGallery
+
+
+insertStyles=
    liftIO $ addHeader $ link ! atr (fs "rel") (fs "stylesheet")
                              ! href (fs "./fotos.css") -- "http://www.w3schools.com/lib/w3.css")
 
---   liftIO $ forElems_ (fs "body") $ this ! style_ (fs "margin:10px;padding:10px")
+-- | the skeleton of the app
+panels= do
    render $ rawHtml $ do
          h2 ! style_ (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA ALONSO"
          h4 ! style (fs "margin-top:0px") $ "Photography"
-   render $ rawHtml $ do
-         div ! id (fs "leftpane") ! clas (fs "leftpane")$ noHtml
+
+         div ! id (fs "leftpane") ! clas (fs "leftpane")$ do
+               h3 ! style (fs "color:black") $ "Works"
+               div ! id (fs "projects") $ noHtml
+               br
+               br
+               h3 ! style (fs "color:black") $ "Bio"
+               h3 ! style (fs "color:black") $ "Contact"
+               br
          div ! id (fs "gallery") ! clas (fs "gallery") $ noHtml
 
-   -- any event in the left pane or the navigation buttons refresh the gallery
-   render $ at (fs "#leftpane") Insert $ leftPane  <++ br <|> choosePhoto  <|> return ()
 
-   -- since the gallery refresing code below is downstream in the monad
+
+-- | execute a widget but redraw itself too when some event happens
+--redraw :: JSString -> Widget a -> TransIO a
+redraw idelem w=  do
+   r <- render $ at idelem Insert  w
+   redraw  idelem w <|> return r
+
+renderGallery= do
    render $ at (fs "#gallery") Insert gallery
+   forward            -- click in the gallery render the next photo recursively
+   renderGallery
 
-leftPane= do
-   rawHtml $ do
-      h3 ! style (fs "color:black") $ "Works"
-      div ! id (fs "projects") $ noHtml
-      br
-      br
-      h3 ! style (fs "color:black") $ "Bio"
-      h3 ! style (fs "color:black") $ "Contact"
+chooseProject= do
+   Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
+   project <- redraw (fs "#projects")   $ mconcat [ wlink project (h4 project) <++ ptext n n'  txt
+                                                            | ((project,txt,_),n') <- zip projects [0..]]
 
-   at (fs "#projects")  Insert $ do
-     Current (n,_,_) <- Widget $ getRData <|> return (Current (0,0,""))
+   setRData $ Current (fromJust $ findIndex (==project) $ map fst' projects,0,"")
 
-     project <-  mconcat [wlink project (h4 project) <++ ptext n n'  txt | ((project,txt,_),n') <- zip projects [0..]]
-     Widget $ setRData $ Current (fromJust $ findIndex (==project) $ map fst' projects,0,"")
+
 
    where
-   ptext n n' txt=   when (n==n') $ p ! atr "align" (fs "justify") $  txt
+
+   ptext n n' txt=     if (n==n') then p ! atr "align" (fs "justify") $  txt else noHtml
+
+
 
 fst' (x, _, _)= x
 snd' (_, x, _)= x
@@ -115,15 +143,19 @@ instance Monoid Int where
 
 style_= atr (fs "style")
 
+-- | display the current image. it stop and continue when the image is clicked (OnClick)
 gallery = do
   Current (n,m,classMove) <- Widget $ getRData <|> return (Current (0,0,""))
   let proj=(projects !!n)
-  rawHtml $ do
-        img ! clas (fs classMove)
+
+  -- preload next photo
+  rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
+                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+
+  img ! clas (fs classMove)
                 ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                 ! style_ (fs "width:100%")
-        img ! style (fs "visibility: hidden;width:0px;height:0px")
-                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+           `pass` OnClick
 
 
 lengthImages pro= (projects !! pro) & trd & length
@@ -134,21 +166,26 @@ rightst= "w3-animate-right"
 
 left = do
 
-    wlink "left" (fs "<") ! clas (fs "w3-btn-floating")
-                          ! id (fs "left")
-    Current (n,m,_) <- Widget $ getRData <|> return (Current (0,0,""))
-    Widget $ setRData . Current $
+    render $ wlink "left" (fs "<") ! clas (fs "w3-btn-floating")  ! id (fs "left")
+    backward
+
+
+backward= do
+    Current (n,m,_) <-  getRData <|> return (Current (0,0,""))
+    setRData . Current $
        if m == 0
          then  let n'= length projects -1
                  in if n == 0 then (n',lengthImages n' -1, leftst) else (n-1,lengthImages (n-1)-1, leftst)
          else (n,m-1, leftst)
 
 right= do
+    render $ wlink "left" (fs ">") ! clas (fs "w3-btn-floating")  ! id (fs "right")
 
-    wlink "left" (fs ">") ! clas (fs "w3-btn-floating")
-                          ! id (fs "right")
-    Current (n,m,_) <- Widget $ getRData <|> return (Current (0,0,rightst))
-    Widget $ setRData . Current $
+    forward
+
+forward=  do
+    Current (n,m,_) <- getRData <|> return (Current (0,0,rightst))
+    setRData . Current $
        if m == lengthImages n - 1
          then if n == length projects - 1 then (0,0,rightst) else (n+1,0, rightst)
          else (n, m+1, rightst)
