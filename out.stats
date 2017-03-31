@@ -1,9 +1,9 @@
 code size summary per package:
 
-7IN8QToyYSYI3RlsqKnpb0:  21114
+7IN8QToyYSYI3RlsqKnpb0:  22335
 D7wECGKfFGG1VFDeAI9sMH:  84308
-GOcfyM8fqYgDdKTVniLZeS:  218944
-base:                    422988
+GOcfyM8fqYgDdKTVniLZeS:  219078
+base:                    436054
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1064
 conta_5w3UY4chXx62LVUOUrXeRm:30463
 deeps_IA8DgGbqfWcHYE0vChdRyn:834
@@ -11,7 +11,7 @@ ghc-prim:                12449
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    46072
+main:                    49998
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3254
 
@@ -19,14 +19,14 @@ trans_KzbnBSIEqPI2eU1Inn4mzm:3254
 code size per module:
 
 7IN8QToyYSYI3RlsqKnpb0
-    Internal.Perch:                     20017
+    Internal.Perch:                     21238
     Internal.Type:                      1097
 
 D7wECGKfFGG1VFDeAI9sMH
     Transient.Internals:                84308
 
 GOcfyM8fqYgDdKTVniLZeS
-    GHCJS.HPlay.View:                   218944
+    GHCJS.HPlay.View:                   219078
 
 base
     Control.Exception.Base:             8241
@@ -38,17 +38,16 @@ base
     Data.Maybe:                         464
     Data.OldList:                       1248
     Data.String:                        236
-    Data.Tuple:                         334
     Data.Typeable:                      885
     Data.Typeable.Internal:             8260
     Foreign.C.Error:                    9812
     Foreign.Marshal.Alloc:              375
     Foreign.Marshal.Array:              2038
     Foreign.Storable:                   9693
-    GHC.Base:                           9749
+    GHC.Base:                           10304
     GHC.Char:                           718
     GHC.Conc.Sync:                      4451
-    GHC.Enum:                           189
+    GHC.Enum:                           10074
     GHC.Err:                            218
     GHC.Exception:                      4581
     GHC.Fingerprint:                    1900
@@ -71,7 +70,7 @@ base
     GHC.IO.Handle.Types:                3571
     GHC.IORef:                          638
     GHC.Int:                            802
-    GHC.List:                           12407
+    GHC.List:                           15367
     GHC.MVar:                           188
     GHC.Num:                            3078
     GHC.Ptr:                            631
@@ -119,7 +118,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               46072
+    Main:                               49998
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -130,5 +129,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 190001
+packed metadata: 193926
 
