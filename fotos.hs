@@ -2,7 +2,7 @@
 import Transient.Base
 import Transient.Move
 
-import GHCJS.HPlay.View hiding (map,head)
+import GHCJS.HPlay.View as V hiding (map,head)
 import Data.String
 import Data.Function ((&))
 import Data.List
@@ -90,7 +90,7 @@ panels= do
 renderGallery= do
 
    render $ at (fs "#gallery") Insert gallery
-   forward            -- click in the gallery render the next photo recursively
+   norender forward            -- click in the gallery render the next photo recursively
    renderGallery
 
 
@@ -101,29 +101,33 @@ chooseProject= do
 
 
     project <- render $ at (fs "#projects") Insert  $ do
-                             mconcat [ wlink project (h4 project) <++ ptext  n'  txt
+                             mconcat [ wlink project (h4 project) -- <++ ptext  n'  txt
                                                             | ((project,txt,_),n') <- zip projects [0..]]
 
     Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
 
     let n'= fromJust $ findIndex (==project) $ map fst' projects
-    when (n /= n') $ changeText n n'
     setRData $ Current (n',0,"")
+
+    when (n /= n') $ changeText n n'
 
    where
 
-   ptext n txt=  div ! id (fs $ fst' (projects !! n)) $  if (n== 0) then p ! atr "align" (fs "justify") $  txt else noHtml
+   -- ptext n txt=  div ! id (fs $ fst' (projects !! n)) $  if (n== 0) then p ! atr "align" (fs "justify") $  txt else noHtml
 
-changeText n n' = render $  rawHtml $ do
-    forElemId (fs $ fst' (projects !! n))  $ clear
-    forElemId (fs $ fst' (projects !! n')) $ do clear ; p ! atr "align" (fs "justify") $  snd' (projects !! n')
+changeText n n' =   do 
 
+   -- forElemId (fs $ fst' (projects !! n))  $ clear
+
+    render $ at (fs "#gallery")  Insert $ 
+                           (p ! atr "align" (fs "justify")
+                             $ snd' (projects !! n'))  `pass`  OnClick
+    return ()
 
 fst' (x, _, _)= x
 snd' (_, x, _)= x
 trd  (_, _, x)= x
 
-choosePhoto=  left <|> right
 
 instance Monoid Int where
    mempty= 0
@@ -153,28 +157,31 @@ clas= atr (fs "class")
 leftst= "w3-animate-left"
 rightst= "w3-animate-right"
 
-left = do
-    render $ wlink "left" (fs "<") ! clas (fs "w3-btn-floating")  ! id (fs "left")
-    backward
+
+choosePhoto=  render $  p ! atr "align" (fs "center")  <<< ( left <|> right)
+   where
+   left = do
+      wlink "left" ( fs "Prev")    <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
+      backward
 
 
-backward = do
-    Current (n,m,_) <-  getRData <|> return (Current (0,0,""))
-    let (n',m')= if m == 0
+   backward = Widget $ do
+      Current (n,m,_) <-  getRData <|> return (Current (0,0,""))
+      let (n',m')= if m == 0
                      then  let n'= length projects -1
                              in if n == 0 then (n',lengthImages n' -1) else (n-1,lengthImages (n-1)-1)
                      else (n,m-1)
 
 
-    setRData $ Current (n',m',leftst)
-    when (n' /= n) $ changeText n n'
+      setRData $ Current (n',m',leftst)
+      when (n' /= n) $ changeText n n'
 
 
-right= do
-    render $ wlink "left" (fs ">") ! clas (fs "w3-btn-floating")  ! id (fs "right")
-    forward
+   right= do
+      wlink "right" ( fs "Next")  -- ! id (fs "right")     ! clas (fs "w3-btn-floating") 
+      forward
 
-forward =  do
+forward =  Widget $ do
     Current (n,m,_) <- getRData <|> return (Current (0,0,rightst))
     let (n',m')=  if m == lengthImages n - 1
                      then if n == length projects - 1 then (0,0) else (n+1,0)

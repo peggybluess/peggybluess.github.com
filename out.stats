@@ -1,17 +1,17 @@
 code size summary per package:
 
-7IN8QToyYSYI3RlsqKnpb0:  23421
+7IN8QToyYSYI3RlsqKnpb0:  22335
 D7wECGKfFGG1VFDeAI9sMH:  84308
-GOcfyM8fqYgDdKTVniLZeS:  237759
-base:                    435826
+GOcfyM8fqYgDdKTVniLZeS:  231635
+base:                    434365
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1064
 conta_5w3UY4chXx62LVUOUrXeRm:30463
 deeps_IA8DgGbqfWcHYE0vChdRyn:834
 ghc-prim:                12621
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
-integer-gmp:             15737
-main:                    54783
+integer-gmp:             18677
+main:                    51112
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3256
 
@@ -19,14 +19,14 @@ trans_KzbnBSIEqPI2eU1Inn4mzm:3256
 code size per module:
 
 7IN8QToyYSYI3RlsqKnpb0
-    Internal.Perch:                     22324
+    Internal.Perch:                     21238
     Internal.Type:                      1097
 
 D7wECGKfFGG1VFDeAI9sMH
     Transient.Internals:                84308
 
 GOcfyM8fqYgDdKTVniLZeS
-    GHCJS.HPlay.View:                   237759
+    GHCJS.HPlay.View:                   231635
 
 base
     Control.Exception.Base:             8241
@@ -47,7 +47,7 @@ base
     GHC.Base:                           10076
     GHC.Char:                           718
     GHC.Conc.Sync:                      4451
-    GHC.Enum:                           10074
+    GHC.Enum:                           8613
     GHC.Err:                            218
     GHC.Exception:                      4581
     GHC.Fingerprint:                    1900
@@ -115,10 +115,10 @@ ghcjs_AgbsMYFADwwH7Jh1O1ePkf
 
 integer-gmp
     GHC.Integer.GMP.Prim:               172
-    GHC.Integer.Type:                   15565
+    GHC.Integer.Type:                   18505
 
 main
-    Main:                               54783
+    Main:                               51112
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -129,5 +129,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 197603
+packed metadata: 195749
 
