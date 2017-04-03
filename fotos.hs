@@ -86,6 +86,7 @@ panels= do
                h3 ! style (fs "color:black") $ "Contact"
                br
          div ! id (fs "gallery") ! clas (fs "gallery") $ noHtml
+         div ! id (fs "nav") $ noHtml
 
 renderGallery= do
 
@@ -109,7 +110,7 @@ chooseProject= do
     let n'= fromJust $ findIndex (==project) $ map fst' projects
     setRData $ Current (n',0,"")
 
-    when (n /= n') $ changeText n n'
+    changeText n n'
 
    where
 
@@ -158,7 +159,7 @@ leftst= "w3-animate-left"
 rightst= "w3-animate-right"
 
 
-choosePhoto=  render $  p ! atr "align" (fs "center")  <<< ( left <|> right)
+choosePhoto=  render $ at (fs "#nav") Insert (left <|> right)
    where
    left = do
       wlink "left" ( fs "Prev")    <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
