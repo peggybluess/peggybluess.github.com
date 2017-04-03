@@ -10,8 +10,7 @@ body{margin:10px;padding:5px}
 .gallery{width:25%; padding-left:8%;float:left}
 #nav{width:100%;float:left;text-align:center}
 
-#left{position:absolute;top:48%;left:33%}
-#right{position:absolute;top:48%;left:67%}
+h4.highlighted{color:#000}
 
 .w3-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
 @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
