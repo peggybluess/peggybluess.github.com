@@ -2,7 +2,7 @@ code size summary per package:
 
 7IN8QToyYSYI3RlsqKnpb0:  22335
 D7wECGKfFGG1VFDeAI9sMH:  84308
-GOcfyM8fqYgDdKTVniLZeS:  231635
+GOcfyM8fqYgDdKTVniLZeS:  231142
 base:                    434365
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1064
 conta_5w3UY4chXx62LVUOUrXeRm:30463
@@ -11,7 +11,7 @@ ghc-prim:                12621
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             18677
-main:                    51112
+main:                    51431
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3256
 
@@ -26,7 +26,7 @@ D7wECGKfFGG1VFDeAI9sMH
     Transient.Internals:                84308
 
 GOcfyM8fqYgDdKTVniLZeS
-    GHCJS.HPlay.View:                   231635
+    GHCJS.HPlay.View:                   231142
 
 base
     Control.Exception.Base:             8241
@@ -118,7 +118,7 @@ integer-gmp
     GHC.Integer.Type:                   18505
 
 main
-    Main:                               51112
+    Main:                               51431
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -129,5 +129,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 195749
+packed metadata: 195318
 

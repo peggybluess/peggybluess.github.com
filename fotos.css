@@ -4,10 +4,11 @@ h1{font-size:36px}h2{font-size:27px}h3{font-size:20px}h4{font-size:18px}h5{font-
 h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 
-body{"margin:10px;padding:5px"}
+body{margin:10px;padding:5px}
 
 .leftpane{width:30%;padding-top:3%;float:left}
 .gallery{width:27%; padding-left:8%;float:left}
+#nav{width:100%;float:left;text-align:center}
 
 #left{position:absolute;top:48%;left:33%}
 #right{position:absolute;top:48%;left:67%}
