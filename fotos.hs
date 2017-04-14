@@ -49,7 +49,7 @@ main=  do
 --  projects <- liftIO $ mapM (\f -> (getDirectoryContents $ files ++ "/" ++ f) >>= filterdir)  prs
 --  liftIO $ writeFile "content" $ "\t"++ (show $ zip3 (reverse prs) "" projects)
 
-    keep $ initNode empty  -- a web server for tests (files to serve must be in the folder "./static/out.jsexe")
+    keep $ initNode (empty :: Cloud ())  -- a web server for tests (files to serve must be in the folder "./static/out.jsexe")
 #else
 
   runBody $ Widget $  do
@@ -58,23 +58,28 @@ main=  do
    insertStyles
 
    panels
+   -- any event in the left pane  or the initial photo refresh the gallery
+   chooseProject  <|>  reinitpage <|> initialPhoto 
 
-   -- any event in the left pane or the navigation buttons refresh the gallery
-   chooseProject   <|> choosePhoto   <|> return ()
+   -- since the gallery rendering code is downstream in the monad
+   renderGallery 
 
-   -- since the gallery refresing code below is downstream in the monad
+initialPhoto=  render $  at (fs "#gallery") Insert $ do 
+         let m= 0; n=0; proj= projects !! n
 
-   renderGallery
-
+         img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
+                ! style (fs "width:100%")
+           `pass` OnClick
+         return ()
 
 insertStyles=
    liftIO $ addHeader $ link ! atr (fs "rel") (fs "stylesheet")
-                             ! href (fs "fotos.css") -- "http://www.w3schools.com/lib/w3.css")
+                             ! href (fs "fotos.css") 
 
 -- | the skeleton of the app
 panels= do
    render $ rawHtml $ do
-         h2 ! style_ (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA ALONSO"
+         h2 ! id (fs "init") ! style (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA ALONSO"
          h4 ! style (fs "margin-top:0px") $ "Photography"
 
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ do
@@ -88,44 +93,55 @@ panels= do
          div ! id (fs "gallery") ! clas (fs "gallery") $ noHtml
          div ! id (fs "nav") $ noHtml
 
+
+
 renderGallery= do
-
-   render $ at (fs "#gallery") Insert gallery
-   norender forward            -- click in the gallery render the next photo recursively
+   clikableGallery <|>  leftRight
+               -- click in the gallery would render the next photo recursively
    renderGallery
+   where
+   clikableGallery= do
+     render $ at (fs "#gallery") Insert gallery
+     norender forward
 
-
-
+reinitpage= do
+   render $ at (fs "#init") Insert $ wlink "init"  (fs "MARIA ALONSO")  ! style (fs "color:black")
+   setRData $ Current (0,0,"") 
+   initialPhoto
+   render $ rawHtml $ forElemId (fs "#nav")  clear
 
 
 chooseProject= do
 
 
     project <- render $ at (fs "#projects") Insert  $ do
-                             mconcat [ wlink project (h4 project) -- <++ ptext  n'  txt
-                                                            | ((project,txt,_),n') <- zip projects [0..]]
+                             mconcat [ wlink project (h4 ! id (fs project) $ project) 
+                                                            | (project,txt,_) <-  projects]
 
     Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
 
     let n'= fromJust $ findIndex (==project) $ map fst' projects
     setRData $ Current (n',0,"")
 
-    changeText n n'
+    -- render $ rawHtml $ do
+    --     forElemId (fs "left")  $ this ! style (fs "visibility:hidden") 
+    --     forElemId (fs "right") $ this ! style (fs "visibility:visible") 
 
-   where
 
-   -- ptext n txt=  div ! id (fs $ fst' (projects !! n)) $  if (n== 0) then p ! atr "align" (fs "justify") $  txt else noHtml
+    when (n /= n')  . render $ rawHtml $ do
+       forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
+       forElemId (fs $ fst' (projects !! n'))  $ this ! clas (fs "highlighted")
 
-changeText n n' =   do 
-
-   -- forElemId (fs $ fst' (projects !! n))  $ clear
-
-    render $ at (fs "#gallery")  Insert $ 
+    clicableText n' <|> leftRight
+    return ()
+    where
+    clicableText n'=  do
+       render $ at (fs "#gallery")  Insert $ 
                            (p ! atr "align" (fs "justify")
                              $ snd' (projects !! n'))  `pass`  OnClick
-    return ()
+       return ()
 
-fst' (x, _, _)= x
+fst' (x, _, _)= x 
 snd' (_, x, _)= x
 trd  (_, _, x)= x
 
@@ -134,22 +150,23 @@ instance Monoid Int where
    mempty= 0
    mappend= (+)
 
-style_= atr (fs "style")
+-- style= atr (fs "style")
 
--- | display the current image. it stop and continue when the image is clicked (OnClick)
+-- | display the current image. it stop, and continue when the image is clicked (OnClick)
 gallery = do
-  Current (n,m,classMove) <- Widget $ getRData <|> return (Current (0,0,""))
+    Current (n,m,classMove) <- Widget $ getRData <|> return (Current (0,0,""))
 
-  let proj=(projects !!n)
+    let proj=(projects !!n)
 
   -- preload next photo
 --  rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
 --                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
 
-  img ! clas (fs classMove)
-                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
-                ! style_ (fs "width:100%")
-           `pass` OnClick
+    img ! clas (fs classMove)
+                    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
+                    ! style (fs "width:100%")
+            `pass` OnClick
+    return()
 
 
 lengthImages pro= (projects !! pro) & trd & length
@@ -159,37 +176,60 @@ leftst= "w3-animate-left"
 rightst= "w3-animate-right"
 
 
-choosePhoto=  render $ at (fs "#nav") Insert (left <|> right)
-   where
-   left = do
-      wlink "left" ( fs "Prev")    <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
-      backward
+leftRight= staticNav $  render $ at (fs "#nav") Insert (left  <|> right)
+   
+left  = do
+      Current (n,m,_) <-  Widget $ getRData <|> return (Current (0,0,""))
+      if (m > 0) 
+       then do
+            wlink "left"  ( fs "Prev")   <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
+            backward
+       else empty
 
 
-   backward = Widget $ do
-      Current (n,m,_) <-  getRData <|> return (Current (0,0,""))
-      let (n',m')= if m == 0
-                     then  let n'= length projects -1
-                             in if n == 0 then (n',lengthImages n' -1) else (n-1,lengthImages (n-1)-1)
-                     else (n,m-1)
+backward = Widget $ do
+      Current (n,m,_) <- getRData <|> return (Current (0,0,""))
+      let m'= m-1
+                  -- if m == 0
+                  --      then  let n'= length projects -1
+                  --            in if n == 0 then (n',lengthImages n' -1) else (n-1,lengthImages (n-1)-1)
+                  --    else (n,m-1)
 
 
-      setRData $ Current (n',m',leftst)
-      when (n' /= n) $ changeText n n'
+      setRData $ Current (n,m',leftst)
+      -- when (n' /= n) $ changeText n n'
+    --   render . rawHtml $ do
+    --       when (m == lengthImages n ) $ forElemId (fs "right") $ this ! style (fs "visibility:visible") 
+    --       when (m'==0)                $ forElemId (fs "left" ) $ this ! style (fs "visibility:hidden")
 
 
-   right= do
-      wlink "right" ( fs "Next")  -- ! id (fs "right")     ! clas (fs "w3-btn-floating") 
+right = do
+  Current (n,m,_) <-  Widget $ getRData <|> return (Current (0,0,""))
+  if (m < lengthImages n -1 )
+    then  do
+      wlink "right" ( fs "Next")     --   ! clas (fs "w3-btn-floating") 
       forward
+    else empty
 
 forward =  Widget $ do
     Current (n,m,_) <- getRData <|> return (Current (0,0,rightst))
-    let (n',m')=  if m == lengthImages n - 1
-                     then if n == length projects - 1 then (0,0) else (n+1,0)
-                     else (n, m+1)
+    let m'= m+1
+    -- let (n',m')=  if m == lengthImages n - 1
+    --                  then if n == length projects - 1 then (0,0) else (n+1,0)
+    --                  else (n, m+1)
 
-    setRData $ Current (n',m',rightst)
-    when (n' /= n) $ changeText n n'
+    setRData $ Current (n,m',rightst)
+    -- when (n' /= n) $ changeText n n'
+    -- render . rawHtml $ do
+    --      when (m'== lengthImages n )  $ forElemId (fs "right") $ this ! style (fs "visibility:hidden") 
+    --      when (m==0)                  $ forElemId (fs "left" ) $ this ! style (fs "visibility:visible")
+
+
+
+
+
+
+
 
 -- STRefs for the Transient monad
 
