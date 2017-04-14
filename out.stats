@@ -1,6 +1,6 @@
 code size summary per package:
 
-4R47eVvMlnL1qGzMnjspdO:  241133
+4R47eVvMlnL1qGzMnjspdO:  241131
 7IN8QToyYSYI3RlsqKnpb0:  23706
 D7wECGKfFGG1VFDeAI9sMH:  84976
 base:                    423392
@@ -11,7 +11,7 @@ ghc-prim:                15975
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    62309
+main:                    62199
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3284
 
@@ -19,7 +19,7 @@ trans_KzbnBSIEqPI2eU1Inn4mzm:3284
 code size per module:
 
 4R47eVvMlnL1qGzMnjspdO
-    GHCJS.HPlay.View:                   241133
+    GHCJS.HPlay.View:                   241131
 
 7IN8QToyYSYI3RlsqKnpb0
     Internal.Perch:                     22601
@@ -118,7 +118,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               62309
+    Main:                               62199
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -129,5 +129,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 200889
+packed metadata: 200853
 

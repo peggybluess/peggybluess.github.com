@@ -67,6 +67,8 @@ main=  do
 initialPhoto=  render $  at (fs "#gallery") Insert $ do 
          let m= 0; n=0; proj= projects !! n
 
+         rawHtml $ forElemId (fs "nav")  clear
+
          img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                 ! style (fs "width:100%")
            `pass` OnClick
@@ -108,7 +110,6 @@ reinitpage= do
    render $ at (fs "#init") Insert $ wlink "init"  (fs "MARIA ALONSO")  ! style (fs "color:black")
    setRData $ Current (0,0,"") 
    initialPhoto
-   render $ rawHtml $ forElemId (fs "#nav")  clear
 
 
 chooseProject= do
@@ -163,7 +164,7 @@ gallery = do
 --                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
 
     img ! clas (fs classMove)
-                    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
+                    ! src (fs $ "../"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                     ! style (fs "width:100%")
             `pass` OnClick
     return()
