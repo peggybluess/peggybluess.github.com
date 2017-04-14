@@ -108,7 +108,12 @@ renderGallery= do
 
 reinitpage= do
    render $ at (fs "#init") Insert $ wlink "init"  (fs "MARIA ALONSO")  ! style (fs "color:black")
+   Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
+
    setRData $ Current (0,0,"") 
+   render $ rawHtml $ do
+       forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
+
    initialPhoto
 
 
@@ -129,11 +134,11 @@ chooseProject= do
     --     forElemId (fs "right") $ this ! style (fs "visibility:visible") 
 
 
-    when (n /= n')  . render $ rawHtml $ do
+    render $ rawHtml $ do
        forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
        forElemId (fs $ fst' (projects !! n'))  $ this ! clas (fs "highlighted")
 
-    clicableText n' <|> leftRight
+    clicableText n' <|>  staticNav (render $ at (fs "#nav") Insert (wlink () (fs "Next")))
     return ()
     where
     clicableText n'=  do

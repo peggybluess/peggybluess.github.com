@@ -1,25 +1,25 @@
 code size summary per package:
 
-4R47eVvMlnL1qGzMnjspdO:  241131
+4R47eVvMlnL1qGzMnjspdO:  241188
 7IN8QToyYSYI3RlsqKnpb0:  23706
 D7wECGKfFGG1VFDeAI9sMH:  84976
-base:                    423392
+base:                    425035
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1064
 conta_5w3UY4chXx62LVUOUrXeRm:30463
 deeps_IA8DgGbqfWcHYE0vChdRyn:834
-ghc-prim:                15975
+ghc-prim:                15803
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    62199
+main:                    66111
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
-trans_KzbnBSIEqPI2eU1Inn4mzm:3284
+trans_KzbnBSIEqPI2eU1Inn4mzm:3282
 
 
 code size per module:
 
 4R47eVvMlnL1qGzMnjspdO
-    GHCJS.HPlay.View:                   241131
+    GHCJS.HPlay.View:                   241188
 
 7IN8QToyYSYI3RlsqKnpb0
     Internal.Perch:                     22601
@@ -44,7 +44,7 @@ base
     Foreign.Marshal.Alloc:              375
     Foreign.Marshal.Array:              2038
     Foreign.Storable:                   9693
-    GHC.Base:                           10487
+    GHC.Base:                           9704
     GHC.Char:                           718
     GHC.Conc.Sync:                      4451
     GHC.Enum:                           189
@@ -76,7 +76,7 @@ base
     GHC.Ptr:                            631
     GHC.Read:                           11081
     GHC.STRef:                          382
-    GHC.Show:                           24069
+    GHC.Show:                           26495
     GHC.Storable:                       1084
     GHC.TopHandler:                     10349
     GHC.Word:                           965
@@ -98,7 +98,7 @@ deeps_IA8DgGbqfWcHYE0vChdRyn
 
 ghc-prim
     GHC.CString:                        4515
-    GHC.Classes:                        9533
+    GHC.Classes:                        9361
     GHC.IntWord64:                      146
     GHC.Tuple:                          802
     GHC.Types:                          979
@@ -118,16 +118,16 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               62199
+    Main:                               66111
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
 
 trans_KzbnBSIEqPI2eU1Inn4mzm
     Control.Monad.IO.Class:             552
-    Control.Monad.Trans.State.Lazy:     2732
+    Control.Monad.Trans.State.Lazy:     2730
 
 
 
-packed metadata: 200853
+packed metadata: 201960
 
