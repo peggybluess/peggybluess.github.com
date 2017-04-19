@@ -56,14 +56,11 @@ main=  do
     keep $ initNode (empty :: Cloud ())  -- a web server for tests (files to serve must be in the folder "./static/out.jsexe")
 #else
 
-  runBody $ Widget $  do
-   setRData $ Current (0,0,"")
-
-   insertStyles
-
-   panels
-   -- any event in the left pane  or the initial photo refresh the gallery
-   chooseProject  <|>  reinitpage <|> initialPhoto  <|> bio <|> statement <|> contact
+    runBody $ Widget $  do
+        setRData $ Current (0,0,"")
+        insertStyles
+        panels
+        chooseProject <|> reinitpage <|> initialPhoto <|> bio <|> statement <|> contact
 
    
 
@@ -108,7 +105,7 @@ bio=  do
          render $ rawHtml $ do
                      forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
                      forElemId (fs "nav")  clear
-                     forElemId (fs "gallery")  $ clear >> biotext  
+                     forElemId (fs "gallery")  $ this ! clas (fs "landscape")  `child`  clear >> biotext  
          return ()
       where 
       biotext= div $ do
@@ -122,9 +119,9 @@ statement= do
          render $ at (fs "#statement")  Insert $ wlink "statement"  (fs "Statement")  ! style (fs "color:black")
          Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
          render $ rawHtml $ do
-                    forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other") 
+                    forElemId (fs $ fst' (projects !! n))  $ this ! clas (fs "other") 
                     forElemId (fs "nav")  clear
-                    forElemId (fs "gallery")  $ clear >> statext 
+                    forElemId (fs "gallery")  $  this ! clas (fs "landscape")  `child` clear >>  statext 
          return ()
      where
      statext= div $ do
@@ -150,8 +147,10 @@ contact= do
          
          where 
          contactext=  do
-               p ! style (fs "align:center") $ "María T. Alonso"
-               p ! style (fs "align:center") $ a ! style (fs "color:black") ! href (fs "mailto:mariajtalonso@gmail.com") $ "mariajtalonso@gmail.com"
+               p ! style (fs "text-align:center") $ "María T. Alonso"
+               p ! style (fs "font-weight:bold;text-align:center") 
+                 $ a ! style (fs "color:black") 
+                     ! href (fs "mailto:mariajtalonso@gmail.com") $ "mariajtalonso@gmail.com"
 
 renderGallery= do
    clikableGallery <|>  leftRight
