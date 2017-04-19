@@ -11,7 +11,7 @@ ghc-prim:                15803
 ghcjs_5HiAdRCvzl46JZ7C0Yh4P8:8349
 ghcjs_AgbsMYFADwwH7Jh1O1ePkf:12619
 integer-gmp:             15737
-main:                    110348
+main:                    110285
 mtl_JY14bYun6zF5fM4QvBys8Y:1242
 trans_KzbnBSIEqPI2eU1Inn4mzm:3282
 
@@ -118,7 +118,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               110348
+    Main:                               110285
 
 mtl_JY14bYun6zF5fM4QvBys8Y
     Control.Monad.State.Class:          1242
@@ -129,5 +129,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 208903
+packed metadata: 208900
 

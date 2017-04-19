@@ -64,15 +64,12 @@ main=  do
 
    
 
-initialPhoto=  render $  at (fs "#gallery") Insert $ do 
-         let m= 0; n=0; proj= projects !! n
-
-         rawHtml $ forElemId (fs "nav")  clear
-
-         img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
-                ! style (fs "width:100%")
-           `pass` OnClick
-         return ()
+initialPhoto=  render $ rawHtml $ do
+      forElemId (fs "gallery") $ this ! clas (fs "portrait") `child` do
+                    let  proj= projects !! 0
+                    img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! 0)
+                            ! style (fs "width:100%")
+      forElemId (fs "nav")  clear         
 
 insertStyles=
    liftIO $ addHeader $ link ! atr (fs "rel") (fs "stylesheet")
@@ -96,7 +93,7 @@ panels= do
                br
          div ! id (fs "gallery") ! clas (fs "portrait") $ noHtml
          div ! id (fs "nav") $ noHtml
-         div ! style (fs "float:left;margin-left:45%") $ "© Maria Alonso 2017"
+         div ! clas (fs "copyright")  $ "© Maria Alonso 2017"
 
 
 bio=  do
@@ -224,13 +221,16 @@ gallery = do
     let proj=(projects !!n)
 
   -- preload next photo
---  rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
---                ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
-    
+   
     img ! clas (fs classMove)
                     ! src (fs $ "../"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
                     ! style (fs "width:100%")
             `pass` OnClick
+
+    when (m < lengthImages n -1) $    
+        rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
+                      ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+ 
     return()
 
 
