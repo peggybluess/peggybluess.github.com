@@ -60,7 +60,7 @@ main=  do
         setRData $ Current (0,0,"")
         insertStyles
         panels
-        chooseProject <|> reinitpage <|> initialPhoto <|> bio <|> statement <|> contact
+        reinitpage <|> chooseProject  <|> bio <|> statement <|> contact <|> initialPhoto
 
    
 
@@ -68,7 +68,7 @@ initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "portrait") `child` do
                     let  proj= projects !! 0
                     img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! 0)
-                            ! style (fs "width:100%")
+                           ! style (fs "width:100%")
       forElemId (fs "nav")  clear         
 
 insertStyles=
