@@ -9,7 +9,7 @@ body{margin:10px;padding:5px}
 .leftpane{width:30%;padding-top:3%;float:left}
 .portrait{width:25%; padding-left:8%;float:left}
 .landscape{width:45%; padding-left:0%;float:left}
-.copyright{float:left;margin-bottom:2%;margin-left:47%}
+.copyright{float:left;margin-bottom:2%;margin-top:10%;margin-left:47%}
 #nav{width:100%;float:left;text-align:center}
 
 h4.highlighted{color:#000}
