@@ -66,6 +66,7 @@ main=  do
 
 initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "portrait") `child` do
+                    clear
                     let  proj= projects !! 0
                     img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! 0)
                            ! style (fs "width:100%")
