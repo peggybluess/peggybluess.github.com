@@ -65,7 +65,7 @@ main=  do
    
 
 initialPhoto=  render $ rawHtml $ do
-      forElemId (fs "gallery") $ this ! clas (fs "portrait") `child` do
+      forElemId (fs "gallery") $ this ! clas (fs "landscape") `child` do
                     clear
                     let  proj= projects !! 0
                     img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! 0)
