@@ -248,7 +248,7 @@ left  = do
       Current (n,m,_) <-  Widget $ getRData <|> return (Current (0,0,""))
       if (m > 0) 
        then do
-            wlink "left"  ( fs "Prev")   <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
+            wlink "left"  ( fs "<<<<")   <++ toElem " | " -- ! id (fs "left") !  clas (fs "w3-btn-floating"
             backward
        else empty
 
@@ -273,7 +273,7 @@ right = do
   Current (n,m,_) <-  Widget $ getRData <|> return (Current (0,0,""))
   if (m < lengthImages n -1 )
     then  do
-      wlink "right" ( fs "Next")     --   ! clas (fs "w3-btn-floating") 
+      wlink "right" ( fs ">>>>")     --   ! clas (fs "w3-btn-floating") 
       forward
     else empty
 
