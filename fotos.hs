@@ -156,7 +156,7 @@ renderGallery= do
    renderGallery
    where
    clikableGallery= do
-     render $ at (fs "#gallery") Insert gallery
+     gallery
      norender forward
 
 reinitpage= do
@@ -217,18 +217,28 @@ instance Monoid Int where
 
 -- | display the current image. it stop, and continue when the image is clicked (OnClick)
 gallery = do
-    Current (n,m,classMove) <- Widget $ getRData <|> return (Current (0,0,""))
+    Current (n,m,classMove) <-  getRData <|> return (Current (0,0,""))
 
     let proj=(projects !!n)
 
   -- preload next photo
-   
-    img ! clas (fs classMove)
-                    ! src (fs $ "../"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! m)
-                    ! style (fs "width:100%")
-            `pass` OnClick
+    let str= proj & fst'
+        (image,t) = break (==' ') image
+        classgal= case t of
+         " P" -> "portrait"
+         " L" -> "landscape"
+         _   -> case  proj & fourth  of
+                  Portrait ->  "portrait"
+                  Landscape -> "landscape"
 
-    when (m < lengthImages n -1) $    
+    render $ at (fs "#gallery") Insert $ 
+      (this ! clas (fs classgal) `child` do
+         img ! clas (fs classMove)
+                    ! src (fs $ "../"++files++"/"++ image ++ "/"++ ( proj & trd) !! m)
+                    ! style (fs "width:100%"))
+                  `pass` OnClick
+
+    when (m < lengthImages n -1) $ render $   
         rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
                       ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
  
