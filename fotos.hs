@@ -68,8 +68,9 @@ initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "landscape") `child` do
                     clear
                     let  proj= projects !! 0
-                    img    ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! 0)
-                           ! style (fs "width:100%")
+                         (image,_)= break (==' ') $ (proj & trd) !! 6
+                    img ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ image)
+                        ! style (fs "width:100%")
       forElemId (fs "nav")  clear         
 
 insertStyles=
@@ -222,25 +223,25 @@ gallery = do
     let proj=(projects !!n)
 
   -- preload next photo
-    let str= proj & fst'
-        (image,t) = break (==' ') image
+    let str= ( proj & trd) !! m
+        (image,t) = break (==' ') str
         classgal= case t of
          " P" -> "portrait"
          " L" -> "landscape"
          _   -> case  proj & fourth  of
                   Portrait ->  "portrait"
                   Landscape -> "landscape"
-
+--    liftIO $ alert (fs $ show (image, classgal))
     render $ at (fs "#gallery") Insert $ 
-      (this ! clas (fs classgal) `child` do
-         img ! clas (fs classMove)
-                    ! src (fs $ "../"++files++"/"++ image ++ "/"++ ( proj & trd) !! m)
+      (this `goParent` this ! clas (fs classgal) `child` do
+                img ! clas (fs classMove)
+                    ! src (fs $ "../"++files++"/"++ (proj & fst') ++ "/"++ image)
                     ! style (fs "width:100%"))
                   `pass` OnClick
 
-    when (m < lengthImages n -1) $ render $   
-        rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
-                      ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
+    -- when (m < lengthImages n -1) $ render $   
+    --     rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
+    --                   ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
  
     return()
 
