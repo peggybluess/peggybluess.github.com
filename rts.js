@@ -1334,7 +1334,7 @@ var h$ret7;
 var h$ret8;
 var h$ret9;
 var h$ret10;
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -1363,8 +1363,9 @@ var h$ret10;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 /* platform-specific setup */
 // top-level debug initialization needs this. declare it in case we aren't in the same file as out.js
@@ -1398,7 +1399,24 @@ if(typeof process !== 'undefined' && (typeof h$TH !== 'undefined' || (typeof req
     var h$os = os;
     var h$child = child_process;
     var h$process = process;
-    var h$processConstants = process['binding']('constants');
+    function h$getProcessConstants() {
+      // this is a non-public API, but we need these values for things like file access modes
+      var cs = process['binding']('constants');
+      if(typeof cs.os === 'object' && typeof cs.fs === 'object') {
+        return cs;
+      } else {
+        // earlier node.js versions (4.x and older) have all constants directly in the constants object
+        // construct something that resembles the hierarchy of the object in new versions:
+        return { 'fs': cs
+               , 'crypto': cs
+               , 'os': { 'UV_UDP_REUSEADDR': cs['UV_UDP_REUSEADDR']
+                           , 'errno': cs
+                           , 'signals': cs
+                           }
+               };
+      }
+    }
+    var h$processConstants = h$getProcessConstants();
 } else if(typeof Java !== 'undefined') {
     h$isJvm = true;
     this.console = {
@@ -1421,7 +1439,7 @@ function h$getGlobal(that) {
     if(typeof global !== 'undefined') return global;
     return that;
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -1450,8 +1468,9 @@ function h$getGlobal(that) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 /*
   set up the google closure library. this is a rather hacky setup
@@ -1503,7 +1522,7 @@ goog.isString = function(v) {
 }
 goog.math = {};
 goog.crypt = {};
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -1532,8 +1551,9 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 /*
  Copyright (c) 2010, Linden Research, Inc.
@@ -2433,7 +2453,7 @@ goog.crypt = {};
     global.DataView = global.DataView || DataView;
   }());
 }(h$getGlobal(this)));
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -2462,8 +2482,9 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 (function (global, undefined) {
     "use strict";
@@ -2621,7 +2642,7 @@ goog.crypt = {};
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(h$getGlobal(this)));
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -2650,8 +2671,9 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // Copyright 2009 The Closure Library Authors. All Rights Reserved.
 //
@@ -3322,7 +3344,7 @@ goog.math.Long.prototype.shiftRightUnsigned = function(numBits) {
     }
   }
 };
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -3351,8 +3373,9 @@ goog.math.Long.prototype.shiftRightUnsigned = function(numBits) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 /*
   simple set with reasonably fast iteration though an array, which may contain nulls
@@ -3376,13 +3399,6 @@ h$Set.prototype.size = function() {
     return this._size;
 }
 h$Set.prototype.add = function(o) {
-    if((typeof o !== 'object' && typeof o !== 'function') || typeof o._key !== 'number') throw ("h$Set.add: invalid element: " + o);
-    if(this._size > 0) {
-//        if(this._storedProto !== o.prototype) throw ("h$Set.add: unexpected element prototype: " + o)
-    } else {
-        this._storedProto = o.prototype;
-    }
-    if(this._keys[o._key] !== undefined && this._vals[this._keys[o._key]] !== o) throw ("h$Set.add: duplicate key: " + o);
     var k = this._keys, v = this._vals;
     if(k[o._key] === undefined) {
         k[o._key] = this._size;
@@ -3469,13 +3485,6 @@ h$Map.prototype.size = function() {
     return this._size;
 }
 h$Map.prototype.put = function(k,v) {
-    if((typeof k !== 'object' && typeof k !== 'function') || typeof k._key !== 'number') throw ("h$Map.add: invalid key: " + k);
-    if(this._size > 0) {
-        if(this._storedProto !== k.prototype) throw ("h$Map.add: unexpected key prototype: " + k)
-    } else {
-        this._storedProto = k.prototype;
-    }
-    if(this._keys[k._key] !== undefined && this._pairsKeys[this._keys[k._key]] !== k) throw ("h$Map.add: duplicate key: " + k);
     var ks = this._keys, pk = this._pairsKeys, pv = this._pairsValues, x = ks[k._key];
     if(x === undefined) {
         var n = this._size++;
@@ -3635,13 +3644,6 @@ h$HeapSet.prototype.size = function() {
 }
 // add a node, if it already exists, it's moved to the new priority
 h$HeapSet.prototype.add = function(op,o) {
-    if((typeof o !== 'object' && typeof o !== 'function') || typeof o._key !== 'number') throw ("h$HeapSet.add: invalid element: " + o);
-    if(this._size > 0) {
-        if(this._storedProto !== o.prototype) throw ("h$HeapSet.add: unexpected element prototype: " + o)
-    } else {
-        this._storedProto = o.prototype;
-    }
-    if(this._keys[o._key] !== undefined && this._vals[this._keys[o._key]] !== o) throw ("h$Set.add: duplicate key: " + o);
     var p = this._prios, k = this._keys, v = this._vals, x = k[o._key];
     if(x !== undefined) { // adjust node
         var oop = p[x];
@@ -3755,7 +3757,7 @@ h$HeapSet.prototype._upHeap = function(i) {
         }
     }
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -3784,8 +3786,9 @@ h$HeapSet.prototype._upHeap = function(i) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -3820,11 +3823,10 @@ function h$sti(i,c,xs) {
     h$init_closure(i,xs);
 }
 // static init, caf
-function h$stc(i,c) {
+function h$stc(i,c,xs) {
     i.f = c;
-    h$init_closure(i,[]);
-    h$CAFs.push(i);
-    h$CAFsReset.push(i.f);
+    h$init_closure(i,xs);
+    h$addCAF(i);
 }
 function h$stl(o, xs, t) {
     var r = t ? t : h$ghczmprimZCGHCziTypesziZMZN;
@@ -4158,13 +4160,44 @@ function h$initInfoTables ( depth // depth in the base chain
           break;
       case 1: // staticfun
           o.f = nextEntry();
-          ;
+        ;
+        n = next();
+        ;
+        if(n === 0) {
+          o.d1 = null;
+          o.d2 = null;
+        } else if(n === 1) {
+          o.d1 = nextArg();
+          o.d2 = null;
+        } else if(n === 2) {
+          o.d1 = nextArg();
+          o.d2 = nextArg();
+        } else {
+          for(j=0;j<n;j++) {
+            h$setField(o, j, nextArg());
+          }
+        }
           break;
       case 2: // staticThunk
           ;
-          o.f = nextEntry();
-          h$CAFs.push(o);
-          h$CAFsReset.push(o.f);
+        o.f = nextEntry();
+        n = next();
+        ;
+        if(n === 0) {
+          o.d1 = null;
+          o.d2 = null;
+        } else if(n === 1) {
+          o.d1 = nextArg();
+          o.d2 = null;
+        } else if(n === 2) {
+          o.d1 = nextArg();
+          o.d2 = nextArg();
+        } else {
+          for(j=0;j<n;j++) {
+            h$setField(o, j, nextArg());
+          }
+        }
+          h$addCAF(o);
           break;
       case 3: // staticPrim false, no init
           ;
@@ -4602,6 +4635,27 @@ function h$setField(o,n,v) {
     case 100:
         o.d2.d100 = v;
         return;
+    case 101:
+        o.d2.d101 = v;
+        return;
+    case 102:
+        o.d2.d102 = v;
+        return;
+    case 103:
+        o.d2.d103 = v;
+        return;
+    case 104:
+        o.d2.d104 = v;
+        return;
+    case 105:
+        o.d2.d105 = v;
+        return;
+    case 106:
+        o.d2.d106 = v;
+        return;
+    case 107:
+        o.d2.d107 = v;
+        return;
     default:
         throw ("h$setField: setter not implemented for field: " + n);
     }
@@ -4890,7 +4944,7 @@ function h$munmap(addr_d, addr_o, size) {
   }
   return 0;
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -4919,8 +4973,9 @@ function h$munmap(addr_d, addr_o, size) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 /*
   Do garbage collection where the JavaScript GC doesn't suffice or needs some help:
@@ -5417,6 +5472,11 @@ function h$resolveDeadlocks() {
         }
     } while(kill);
 }
+// register a CAF (after initialising the heap object)
+function h$addCAF(o) {
+  h$CAFs.push(o);
+  h$CAFsReset.push([o.f, o.d1, o.d2]);
+}
 // reset unreferenced CAFs to their initial value
 function h$finalizeCAFs() {
     if(h$retainCAFs) return;
@@ -5425,17 +5485,17 @@ function h$finalizeCAFs() {
         var c = h$CAFs[i];
         if(c.m & 3 !== mark) {
             var cr = h$CAFsReset[i];
-            if(c.f !== cr) { // has been updated, reset it
+            if(c.f !== cr[0]) { // has been updated, reset it
                 ;
-                c.f = cr;
-                c.d1 = null;
-                c.d2 = null;
+                c.f = cr[0];
+                c.d1 = cr[1];
+                c.d2 = cr[2];
             }
         }
     }
     ;
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -5464,8 +5524,9 @@ function h$finalizeCAFs() {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -5782,7 +5843,7 @@ function h$handleErrnoC(err, r_err, r_success, c) {
         c(r_success);
     }
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -5811,8 +5872,9 @@ function h$handleErrnoC(err, r_err, r_success, c) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 function h$MD5Init(ctx, ctx_off) {
   if(!ctx.arr) { ctx.arr = []; }
@@ -5831,7 +5893,7 @@ function h$MD5Final(dst, dst_off, ctx, ctx_off) {
   }
 }
 var h$__hsbase_MD5Final = h$MD5Final;
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -5860,8 +5922,9 @@ var h$__hsbase_MD5Final = h$MD5Final;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -6196,21 +6259,22 @@ function h$decodeFloatIntArray(d) {
     }
     h$convertFloat[0] = d;
     var i = h$convertInt[0];
-    var exp = (i&2139095040) >> 23;
+    var exp = (i >> 23) & 0xff;
+    var sgn = 2 * (i >> 31) + 1;
     var s = i&8388607;
     if(exp === 0) { // zero or denormal
         if(s === 0) {
             ;
-     { h$ret1 = (0); return (0); };
+            { h$ret1 = (0); return (0); };
         } else {
             h$convertFloat[0] = d*8388608;
             i = h$convertInt[0];
             ;
-     { h$ret1 = (((i&2139095040) >> 23) - 173); return ((((i&8388607)<<7)|(i&2147483648))>>7); }
+            { h$ret1 = (((i&2139095040) >> 23) - 173); return (sgn*(i&8388607)); }
         }
     } else {
-        ;
-        { h$ret1 = (exp - 150); return ((((s|8388608)<<7)|(i&2147483648))>>7); };
+      ;
+      { h$ret1 = (exp - 150); return (sgn * (s|8388608)); };
     }
 }
 function h$decodeFloatIntFallback(d) {
@@ -6368,7 +6432,7 @@ function h$ctz8(x) {
 function h$ctz64(x1,x2) {
     return (x2 === 0) ? 32 + h$ctz32(x1) : h$ctz32(x2);
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -6397,8 +6461,9 @@ function h$ctz64(x1,x2) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // Unicode tables generated by ghcjs/utils/genUnicode.hs
 var h$printRanges = "f|!-f=|/q'/+1$J|(mo'1q&')| 63Y--EO'|$9| ('| ?'|!9?| ?-| %'AZ'| JI| +|#U2'''O0$)+'5'''+3*','O-).+''O0&&&'$-+''))0+$1C9)4(N0&,'7(('@+';A)2'''O0&,'5''')3'+','G7'.))*)'$&)')));+-))*'.>M-+2(PB)3(*1'&/+'733(2(P6,'5(*1'1$+'7&?)2(u'3(,32+'C)1''F)S4$'1)*/$2/7');| =+^n'$''$'.+0( #''<('-$.'7'+d| Yk+rk@<n|$G$-&|(E*'1$*'v*'f*'1$*'A| :*'| O'd)W/| t9|.r)|! 1=09Q5K;=(&;|!+'7/7/?'7/| z3z-| U7b:+;+(x'-9|  +W/9)| E'| K]'9/7/?'A| K| b+| #)|!W3| A)A)| /| I33r&/|%M/|&;'/'p'/'3 $a'| 3@>'/H')48-S1| +C''Y<)`GfA|#)/|-h-rU9M|H;'d'h);2| %| '| &|#<-| #$-&| 91'?S510000000|!4| CW| {;|$hW;+| I| u'|!=-v)|!+y-l;| '|$y} ^y7}%0j| /|9t)| 75|'fK|!+| {3|#3_''| S| 3+7/| 93| S5;/[+| r9`)| f8+f| 65?'7'|!=S[7/'/'/510| (+'|!#| %'7/}!e;;Q+| +}!'n|(/'|!Cp1;--W,$&&|!gE|(-C| I'| 5t?'W/?'jH*+-|#!+|$7)/'/'/'))10='';VH&@'?h|!f-)+| #)| v);+| &| %|!t^)| +A[+l;Y-z-`m+?x|#Q'7| vt3| 19|#4|&v5O73|#E/'$|  &)&Q| X35| j[)Y-| H| 9/'| I+&-3(X+)+5351| Idr+;5| 5)^'Y-W1+;1| j| [|+tb|(U| f+`A| E*?U17/| 3>;r5| [+&9/K9Gy|!S| ?-71)2'''O0&,'5''')5,1'1)-|%x| Y37|#b| 5'G| 5| S97p| 937|*K| p;|)y| ;|<Y|4M|!=|!M,|b`|7l}#8j|,^1b6+'|!/`'/7| U770L-I|3U| S9| 'CE}$&7'|e7|!E-=)517'+} 47|%M7r'| ^3|!5h| U|$/| x5G|#1| t| V&'&''+:$0| J*'30Z*,$)1|'T'|&O'| -}  %|$E'C|=C+X&$'$7* #/* $)&$' &'$'+0**$6D-),D| 1'|&#|  +|!7;A'A@m7=)b| @+z| `^=z-51'|#r| #)| f'| h-l3|%`| _-xu|#P'|#+C=)+;|!W;| tz;+| 937/t3`|I^}*Q/v} !59|$x}$#I|,'|G1|%A";
@@ -6409,7 +6474,7 @@ var h$alphaRanges = "| MW/W| '6*,Qa|*2+;?-1$|!q-&'+$/$)$J| o|#*3|#bo'0r| YY-)| #
 var h$toLowerMapping = "| K Wb|!9 Qb!1bf  9#  !|$F  ## &'  (# &'  8#  !|!_# # #)  !|$^# ! # ! |$U !# '|$S&'  !| f|$M !|$O# ! |$S !|$W  !|$`|$[&)  !|$`|$d ! |$f $#  !|$n# ! |$n'  !#  !|$n#!'|$l ##  !|$p#) &1  !%# ! % !#  !%# ) #'  )# &'  !%# ! # ! |!. !| 6# 4 # ! |!q * #1  !}![r# ! |#X}%=]'  !#  !|$>| Q !| U# % #|&I  !# &) &3 |%0/  !n )l ! | G!'| E!Eb!5bj B3  ,# &- |!]'  !#  !.#' )|!qC| hdb| )  1# &5  <#  !?# ' #'  P# &' p| '|a5 p} hG ! } hG- }#To|l)  l# &5  !} p4  P# &5 303 /07 303 303 /09  $0 @3 30S 303 303 303 '0'| ZD9 +| sD9 '0'|!4; '0'|!L<9 '|!m'|!iD|&Y }#a()  !}!&:}!#V/ | 8| # CAI &|23 WU|Ht | '| '| +  !#  !}!Zc|ue}%:e'  $#  !}![R}!Zo !}![X}![V ! #' &3 '}!]> R# &3  !# &+ &}'])  7# &I  .# &|##  '# &)  ?# &7  ##  !}(b.# % #+  !# }4p*'  !# &)  +#  !}*H0}*HF !}*H>}*H*'  !}*G&}*GV}%OG Wb|;/ tr} :K db}p?  ";
 var h$toUpperMapping = "|!1 Wa| = |A$x Qa!1a !|!`  9!  !|%.  #! $'  (! $'  7! $'  #!  !!|&]|(_'  !! $' $) $- $' |$>)  !!|#Y) |%i'  #! $' $+ $' $)  !! $' $)  !! |!N-  !!$ ! ! !$  !!$ ) ! !| e  )! $'  !!$ ! !)  4! $)  )! $3 $' '}!]? ! !+  %!  !!}![Y !}![S}![W !|$]|$T!'|$R ! |$L ! |$N}4qo)  !|$R}*H? ! |$V ! }*GS !}*H1  !|$Z|$_ ! }!Zd}4q6'  !|$_  !}!Zp|$c' |)N1 }%:g' |)_' |)_)  !}*GW|$m|#&'|$k|#.- |)c9 }4o.|#b |#ez  !! $) $) )|!r| % | _)k!Ea| B5a|!m'| D ! | B|!P)  !| $| 2 !0  ,!  !!| s !| g/ !|!T |$8' $' $| 1 daC| g 2 !5  ;! $'  '!  !!> Q !| + p| &} N7 }1H>) } pP|!v  l! $- |!X-  P! $313 /17 313 313 /19  $1 B3 313 '| [+| t'|!5'|!n'|!M'|!j' 313 313 313 '1 ! 37 }#R4+ F; '1? '1) >= F|'b | 6f C@+ $|2f WT|IE | '| &' $)  !}![q}![k $ !/ $' $7  R! $3  !! $+ $; p} hF ! } hF- }#Tm}'Zj  7! $I  .! $|##  '! $)  ?! $7  !! $'  %! $+ $+  !! $)  *! $}%P= Wa|;? tq} :; da}p>; ";
 var h$catMapping = "d;P)3J)3 !/0 !34 !3.'37*'3)4'3W! !/3 !06 !-6W# !/4 !04f; !83+5 !73 !67 !&1 !4< !76 !74', !6#'3 !6, !&2),FQ!H1!S#H3# <!#$'# (!#$'# 8!#'! ##!)#'! !#!&'!&)!'#+!&'!&)!)#'!&'! ##!&'! !#!'# !!#'!&)! !#!&'!'# !&!)#+& !!$ !#! !$# !!$ )#!'# )!#$'# !!$ !#!&)! >#!1#'!&'!'# !!#+! %#!| S#,Y#G%+6;%?6-%16 !%6*E6|!O' #!# !%6 !!#' *)# !3!+ '6 !!3)! ! !!'!&E!!5!j#$'#)!)# ,!#$-# !!# !4!&'!'#| /!| )# 2!#N-'') <!#'! '#!'# Q!#!p!' */3!r# ! 3<' '7 !5 | #' !.'F''F'' !3'3 Y&- )&'39 /<)4'3J'3'79' !3<!'3d&*7&M'7*+3'&.|!5& !3&1' !<7/''%''N+''&7*)&'7,?3 ! < !&'`&Y'' |! &9',? 7*f&5''%N)3*- O&+'*5'*)'*-'' A3!U&)'' F| K I&| + b'0| 5& !'( !'&)(3'+(.'(,1'7&'''37* !3%A&.'(!3&' '&' O&!1& ! &) +&'  !'&)(+'' '(' '( !'&3 0+ '&!)&''' 7*'&'5/, !75- '' !( /&+ '&' O&!1&!'&!'&!'&'  !' )(''+ ''' )') .1 +& ! &1 7*'')&.9 '' !( 5&!)&!O&!1&!'&!-&'  !'&)(-'!'' !( '(.' ,A '&''' 7* !35A .'(!3&' '&' O&!1&!'&!-&'  !'& !('0+'' '(' '(.3  !'(+ '&!)&''' 7* !7&/,7  !'&!/&) )&!+&) '& ! &!'&) '&) )&) ;&+ '(.'() )(!)(.' ,/ 0? 7*),/7 !57- .)(!3&!)&!Q&!C&) ,)'+(!)'!+'1 ''!'&/ '&''' 7*3 1, !7 .'(!3&!)&!Q&!7&!-&'  !'& !('-( ! ''(!'(''1 '(1  !& '&''' 7*!'&? .'(!3&!)&!v&' ,)(+'!)(!)( !'&3 03 '&''' 7*/,) N/&' '(!G&) S&!5& ! &' 1&) .+ )()' ! '!3(/ 7*' '(F; | )&.'&1'+ J/&*3'F7*'3n '& ! &' '& ! &' ,/ +&!1&!)& # &' '&!+&.'&/'!'',' -& ! %!/'' 7*' +&d ,)7A3 !73)7''/77*7, $7' #/0'(3&!l&+ ?'0-'F''-&9'!l'!37./7!'7-3+7'3n z&'(+'0/'0'''('',7*/3/&'(''+&)',)('&1()&+'=&.'(''/( !'&07*)(.'7p! ! !- $' z& !3%|'E&!+&' 1& ! &!+&' v&!+&' f&!+&' 1& ! &!+&' A&!| ;&!+&' | O&' )'53K,) C&77/ | t&9 <|-j&'3E&PW& !/0) | `&)3)+3&1 =&!+&)'9 G&)''35 G&''; =&!)&!''; | 1&''01'3(.'(9')3*)3 !5&.' 7*/ 7,/ /3<+3)' !< 7*/ j&*| 1&3 v& !'&- | U&7 b&!)'+('')(+ '(./()'+ N) '37*`&' -&9 |  &+ E(1&'(/ 7*8) h7Q&'''(.' '3| 3& !('01' ! ' !(''(3'/(7'' .7*/ 7*/ 13*/3' ?'2| K +'0| '& !'(-' !('-(.'(1&+ 7*13775'57) ''0`&0+''(''0)''&7*|  & !'('')( !'()''(3 +3l&3(3''('') -37*) )&7*`&/%'3| I 333 )'F='01'+&.+&'(.'&!''/ |  #| G%=#*h#n%| 5'/ +' l!#$5# Q!#$5#3!/#' /!' 3#3!3#3!/#' /!' 3# % !3#3!?#' 3#3$3#3$3#3$-#!'#+! !$6&)6)#!'#+!()6+#' '#+!!)63#-!)6' )#!'#+!('6!98-</.'3 !12>'1 !2/B33 !9:-<P53 !12+3'-)3 !4/@93 !43:73P-<!7< !,%' /,)4 !/0*7,)4 !/0!=%) `5G ='+).));'A '7$+7$'7&)!'#)! !#7$'7H-!/7 $!7+! !7#+!&+&&'7'#'!-4$+# !74'7 !#7C,j+ !!#++8/ -4-7'4+7H'7H'7H17Hb7'4'7 !47Hb7|%z437 #/0K7'417 !/0| l7H`7U4t7/4U7- r7U 97M | A,| f7O,|$)7H57H| 5734|!M7H|%Q7 (/0`,|  7-4 !/0b4 &/0C4|%b7|!v4 ,/0| G4 #/0d4 !/0|%f4| )7M4'7/4r7' d7' h7) ;7!37| % | '!!| '# ! !&)!'# $!#+! !#!'#$/#'%)! R#!'#/7 #!#)' !!#- +38'3p# ! #- &' | 9&1  !%3? .Q&5 1&!1&!1&!1&!1&!1&!1&!1&!d''3 #12)3 !12 !31D53<'3 !.3 !12'3 !12 %/0-3*73'.+3 !.3>| C W7!|! 7; |$h7W ;7+ P)3 !7% !&+ &/0'7 %/0 !./'0N5++''(<-%'7)+ !%&F'7!| v&' '''6'% !&.|!#&F)%,- v&) |!+&!'7+,77Y&- l7; C&b7!7,`73,NA,d77,r7A,| G7!|%b7} X;&7 | I7}%/C&| / M&*|9G&) | 775 t&/%'3|%z&*)3C&7*'&K  8!# !&'))F7' !3% /!#'% ! '| U&7+''/33 Q65%'6 '!#$)# @!#*3# #!#'! %#! !#%'6 #!# ! ! !#!)# +!#+!' '!| S ,'%&1&.)&.+&.Q&'(''0+7+ /,'7 !57/ | 1&+33 '(| -&C(.5 '37*/ G'/&)3,+ 7*[&3''3Q&9''(9 F^&) )'0| '&.'(+''(.+(=3 ! %7*+ '3-& !'%5&7*-&!v&/''('''(''5 )&.3& !'(' 7*' +3C&*/&)7 !&( !'(| -& !'&)''&''-&'' !&',S '&*'39&0'''('3,'% !('7 /&' /&' /&5 1&!1&!z#L+%+ '#|!# j&'(.'(.'( !3(.' 7*/ }!e;&; Q&+ | +&+ |MQ=} T7 |(/&' |!C&p 1#; -#-  !&'7&H=&!-& ! &!'&!'&!|!G&C6E |()& !0/C | I&' | 5&t ;& !57' C'13 !/0F/ ?'' F'.'- )/0'3 !/0+3)-)3!+3 !./ #0/@)3 !4.)4 ! 3J'3+ -&!|##&'  !< )3J)3 !/0 !34 !3.'37*'3)4'3W! !/3 !06 !-6W# !/4 !04 !/0 !3/@'37&*| #&'%b&) /&' /&' /&' )&) '5 !46N'5 ! 7+4'77 )<'7' ;&!W&!I&!'&!A&' ?&h |!f&- )3+ | #,) 57| 3++,E7',N) ;7+ N| ' | #7.|!t ^&) | +&A .Y,+ d&+,; E&63&6- p&-'- `& ! 3l&+ 3&F-+x t!t#| f&' 7*| v t&3 | 1&9 F|#5 |&v&5 O&7 3&|#E /&'  !& |  &!'&) ,' Q& ! 33,Q&'71,b&3 5,| j O&/,) FW&- F| I | 9&/ '&| I ,)'!''- +'+&!)&!Y&+ )'+ .3,3 531 ^&',F^&),d 3&N[&''+ -,135 | 5&) 13O&' 3,I&- 3,G&1 +3; 1,| j | [&|+t b,|(U  !('0| 3&A'13+ K,7*A )'0| #&)(+''('''3X+3? U&1 7*/ )'l&-'03'!7*+3; j&.'3,5 ''0| )&)(5''(+&+3+ F' 7*,/ K,9 G&!U&)()''( !'(''/3|!S | '&.)(3'- 7*1 .'(!3&' '&' O&!1&!'&!-&'  !'&'(.+(' '(' )(5 0- -&'(' 1') -'|%x | )&)(/' !('+(''0'''& !3&3 7*|#b | '&)(+'' +(''0''53| 5 | )&)(3''( !'('')3,9 7*p z& !'(.'(/' !('3 7*|*K d!d#7*5,; ,|)z | ;&|<Y |4M&|!= |!M+!-3|b` |7l&}#8j |,^&1 b&!7*+ '3|!/ `&' -'F7 | )&1'-3+7+% !377 7*!1,!M&- I&|3U | S&9 ,| %(C +'=%}$&7 '&|e7 |!E&- =&) 5&1 7&' N''F+<} 4/ |%M77 r7' | A7'()')7/(3<3''71'`7+'| )7h | M7)'N|$/ | x75 G,|#1 W!W#W!1#!G#W!W# !! '!' $' '!' +!!3!+# ! #!1#!9#W!W#'!!+!' 3!!1!!W#'!!+!!-! ! !) 1!!W#W!W#W!W#W!W#W!W#W!W#W![#' U!HU#H/#U!HU#H/#U!HU#H/#U!HU#H/#U!HU#H/# !!#' | -*}  % |$E&' 5,1'|=C +&!Y&!'& ! &'  !& 7&!+& # &/ ,+  $& )&!'& ! &'  && '& ! &' +&!1&!+&!+& ! &!7&!E&- )&!-&!E&| 1 '4|&# |  7+ |!77; A7' A7!A7!n77 =,) b7!| A7+ z7| ` ^7= z7- 571 '7|#r | #7) | f7' | h7- l73 |%`7!| `7- x7!v7!|#Q7' |#+7C =7) +7; |!W7; | t7z ;7+ | 973 77/ t73 `7|I^ }*Q/&v } !5&9 |$x&}$#I |,'&|AO X` |!/<|!p |%A'}PF' ";
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -6438,8 +6503,9 @@ var h$catMapping = "d;P)3J)3 !/0 !34 !3.'37*'3)4'3W! !/3 !06 !-6W# !/4 !04f; !83
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -6936,14 +7002,14 @@ function h$writePtrPtrU32(ptr, ptr_off, v, x, y) {
   x = x || 0;
   y = y || 0;
   var arr = ptr.arr[ptr_off + 4 * x];
-  arr[0].dv.putInt32(arr[1] + y, v);
+  arr[0].dv.setInt32(arr[1] + y, v);
 }
 // unsigned char** ptr[x][y] = v
 function h$writePtrPtrU8(ptr, ptr_off, v, x, y) {
   x = x || 0;
   y = y || 0;
   var arr = ptr.arr[ptr_off+ 4 * x];
-  arr[0].dv.putUint8(arr[1] + y, v);
+  arr[0].dv.setUint8(arr[1] + y, v);
 }
 // convert JavaScript String to a Haskell String
 function h$toHsString(str) {
@@ -7049,7 +7115,7 @@ function h$throwJSException(e) {
   var someE = (h$c2(h$baseZCGHCziExceptionziSomeException_con_e,(h$ghcjszmprimZCGHCJSziPrimzizdfExceptionJSException),((h$c2(h$ghcjszmprimZCGHCJSziPrimziJSException_con_e,((h$c1(h$ghcjszmprimZCGHCJSziPrimziJSVal_con_e, (e)))),(h$toHsString(e.toString())))))));
   return h$throw(someE, true);
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -7078,8 +7144,9 @@ function h$throwJSException(e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -7307,7 +7374,7 @@ function h$localtime_r(timep_v, timep_o, result_v, result_o) {
   { h$ret1 = (result_o); return (result_v); };
 }
 var h$__hscore_localtime_r = h$localtime_r;
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -7336,8 +7403,9 @@ var h$__hscore_localtime_r = h$localtime_r;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // some Enum conversion things
 // an array of generic enums
@@ -7366,7 +7434,7 @@ function h$tagToEnum(tag) {
 function h$dataTag(e) {
   return (e===true)?1:((typeof e !== 'object')?0:(e.f.a-1));
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -7395,8 +7463,9 @@ function h$dataTag(e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // weak reference support
 // values defined in Gen2.ClosureInfo
@@ -7489,7 +7558,7 @@ function h$finalizeWeak(w) {
         { h$ret1 = (1); return (r); };
     }
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -7518,8 +7587,9 @@ function h$finalizeWeak(w) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -7651,14 +7721,18 @@ function h$delayThread(time) {
 }
 function h$resumeDelayThread() {
   h$r1 = false;
-  return h$stack[h$sp];
+  return h$rs(); // stack[h$sp];
 }
 function h$yield() {
-  h$sp += 2;
-  h$stack[h$sp-1] = h$r1;
-  h$stack[h$sp] = h$return;
-  h$currentThread.sp = h$sp;
-  return h$reschedule;
+  if(h$currentThread.isSynchronous) {
+    return h$stack[h$sp];
+  } else {
+    h$sp += 2;
+    h$stack[h$sp-1] = h$r1;
+    h$stack[h$sp] = h$return;
+    h$currentThread.sp = h$sp;
+    return h$reschedule;
+  }
 }
 // raise the async exception in the thread if not masked
 function h$killThread(t, ex) {
@@ -8030,7 +8104,16 @@ function h$startMainLoop() {
             h$mainLoopImmediate = setImmediate(h$mainLoop);
         }
     } else {
-        while(true) h$mainLoop();
+      while(true) {
+        // the try/catch block appears to prevent a crash with
+        // Safari on iOS 10, even though this path is never taken
+        // in a browser.
+        try {
+          h$mainLoop();
+        } catch(e) {
+          throw e;
+        }
+      }
     }
 }
 var h$busyYield = 500;
@@ -8661,7 +8744,10 @@ function h$makeMVarListener(mv, stopProp, stopImmProp, preventDefault) {
   f.root = mv;
   return f;
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+function h$rs() {
+  return h$stack[h$sp];
+}
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -8690,8 +8776,9 @@ function h$makeMVarListener(mv, stopProp, stopImmProp, preventDefault) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // software transactional memory
 var h$stmTransactionActive = 0;
@@ -8968,7 +9055,7 @@ function h$stmCommitInvariant(localInv) {
         h$stmAddTVarInvariant(dep, inv);
     }
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -8997,8 +9084,9 @@ function h$stmCommitInvariant(localInv) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -9069,7 +9157,7 @@ function h$hs_spt_lookup_key(key1,key2,key3,key4) {
        s[key1][key2][key3][key4]) return s[key1][key2][key3][key4];
     return null;
 }
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -9098,8 +9186,9 @@ function h$hs_spt_lookup_key(key1,key2,key3,key4) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
+/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
+   2015-05-15).  */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -12334,7 +12423,7 @@ function h$bh_lne(h$RTS_26, h$RTS_27)
     {
       h$r1 = h$RTS_28;
       h$sp -= h$RTS_27;
-      return h$stack[h$sp];
+      return h$rs();
     };
   }
   else
@@ -12991,7 +13080,7 @@ function h$ap_1_0()
           var h$RTS_98 = h$c3(h$pap_0, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 0) - 1), null);
           --h$sp;
           h$r1 = h$RTS_98;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13021,7 +13110,7 @@ function h$ap_1_0()
           var h$RTS_103 = h$c3(h$pap_0, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 0) - 1), null);
           --h$sp;
           h$r1 = h$RTS_103;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13069,7 +13158,7 @@ function h$ap_1_1()
           var h$RTS_109 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 1), h$stack[(h$sp - 1)]);
           h$sp -= 2;
           h$r1 = h$RTS_109;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13102,7 +13191,7 @@ function h$ap_1_1()
           var h$RTS_114 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 1), h$stack[(h$sp - 1)]);
           h$sp -= 2;
           h$r1 = h$RTS_114;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13154,7 +13243,7 @@ function h$ap_1_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_120;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13191,7 +13280,7 @@ function h$ap_1_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_125;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13239,7 +13328,7 @@ function h$ap_2_1()
           var h$RTS_131 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 2), h$stack[(h$sp - 1)]);
           h$sp -= 2;
           h$r1 = h$RTS_131;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13272,7 +13361,7 @@ function h$ap_2_1()
           var h$RTS_136 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 2), h$stack[(h$sp - 1)]);
           h$sp -= 2;
           h$r1 = h$RTS_136;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13324,7 +13413,7 @@ function h$ap_2_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_142;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13361,7 +13450,7 @@ function h$ap_2_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_147;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13416,7 +13505,7 @@ function h$ap_2_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_153;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13456,7 +13545,7 @@ function h$ap_2_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_158;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13514,7 +13603,7 @@ function h$ap_2_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_164;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13557,7 +13646,7 @@ function h$ap_2_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_169;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13609,7 +13698,7 @@ function h$ap_3_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_175;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13646,7 +13735,7 @@ function h$ap_3_2()
           h$stack[(h$sp - 2)]);
           h$sp -= 3;
           h$r1 = h$RTS_180;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13701,7 +13790,7 @@ function h$ap_3_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_186;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13741,7 +13830,7 @@ function h$ap_3_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_191;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13799,7 +13888,7 @@ function h$ap_3_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_197;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13842,7 +13931,7 @@ function h$ap_3_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_202;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -13903,7 +13992,7 @@ function h$ap_3_5()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)]);
           h$sp -= 6;
           h$r1 = h$RTS_208;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -13949,7 +14038,7 @@ function h$ap_3_5()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)]);
           h$sp -= 6;
           h$r1 = h$RTS_213;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14013,7 +14102,7 @@ function h$ap_3_6()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)], h$stack[(h$sp - 6)]);
           h$sp -= 7;
           h$r1 = h$RTS_219;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14062,7 +14151,7 @@ function h$ap_3_6()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)], h$stack[(h$sp - 6)]);
           h$sp -= 7;
           h$r1 = h$RTS_224;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14117,7 +14206,7 @@ function h$ap_4_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_230;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14157,7 +14246,7 @@ function h$ap_4_3()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)]);
           h$sp -= 4;
           h$r1 = h$RTS_235;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14215,7 +14304,7 @@ function h$ap_4_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_241;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14258,7 +14347,7 @@ function h$ap_4_4()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)]);
           h$sp -= 5;
           h$r1 = h$RTS_246;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14319,7 +14408,7 @@ function h$ap_4_5()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)]);
           h$sp -= 6;
           h$r1 = h$RTS_252;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14365,7 +14454,7 @@ function h$ap_4_5()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)]);
           h$sp -= 6;
           h$r1 = h$RTS_257;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14429,7 +14518,7 @@ function h$ap_4_6()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)], h$stack[(h$sp - 6)]);
           h$sp -= 7;
           h$r1 = h$RTS_263;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14478,7 +14567,7 @@ function h$ap_4_6()
           h$stack[(h$sp - 2)], h$stack[(h$sp - 3)], h$stack[(h$sp - 4)], h$stack[(h$sp - 5)], h$stack[(h$sp - 6)]);
           h$sp -= 7;
           h$r1 = h$RTS_268;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14546,7 +14635,7 @@ function h$ap_4_7()
           h$stack[(h$sp - 7)]);
           h$sp -= 8;
           h$r1 = h$RTS_274;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14599,7 +14688,7 @@ function h$ap_4_7()
           h$stack[(h$sp - 7)]);
           h$sp -= 8;
           h$r1 = h$RTS_279;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14670,7 +14759,7 @@ function h$ap_4_8()
           h$stack[(h$sp - 7)], h$stack[(h$sp - 8)]);
           h$sp -= 9;
           h$r1 = h$RTS_285;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14726,7 +14815,7 @@ function h$ap_4_8()
           h$stack[(h$sp - 7)], h$stack[(h$sp - 8)]);
           h$sp -= 9;
           h$r1 = h$RTS_290;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -14767,7 +14856,7 @@ function h$ap_1_0_fast()
         {
           var h$RTS_297 = h$c3(h$pap_0, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 0) - 1), null);
           h$r1 = h$RTS_297;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14795,7 +14884,7 @@ function h$ap_1_0_fast()
         {
           var h$RTS_302 = h$c3(h$pap_0, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 0) - 1), null);
           h$r1 = h$RTS_302;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -14843,7 +14932,7 @@ function h$ap_1_1_fast()
         {
           var h$RTS_308 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 1), h$r2);
           h$r1 = h$RTS_308;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14873,7 +14962,7 @@ function h$ap_1_1_fast()
         {
           var h$RTS_313 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 1), h$r2);
           h$r1 = h$RTS_313;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -14921,7 +15010,7 @@ function h$ap_1_2_fast()
         {
           var h$RTS_319 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 1), h$r2, h$r3);
           h$r1 = h$RTS_319;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -14953,7 +15042,7 @@ function h$ap_1_2_fast()
         {
           var h$RTS_324 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 1), h$r2, h$r3);
           h$r1 = h$RTS_324;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -14999,7 +15088,7 @@ function h$ap_2_1_fast()
         {
           var h$RTS_330 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 2), h$r2);
           h$r1 = h$RTS_330;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15029,7 +15118,7 @@ function h$ap_2_1_fast()
         {
           var h$RTS_335 = h$c3(h$pap_1, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 256) - 2), h$r2);
           h$r1 = h$RTS_335;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15077,7 +15166,7 @@ function h$ap_2_2_fast()
         {
           var h$RTS_341 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 2), h$r2, h$r3);
           h$r1 = h$RTS_341;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15109,7 +15198,7 @@ function h$ap_2_2_fast()
         {
           var h$RTS_346 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 2), h$r2, h$r3);
           h$r1 = h$RTS_346;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15159,7 +15248,7 @@ function h$ap_2_3_fast()
         {
           var h$RTS_352 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 2), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_352;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15193,7 +15282,7 @@ function h$ap_2_3_fast()
         {
           var h$RTS_357 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 2), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_357;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15245,7 +15334,7 @@ function h$ap_2_4_fast()
         {
           var h$RTS_363 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 2), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_363;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15281,7 +15370,7 @@ function h$ap_2_4_fast()
         {
           var h$RTS_368 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 2), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_368;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15329,7 +15418,7 @@ function h$ap_3_2_fast()
         {
           var h$RTS_374 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 3), h$r2, h$r3);
           h$r1 = h$RTS_374;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15361,7 +15450,7 @@ function h$ap_3_2_fast()
         {
           var h$RTS_379 = h$c4(h$pap_2, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 512) - 3), h$r2, h$r3);
           h$r1 = h$RTS_379;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15411,7 +15500,7 @@ function h$ap_3_3_fast()
         {
           var h$RTS_385 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 3), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_385;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15445,7 +15534,7 @@ function h$ap_3_3_fast()
         {
           var h$RTS_390 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 3), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_390;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15497,7 +15586,7 @@ function h$ap_3_4_fast()
         {
           var h$RTS_396 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 3), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_396;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15533,7 +15622,7 @@ function h$ap_3_4_fast()
         {
           var h$RTS_401 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 3), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_401;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15588,7 +15677,7 @@ function h$ap_3_5_fast()
           var h$RTS_407 = h$c7(h$pap_5, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1280) - 3), h$r2, h$r3, h$r4, h$r5,
           h$r6);
           h$r1 = h$RTS_407;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15627,7 +15716,7 @@ function h$ap_3_5_fast()
           var h$RTS_412 = h$c7(h$pap_5, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1280) - 3), h$r2, h$r3, h$r4, h$r5,
           h$r6);
           h$r1 = h$RTS_412;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15684,7 +15773,7 @@ function h$ap_3_6_fast()
           var h$RTS_418 = h$c8(h$pap_6, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1536) - 3), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7);
           h$r1 = h$RTS_418;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15725,7 +15814,7 @@ function h$ap_3_6_fast()
           var h$RTS_423 = h$c8(h$pap_6, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1536) - 3), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7);
           h$r1 = h$RTS_423;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15775,7 +15864,7 @@ function h$ap_4_3_fast()
         {
           var h$RTS_429 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 4), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_429;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15809,7 +15898,7 @@ function h$ap_4_3_fast()
         {
           var h$RTS_434 = h$c5(h$pap_3, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 768) - 4), h$r2, h$r3, h$r4);
           h$r1 = h$RTS_434;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15861,7 +15950,7 @@ function h$ap_4_4_fast()
         {
           var h$RTS_440 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 4), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_440;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15897,7 +15986,7 @@ function h$ap_4_4_fast()
         {
           var h$RTS_445 = h$c6(h$pap_4, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1024) - 4), h$r2, h$r3, h$r4, h$r5);
           h$r1 = h$RTS_445;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -15952,7 +16041,7 @@ function h$ap_4_5_fast()
           var h$RTS_451 = h$c7(h$pap_5, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1280) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6);
           h$r1 = h$RTS_451;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -15991,7 +16080,7 @@ function h$ap_4_5_fast()
           var h$RTS_456 = h$c7(h$pap_5, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1280) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6);
           h$r1 = h$RTS_456;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -16048,7 +16137,7 @@ function h$ap_4_6_fast()
           var h$RTS_462 = h$c8(h$pap_6, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1536) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7);
           h$r1 = h$RTS_462;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -16089,7 +16178,7 @@ function h$ap_4_6_fast()
           var h$RTS_467 = h$c8(h$pap_6, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1536) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7);
           h$r1 = h$RTS_467;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -16148,7 +16237,7 @@ function h$ap_4_7_fast()
           var h$RTS_473 = h$c9(h$pap_gen, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1792) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7, h$r8);
           h$r1 = h$RTS_473;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -16191,7 +16280,7 @@ function h$ap_4_7_fast()
           var h$RTS_478 = h$c9(h$pap_gen, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 1792) - 4), h$r2, h$r3, h$r4, h$r5,
           h$r6, h$r7, h$r8);
           h$r1 = h$RTS_478;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -16252,7 +16341,7 @@ function h$ap_4_8_fast()
           var h$RTS_484 = h$c10(h$pap_gen, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 2048) - 4), h$r2, h$r3, h$r4,
           h$r5, h$r6, h$r7, h$r8, h$r9);
           h$r1 = h$RTS_484;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -16297,7 +16386,7 @@ function h$ap_4_8_fast()
           var h$RTS_489 = h$c10(h$pap_gen, h$r1, ((((h$r1.f.t === 1) ? h$r1.f.a : h$r1.d2.d1) - 2048) - 4), h$r2, h$r3, h$r4,
           h$r5, h$r6, h$r7, h$r8, h$r9);
           h$r1 = h$RTS_489;
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (0):
@@ -18256,7 +18345,7 @@ function h$ap_gen()
           h$sp = ((h$sp - h$RTS_526) - 2);
           h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_532, m: 0
                                 }, h$RTS_533);
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -18304,7 +18393,7 @@ function h$ap_gen()
           h$sp = ((h$sp - h$RTS_538) - 2);
           h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_544, m: 0
                                 }, h$RTS_545);
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (5):
@@ -18511,7 +18600,7 @@ function h$ap_gen_fast(h$RTS_547)
             h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_559, m: 0
                                   }, h$RTS_560);
           };
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (3):
@@ -18558,7 +18647,7 @@ function h$ap_gen_fast(h$RTS_547)
             h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_570, m: 0
                                   }, h$RTS_571);
           };
-          return h$stack[h$sp];
+          return h$rs();
         };
       };
     case (2):
@@ -18723,20 +18812,20 @@ function h$ap_0_0_fast()
 {
   if((typeof h$r1 !== "object"))
   {
-    return h$stack[h$sp];
+    return h$rs();
   };
   var h$RTS_575 = h$r1.f;
   if((h$RTS_575 === h$unbox_e))
   {
     h$r1 = h$r1.d1;
-    return h$stack[h$sp];
+    return h$rs();
   };
   switch (h$RTS_575.t)
   {
     case (2):
     case (1):
     case (3):
-      return h$stack[h$sp];
+      return h$rs();
     case (5):
       h$p3(h$ap_0_0, h$r1, h$return);
       return h$blockOnBlackhole(h$r1);
@@ -18749,20 +18838,20 @@ function h$ap_0_0()
   --h$sp;
   if((typeof h$r1 !== "object"))
   {
-    return h$stack[h$sp];
+    return h$rs();
   };
   var h$RTS_576 = h$r1.f;
   if((h$RTS_576 === h$unbox_e))
   {
     h$r1 = h$r1.d1;
-    return h$stack[h$sp];
+    return h$rs();
   };
   switch (h$RTS_576.t)
   {
     case (2):
     case (1):
     case (3):
-      return h$stack[h$sp];
+      return h$rs();
     case (5):
       h$p3(h$ap_0_0, h$r1, h$return);
       return h$blockOnBlackhole(h$r1);
@@ -18798,20 +18887,20 @@ function h$e(h$RTS_579)
   h$r1 = h$RTS_579;
   if((typeof h$RTS_579 !== "object"))
   {
-    return h$stack[h$sp];
+    return h$rs();
   };
   var h$RTS_580 = h$RTS_579.f;
   if((h$RTS_580 === h$unbox_e))
   {
     h$r1 = h$RTS_579.d1;
-    return h$stack[h$sp];
+    return h$rs();
   };
   switch (h$RTS_580.t)
   {
     case (2):
     case (1):
     case (3):
-      return h$stack[h$sp];
+      return h$rs();
     case (5):
       h$p3(h$ap_0_0, h$RTS_579, h$return);
       return h$blockOnBlackhole(h$RTS_579);
@@ -18844,7 +18933,7 @@ function h$upd_frame()
     h$RTS_581.m = 0;
   };
   h$sp -= 2;
-  return h$stack[h$sp];
+  return h$rs();
 };
 h$o(h$upd_frame, (-1), 0, 1, 256, null);
 function h$upd_frame_lne()
@@ -18852,7 +18941,7 @@ function h$upd_frame_lne()
   var h$RTS_584 = h$stack[(h$sp - 1)];
   h$stack[h$RTS_584] = h$r1;
   h$sp -= 2;
-  return h$stack[h$sp];
+  return h$rs();
 };
 h$o(h$upd_frame_lne, (-1), 0, 1, 256, null);
 function h$pap_gen()
