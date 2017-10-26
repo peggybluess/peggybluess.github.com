@@ -3,14 +3,14 @@ code size summary per package:
 axiom-0.4.5-8MVNURGytw7C6AMzY7JZ63:233125
 base:                    446183
 bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:1141
-containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:32672
+containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:32678
 deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ:878
 ghc-prim:                18306
 ghcjs-base-0.2.0.0-GiGsdYOoO5CISyJ2m7ax9F:12944
 ghcjs-perch-0.3.3.2-23lgSmQ8cLXHCCbfQMkmML:25481
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10712
 integer-gmp:             39627
-main:                    117434
+main:                    118946
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF:1285
 transient-0.5.9.1-lwfh51KcU3EvZ4gr1Ieav:76419
 
@@ -89,7 +89,7 @@ bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU
     Data.ByteString.Internal:           1141
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
-    Data.Map.Base:                      32672
+    Data.Map.Base:                      32678
 
 deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ
     Control.DeepSeq:                    878
@@ -119,7 +119,7 @@ integer-gmp
     GHC.Integer.Type:                   39627
 
 main
-    Main:                               117434
+    Main:                               118946
 
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF
     Control.Monad.State.Class:          1285
@@ -129,5 +129,5 @@ transient-0.5.9.1-lwfh51KcU3EvZ4gr1Ieav
 
 
 
-packed metadata: 231007
+packed metadata: 231116
 
