@@ -5,6 +5,11 @@ h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 
 
+
+ul {
+    list-style-type: none;
+  }
+
 body{margin:10px;padding:5px}
 
 .leftpane{width:30%;padding-top:3%;float:left}
