@@ -10,7 +10,7 @@ ghcjs-base-0.2.0.0-GiGsdYOoO5CISyJ2m7ax9F:12998
 ghcjs-perch-0.3.3.2-23lgSmQ8cLXHCCbfQMkmML:29321
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10712
 integer-gmp:             39627
-main:                    122677
+main:                    122683
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF:1285
 transient-0.5.9.1-lwfh51KcU3EvZ4gr1Ieav:76419
 
@@ -119,7 +119,7 @@ integer-gmp
     GHC.Integer.Type:                   39627
 
 main
-    Main:                               122677
+    Main:                               122683
 
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF
     Control.Monad.State.Class:          1285
