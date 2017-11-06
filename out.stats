@@ -7,10 +7,10 @@ containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:32694
 deepseq-1.4.2.0-47yvsc92PQF1rYmebWoAXZ:884
 ghc-prim:                18306
 ghcjs-base-0.2.0.0-GiGsdYOoO5CISyJ2m7ax9F:12998
-ghcjs-perch-0.3.3.2-23lgSmQ8cLXHCCbfQMkmML:29321
+ghcjs-perch-0.3.3.2-23lgSmQ8cLXHCCbfQMkmML:29325
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10712
 integer-gmp:             39627
-main:                    122683
+main:                    122786
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF:1285
 transient-0.5.9.1-lwfh51KcU3EvZ4gr1Ieav:76419
 
@@ -108,7 +108,7 @@ ghcjs-base-0.2.0.0-GiGsdYOoO5CISyJ2m7ax9F
     Data.JSString.Internal.Type:        422
 
 ghcjs-perch-0.3.3.2-23lgSmQ8cLXHCCbfQMkmML
-    Internal.Perch:                     28450
+    Internal.Perch:                     28454
     Internal.Type:                      871
 
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
@@ -119,7 +119,7 @@ integer-gmp
     GHC.Integer.Type:                   39627
 
 main
-    Main:                               122683
+    Main:                               122786
 
 mtl-2.2.1-JWmkRmuDwS4ARUue7XBzoF
     Control.Monad.State.Class:          1285
@@ -129,5 +129,5 @@ transient-0.5.9.1-lwfh51KcU3EvZ4gr1Ieav
 
 
 
-packed metadata: 232947
+packed metadata: 233174
 
