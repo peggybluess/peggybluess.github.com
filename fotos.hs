@@ -1,4 +1,5 @@
 {-# LANGUAGE NoMonomorphismRestriction, CPP #-}
+module Main where
 import Transient.Base
 import Transient.Move
 
@@ -118,11 +119,32 @@ bio=  do
                      forElemId (fs "gallery")  $ this ! clas (fs "landscape")  `child`  clear >> biotext  
          return ()
       where 
-      biotext= div $ do
-            p ! atr "align" (fs "justify") $
-               "Comienzo en el año 2012 como autodidacta. En el año 2014 en la escuela La Máquina realizo varios cursos; iluminación de estudio, flash de mano, lenguaje fotográfico y composición .Año 2015 curso de diseño gráfico en la escuela Aula Creactiva. Año 2015 curso de lenguaje fotográfico, y curso de creación fotográfica contemporánea en escuela Blank Paper Años 2015 y 2016, cursos de Photoshop, Lightroom, Premier y video en la escuela Lens. Año 2016 curso sobre proyecto fotográfico escuela Pivot Realización de talleres con reconocidos fotógrafos durante los años 2015 , 2016; Lurdes R, Basoli, Jesús Mico, Ricky Dávila, Eduardo Nave, David Jimenez, Laia Abril, Matias Costa ,Taller libros fotografía Underbrau .Curso Fotografía contemporánea y Fotografía Documental como fotografía de autor , Escuela de las Artes 16 , Universidad Carlos III y el Circulo de Bellas Artes de Madrid. Actualmente realiza curso de fotografía documental en la escuela Pica Photoespaña y de fotografía y creación contemporánea en la escuela Lens."
+      biotext= do
+        div $ do
+            img ! style (fs "width:20%;height:20%;float:left;margin-right:5%") ! src (fs "bio.jpg")
 
+            p ! atr "align" (fs "justify") $
+               "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laborar se centra en la Administración Publica."
+
+            p ! atr "align" (fs "justify") $
+               "Comienzo en la fotografía en el año 2012 como autodidacta. En el año 2014 en la escuela La Máquina realizo varios cursos; iluminación de estudio, flash de mano, lenguaje fotográfico y composición .Año 2015 curso de diseño gráfico en la escuela Aula Creactiva. Año 2015 curso de lenguaje fotográfico, y curso de creación fotográfica contemporánea en escuela Blank Paper Años 2015 y 2016, cursos de Photoshop, Lightroom, Premier y video en la escuela Lens. Año 2016 curso sobre proyecto fotográfico escuela Pivot. .Curso Fotografía contemporánea y Fotografía Documental como fotografía de autor, Escuela de las Artes 16 , Universidad Carlos III y el Circulo de Bellas Artes de Madrid. Actualmente realiza curso de fotografía documental en la escuela Pica Photoespaña y de fotografía y creación contemporánea en la escuela Lens."
+
+            p ! atr "align" (fs "justify") $
+               "Asistencia a talleres con reconocidos fotógrafos ;Lurdes R, Basoli , Jesús Mico Ricky Dávila , Eduardo Nave, David Jimenez , Laia Abril, Matias Costa , fotolibros Underbrau"
+        div ! style (fs "float:left") $ do
+            p  ! style (fs "margin: -2% 0 0 -2.5%") $ b $ "PREMIOS" 
+            ul ! style (fs "list-style: none;") $ do
+                li  $ "2017  Finalista XVII Seminario  de Fotografia  de Albarracin Teruel" 
+                li  $ "2017 Seleccionada Descubrimientos PH 17" 
+                li  $ "2017 Finalista Beca Master BASE  escuela LENS"
             
+            p  ! style (fs "margin: -2% 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
+            ul ! style (fs "list-style: none;")  $ do
+                li   $ "2017 Showroom , exposicion colectiva \"Archipielago\""
+             
+            p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "PUBLICACIONES" 
+            ul ! style (fs "list-style: none;")  $ do
+                li  $ "Fotolibro colectivo  Barrios Project , escuela PICA" 
 
 statement= do
          render $ at (fs "#statement")  Insert $ wlink "statement"  (fs "Statement")  ! style (fs "color:black")
@@ -135,7 +157,7 @@ statement= do
      where
      statext= div $ do
          p ! atr "align" (fs "justify") $
-              "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laborar se centra en la Administración Publica. Mi pasión por la Fotografía aparece en la edad madura para quedarse y ocupar casi todo, es mucho más lo que ella me ofrece a mí que lo que yo le doy, y eso que es mucho. La pregunta que me hago siempre en la elaboración de trabajos fotográficos ¿Es posible llegar a compartir la realidad con alguien? Compartir el acto de mirar y la realidad resulta al final una forma de superar la insidia entre la existencia y la verdad, de alcanzar un fundamento vital"
+              "Mi pasión por la fotografía aparece en la edad madura para quedarse y ocupar casi todo, es mucho más lo que ella me ofrece a mí que lo que yo le doy, y eso que es mucho. La pregunta que me hago siempre en la elaboración de trabajos fotográficos ¿Es posible llegar a compartir la realidad con alguien? Compartir el acto de mirar y la realidad resulta al final una forma de superar la insidia entre la existencia y la verdad, de alcanzar un fundamento vital"
 
          p ! atr "align" (fs "justify") $
               "En mis trabajos personales no muestro fotografías de realidades amables y explicitas , supongo que dentro de mi hay una atracción hacia la oscuridad y lo misterioso, el doble sentido de las cosas y la realidad oculta que no se evidencia, pero se intuye. Tampoco hago fotografías para informar, aunque todo lo que sale en ellas es real, son cosas y personas que están allí, pero vistas desde mi subjetividad documental, comunicando con las imágenes experiencias semejantes a las que yo he tenido en sociedad."
