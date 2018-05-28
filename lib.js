@@ -3490,6 +3490,311 @@ function h$rand() {
 /* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
    Unicode 6.0.  */
 /* We do not support C11 <threads.h>.  */
+/* FNV-1 hash
+ *
+ * The FNV-1 hash description: http://isthe.com/chongo/tech/comp/fnv/
+ * The FNV-1 hash is public domain: http://isthe.com/chongo/tech/comp/fnv/#public_domain
+ */
+function h$hashable_fnv_hash_offset(str_a, o, len, hash) {
+  return h$hashable_fnv_hash(str_a, o, len, hash);
+}
+function h$hashable_fnv_hash(str_d, str_o, len, hash) {
+  if(len > 0) {
+    var d = str_d.u8;
+    for(var i=0;i<len;i++) {
+      hash = h$mulInt32(hash, 16777619) ^ d[str_o+i];
+    }
+  }
+  return hash;
+}
+// int hashable_getRandomBytes(unsigned char *dest, int nbytes)
+function h$hashable_getRandomBytes(dest_d, dest_o, len) {
+  if(len > 0) {
+    var d = dest_d.u8;
+    for(var i=0;i<len;i++) {
+      d[dest_o+i] = Math.floor(Math.random() * 256);
+    }
+  }
+  return len;
+}
+/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+/* This header is separate from features.h so that the compiler can
+   include it implicitly at the start of every compilation.  It must
+   not itself include <features.h> or any other header that includes
+   <features.h> because the implicit include comes before any feature
+   test macros that may be defined in a source file before it first
+   explicitly includes a system header.  GCC knows the name of this
+   header in order to preinclude it.  */
+/* glibc's intent is to support the IEC 559 math functionality, real
+   and complex.  If the GCC (4.9 and later) predefined macros
+   specifying compiler intent are available, use them to determine
+   whether the overall intent is to support these features; otherwise,
+   presume an older compiler has intent to support these features and
+   define these macros by default.  */
+/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
+   Unicode 6.0.  */
+/* We do not support C11 <threads.h>.  */
+// values defined in Gen2.ClosureInfo
+// thread status
+/*
+ * low-level heap object manipulation macros
+ */
+// GHCJS.Prim.JSVal
+// GHCJS.Prim.JSException
+// Exception dictionary for JSException
+// SomeException
+// GHC.Ptr.Ptr
+// GHC.Integer.GMP.Internals
+// Data.Maybe.Maybe
+// #define HS_NOTHING h$nothing
+// Data.List
+// Data.Text
+// Data.Text.Lazy
+// black holes
+// can we skip the indirection for black holes?
+// resumable thunks
+// general deconstruction
+// retrieve  a numeric value that's possibly stored as an indirection
+// generic lazy values
+// generic data constructors and selectors
+// unboxed tuple returns
+// #define RETURN_UBX_TUP1(x) return x;
+function h$_hs_text_memcpy(dst_v,dst_o2,src_v,src_o2,n) {
+  return h$memcpy(dst_v,2*dst_o2,src_v,2*src_o2,2*n);
+}
+function h$_hs_text_memcmp(a_v,a_o2,b_v,b_o2,n) {
+  return h$memcmp(a_v,2*a_o2,b_v,2*b_o2,2*n);
+}
+// decoder below adapted from cbits/cbits.c in the text package
+var h$_text_utf8d =
+   [
+  /*
+   * The first part of the table maps bytes to character classes that
+   * to reduce the size of the transition table and create bitmasks.
+   */
+   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
+   7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7, 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+   8,8,2,2,2,2,2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+  10,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3, 11,6,6,6,5,8,8,8,8,8,8,8,8,8,8,8,
+  /*
+   * The second part is a transition table that maps a combination of
+   * a state of the automaton and a character class to a state.
+   */
+   0,12,24,36,60,96,84,12,12,12,48,72, 12,12,12,12,12,12,12,12,12,12,12,12,
+  12, 0,12,12,12,12,12, 0,12, 0,12,12, 12,24,12,12,12,12,12,24,12,24,12,12,
+  12,12,12,12,12,12,12,24,12,12,12,12, 12,24,12,12,12,12,12,12,12,24,12,12,
+  12,12,12,12,12,12,12,36,12,36,12,12, 12,36,12,12,12,12,12,36,12,36,12,12,
+  12,36,12,12,12,12,12,12,12,12,12,12];
+/*
+ * A best-effort decoder. Runs until it hits either end of input or
+ * the start of an invalid byte sequence.
+ *
+ * At exit, updates *destoff with the next offset to write to, and
+ * returns the next source offset to read from.
+ */
+function h$_hs_text_decode_utf8_internal ( dest_v
+                                         , destoff_v, destoff_o
+                                         , src_v, src_o
+                                         , src_end_v, src_end_o
+                                         , s
+                                         ) {
+  if(src_v === null || src_end_v === null) {
+    { h$ret1 = (src_end_o); return (null); };
+  }
+  var dsto = destoff_v.dv.getUint32(destoff_o,true) << 1;
+  var srco = src_o;
+  var state = s.state;
+  var codepoint = s.codepoint;
+  var ddv = dest_v.dv;
+  var sdv = src_v.dv;
+  function decode(b) {
+    var type = h$_text_utf8d[b];
+    codepoint = (state !== 0) ?
+      (b & 0x3f) | (codepoint << 6) :
+      (0xff >>> type) & b;
+    state = h$_text_utf8d[256 + state + type];
+    return state;
+  }
+  while (srco < src_end_o) {
+    if(decode(sdv.getUint8(srco++)) !== 0) {
+      if(state !== 12) {
+        continue;
+      } else {
+        break;
+      }
+    }
+    if (codepoint <= 0xffff) {
+      ddv.setUint16(dsto,codepoint,true);
+      dsto += 2;
+    } else {
+      ddv.setUint16(dsto,(0xD7C0 + (codepoint >>> 10)),true);
+      ddv.setUint16(dsto+2,(0xDC00 + (codepoint & 0x3FF)),true);
+      dsto += 4;
+    }
+    s.last = srco;
+  }
+  s.state = state;
+  s.codepoint = codepoint;
+  destoff_v.dv.setUint32(destoff_o,dsto>>1,true);
+  { h$ret1 = (srco); return (src_v); };
+}
+function h$_hs_text_decode_utf8_state( dest_v
+                                     , destoff_v, destoff_o
+                                     , src_v, src_o
+                                     , srcend_v, srcend_o
+                                     , codepoint0_v, codepoint0_o
+                                     , state0_v, state0_o
+                                     ) {
+  var s = { state: state0_v.dv.getUint32(state0_o, true)
+          , codepoint: codepoint0_v.dv.getUint32(codepoint0_o, true)
+          , last: src_o
+          };
+  var ret, ret1;
+  { (ret) = (h$_hs_text_decode_utf8_internal ( dest_v , destoff_v, destoff_o , src_v.arr[src_o][0], src_v.arr[src_o][1] , srcend_v, srcend_o , s )); (ret1) = h$ret1; };
+  src_v.arr[src_o][1] = s.last;
+  state0_v.dv.setUint32(state0_o, s.state, true);
+  codepoint0_v.dv.setUint32(codepoint0_o, s.codepoint, true);
+  if(s.state === 12) ret1--;
+  { h$ret1 = (ret1); return (ret); };
+}
+function h$_hs_text_decode_utf8( dest_v
+                               , destoff_v, destoff_o
+                               , src_v, src_o
+                               , srcend_v, srcend_o
+                               ) {
+  /* Back up if we have an incomplete or invalid encoding */
+  var s = { state: 0
+          , codepoint: 0
+          , last: src_o
+          };
+  var ret, ret1;
+  { (ret) = (h$_hs_text_decode_utf8_internal ( dest_v , destoff_v, destoff_o , src_v, src_o , srcend_v, srcend_o , s )); (ret1) = h$ret1; };
+  if (s.state !== 0) ret1--;
+  { h$ret1 = (ret1); return (ret); };
+}
+/*
+ * The ISO 8859-1 (aka latin-1) code points correspond exactly to the first 256 unicode
+ * code-points, therefore we can trivially convert from a latin-1 encoded bytestring to
+ * an UTF16 array
+ */
+function h$_hs_text_decode_latin1(dest_d, src_d, src_o, srcend_d, srcend_o) {
+  var p = src_o;
+  var d = 0;
+  var su8 = src_d.u8;
+  var su3 = src_d.u3;
+  var du1 = dest_d.u1;
+  // consume unaligned prefix
+  while(p != srcend_o && p & 3) {
+    du1[d++] = su8[p++];
+  }
+  // iterate over 32-bit aligned loads
+  if(su3) {
+    while (p < srcend_o - 3) {
+      var w = su3[p>>2];
+      du1[d++] = w & 0xff;
+      du1[d++] = (w >>> 8) & 0xff;
+      du1[d++] = (w >>> 16) & 0xff;
+      du1[d++] = (w >>> 32) & 0xff;
+      p += 4;
+    }
+  }
+  // handle unaligned suffix
+  while (p != srcend_o)
+    du1[d++] = su8[p++];
+}
+function h$_hs_text_encode_utf8(destp_v, destp_o, src_v, srcoff, srclen) {
+  var dest_v = destp_v.arr[destp_o][0];
+  var dest_o = destp_v.arr[destp_o][1];
+  var src = srcoff;
+  var dest = dest_o;
+  var srcend = src + srclen;
+  var srcu1 = src_v.u1;
+  if(!srcu1) throw "h$_hs_text_encode_utf8: invalid alignment for source";
+  var srcu3 = src_v.u3;
+  var destu8 = dest_v.u8;
+  while(src < srcend) {
+    // run of (aligned) ascii characters
+    while(srcu3 && !(src & 1) && srcend - src >= 2) {
+      var w = srcu3[src>>1];
+      if(w & 0xFF80FF80) break;
+      destu8[dest++] = w & 0xFFFF;
+      destu8[dest++] = w >>> 16;
+      src += 2;
+    }
+    while(src < srcend) {
+      var w = srcu1[src++];
+      if(w <= 0x7F) {
+        destu8[dest++] = w;
+        break; // go back to a stream of ASCII
+      } else if(w <= 0x7FF) {
+        destu8[dest++] = (w >> 6) | 0xC0;
+        destu8[dest++] = (w & 0x3f) | 0x80;
+      } else if(w < 0xD800 || w > 0xDBFF) {
+        destu8[dest++] = (w >>> 12) | 0xE0;
+        destu8[dest++] = ((w >> 6) & 0x3F) | 0x80;
+        destu8[dest++] = (w & 0x3F) | 0x80;
+      } else {
+        var c = ((w - 0xD800) << 10) + (srcu1[src++] - 0xDC00) + 0x10000;
+        destu8[dest++] = (c >>> 18) | 0xF0;
+        destu8[dest++] = ((c >> 12) & 0x3F) | 0x80;
+        destu8[dest++] = ((c >> 6) & 0x3F) | 0x80;
+        destu8[dest++] = (c & 0x3F) | 0x80;
+      }
+    }
+  }
+  destp_v.arr[destp_o][1] = dest;
+}
+/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <http://www.gnu.org/licenses/>.  */
+/* This header is separate from features.h so that the compiler can
+   include it implicitly at the start of every compilation.  It must
+   not itself include <features.h> or any other header that includes
+   <features.h> because the implicit include comes before any feature
+   test macros that may be defined in a source file before it first
+   explicitly includes a system header.  GCC knows the name of this
+   header in order to preinclude it.  */
+/* glibc's intent is to support the IEC 559 math functionality, real
+   and complex.  If the GCC (4.9 and later) predefined macros
+   specifying compiler intent are available, use them to determine
+   whether the overall intent is to support these features; otherwise,
+   presume an older compiler has intent to support these features and
+   define these macros by default.  */
+/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
+   Unicode 6.0.  */
+/* We do not support C11 <threads.h>.  */
 function h$filepath_isWindows() {
     if(h$isNode && process.platform === 'win32') return true;
   return false;
@@ -4048,311 +4353,6 @@ function h$chmod(path_d, path_o, m) {
         return 0;
     } else
         return h$unsupported(-1);
-}
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
-
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
-
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, see
-   <http://www.gnu.org/licenses/>.  */
-/* This header is separate from features.h so that the compiler can
-   include it implicitly at the start of every compilation.  It must
-   not itself include <features.h> or any other header that includes
-   <features.h> because the implicit include comes before any feature
-   test macros that may be defined in a source file before it first
-   explicitly includes a system header.  GCC knows the name of this
-   header in order to preinclude it.  */
-/* glibc's intent is to support the IEC 559 math functionality, real
-   and complex.  If the GCC (4.9 and later) predefined macros
-   specifying compiler intent are available, use them to determine
-   whether the overall intent is to support these features; otherwise,
-   presume an older compiler has intent to support these features and
-   define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
-/* We do not support C11 <threads.h>.  */
-/* FNV-1 hash
- *
- * The FNV-1 hash description: http://isthe.com/chongo/tech/comp/fnv/
- * The FNV-1 hash is public domain: http://isthe.com/chongo/tech/comp/fnv/#public_domain
- */
-function h$hashable_fnv_hash_offset(str_a, o, len, hash) {
-  return h$hashable_fnv_hash(str_a, o, len, hash);
-}
-function h$hashable_fnv_hash(str_d, str_o, len, hash) {
-  if(len > 0) {
-    var d = str_d.u8;
-    for(var i=0;i<len;i++) {
-      hash = h$mulInt32(hash, 16777619) ^ d[str_o+i];
-    }
-  }
-  return hash;
-}
-// int hashable_getRandomBytes(unsigned char *dest, int nbytes)
-function h$hashable_getRandomBytes(dest_d, dest_o, len) {
-  if(len > 0) {
-    var d = dest_d.u8;
-    for(var i=0;i<len;i++) {
-      d[dest_o+i] = Math.floor(Math.random() * 256);
-    }
-  }
-  return len;
-}
-/* Copyright (C) 1991-2014 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
-
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
-
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, see
-   <http://www.gnu.org/licenses/>.  */
-/* This header is separate from features.h so that the compiler can
-   include it implicitly at the start of every compilation.  It must
-   not itself include <features.h> or any other header that includes
-   <features.h> because the implicit include comes before any feature
-   test macros that may be defined in a source file before it first
-   explicitly includes a system header.  GCC knows the name of this
-   header in order to preinclude it.  */
-/* glibc's intent is to support the IEC 559 math functionality, real
-   and complex.  If the GCC (4.9 and later) predefined macros
-   specifying compiler intent are available, use them to determine
-   whether the overall intent is to support these features; otherwise,
-   presume an older compiler has intent to support these features and
-   define these macros by default.  */
-/* wchar_t uses ISO/IEC 10646 (2nd ed., published 2011-03-15) /
-   Unicode 6.0.  */
-/* We do not support C11 <threads.h>.  */
-// values defined in Gen2.ClosureInfo
-// thread status
-/*
- * low-level heap object manipulation macros
- */
-// GHCJS.Prim.JSVal
-// GHCJS.Prim.JSException
-// Exception dictionary for JSException
-// SomeException
-// GHC.Ptr.Ptr
-// GHC.Integer.GMP.Internals
-// Data.Maybe.Maybe
-// #define HS_NOTHING h$nothing
-// Data.List
-// Data.Text
-// Data.Text.Lazy
-// black holes
-// can we skip the indirection for black holes?
-// resumable thunks
-// general deconstruction
-// retrieve  a numeric value that's possibly stored as an indirection
-// generic lazy values
-// generic data constructors and selectors
-// unboxed tuple returns
-// #define RETURN_UBX_TUP1(x) return x;
-function h$_hs_text_memcpy(dst_v,dst_o2,src_v,src_o2,n) {
-  return h$memcpy(dst_v,2*dst_o2,src_v,2*src_o2,2*n);
-}
-function h$_hs_text_memcmp(a_v,a_o2,b_v,b_o2,n) {
-  return h$memcmp(a_v,2*a_o2,b_v,2*b_o2,2*n);
-}
-// decoder below adapted from cbits/cbits.c in the text package
-var h$_text_utf8d =
-   [
-  /*
-   * The first part of the table maps bytes to character classes that
-   * to reduce the size of the transition table and create bitmasks.
-   */
-   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
-   7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7, 7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
-   8,8,2,2,2,2,2,2,2,2,2,2,2,2,2,2, 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-  10,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3, 11,6,6,6,5,8,8,8,8,8,8,8,8,8,8,8,
-  /*
-   * The second part is a transition table that maps a combination of
-   * a state of the automaton and a character class to a state.
-   */
-   0,12,24,36,60,96,84,12,12,12,48,72, 12,12,12,12,12,12,12,12,12,12,12,12,
-  12, 0,12,12,12,12,12, 0,12, 0,12,12, 12,24,12,12,12,12,12,24,12,24,12,12,
-  12,12,12,12,12,12,12,24,12,12,12,12, 12,24,12,12,12,12,12,12,12,24,12,12,
-  12,12,12,12,12,12,12,36,12,36,12,12, 12,36,12,12,12,12,12,36,12,36,12,12,
-  12,36,12,12,12,12,12,12,12,12,12,12];
-/*
- * A best-effort decoder. Runs until it hits either end of input or
- * the start of an invalid byte sequence.
- *
- * At exit, updates *destoff with the next offset to write to, and
- * returns the next source offset to read from.
- */
-function h$_hs_text_decode_utf8_internal ( dest_v
-                                         , destoff_v, destoff_o
-                                         , src_v, src_o
-                                         , src_end_v, src_end_o
-                                         , s
-                                         ) {
-  if(src_v === null || src_end_v === null) {
-    { h$ret1 = (src_end_o); return (null); };
-  }
-  var dsto = destoff_v.dv.getUint32(destoff_o,true) << 1;
-  var srco = src_o;
-  var state = s.state;
-  var codepoint = s.codepoint;
-  var ddv = dest_v.dv;
-  var sdv = src_v.dv;
-  function decode(b) {
-    var type = h$_text_utf8d[b];
-    codepoint = (state !== 0) ?
-      (b & 0x3f) | (codepoint << 6) :
-      (0xff >>> type) & b;
-    state = h$_text_utf8d[256 + state + type];
-    return state;
-  }
-  while (srco < src_end_o) {
-    if(decode(sdv.getUint8(srco++)) !== 0) {
-      if(state !== 12) {
-        continue;
-      } else {
-        break;
-      }
-    }
-    if (codepoint <= 0xffff) {
-      ddv.setUint16(dsto,codepoint,true);
-      dsto += 2;
-    } else {
-      ddv.setUint16(dsto,(0xD7C0 + (codepoint >>> 10)),true);
-      ddv.setUint16(dsto+2,(0xDC00 + (codepoint & 0x3FF)),true);
-      dsto += 4;
-    }
-    s.last = srco;
-  }
-  s.state = state;
-  s.codepoint = codepoint;
-  destoff_v.dv.setUint32(destoff_o,dsto>>1,true);
-  { h$ret1 = (srco); return (src_v); };
-}
-function h$_hs_text_decode_utf8_state( dest_v
-                                     , destoff_v, destoff_o
-                                     , src_v, src_o
-                                     , srcend_v, srcend_o
-                                     , codepoint0_v, codepoint0_o
-                                     , state0_v, state0_o
-                                     ) {
-  var s = { state: state0_v.dv.getUint32(state0_o, true)
-          , codepoint: codepoint0_v.dv.getUint32(codepoint0_o, true)
-          , last: src_o
-          };
-  var ret, ret1;
-  { (ret) = (h$_hs_text_decode_utf8_internal ( dest_v , destoff_v, destoff_o , src_v.arr[src_o][0], src_v.arr[src_o][1] , srcend_v, srcend_o , s )); (ret1) = h$ret1; };
-  src_v.arr[src_o][1] = s.last;
-  state0_v.dv.setUint32(state0_o, s.state, true);
-  codepoint0_v.dv.setUint32(codepoint0_o, s.codepoint, true);
-  if(s.state === 12) ret1--;
-  { h$ret1 = (ret1); return (ret); };
-}
-function h$_hs_text_decode_utf8( dest_v
-                               , destoff_v, destoff_o
-                               , src_v, src_o
-                               , srcend_v, srcend_o
-                               ) {
-  /* Back up if we have an incomplete or invalid encoding */
-  var s = { state: 0
-          , codepoint: 0
-          , last: src_o
-          };
-  var ret, ret1;
-  { (ret) = (h$_hs_text_decode_utf8_internal ( dest_v , destoff_v, destoff_o , src_v, src_o , srcend_v, srcend_o , s )); (ret1) = h$ret1; };
-  if (s.state !== 0) ret1--;
-  { h$ret1 = (ret1); return (ret); };
-}
-/*
- * The ISO 8859-1 (aka latin-1) code points correspond exactly to the first 256 unicode
- * code-points, therefore we can trivially convert from a latin-1 encoded bytestring to
- * an UTF16 array
- */
-function h$_hs_text_decode_latin1(dest_d, src_d, src_o, srcend_d, srcend_o) {
-  var p = src_o;
-  var d = 0;
-  var su8 = src_d.u8;
-  var su3 = src_d.u3;
-  var du1 = dest_d.u1;
-  // consume unaligned prefix
-  while(p != srcend_o && p & 3) {
-    du1[d++] = su8[p++];
-  }
-  // iterate over 32-bit aligned loads
-  if(su3) {
-    while (p < srcend_o - 3) {
-      var w = su3[p>>2];
-      du1[d++] = w & 0xff;
-      du1[d++] = (w >>> 8) & 0xff;
-      du1[d++] = (w >>> 16) & 0xff;
-      du1[d++] = (w >>> 32) & 0xff;
-      p += 4;
-    }
-  }
-  // handle unaligned suffix
-  while (p != srcend_o)
-    du1[d++] = su8[p++];
-}
-function h$_hs_text_encode_utf8(destp_v, destp_o, src_v, srcoff, srclen) {
-  var dest_v = destp_v.arr[destp_o][0];
-  var dest_o = destp_v.arr[destp_o][1];
-  var src = srcoff;
-  var dest = dest_o;
-  var srcend = src + srclen;
-  var srcu1 = src_v.u1;
-  if(!srcu1) throw "h$_hs_text_encode_utf8: invalid alignment for source";
-  var srcu3 = src_v.u3;
-  var destu8 = dest_v.u8;
-  while(src < srcend) {
-    // run of (aligned) ascii characters
-    while(srcu3 && !(src & 1) && srcend - src >= 2) {
-      var w = srcu3[src>>1];
-      if(w & 0xFF80FF80) break;
-      destu8[dest++] = w & 0xFFFF;
-      destu8[dest++] = w >>> 16;
-      src += 2;
-    }
-    while(src < srcend) {
-      var w = srcu1[src++];
-      if(w <= 0x7F) {
-        destu8[dest++] = w;
-        break; // go back to a stream of ASCII
-      } else if(w <= 0x7FF) {
-        destu8[dest++] = (w >> 6) | 0xC0;
-        destu8[dest++] = (w & 0x3f) | 0x80;
-      } else if(w < 0xD800 || w > 0xDBFF) {
-        destu8[dest++] = (w >>> 12) | 0xE0;
-        destu8[dest++] = ((w >> 6) & 0x3F) | 0x80;
-        destu8[dest++] = (w & 0x3F) | 0x80;
-      } else {
-        var c = ((w - 0xD800) << 10) + (srcu1[src++] - 0xDC00) + 0x10000;
-        destu8[dest++] = (c >>> 18) | 0xF0;
-        destu8[dest++] = ((c >> 12) & 0x3F) | 0x80;
-        destu8[dest++] = ((c >> 6) & 0x3F) | 0x80;
-        destu8[dest++] = (c & 0x3F) | 0x80;
-      }
-    }
-  }
-  destp_v.arr[destp_o][1] = dest;
 }
 /* Copyright (C) 1991-2014 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
