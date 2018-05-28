@@ -1,15 +1,15 @@
 code size summary per package:
 
-1EEwSYlJ04h7IdDYQ4AWtH:  12413
+1EEwSYlJ04h7IdDYQ4AWtH:  13036
 32pn3uqmK6a1S05OFIHyKd:  30067
 3bVHNR8TsszJ2MpFVVLSMv:  10243
 3uGAZNamOOGEUs5PlcnTcb:  3222
-8mQqhpqw8EQBwsWyyzlbiB:  76080
+5kemKPBF0PTA0xRSAY1R2z:  76071
 92Rm68Qq0OkELp7ffT22ZF:  29542
 EtfqH07mrmv6LF31KlzP6n:  1029
 GJxxApMjPoLLP9XwE3nBAB:  813
 IgTSpKaBpIiLgG92JiM3AP:  1200
-KsgOHW8GPQCLDuc69MWU1X:  227935
+Kc7YaUgHrRXLR3mxUHMvW1:  234185
 base:                    426616
 ghc-prim:                15975
 integer-gmp:             15737
@@ -19,7 +19,7 @@ main:                    119984
 code size per module:
 
 1EEwSYlJ04h7IdDYQ4AWtH
-    Data.JSString:                      6401
+    Data.JSString:                      7024
     Data.JSString.Internal.Fusion.Common:1314
     Data.JSString.Internal.Fusion.Types:4277
     Data.JSString.Internal.Type:        421
@@ -35,8 +35,8 @@ code size per module:
     Control.Monad.IO.Class:             532
     Control.Monad.Trans.State.Lazy:     2690
 
-8mQqhpqw8EQBwsWyyzlbiB
-    Transient.Internals:                76080
+5kemKPBF0PTA0xRSAY1R2z
+    Transient.Internals:                76071
 
 92Rm68Qq0OkELp7ffT22ZF
     Internal.Perch:                     28435
@@ -51,8 +51,8 @@ GJxxApMjPoLLP9XwE3nBAB
 IgTSpKaBpIiLgG92JiM3AP
     Control.Monad.State.Class:          1200
 
-KsgOHW8GPQCLDuc69MWU1X
-    GHCJS.HPlay.View:                   227935
+Kc7YaUgHrRXLR3mxUHMvW1
+    GHCJS.HPlay.View:                   234185
 
 base
     Control.Exception.Base:             8241
@@ -128,5 +128,5 @@ main
 
 
 
-packed metadata: 206410
+packed metadata: 207019
 
