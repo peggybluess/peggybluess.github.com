@@ -1,3 +1,7 @@
+#!/usr/bin/env execthirdline.sh
+-- compile it with ghcjs and  execute it with runghc
+-- set -e && port=`echo ${3} | awk -F/ '{print $(3)}'` && docker run -it -p ${port}:${port} -v $(pwd):/work agocorona/transient  bash -c "cd /work && mkdir -p ./static && ghcjs -itransient/src -itransient-universe/src  -iaxiom/src ${4} ${1} -o static/out && runghc -itransient/src -itransient-universe/src -iaxiom/src  ${4} ${1}  ${2} ${3}"
+
 {-# LANGUAGE NoMonomorphismRestriction, CPP #-}
 module Main where
 import Transient.Base
@@ -26,16 +30,9 @@ type Desc= String
 type PhotoFile= String 
 type Projects = [(Name,Desc,[PhotoFile],Format)]
 
+projects :: Projects
 projects=
-#include "content"
-   :: Projects
---projects= [("landscapes","",
---               ["http://agocorona.github.io/roadmap-to-landscapes-finance.jpg"
---               ,"http://feelgrafix.com/data/landscape/landscape-15.jpg"
---              ,"https://upload.wikimedia.org/wikipedia/commons/e/e4/Stourhead_garden.jpg"]),
---
---           ("animals",["http://kids.nationalgeographic.com/content/dam/kids/photos/games/screen-shots/More%20Games/A-G/babyanimal_open.jpg"
---           ,"http://r.ddmcdn.com/w_830/s_f/o_1/cx_98/cy_0/cw_640/ch_360/APL/uploads/2015/07/cecil-AP463227356214-1000x400.jpg"])] :: Projects
+#include "content.txt"
 
 type Style=  String
 type Project = Int
@@ -80,9 +77,9 @@ initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "landscape") `child` do
                     clear
                     let  proj= projects !! 0
-                         (image,_)= break (==' ') $ (proj & trd) !! 6
+                         (image,_)= break (==' ') $ (proj & trd) !! 1
                     img ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ image)
-                        ! style (fs "width:100%")
+                        ! style (fs "width:70%")
       forElemId (fs "nav")  clear         
 
 insertStyles=
@@ -92,7 +89,7 @@ insertStyles=
 -- | the skeleton of the app
 panels= do
    render $ rawHtml $ do
-         h2 ! id (fs "init") ! style (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA ALONSO"
+         h2 ! id (fs "init") ! style (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA TORIJA"
          h4 ! style (fs "margin-top:0px") $ "Photography"
 
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ do
@@ -107,7 +104,7 @@ panels= do
                br
          div ! id (fs "gallery") ! clas (fs "portrait") $ noHtml
          div ! id (fs "nav") $ noHtml
-         div ! clas (fs "copyright")  $ "© Maria Alonso 2017"
+         div ! clas (fs "copyright")  $ "© Maria Torija 2017"
 
 
 bio=  do
@@ -127,16 +124,18 @@ bio=  do
                "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laborar se centra en la Administración Publica."
 
             p ! atr "align" (fs "justify") $
-               "Comienzo en la fotografía en el año 2012 como autodidacta. En el año 2014 en la escuela La Máquina realizo varios cursos; iluminación de estudio, flash de mano, lenguaje fotográfico y composición .Año 2015 curso de diseño gráfico en la escuela Aula Creactiva. Año 2015 curso de lenguaje fotográfico, y curso de creación fotográfica contemporánea en escuela Blank Paper Años 2015 y 2016, cursos de Photoshop, Lightroom, Premier y video en la escuela Lens. Año 2016 curso sobre proyecto fotográfico escuela Pivot. .Curso Fotografía contemporánea y Fotografía Documental como fotografía de autor, Escuela de las Artes 16 , Universidad Carlos III y el Circulo de Bellas Artes de Madrid. Actualmente realiza curso de fotografía documental en la escuela Pica Photoespaña y de fotografía y creación contemporánea en la escuela Lens."
+               "Comienzo en la fotografía como autodidacta ,efectúo cursos en diversas escuelas de Fotografía  La Máquina , escuela Blank Paper ,escuela Lens. escuela Pica Photoespaña y Efti. Asistencia a talleres con reconocidos fotógrafos ;Lurdes R, Basoli , Jesús Mico Ricky Dávila , Eduardo Nave, David Jiménez , Laia Abril, Matías Costa ,  Javier Vallhonrat, Aleix Plademunt"
 
-            p ! atr "align" (fs "justify") $
-               "Asistencia a talleres con reconocidos fotógrafos ;Lurdes R, Basoli , Jesús Mico Ricky Dávila , Eduardo Nave, David Jimenez , Laia Abril, Matias Costa , fotolibros Underbrau"
+        br
         div ! style (fs "float:left") $ do
             p  ! style (fs "margin: -2% 0 0 -2.5%") $ b $ "PREMIOS" 
             ul ! style (fs "list-style: none;") $ do
-                li  $ "2017  Finalista XVII Seminario  de Fotografia  de Albarracin Teruel" 
-                li  $ "2017 Seleccionada Descubrimientos PH 17" 
-                li  $ "2017 Finalista Beca Master BASE  escuela LENS"
+                li $ "Seleccionada Transeuropa  PhotoEspaña 2018"
+                li $ "Seleccionada PhotoAlicante 2018" 
+                li $ "Finalista XVII Seminario  de Fotografia  de Albarracin Teruel 2017" 
+                li $ "Seleccionada Descubrimientos PH 17 2017" 
+                li $ "Finalista Beca Master BASE  escuela LENS 2017"
+                li $ "Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro 2018"
             
             p  ! style (fs "margin: -2% 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
             ul ! style (fs "list-style: none;")  $ do
@@ -145,6 +144,11 @@ bio=  do
             p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "PUBLICACIONES" 
             ul ! style (fs "list-style: none;")  $ do
                 li  $ "Fotolibro colectivo  Barrios Project , escuela PICA" 
+
+            p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "ACTIVIDADES" 
+            ul ! style (fs "list-style: none;")  $ do
+                li  $ "Charla \"Conversaciones con Fotógrafas\". Universidad Rey Juan Carlos 2018"
+                
 
 statement= do
          render $ at (fs "#statement")  Insert $ wlink "statement"  (fs "Statement")  ! style (fs "color:black")
@@ -157,10 +161,11 @@ statement= do
      where
      statext= div $ do
          p ! atr "align" (fs "justify") $
-              "Mi pasión por la fotografía aparece en la edad madura para quedarse y ocupar casi todo, es mucho más lo que ella me ofrece a mí que lo que yo le doy, y eso que es mucho. La pregunta que me hago siempre en la elaboración de trabajos fotográficos ¿Es posible llegar a compartir la realidad con alguien? Compartir el acto de mirar y la realidad resulta al final una forma de superar la insidia entre la existencia y la verdad, de alcanzar un fundamento vital"
+              "En la elaboración de mis trabajos fotográficos siempre surge esta pregunta ¿ Es posible llegar a compartir la realidad con alguien? Compartir el acto de mirar y la realidad resulta al final una forma de superar la insidia entre la existencia y la verdad, de alcanzar un fundamento vital."
+              
 
          p ! atr "align" (fs "justify") $
-              "En mis trabajos personales no muestro fotografías de realidades amables y explicitas , supongo que dentro de mi hay una atracción hacia la oscuridad y lo misterioso, el doble sentido de las cosas y la realidad oculta que no se evidencia, pero se intuye. Tampoco hago fotografías para informar, aunque todo lo que sale en ellas es real, son cosas y personas que están allí, pero vistas desde mi subjetividad documental, comunicando con las imágenes experiencias semejantes a las que yo he tenido en sociedad."
+              "En mis trabajos personales no muestro fotografías de realidades amables y explicitas , supongo que dentro de mi hay una atracción hacia la oscuridad y lo misterioso, el doble sentido de las cosas y la realidad oculta que no se evidencia, pero se intuye. Tampoco hago fotografías para informar, aunque todo lo que sale en ellas es real, son cosas y personas que están allí, pero vistas desde mi subjetividad documental, me interesan las construcciones sociales que articulan la realidad vital , sus consecuencias en la existencia del hombre."
 
          p ! atr "align" (fs "justify") $
               "No estoy segura de que todo lo que estoy diciendo ahora sea válido en un futuro próximo, estoy en pleno periodo de aprendizaje y evolución y lo más importante de vivencia fotográfica"
@@ -177,7 +182,7 @@ contact= do
          
          where 
          contactext=  do
-               p ! style (fs "text-align:center") $ "María T. Alonso"
+               p ! style (fs "text-align:center") $ "María Torija"
                p ! style (fs "font-weight:bold;text-align:center") 
                  $ a ! style (fs "color:black") 
                      ! href (fs "mailto:mariajtalonso@gmail.com") $ "mariajtalonso@gmail.com"
@@ -192,7 +197,7 @@ renderGallery= do
      norender forward
 
 reinitpage= do
-   render $ at (fs "#init")  Insert (wlink "init"  (fs "MARIA ALONSO")  ! style (fs "color:black")) <|>
+   render $ at (fs "#init")  Insert (wlink "init"  (fs "MARIA TORIJA")  ! style (fs "color:black")) <|>
             at (fs "#works") Insert (wlink "works" (fs "Works")          ! style (fs "color:black"))
    Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
 
@@ -207,7 +212,7 @@ chooseProject= do
 
 
     project <- render $ at (fs "#projects") Insert  $ do
-                             mconcat [ wlink project (h4 ! id (fs project) $ project) 
+                                foldr  (<|>) empty [ wlink project (h4 ! id (fs project) $ project) 
                                                             | (project,txt,_,_) <-  projects]
 
     Current (n,_,_) <-  getRData <|> return (Current (0,0  ,"") )
