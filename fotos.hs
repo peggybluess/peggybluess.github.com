@@ -18,11 +18,6 @@ import Control.Monad.IO.Class
 import Data.Typeable
 import Control.Monad(when)
 import System.Directory
--- import           GHCJS.Foreign
-
--- import           GHCJS.Marshal
--- import           GHCJS.Types
-
 
 data Format= Portrait | Landscape
 type Name= String
@@ -121,7 +116,7 @@ bio=  do
             img ! style (fs "width:20%;height:20%;float:left;margin-right:5%") ! src (fs "bio.jpg")
 
             p ! atr "align" (fs "justify") $
-               "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laborar se centra en la Administración Publica."
+               "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laboral se centra en la Administración Publica."
 
             p ! atr "align" (fs "justify") $
                "Comienzo en la fotografía como autodidacta ,efectúo cursos en diversas escuelas de Fotografía  La Máquina , escuela Blank Paper ,escuela Lens. escuela Pica Photoespaña y Efti. Asistencia a talleres con reconocidos fotógrafos ;Lurdes R, Basoli , Jesús Mico Ricky Dávila , Eduardo Nave, David Jiménez , Laia Abril, Matías Costa ,  Javier Vallhonrat, Aleix Plademunt"
@@ -130,12 +125,12 @@ bio=  do
         div ! style (fs "float:left") $ do
             p  ! style (fs "margin: -2% 0 0 -2.5%") $ b $ "PREMIOS" 
             ul ! style (fs "list-style: none;") $ do
+                li $ "Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro 2018"
                 li $ "Seleccionada Transeuropa  PhotoEspaña 2018"
                 li $ "Seleccionada PhotoAlicante 2018" 
                 li $ "Finalista XVII Seminario  de Fotografia  de Albarracin Teruel 2017" 
                 li $ "Seleccionada Descubrimientos PH 17 2017" 
                 li $ "Finalista Beca Master BASE  escuela LENS 2017"
-                li $ "Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro 2018"
             
             p  ! style (fs "margin: -2% 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
             ul ! style (fs "list-style: none;")  $ do
