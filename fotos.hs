@@ -134,6 +134,7 @@ bio=  do
             
             p  ! style (fs "margin: -2% 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
             ul ! style (fs "list-style: none;")  $ do
+                li   $ "2018 Exposición   colecvtiva 16 CUADERNOS VALLECANOS en CASA MADRID" 
                 li   $ "2017 Showroom , exposicion colectiva \"Archipielago\""
              
             p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "PUBLICACIONES" 
