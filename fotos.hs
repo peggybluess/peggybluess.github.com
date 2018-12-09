@@ -84,7 +84,8 @@ insertStyles=
 -- | the skeleton of the app
 panels= do
    render $ rawHtml $ do
-         h2 ! id (fs "init") ! style (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA TORIJA"
+         --h2 ! id (fs "init") ! style (fs "color:black;margin-bottom:0px;font-weight:700;font-size:20px") $  "MARIA TORIJA"
+         img ! src (fs "files/logotipoA.jpg")
          h4 ! style (fs "margin-top:0px") $ "Photography"
 
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ do
