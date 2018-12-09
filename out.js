@@ -27299,7 +27299,7 @@ function h$$Kl()
 function h$$Kk()
 {
   h$bh();
-  var a = h$ustra("PREMIOS");
+  var a = h$ustra("MENCIONES Y PREMIOS");
   h$l3(a, h$z39U2Rm68Qq0OkELp7ffT22ZZFZCInternalziPerchzizdfToElemZMZN, h$z39U2Rm68Qq0OkELp7ffT22ZZFZCInternalziPerchzib);
   return h$ap_2_2_fast();
 };
