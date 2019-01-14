@@ -13,7 +13,7 @@ IgTSpKaBpIiLgG92JiM3AP:  1192
 base:                    426124
 ghc-prim:                15975
 integer-gmp:             15737
-main:                    122667
+main:                    122676
 
 
 code size per module:
@@ -124,7 +124,7 @@ integer-gmp
     GHC.Integer.Type:                   15565
 
 main
-    Main:                               122667
+    Main:                               122676
 
 
 
