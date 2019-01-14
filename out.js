@@ -28638,7 +28638,7 @@ var h$$SF = h$strta("04.jpg");
 var h$$SH = h$strta("03.jpg");
 var h$$SJ = h$strta("02.jpg");
 var h$$SL = h$strta("01.jpg");
-var h$$SN = h$strt("\"Se at\xf3  una punta de hilo al tobillo y avanzo hacia la oscuridad \", Jose Saramago   , todos los nombres.<br><br> Trabajo en progreso");
+var h$$SN = h$strt("\"Se at\xf3  una punta de hilo al tobillo y avanzo hacia la oscuridad \", Jose Saramago, todos los nombres. Trabajo en progreso");
 var h$$SO = h$strta("Rito");
 function h$$Oa()
 {
