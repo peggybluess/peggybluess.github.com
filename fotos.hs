@@ -72,9 +72,9 @@ initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "landscape") `child` do
                     clear
                     let  proj= projects !! 0
-                         (image,_)= break (==' ') $ (proj & trd) !! 1
+                         (image,_)= break (==' ') $ (proj & trd) !! 4
                     img ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ image)
-                        ! style (fs "width:70%")
+                        ! style (fs "width:80%")
       forElemId (fs "nav")  clear         
 
 insertStyles=
@@ -113,36 +113,41 @@ bio=  do
          return ()
       where 
       biotext= do
-        div $ do
-            img ! style (fs "width:20%;height:20%;float:left;margin-right:5%") ! src (fs "bio.jpg")
 
-            p ! atr "align" (fs "justify") $
-               "Puedo decir que me considero Madrileña. Soy licenciada en Veterinaria y Derecho, mi trayectoria laboral se centra en la Administración Publica."
-
-            p ! atr "align" (fs "justify") $
-               "Comienzo en la fotografía como autodidacta ,efectúo cursos en diversas escuelas de Fotografía  La Máquina , escuela Blank Paper ,escuela Lens. escuela Pica Photoespaña y Efti. Asistencia a talleres con reconocidos fotógrafos ;Lurdes R, Basoli , Jesús Mico Ricky Dávila , Eduardo Nave, David Jiménez , Laia Abril, Matías Costa ,  Javier Vallhonrat, Aleix Plademunt"
-
-        br
         div ! style (fs "float:left") $ do
-            p  ! style (fs "margin: -2% 0 0 -2.5%") $ b $ "PREMIOS" 
+            img ! style (fs "width:20%;height:20%;float:left;margin-right:5%;margin-bottom:200%") ! src (fs "bio.jpg")
+
+            p  ! style (fs "margin: 0 0 0 -2.5%") ! atr "align" (fs "justify") $
+                "Fotógrafa de Madrid, licenciada en Veterinaria y Derecho, con una trayectoria "++
+                "laboral en la Administración Publica. Ha asistido a diversos cursos en varias "++
+                "escuelas de fotografía, Blank Paper, Lens. PIC.A de PhotoEspaña y Efti. "++
+                "Alumna de talleres con reconocidos fotógrafos, Lurdes R, Basoli, Jesús Mico " ++
+                "Ricky Dávila, Eduardo Nave, David Jiménez, Laia Abril, Matías Costa, Javier" ++
+                "Vallhonrat, Aleix Plademunt, Ricardo Cases…"
+
+
+            p  ! style (fs "margin: 2.5% 0 0 -2.5%") $ b $ "MENCIONES Y PREMIOS" 
             ul ! style (fs "list-style: none;") $ do
-                li $ "Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro 2018"
-                li $ "Seleccionada Transeuropa  PhotoEspaña 2018"
-                li $ "Seleccionada PhotoAlicante 2018" 
-                li $ "Finalista XVII Seminario  de Fotografia  de Albarracin Teruel 2017" 
-                li $ "Seleccionada Descubrimientos PH 17 2017" 
-                li $ "Finalista Beca Master BASE  escuela LENS 2017"
+                li $ "2018-Seleccionada beca Nuevos Talentos Encuentros Fotográficos de Gijón"
+                li $ "2018-Tercer premio OnPhoto Soria" 
+                li $ "2018-Finalista XVIII Seminario de Fotografía y Periodismo de la Fundación Sta María de Albarracín, Teruel" 
+                li $ "2018-Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro" 
+                li $ "2018-Seleccionada Transeuropa PhotoEspaña"
+                li $ "2018- Seleccionada PhotoAlicante 2018"
+                li $ "2017-Finalista XVII Seminario de Fotografía y Periodismo de la Fundación Sta María de Albarracín, Teruel"
+                li $ "2017-Seleccionada Descubrimientos PhotoEspaña"
+                li $ "2017-Finalista Beca Master BASE escuela LENS"
             
-            p  ! style (fs "margin: -2% 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
+            p  ! style (fs "margin: 0 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
             ul ! style (fs "list-style: none;")  $ do
-                li   $ "2018 Exposición   colecvtiva 16 CUADERNOS VALLECANOS en CASA MADRID" 
+                li   $ "2018 Exposición colectiva 16 CUADERNOS VALLECANOS en CASA MADRID" 
                 li   $ "2017 Showroom , exposicion colectiva \"Archipielago\""
-             
-            p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "PUBLICACIONES" 
+            
+            p  ! style (fs "margin: 0 0 0 -2.5%")  $ b $ "PUBLICACIONES" 
             ul ! style (fs "list-style: none;")  $ do
                 li  $ "Fotolibro colectivo  Barrios Project , escuela PICA" 
 
-            p  ! style (fs "margin: -2% 0 0 -2.5%")  $ b $ "ACTIVIDADES" 
+            p  ! style (fs "margin: 0 0 0 -2.5%")  $ b $ "ACTIVIDADES" 
             ul ! style (fs "list-style: none;")  $ do
                 li  $ "Charla \"Conversaciones con Fotógrafas\". Universidad Rey Juan Carlos 2018"
                 
@@ -157,16 +162,24 @@ statement= do
          return ()
      where
      statext= div $ do
-         p ! atr "align" (fs "justify") $
-              "En la elaboración de mis trabajos fotográficos siempre surge esta pregunta ¿ Es posible llegar a compartir la realidad con alguien? Compartir el acto de mirar y la realidad resulta al final una forma de superar la insidia entre la existencia y la verdad, de alcanzar un fundamento vital."
-              
+        div $ do
 
-         p ! atr "align" (fs "justify") $
-              "En mis trabajos personales no muestro fotografías de realidades amables y explicitas , supongo que dentro de mi hay una atracción hacia la oscuridad y lo misterioso, el doble sentido de las cosas y la realidad oculta que no se evidencia, pero se intuye. Tampoco hago fotografías para informar, aunque todo lo que sale en ellas es real, son cosas y personas que están allí, pero vistas desde mi subjetividad documental, me interesan las construcciones sociales que articulan la realidad vital , sus consecuencias en la existencia del hombre."
+            p ! atr "align" (fs "justify") $
+               "Concibo mis fotografías como un trabajo a largo plazo y en permanente "++
+               "búsqueda .Me interesan las construcciones sociales que articulan la realidad "++
+               "vital cotidiana y sus consecuencias en la existencia del hombre. En la "++
+               "elaboración de mis trabajos fotográficos siempre surge la pregunta de si es "++
+               "posible llegar a compartir la realidad con alguien. Compartir el acto de mirar y "++
+               "la realidad resulta al final una forma de superar la insidia entre la existencia y "++
+               "la verdad, de alcanzar un fundamento vital."
 
-         p ! atr "align" (fs "justify") $
-              "No estoy segura de que todo lo que estoy diciendo ahora sea válido en un futuro próximo, estoy en pleno periodo de aprendizaje y evolución y lo más importante de vivencia fotográfica"
+            p ! atr "align" (fs "justify") $
+               "En mis proyectos personales no muestro fotografías de realidades explicitas, "++
+               "supongo que dentro de mi hay una atracción hacia la oscuridad y lo " ++
+               "misterioso, al doble sentido de las cosas y la realidad oculta que no se " ++
+               "evidencia, pero se intuye."
 
+        br
          
 
 contact= do
@@ -242,10 +255,10 @@ snd' (_, x, _,_)= x
 trd  (_, _, x,_)= x
 fourth (_,_,_,x)= x
 
-
+instance Semigroup Int where
+   (<>) = (+)
 instance Monoid Int where
    mempty= 0
-   mappend= (+)
 
 -- style= atr (fs "style")
 
