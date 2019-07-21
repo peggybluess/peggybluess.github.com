@@ -11,8 +11,8 @@ ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z:11537
 integer-gmp:             6220
 main:                    40835
 mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P:5863
-transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77618
-transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:137765
+transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77625
+transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:138373
 
 
 code size per module:
@@ -120,12 +120,12 @@ mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P
     Control.Monad.State.Class:          5863
 
 transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj
-    Control.Monad.Trans.State.Lazy:     77618
+    Control.Monad.Trans.State.Lazy:     77625
 
 transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq
-    Transient.Internals:                137765
+    Transient.Internals:                138373
 
 
 
-packed metadata: 254687
+packed metadata: 255081
 
