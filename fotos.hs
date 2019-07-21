@@ -72,7 +72,7 @@ initialPhoto=  render $ rawHtml $ do
       forElemId (fs "gallery") $ this ! clas (fs "landscape") `child` do
                     clear
                     let  proj= projects !! 0
-                         (image,_)= break (==' ') $ (proj & trd) !! 4
+                         (image,_)= break (==' ') $ (proj & trd) !! 3
                     img ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ image)
                         ! style (fs "width:80%")
       forElemId (fs "nav")  clear         
