@@ -1,51 +1,51 @@
 code size summary per package:
 
-axiom-0.4.7-D2EE6MNHD8CHNpKTLFEl2l:1141
-base:                    524378
-bytestring-0.10.8.2-ACj33vFBMyeAi499Z0Sdp2:35629
-containers-0.5.11.0-GhhPXbBZ8rf1WBQjAVqqMW:3920
-ghc-prim:                45147
-ghcjs-base-0.2.0.0-BhRptIs93lDDj39qqXxDLF:29538
-ghcjs-perch-0.3.3.3-HfZXuOfBJEBx2QXIArl6F:2430
-ghcjs-prim-0.1.1.0-A1JdvSlggG4AS5cM95oali:11599
-integer-gmp:             6491
-main:                    42176
-mtl-2.2.2-91LhCdCm6EI5RmEcZ3zKJx:2444
-transformers-0.5.5.0-8ZjexgxxdBLH8OWn8CZkwx:87602
-transient-0.6.1-CBkWqj5UC8V34QKf4qybe:133244
+axiom-0.4.7-HawFbZPKVaVJaBH454XePX:1136
+base:                    447102
+bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A:32433
+containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5:4260
+ghc-prim:                42012
+ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn:28022
+ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi:2414
+ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z:11537
+integer-gmp:             6220
+main:                    40835
+mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P:5863
+transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77505
+transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:134860
 
 
 code size per module:
 
-axiom-0.4.7-D2EE6MNHD8CHNpKTLFEl2l
-    GHCJS.HPlay.View:                   1141
+axiom-0.4.7-HawFbZPKVaVJaBH454XePX
+    GHCJS.HPlay.View:                   1136
 
 base
     Control.Exception.Base:             430
     Control.Monad.IO.Class:             201
-    Data.Dynamic:                       3543
+    Data.Dynamic:                       3593
     Data.Foldable:                      86
     Data.Function:                      101
-    Data.IORef:                         561
-    Data.Maybe:                         1869
-    Data.OldList:                       5714
-    Data.Semigroup.Internal:            411
+    Data.IORef:                         529
+    Data.Maybe:                         2283
+    Data.OldList:                       411
     Data.String:                        602
-    Data.Type.Equality:                 71335
+    Data.Type.Equality:                 17182
     Data.Typeable.Internal:             10697
-    Foreign.C.Error:                    423
-    Foreign.Marshal.Alloc:              1646
-    Foreign.Storable:                   3443
-    GHC.Arr:                            11496
+    Foreign.C.Error:                    1782
+    Foreign.C.String:                   1574
+    Foreign.Marshal.Alloc:              2040
+    Foreign.Marshal.Array:              9422
+    Foreign.Storable:                   8638
     GHC.Base:                           582
-    GHC.Char:                           4262
-    GHC.Conc.Sync:                      271
-    GHC.Enum:                           1561
-    GHC.Err:                            11870
-    GHC.Exception:                      6455
-    GHC.Fingerprint:                    1043
-    GHC.Fingerprint.Type:               11445
-    GHC.Foreign:                        1296
+    GHC.Char:                           4249
+    GHC.Conc.Sync:                      239
+    GHC.Enum:                           514
+    GHC.Err:                            12530
+    GHC.Exception:                      2000
+    GHC.Fingerprint:                    1402
+    GHC.Fingerprint.Type:               12563
+    GHC.Foreign:                        1264
     GHC.ForeignPtr:                     3504
     GHC.IO:                             1241
     GHC.IO.Buffer:                      850
@@ -53,79 +53,79 @@ base
     GHC.IO.Device:                      1044
     GHC.IO.Encoding:                    906
     GHC.IO.Encoding.Failure:            983
-    GHC.IO.Encoding.Types:              62030
-    GHC.IO.Encoding.UTF8:               23273
-    GHC.IO.Exception:                   34991
+    GHC.IO.Encoding.Types:              55775
+    GHC.IO.Encoding.UTF8:               23779
+    GHC.IO.Exception:                   32235
     GHC.IO.FD:                          368
-    GHC.IO.Handle:                      7178
-    GHC.IO.Handle.FD:                   27207
-    GHC.IO.Handle.Internals:            3651
+    GHC.IO.Handle:                      7207
+    GHC.IO.Handle.FD:                   27188
+    GHC.IO.Handle.Internals:            3328
     GHC.IO.Handle.Types:                579
     GHC.IORef:                          1016
-    GHC.Int:                            16217
+    GHC.Int:                            15808
     GHC.List:                           174
-    GHC.MVar:                           3043
+    GHC.MVar:                           2981
     GHC.Num:                            174
-    GHC.Ptr:                            13169
-    GHC.Read:                           2342
+    GHC.Ptr:                            12883
+    GHC.Read:                           236
     GHC.Real:                           361
-    GHC.STRef:                          29770
-    GHC.Show:                           4160
+    GHC.STRef:                          28209
+    GHC.Show:                           4152
     GHC.Stack.CCS:                      1502
-    GHC.Stack.Types:                    13780
-    GHC.TopHandler:                     1886
-    GHC.Unicode:                        459
-    GHC.Word:                           14531
-    System.Posix.Internals:             23070
+    GHC.Stack.Types:                    1069
+    GHC.Storable:                       11494
+    GHC.TopHandler:                     1822
+    GHC.Unicode:                        556
+    GHC.Word:                           15677
+    System.Posix.Internals:             22973
     Text.ParserCombinators.ReadP:       1
     Text.ParserCombinators.ReadPrec:    1520
-    Text.Read:                          72717
+    Text.Read:                          65372
     Text.Read.Lex:                      97
-    Unsafe.Coerce:                      3993
+    Unsafe.Coerce:                      3876
 
-bytestring-0.10.8.2-ACj33vFBMyeAi499Z0Sdp2
-    Data.ByteString.Internal:           35629
+bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A
+    Data.ByteString.Internal:           32433
 
-containers-0.5.11.0-GhhPXbBZ8rf1WBQjAVqqMW
-    Data.Map.Internal:                  3920
+containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5
+    Data.Map.Internal:                  4260
 
 ghc-prim
-    GHC.CString:                        10989
-    GHC.Classes:                        139
-    GHC.IntWord64:                      2617
-    GHC.Tuple:                          3440
-    GHC.Types:                          27962
+    GHC.CString:                        9297
+    GHC.Classes:                        2617
+    GHC.Tuple:                          3239
+    GHC.Types:                          26859
 
-ghcjs-base-0.2.0.0-BhRptIs93lDDj39qqXxDLF
-    Data.JSString:                      1492
-    Data.JSString.Internal.Fusion.Common:1833
-    Data.JSString.Internal.Fusion.Types:422
-    Data.JSString.Internal.Type:        25791
+ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn
+    Data.JSString:                      1506
+    Data.JSString.Internal.Fusion.Common:1844
+    Data.JSString.Internal.Fusion.Types:424
+    Data.JSString.Internal.Type:        24248
 
-ghcjs-perch-0.3.3.3-HfZXuOfBJEBx2QXIArl6F
-    Internal.Perch:                     1130
-    Internal.Type:                      1300
+ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi
+    Internal.Perch:                     1128
+    Internal.Type:                      1286
 
-ghcjs-prim-0.1.1.0-A1JdvSlggG4AS5cM95oali
+ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z
     GHCJS.Prim:                         3766
-    GHCJS.Prim.Internal:                7833
+    GHCJS.Prim.Internal:                7771
 
 integer-gmp
-    GHC.Integer.Type:                   6491
+    GHC.Integer.Type:                   6220
 
 main
-    Main:                               42176
+    Main:                               40835
 
-mtl-2.2.2-91LhCdCm6EI5RmEcZ3zKJx
-    Control.Monad.State.Class:          2444
+mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P
+    Control.Monad.State.Class:          5863
 
-transformers-0.5.5.0-8ZjexgxxdBLH8OWn8CZkwx
-    Control.Monad.Trans.State.Lazy:     87602
+transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj
+    Control.Monad.Trans.State.Lazy:     77505
 
-transient-0.6.1-CBkWqj5UC8V34QKf4qybe
-    Transient.Internals:                133244
+transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq
+    Transient.Internals:                134860
 
 
 
-packed metadata: 256114
+packed metadata: 253414
 
