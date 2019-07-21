@@ -1,7 +1,7 @@
 code size summary per package:
 
 axiom-0.4.7-HawFbZPKVaVJaBH454XePX:1136
-base:                    448034
+base:                    451212
 bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A:32433
 containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5:4260
 ghc-prim:                42332
@@ -11,8 +11,8 @@ ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z:11537
 integer-gmp:             6220
 main:                    40835
 mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P:5863
-transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77625
-transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:138373
+transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77647
+transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:138571
 
 
 code size per module:
@@ -69,7 +69,7 @@ base
     GHC.Ptr:                            12883
     GHC.Read:                           236
     GHC.Real:                           361
-    GHC.STRef:                          28209
+    GHC.STRef:                          31387
     GHC.Show:                           4152
     GHC.Stack.CCS:                      1502
     GHC.Stack.Types:                    1069
@@ -120,12 +120,12 @@ mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P
     Control.Monad.State.Class:          5863
 
 transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj
-    Control.Monad.Trans.State.Lazy:     77625
+    Control.Monad.Trans.State.Lazy:     77647
 
 transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq
-    Transient.Internals:                138373
+    Transient.Internals:                138571
 
 
 
-packed metadata: 255081
+packed metadata: 255915
 
