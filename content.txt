@@ -24,7 +24,7 @@
 	   Portrait),
 	  
 
-	 ("Código",
+	 ("CÓDIGO",
 
     "Busca sintonizar con el  misterio , con el insondable enigma del universo  a través del paisaje , las imágenes aluden a un paisaje en construcción , que utiliza los desechos y residuos de la actividad humana , una fábrica  de Hormigón , para construir escenarios que aluden a lo intangible y lo abstracto , a lo aparente , a lo que asombra , sin escalas, sin tamaños  y   sin dimensiones  concretas  que hacen transcender  las imágenes de su contexto original y que ha sido creado por la construcción humana Imágenes, que a modo de presencias, quietas, silenciosas,   se asemejan  a  formas esenciales de la geometría plana , un circulo , un triángulo y un rectángulo, pero también abrazan lo simbólico y sugieren ese todo invisible que es el Universo  expresado en un código de geometrías  , o lo que es lo mismo  , la vida y  la muerte , origen y fin , lleno y vacío. Fotografías que nos hablan de la transitoriedad, de la impermanencia  de la actividad humana  y a la vez de la creación de un paisaje lleno de significados  en sus formas. Al hacer las imágenes me enfoqué en las cualidades formales para dejar al espectador desorientado en este paisaje disperso y simbólico, que es una caligrafía de una cosmovisión, un extraño código que asombra.",
 
@@ -52,7 +52,7 @@
 
 	--  Portrait),
 
-	("Trayecto",
+	("TRAYECTO",
 
 	  "Recorridos en el metro cotidiano donde se  descubre a los demás , los recovecos de las vidas privadas en la distancia , las penas del corazón , las desdichas ,  el agotamiento vital , el paso de una emoción, cuyas razones y objetos se nos escapan  . La cámara desempeña el papel de un vidrio de aumento  que nos  acerca a la humanidad cotidiana y evidencia  la soledad sin aislamiento de una  una colectividad , soledades en plural, en el carácter limite de aglomeración de pasajeros , lectura y cartografía humana de seres diferentes pero nunca radicalmente extraños o incomprensibles. Alteridad inmediata de los semejantes próximos. El trabajo se ha realizado ccon teléfono móvil",
 
