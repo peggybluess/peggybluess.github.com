@@ -89,7 +89,7 @@ panels= do
          h4 ! style (fs "margin-top:0px") $ "Photography"
 
          div ! id (fs "leftpane") ! clas (fs "leftpane")$ do
-               h3 ! style (fs "color:black") ! id (fs "works") $ "Works"
+               h3 ! style (fs "color:black") ! id (fs "Projects") $ "Projects"
                div ! id (fs "projects") $ noHtml
                br
                br

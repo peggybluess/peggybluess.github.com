@@ -14,11 +14,11 @@
 
 	  Portrait), 
 	 
-	 ("Tropos book dummy",
+	 ("Book dummy",
 	   "",
 	   ["1.jpg",  "2.jpg" ,  "4.jpg",  "5.jpg",  "6.jpg",  "7.jpg",  "8.jpg",  "9.jpg"],
 	   Landscape),
-	 ("Tropos exhibition",
+	 ("Exhibition",
 	   "",
 	   ["1.jpg",  "2.jpg L",  "3.jpg L",  "4.jpg",  "5.jpg",  "6.jpg"],
 	   Portrait),
@@ -33,6 +33,9 @@
     "032.jpg L","033.jpg L","034.jpg L","035.jpg L","036.jpg L","037.jpg L"],
 
     Portrait),
+   ("Multimedia",
+      "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/349335684\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>",
+      [], Portrait), 
 
 	-- ("Benidoom",
 
