@@ -128,7 +128,8 @@ bio=  do
 
             p  ! style (fs "margin: 2.5% 0 0 -2.5%") $ b $ "MENCIONES Y PREMIOS" 
             ul ! style (fs "list-style: none;") $ do
-                li $ "2018-Seleccionada beca Nuevos Talentos Encuentros Fotográficos de Gijón"
+                li $ "2019-Seleccionada OPEN exposiciones Festival BFOTO, Barbastro"
+                li $ "2018-Becada IX edición Nuevos Talentos encuentros fotográficos de Gijón"
                 li $ "2018-Tercer premio OnPhoto Soria" 
                 li $ "2018-Finalista XVIII Seminario de Fotografía y Periodismo de la Fundación Sta María de Albarracín, Teruel" 
                 li $ "2018-Finalista 5ª Edición del Festival de Fotografía BFOTO, Barbastro" 
@@ -140,6 +141,9 @@ bio=  do
             
             p  ! style (fs "margin: 0 0 0 -2.5%")  $  b $ "EXPOSICIONES" 
             ul ! style (fs "list-style: none;")  $ do
+                li   $ "2019- Exposiciones individual en OPEN Festival BFOTO, espacio \"Básico Mobiliario\", Barbastro"
+                li   $ "2019-Exposicion colectiva \"Graduación\" en CASA MADRID"
+                li   $ "2019-Exposicion Colectiva \"Retratos\" en la casa de las asociaciones, Ayuntamiento Alcobendas"
                 li   $ "2018 Exposición colectiva 16 CUADERNOS VALLECANOS en CASA MADRID" 
                 li   $ "2017 Showroom , exposicion colectiva \"Archipielago\""
             
