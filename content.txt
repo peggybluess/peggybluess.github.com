@@ -1,0 +1,154 @@
+    [
+
+
+
+	  -- ("Rito",
+
+
+
+	  -- "\"Se ató  una punta de hilo al tobillo y avanzo hacia la oscuridad \", Jose Saramago, todos los nombres. Trabajo en progreso",
+
+
+
+	  
+
+
+
+	  -- ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg","12.jpg"],
+
+
+
+	  -- Landscape),	
+
+
+
+          ("Tropos",
+
+
+
+	  "Una ficción de la vida contemporánea y la realidad social que muestra  la existencia cotidiana  en la ciudad. El Trabajo son una serie de fotografías en blanco y negro  usando figuras arquitectónicos, Tropos, metáforas de las grandes empresas tecnológicas que gestionan nuestros datos  en beneficio de una economía parasitaria  y no democrática. Se construye una heterotopía de las que habla Foucault, un lugar cargado de amenazas, con grandes torres de vigilancia, de poder y control tecnológico, y se muestra la  visión antropológica de este presente alienante con fotografías de figuras humanas en un espacio público, que como parias digitales desarraigados vagan perdidas en esta realidad. Las fotografías investigan el paisaje cultural  cotidiano contemporáneo, ofreciendo una imagen seductora e inquietante de  los entornos urbanos, bajo la mirada afectiva del fotógrafo.",
+
+
+
+	  
+
+
+
+	  ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg","11.jpg","12.jpg"],
+
+
+
+	  Portrait), 
+
+
+
+
+
+
+
+	 ("Código",
+
+
+
+    "Busca sintonizar con el  misterio , con el insondable enigma del universo  a través del paisaje , las imágenes aluden a un paisaje en construcción , que utiliza los desechos y residuos de la actividad humana , una fábrica  de Hormigón , para construir escenarios que aluden a lo intangible y lo abstracto , a lo aparente , a lo que asombra , sin escalas, sin tamaños  y   sin dimensiones  concretas  que hacen transcender  las imágenes de su contexto original y que ha sido creado por la construcción humana Imágenes, que a modo de presencias, quietas, silenciosas,   se asemejan  a  formas esenciales de la geometría plana , un circulo , un triángulo y un rectángulo, pero también abrazan lo simbólico y sugieren ese todo invisible que es el Universo  expresado en un código de geometrías  , o lo que es lo mismo  , la vida y  la muerte , origen y fin , lleno y vacío. Fotografías que nos hablan de la transitoriedad, de la impermanencia  de la actividad humana  y a la vez de la creación de un paisaje lleno de significados  en sus formas. Al hacer las imágenes me enfoqué en las cualidades formales para dejar al espectador desorientado en este paisaje disperso y simbólico, que es una caligrafía de una cosmovisión, un extraño código que asombra.",
+
+
+
+
+
+
+
+    ["026.jpg L","027.jpg L","028.jpg L","029.jpg L","030.jpg L","031.jpg L",
+
+
+
+    "032.jpg L","033.jpg L","034.jpg L","035.jpg L","036.jpg L","037.jpg L"],
+
+
+
+
+
+
+
+    Portrait),
+
+
+
+
+
+
+
+	-- ("Benidoom",
+
+
+
+	--  "El Benidorm de los guiris. Un Benidorm, pronunciado «Benidoom». En estas calles se habla inglés, se bebe, locales nocturnos , shows eróticos, cabarés horteras, y pubs que animan a losúbditos británicos a noches de bacanal y elevado nivel etílico ,donde el sexo es un reclamo para la fiesta y la transgresión. En este trabajo  se muestra  las situaciones desinhibitorias donde afloran por doquier los instintos reprimidos acompañados  de una explosión de alegría incontrolada y de un motivo festivo en una sociedad  tan controladora en los roles sociales como  la actual ,  en la que se ofrece  el alcohol y el sexo femenino como reclamo de lujo artificial  y válvula de escape  frente a la  indigencia  vital cotidiana de su país.",
+
+
+
+	-- ["01.jpg","02.jpg","03.jpg","04.jpg"
+
+
+
+	-- ,"05.jpg","06.jpg"
+
+
+
+	-- ,"07.jpg","08.jpg","09.jpg","010.jpg"
+
+
+
+  -- ,"011.jpg","011B.jpg","012.jpg","013.jpg","014.jpg"
+
+
+
+	-- ,"014B.jpg","015.jpg","016.jpg"
+
+
+
+	-- ,"016b.jpg","017.jpg"],
+
+
+
+	--  Portrait),
+
+
+
+		
+
+
+
+	("Trayecto",
+
+
+
+	  "Recorridos en el metro cotidiano donde se  descubre a los demás , los recovecos de las vidas privadas en la distancia , las penas del corazón , las desdichas ,  el agotamiento vital , el paso de una emoción, cuyas razones y objetos se nos escapan  . La cámara desempeña el papel de un vidrio de aumento  que nos  acerca a la humanidad cotidiana y evidencia  la soledad sin aislamiento de una  una colectividad , soledades en plural, en el carácter limite de aglomeración de pasajeros , lectura y cartografía humana de seres diferentes pero nunca radicalmente extraños o incomprensibles. Alteridad inmediata de los semejantes próximos. El trabajo se ha realizado ccon teléfono móvil",
+
+
+
+	  
+
+
+
+	  ["001P.jpg","002P.jpg","003P.jpg","004P.jpg","005P.jpg","006P.jpg","010P.jpg","0111P.jpg","0112P.jpg","0113P.jpg","0114P.jpg","012P.jpg","014P.jpg","015P.jpg"],
+
+
+
+	  Portrait)
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	]
+

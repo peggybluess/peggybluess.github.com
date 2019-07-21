@@ -259,10 +259,6 @@ snd' (_, x, _,_)= x
 trd  (_, _, x,_)= x
 fourth (_,_,_,x)= x
 
-instance Semigroup Int where
-   (<>) = (+)
-instance Monoid Int where
-   mempty= 0
 
 -- style= atr (fs "style")
 
