@@ -4,7 +4,7 @@ axiom-0.4.7-HawFbZPKVaVJaBH454XePX:1136
 base:                    447102
 bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A:32433
 containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5:4260
-ghc-prim:                42147
+ghc-prim:                42160
 ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn:28022
 ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi:2414
 ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z:11537
@@ -94,7 +94,7 @@ ghc-prim
     GHC.CString:                        9297
     GHC.Classes:                        2617
     GHC.Tuple:                          3239
-    GHC.Types:                          26994
+    GHC.Types:                          27007
 
 ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn
     Data.JSString:                      1506
@@ -127,5 +127,5 @@ transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq
 
 
 
-packed metadata: 254233
+packed metadata: 254230
 
