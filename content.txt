@@ -6,7 +6,7 @@
 	  -- Landscape),	
 	  
 	  
-    ("Tropos",
+    ("TROPOS",
 
 	  "Una ficción de la vida contemporánea y la realidad social que muestra  la existencia cotidiana  en la ciudad. El Trabajo son una serie de fotografías en blanco y negro  usando figuras arquitectónicos, Tropos, metáforas de las grandes empresas tecnológicas que gestionan nuestros datos  en beneficio de una economía parasitaria  y no democrática. Se construye una heterotopía de las que habla Foucault, un lugar cargado de amenazas, con grandes torres de vigilancia, de poder y control tecnológico, y se muestra la  visión antropológica de este presente alienante con fotografías de figuras humanas en un espacio público, que como parias digitales desarraigados vagan perdidas en esta realidad. Las fotografías investigan el paisaje cultural  cotidiano contemporáneo, ofreciendo una imagen seductora e inquietante de  los entornos urbanos, bajo la mirada afectiva del fotógrafo.",
 
