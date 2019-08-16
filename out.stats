@@ -1,23 +1,23 @@
 code size summary per package:
 
-axiom-0.4.7-HawFbZPKVaVJaBH454XePX:1136
-base:                    451212
+axiom-0.4.7-G6Xj9LjR1icLTuFxO47i4J:1136
+base:                    458104
 bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A:32433
-containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5:4260
-ghc-prim:                42162
-ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn:28022
+containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5:5694
+ghc-prim:                42802
+ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn:28712
 ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi:2414
 ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z:11537
 integer-gmp:             6220
 main:                    40835
 mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P:5863
-transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:77635
-transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq:138374
+transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:71867
+transient-0.6.4-HIurDnpty3FGRRsgZCG9tO:140989
 
 
 code size per module:
 
-axiom-0.4.7-HawFbZPKVaVJaBH454XePX
+axiom-0.4.7-G6Xj9LjR1icLTuFxO47i4J
     GHCJS.HPlay.View:                   1136
 
 base
@@ -31,7 +31,8 @@ base
     Data.OldList:                       411
     Data.String:                        602
     Data.Type.Equality:                 17182
-    Data.Typeable.Internal:             10697
+    Data.Typeable.Internal:             4867
+    Debug.Trace:                        10697
     Foreign.C.Error:                    1782
     Foreign.C.String:                   1574
     Foreign.Marshal.Alloc:              2040
@@ -69,7 +70,7 @@ base
     GHC.Ptr:                            12883
     GHC.Read:                           236
     GHC.Real:                           361
-    GHC.STRef:                          31387
+    GHC.STRef:                          33412
     GHC.Show:                           4152
     GHC.Stack.CCS:                      1502
     GHC.Stack.Types:                    1069
@@ -88,19 +89,19 @@ bytestring-0.10.8.2-JNdgga9938ECdWPoxsaK2A
     Data.ByteString.Internal:           32433
 
 containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5
-    Data.Map.Internal:                  4260
+    Data.Map.Internal:                  5694
 
 ghc-prim
     GHC.CString:                        9297
     GHC.Classes:                        2617
     GHC.Tuple:                          3239
-    GHC.Types:                          27009
+    GHC.Types:                          27649
 
 ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn
     Data.JSString:                      1506
     Data.JSString.Internal.Fusion.Common:1844
     Data.JSString.Internal.Fusion.Types:424
-    Data.JSString.Internal.Type:        24248
+    Data.JSString.Internal.Type:        24938
 
 ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi
     Internal.Perch:                     1128
@@ -120,12 +121,12 @@ mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P
     Control.Monad.State.Class:          5863
 
 transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj
-    Control.Monad.Trans.State.Lazy:     77635
+    Control.Monad.Trans.State.Lazy:     71867
 
-transient-0.6.4-GIEAUi5fJLG9Uq1YMRjVzq
-    Transient.Internals:                138374
+transient-0.6.4-HIurDnpty3FGRRsgZCG9tO
+    Transient.Internals:                140989
 
 
 
-packed metadata: 255774
+packed metadata: 260838
 

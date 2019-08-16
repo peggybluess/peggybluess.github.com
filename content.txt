@@ -22,7 +22,11 @@
 	   "",
 	   ["1.jpg",  "2.jpg L",  "3.jpg L",  "4.jpg",  "5.jpg",  "6.jpg"],
 	   Portrait),
-	  
+	   
+	 ("Multimedia",
+	   "Vídeo de la exhibición",
+	   ["<iframe src='https://player.vimeo.com/video/255194885' width='640' height='524' frameborder='0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
+       Landscape), 
 
 	 ("CÓDIGO",
 
@@ -33,9 +37,9 @@
     "032.jpg L","033.jpg L","034.jpg L","035.jpg L","036.jpg L","037.jpg L"],
 
     Portrait),
-   ("Multimedia",
-      "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/349335684\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>",
-      [], Portrait), 
+   --("Multimedia",
+   --   "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/349335684\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>",
+   --   [], Portrait), 
 
 	-- ("Benidoom",
 
