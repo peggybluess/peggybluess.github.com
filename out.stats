@@ -12,7 +12,7 @@ integer-gmp:             6220
 main:                    40835
 mtl-2.2.2-JwkVRS3GUbAIfWMxnUlM9P:5863
 transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj:71867
-transient-0.6.4-HIurDnpty3FGRRsgZCG9tO:140989
+transient-0.6.4-HIurDnpty3FGRRsgZCG9tO:140873
 
 
 code size per module:
@@ -124,9 +124,9 @@ transformers-0.5.2.0-HtEf5nV5vOXJgl7pipqNkj
     Control.Monad.Trans.State.Lazy:     71867
 
 transient-0.6.4-HIurDnpty3FGRRsgZCG9tO
-    Transient.Internals:                140989
+    Transient.Internals:                140873
 
 
 
-packed metadata: 260838
+packed metadata: 260839
 
