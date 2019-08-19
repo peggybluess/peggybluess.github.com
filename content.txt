@@ -35,28 +35,12 @@
     "032.jpg L","033.jpg L","034.jpg L","035.jpg L","036.jpg L","037.jpg L"],
 
     Portrait),
+
 	 ("Multimedia",
-	   ">>>>>>>>>>> CÓDIGO vídeo >>>>>>>>>>>",
-	   ["<iframe src='https://vimeo.com/349335684' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
+	   ">>>>>>>>>>> CÓDIGO vídeo >>>>>>>",
+	   ["<iframe src='https://player.vimeo.com/video/349335684' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
 	   Landscape),
 
-	-- ("Benidoom",
-
-	--  "El Benidorm de los guiris. Un Benidorm, pronunciado «Benidoom». En estas calles se habla inglés, se bebe, locales nocturnos , shows eróticos, cabarés horteras, y pubs que animan a losúbditos británicos a noches de bacanal y elevado nivel etílico ,donde el sexo es un reclamo para la fiesta y la transgresión. En este trabajo  se muestra  las situaciones desinhibitorias donde afloran por doquier los instintos reprimidos acompañados  de una explosión de alegría incontrolada y de un motivo festivo en una sociedad  tan controladora en los roles sociales como  la actual ,  en la que se ofrece  el alcohol y el sexo femenino como reclamo de lujo artificial  y válvula de escape  frente a la  indigencia  vital cotidiana de su país.",
-
-	-- ["01.jpg","02.jpg","03.jpg","04.jpg"
-
-	-- ,"05.jpg","06.jpg"
-
-	-- ,"07.jpg","08.jpg","09.jpg","010.jpg"
-
-  -- ,"011.jpg","011B.jpg","012.jpg","013.jpg","014.jpg"
-
-	-- ,"014B.jpg","015.jpg","016.jpg"
-
-	-- ,"016b.jpg","017.jpg"],
-
-	--  Portrait),
 
 	("TRAYECTO",
 
@@ -65,8 +49,11 @@
 	  ["001P.jpg","002P.jpg","003P.jpg","004P.jpg","005P.jpg","006P.jpg","010P.jpg","0111P.jpg","0112P.jpg","0113P.jpg","0114P.jpg","012P.jpg","014P.jpg","015P.jpg"],
 
 	  Portrait),
+	   
+
+	   
 	 ("Multimedia",
-	   ">>>>>>>>>>> TRAYECTO vídeo >>>>>>>>>>>",
+	   ">>>>>>>>>>> TRAYECTO vídeo >>>>>>>",
 	   ["<iframe src='https://player.vimeo.com/video/255194885' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
 	   Landscape)
 
