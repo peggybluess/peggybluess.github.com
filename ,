@@ -35,10 +35,9 @@
     "032.jpg L","033.jpg L","034.jpg L","035.jpg L","036.jpg L","037.jpg L"],
 
     Portrait),
-	 ("Multimedia",
-	   ">>>>>>>>>>> CÓDIGO vídeo >>>>>>>>>>>",
-	   ["<iframe src='https://vimeo.com/349335684' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
-	   Landscape),
+   --("Multimedia",
+   --   "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/349335684\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>",
+   --   [], Portrait), 
 
 	-- ("Benidoom",
 
@@ -66,7 +65,7 @@
 
 	  Portrait),
 	 ("Multimedia",
-	   ">>>>>>>>>>> TRAYECTO vídeo >>>>>>>>>>>",
+	   ">>>>>>>>>>> TRAYECTO vídeo >>>>>>>",
 	   ["<iframe src='https://player.vimeo.com/video/255194885' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"],
 	   Landscape)
 

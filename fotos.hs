@@ -32,7 +32,7 @@ projects=
 type Style=  String
 type Project = Int
 type Photo= Int
-type OnDisplay= (Project,Photo, Style)
+type OnDisplay= (Project, Photo, Style)
 data Current= Current OnDisplay
 
 
@@ -249,9 +249,16 @@ chooseProject= do
     renderGallery
     where
     clicableText n'=  do
+       let text= snd' $ projects !! n'
        render $ at (fs "#gallery")  Insert $ 
-                           (p ! atr "align" (fs "justify")
-                             $ snd' (projects !! n'))  `pass`  OnClick
+                if "<" `isPrefixOf` text
+
+                     then do
+                       alert ("<iframe" `isPrefixOf` text)
+                       rawHtml $ fromString text
+                     else do
+                           (p ! atr "align" (fs "justify") $ text)  `pass`  OnClick
+                           return ()
        return ()
 
 fst' (x, _, _,_)= x 
@@ -269,8 +276,8 @@ gallery = do
     let proj=(projects !!n)
 
   -- preload next photo
-    let str= ( proj & trd) !! m
-        (image,t) = break (==' ') str
+    let entry= ( proj & trd) !! m
+        (image,t) = break (==' ') entry
         classgal= case t of
          " P" -> "portrait"
          " L" -> "landscape"
@@ -278,13 +285,22 @@ gallery = do
                   Portrait ->  "portrait"
                   Landscape -> "landscape"
 --    liftIO $ alert (fs $ show (image, classgal))
-    render $ at (fs "#gallery") Insert $ 
-      (this `goParent` this ! clas (fs classgal) `child` do
+
+     
+
+    if (length entry < 15 ) 
+        then do
+            render $ at (fs "#gallery") Insert $
+              (this `goParent` this ! clas (fs classgal) `child` do
                 img ! clas (fs classMove)
                     ! src (fs $ "../"++files++"/"++ (proj & fst') ++ "/"++ image)
                     ! style (fs "width:100%"))
                   `pass` OnClick
-
+            return()
+                  
+        else                   --              is the HTML of a video insert!
+            render $ at (fs "#gallery") Insert $ rawHtml $ this `setHtml` (fs entry) 
+                
     -- when (m < lengthImages n -1) $ render $   
     --     rawHtml $ img ! style (fs "visibility: hidden;width:0px;height:0px")
     --                   ! src (fs $ "./"++files++"/"++(proj & fst')++ "/"++ ( proj & trd) !! (m+1))
