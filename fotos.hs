@@ -244,14 +244,15 @@ chooseProject= do
        forElemId (fs "gallery") $ this ! clas  classgal
        forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
        forElemId (fs $ fst' (projects !! n'))  $ this ! clas (fs "highlighted")
-
-    when  (project /= "Exhibition" && project /= "Multimedia" && project /= "Multimedia " && project /= "Book dummy") $ 
-                   clicableText n' <|>  
+       
+    let text= snd' $ projects !! n'
+    when  (not $ null text) $ 
+                   clicableText text <|>  
                    staticNav (render $ at (fs "#nav") Insert (wlink () (fs ">>>>")))
     renderGallery
     where
-    clicableText n'=  do
-       let text= snd' $ projects !! n'
+    clicableText text =  do
+
        render $ at (fs "#gallery")  Insert $ 
                 if "<" `isPrefixOf` text
 
