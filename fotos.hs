@@ -245,7 +245,9 @@ chooseProject= do
        forElemId (fs $ fst' (projects !! n))   $ this ! clas (fs "other")
        forElemId (fs $ fst' (projects !! n'))  $ this ! clas (fs "highlighted")
 
-    clicableText n' <|>  staticNav (render $ at (fs "#nav") Insert (wlink () (fs ">>>>")))
+    when  (project /= "Exhibition" || project /= "Multimedia" || project /= "Multimedia ") $
+                   clicableText n' <|>  
+                   staticNav (render $ at (fs "#nav") Insert (wlink () (fs ">>>>")))
     renderGallery
     where
     clicableText n'=  do
