@@ -28798,7 +28798,7 @@ function h$_hs_bytestring_long_long_uint_hex(x_a, x_b, buf_d, buf_o) {
     }
     { h$ret1 = (next_free); return (buf_d); };
 }
-var h$$b = h$pstr("\n\x00\n  \x00 \x00  \x00 (\x00 <--\x00 L\x00 P\x00 at position \x00 dead\x00 in \x00 | \x00!!: index too large\x00!!: negative index\x00\"\x00\" as type \x00\" in:   <\x00#\x00#bio\x00#contact\x00#gallery\x00#init\x00#nav\x00#projects\x00#statement\x00#works\x00%s\x00%s\n\x00'\"\x00'(##)\x00'(#,#)\x00'(#,,#)\x00'(#,,,#)\x00'(#,,,,#)\x00'(#,,,,,#)\x00'(#,,,,,,#)\x00'(#,,,,,,,#)\x00'(#,,,,,,,,#)\x00'(#,,,,,,,,,#)\x00'(#,,,,,,,,,,#)\x00'(#,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'()\x00'(,)\x00':\x00'AddrRep\x00'Alive\x00'AllocationLimitExceeded\x00'AlreadyExists\x00'Alternative\x00'Append\x00'BackPoint\x00'Backtrack\x00'BlockedIndefinitelyOnMVar\x00'BlockedIndefinitelyOnSTM\x00'BlockedOnBlackHole\x00'BlockedOnException\x00'BlockedOnForeignCall\x00'BlockedOnMVar\x00'BlockedOnOther\x00'BlockedOnSTM\x00'C#\x00'C:Attributable\x00'C:Exception\x00'C:IsEvent\x00'C:Show\x00'C:ToElem\x00'CFinalizers\x00'Char\x00'CheckBoxes\x00'Click\x00'Current\x00'Dead\x00'Deadlock\x00'Denormal\x00'DivideByZero\x00'DoubleElemRep\x00'DoubleRep\x00'EOF\x00'EQ\x00'ErrorCallWithLocation\x00'ErrorOnCodingFailure\x00'Event\x00'EventData\x00'EventF\x00'EventSet\x00'Exec\x00'ExecEvent\x00'Exit\x00'ExitFailure\x00'ExitSuccess\x00'FD\x00'Finish\x00'FloatElemRep\x00'FloatRep\x00'ForeignPtr\x00'GT\x00'HardwareFault\x00'HaskellFinalizers\x00'HeapOverflow\x00'IDynamic\x00'IDyns\x00'IOError\x00'IdLine\x00'Ident\x00'IgnoreCodingFailure\x00'IllegalOperation\x00'InappropriateType\x00'IndexOutOfBounds\x00'Insert\x00'Int16ElemRep\x00'Int32ElemRep\x00'Int64ElemRep\x00'Int64Rep\x00'Int8ElemRep\x00'IntRep\x00'Interrupted\x00'InvalidArgument\x00'JSException\x00'JSVal\x00'Key\x00'LT\x00'Landscape\x00'LiftedRep\x00'Listener\x00'Log\x00'LossOfPrecision\x00'MFOption\x00'MallocPtr\x00'MkDecimal\x00'MkNumber\x00'Mouse\x00'MouseOut\x00'MyWeak\x00'NoData\x00'NoFinalizers\x00'NoMethodError\x00'NoParam\x00'NoRemote\x00'NoSuchThing\x00'NotValidated\x00'Number\x00'OnBlur\x00'OnChange\x00'OnClick\x00'OnDblClick\x00'OnFocus\x00'OnKeyDown\x00'OnKeyPress\x00'OnKeyUp\x00'OnLoad\x00'OnMouseDown\x00'OnMouseMove\x00'OnMouseOut\x00'OnMouseOver\x00'OnMouseUp\x00'OnUnload\x00'OtherError\x00'Overflow\x00'Parent\x00'ParseError\x00'Path\x00'PatternMatchFail\x00'Perch\x00'PermissionDenied\x00'PlainForeignPtr\x00'PlainPtr\x00'Portrait\x00'Prepend\x00'ProtocolError\x00'Punc\x00'Radio\x00'RadioId\x00'RatioZeroDenominator\x00'RecConError\x00'RecSelError\x00'RecUpdError\x00'Ref\x00'ResourceBusy\x00'ResourceExhausted\x00'ResourceVanished\x00'RoundtripFailure\x00'SDone\x00'SError\x00'SLast\x00'SMore\x00'STM\x00'SomeException\x00'StackOverflow\x00'String\x00'SumRep\x00'Symbol\x00'SystemError\x00'TVar\x00'ThreadBlocked\x00'ThreadDied\x00'ThreadFinished\x00'ThreadId\x00'ThreadKilled\x00'ThreadRunning\x00'TimeExpired\x00'Transient\x00'TransliterateCodingFailure\x00'TupleRep\x00'TypeError\x00'UndefinedElement\x00'Underflow\x00'Unit\x00'UnliftedRep\x00'UnsatisfiedConstraints\x00'UnsupportedOperation\x00'UserError\x00'UserInterrupt\x00'Validated\x00'Var\x00'Vec16\x00'Vec2\x00'Vec32\x00'Vec4\x00'Vec64\x00'Vec8\x00'VecRep\x00'Wait\x00'WasParallel\x00'WasRemote\x00'Widget\x00'Word16ElemRep\x00'Word32ElemRep\x00'Word64ElemRep\x00'Word64Rep\x00'Word8ElemRep\x00'WordRep\x00'[]\x00'\\''\x00(##)\x00(#,#)\x00(#,,#)\x00(#,,,#)\x00(#,,,,#)\x00(#,,,,,#)\x00(#,,,,,,#)\x00(#,,,,,,,#)\x00(#,,,,,,,,#)\x00(#,,,,,,,,,#)\x00(#,,,,,,,,,,#)\x00(#,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00()\x00(,)\x00(,,)\x00(->)\x00)\x00) is outside of enumeration's range (0,\x00,\x00, \x00, called at \x00,;()[]{}`\x00---------Threads-----------\x00--path\x00->\x00-p\x00..\x00..\/\x00.\/\x00.\/Data\/JSString.hs\x00.\/Data\/Map\/Internal.hs\x00.\/Foreign\/Marshal\/Alloc.hs\x00.\/GHC\/ForeignPtr.hs\x00.\/GHC\/Unicode.hs\x00.html\x00\/\x00\/\/IGNORE\x00\/\/ROUNDTRIP\x00\/\/TRANSLIT\x00001P.jpg\x00002P.jpg\x00003P.jpg\x00004P.jpg\x00005P.jpg\x00006P.jpg\x0001.jpg\x00010P.jpg\x000111P.jpg\x000112P.jpg\x000113P.jpg\x000114P.jpg\x00012P.jpg\x00014P.jpg\x00015P.jpg\x0002.jpg\x00026.jpg L\x00027.jpg L\x00028.jpg L\x00029.jpg L\x0003.jpg\x00030.jpg L\x00031.jpg L\x00032.jpg L\x00033.jpg L\x00034.jpg L\x00035.jpg L\x00036.jpg L\x00037.jpg L\x0004.jpg\x0005.jpg\x0006.jpg\x0007.jpg\x0008.jpg\x0009.jpg\x001.jpg\x0010.jpg\x0011.jpg\x0012.jpg\x002\x002.jpg\x002.jpg L\x002017 Showroom , exposicion colectiva \"Archipielago\"\x002017-Finalista Beca Master BASE escuela LENS\x002017-Finalista XVII Seminario de Fotograf\xeda y Periodismo de la Fundaci\xf3n Sta Mar\xeda de Albarrac\xedn, Teruel\x002017-Seleccionada Descubrimientos PhotoEspa\xf1a\x002018 Exposici\xf3n colectiva 16 CUADERNOS VALLECANOS en CASA MADRID\x002018- Seleccionada PhotoAlicante 2018\x002018-Becada IX edici\xf3n Nuevos Talentos encuentros fotogr\xe1ficos de Gij\xf3n\x002018-Finalista 5\xaa Edici\xf3n del Festival de Fotograf\xeda BFOTO, Barbastro\x002018-Finalista XVIII Seminario de Fotograf\xeda y Periodismo de la Fundaci\xf3n Sta Mar\xeda de Albarrac\xedn, Teruel\x002018-Seleccionada Transeuropa PhotoEspa\xf1a\x002018-Tercer premio OnPhoto Soria\x002019- Exposiciones individual en OPEN Festival BFOTO, espacio \"B\xe1sico Mobiliario\", Barbastro\x002019-Exposicion Colectiva \"Retratos\" en la casa de las asociaciones, Ayuntamiento Alcobendas\x002019-Exposicion colectiva \"Graduaci\xf3n\" en CASA MADRID\x002019-Seleccionada OPEN exposiciones Festival BFOTO, Barbastro\x003.jpg L\x004.jpg\x005.jpg\x006.jpg\x007.jpg\x008.jpg\x009.jpg\x00:\x00: \x00: can't read, skip\x00: empty input\x00: empty list\x00::\x00<\x00<-\x00<<<<\x00<<deadlock>>\x00<<loop>>\x00<file descriptor: \x00<iframe\x00<iframe src='https:\/\/player.vimeo.com\/video\/255194885' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>\x00<iframe src='https:\/\/player.vimeo.com\/video\/349335684' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>\x00<stderr>\x00<stdout>\x00=\x00=>\x00>\x00> \x00>>>>\x00@\x00ACK\x00ACTIVIDADES\x00ALTERNATIVE\x00Add content, styles, layout\x00AdditionalOperators\x00Addr#\x00Alive\x00AllocationLimitExceeded\x00AlternativeBranch\x00Alumna de talleres con reconocidos fot\xf3grafos, Lurdes R, Basoli, Jes\xfas Mico \x00Append\x00ArithException\x00Array#\x00ArrayArray#\x00ArrayException\x00AsyncException\x00Attributable\x00BCO#\x00BEL\x00BS\x00BackPoint\x00Backtrack\x00Bio\x00BlockBuffering\x00BlockBuffering \x00BlockReason\x00BlockedIndefinitelyOnMVar\x00BlockedIndefinitelyOnSTM\x00BlockedOnBlackHole\x00BlockedOnException\x00BlockedOnForeignCall\x00BlockedOnMVar\x00BlockedOnOther\x00BlockedOnSTM\x00Book dummy\x00BrowserEvent\x00Busca sintonizar con el  misterio , con el insondable enigma del universo  a trav\xe9s del paisaje , las im\xe1genes aluden a un paisaje en construcci\xf3n , que utiliza los desechos y residuos de la actividad humana , una f\xe1brica  de Hormig\xf3n , para construir escenarios que aluden a lo intangible y lo abstracto , a lo aparente , a lo que asombra , sin escalas, sin tama\xf1os  y   sin dimensiones  concretas  que hacen transcender  las im\xe1genes de su contexto original y que ha sido creado por la construcci\xf3n humana Im\xe1genes, que a modo de presencias, quietas, silenciosas,   se asemejan  a  formas esenciales de la geometr\xeda plana , un circulo , un tri\xe1ngulo y un rect\xe1ngulo, pero tambi\xe9n abrazan lo simb\xf3lico y sugieren ese todo invisible que es el Universo  expresado en un c\xf3digo de geometr\xedas  , o lo que es lo mismo  , la vida y  la muerte , origen y fin , lleno y vac\xedo. Fotograf\xedas que nos hablan de la transitoriedad, de la impermanencia  de la actividad humana  y a la vez de la creaci\xf3n de un paisaje lleno de significados  en sus formas. Al hacer las im\xe1genes me enfoqu\xe9 en las cualidades formales para dejar al espectador desorientado en este paisaje disperso y simb\xf3lico, que es una caligraf\xeda de una cosmovisi\xf3n, un extra\xf1o c\xf3digo que asombra.\x00ByteArray#\x00CAN\x00CFLock\x00CGroup\x00CLconv\x00CPasswd\x00CR\x00CRLF\x00CSigaction\x00CSigset\x00CStat\x00CTermios\x00CTm\x00CTms\x00CUtimbuf\x00CUtsname\x00CallStack (from -prof):\x00CallStack (from HasCallStack):\x00Char\x00Char \x00Char#\x00Charla \"Conversaciones con Fot\xf3grafas\". Universidad Rey Juan Carlos 2018\x00CheckBoxes\x00Click \x00ClosePunctuation\x00CodingFailureMode\x00Compact#\x00Concibo mis fotograf\xedas como un trabajo a largo plazo y en permanente \x00ConnectorPunctuation\x00Constraint\x00Contact\x00Control\x00Control.Concurrent.STM.atomically was nested\x00Control.Exception.Base\x00CostCentre\x00CostCentreStack\x00CurrencySymbol\x00Current\x00C\xd3DIGO\x00DC1\x00DC2\x00DC3\x00DC4\x00DEL\x00DLE\x00DashPunctuation\x00Data.Foldable.maximum (for Data.Map): empty map\x00Data.Foldable.minimum (for Data.Map): empty map\x00Data.JSString\x00Data.JSString.\x00Data.JSString.Internal.Type\x00Data.Map.Internal\x00Data.Map.Internal.Map\x00Data.Maybe\x00Dead\x00Deadlock\x00Debug.Trace\x00DecimalNumber\x00Double#\x00DoubleX2#\x00DoubleX4#\x00DoubleX8#\x00EM\x00ENQ\x00EOF\x00EOT\x00EQ\x00ESC\x00ETB\x00ETX\x00EVENT\x00EXECTEMPLATE\x00EXPOSICIONES\x00Edit this template\x00En mis proyectos personales no muestro fotograf\xedas de realidades explicitas, \x00EnclosingMark\x00ErrorCall\x00ErrorOnCodingFailure\x00EvData\x00Event\x00EventData\x00EventData {\x00EventF\x00EventSet\x00Except this header, don't delete anything unless you know what you do\x00Exception\x00Exec\x00ExecEvent\x00ExecMode\x00Executing: \x00Exhibition\x00Exit\x00ExitCode\x00ExitFailure\x00ExitFailure \x00ExitSuccess\x00FATHER:\x00FD\x00FF\x00FS\x00Failure in Data.Map.balance\x00Failure in Data.Map.balanceL\x00Failure in Data.Map.balanceR\x00False\x00FinalQuote\x00Finalizers\x00Finish\x00Finish \x00Float#\x00FloatX16#\x00FloatX4#\x00FloatX8#\x00Foreign.Marshal.Alloc\x00ForeignPtr\x00ForeignPtrContents\x00Format\x00Fotolibro colectivo  Barrios Project , escuela PICA\x00Fot\xf3grafa de Madrid, licenciada en Veterinaria y Derecho, con una trayectoria \x00GETMULTI\x00GHC.Conc.Sync\x00GHC.Exception\x00GHC.ForeignPtr\x00GHC.ForeignPtr: attempt to add a finalizer to a plain pointer\x00GHC.ForeignPtr: attempt to mix Haskell and C finalizers in the same ForeignPtr\x00GHC.IO.Encoding.Failure\x00GHC.IO.Encoding.UTF8\x00GHC.IO.Exception\x00GHC.IO.FD\x00GHC.IO.FD.close\x00GHC.IO.FD.dup\x00GHC.IO.FD.dup2\x00GHC.IO.FD.fdRead\x00GHC.IO.FD.fdReadNonBlocking\x00GHC.IO.FD.fdWrite\x00GHC.IO.FD.fdWriteNonBlocking\x00GHC.IO.FD.ready\x00GHC.IO.FD.setSize\x00GHC.IO.Handle.FD\x00GHC.IO.Handle.Internals\x00GHC.IORef\x00GHC.Prim\x00GHC.Show\x00GHC.Stack.CCS\x00GHC.TopHandler\x00GHC.Tuple\x00GHC.Types\x00GHC.Unicode\x00GHC\/List.hs:414:34-55|qs@(q : _)\x00GHCJS.HPlay.View\x00GHCJS.Prim\x00GS\x00GT\x00HT\x00IDynamic\x00IOErrorType\x00IOException\x00IORef\x00IdLine\x00IdLine not defined\x00IdLine not set\x00Ident \x00If you can read this, shutdownHaskellAndExit did not exit.\x00IgnoreCodingFailure\x00InitialQuote\x00Insert\x00Int\x00Int#\x00Int16X16#\x00Int16X32#\x00Int16X8#\x00Int32#\x00Int32X16#\x00Int32X4#\x00Int32X8#\x00Int64#\x00Int64X2#\x00Int64X4#\x00Int64X8#\x00Int8X16#\x00Int8X32#\x00Int8X64#\x00Internal.Perch\x00Irrefutable pattern failed for pattern\x00IsEvent\x00JSException\x00JSString\x00JSVal\x00JavaScript exception: \x00Just \x00KILLEVENT1 \x00Key \x00Kill children\x00LF\x00LT\x00LetterNumber\x00Lexeme\x00LifeCycle\x00LineBuffering\x00LineSeparator\x00Listener\x00Log\x00Log \x00LogElem\x00LowercaseLetter\x00MAIN\x00MARIA TORIJA\x00MENCIONES Y PREMIOS\x00MFOption\x00MVar#\x00Main\x00Map.!: given key is not an element in the map\x00Map.deleteFindMax: can not return the maximal element of an empty map\x00Map.elemAt: index out of range\x00Map.findIndex: element is not in the map\x00Map.findMax: empty map has no maximal element\x00Map.findMin: empty map has no minimal element\x00Mar\xeda Torija\x00MathSymbol\x00Maybe.fromJust: Nothing\x00Missing field in record construction\x00MkDecimal \x00MkNumber \x00ModifierLetter\x00ModifierSymbol\x00Mouse \x00MouseOut\x00Multimedia\x00Multimedia \x00MutVar#\x00MutableArray#\x00MutableArrayArray#\x00MutableByteArray#\x00MyWeak\x00NAK\x00NOTHING\x00NOTVALIDATED\x00NUL\x00Nat\x00Navigate the links and save the edition for each link\x00NewlineMode\x00NewlineMode {\x00No instance nor default method for class operation\x00No match in record selector \x00NoBuffering\x00NoData\x00NoMethodError\x00NoParam\x00NoRemote\x00Non-exhaustive guards in\x00Non-exhaustive patterns in\x00NonSpacingMark\x00NonTermination\x00NotAssigned\x00NotValidated\x00NotValidated \x00Nothing\x00Number\x00Number \x00OnBlur\x00OnChange\x00OnClick\x00OnDblClick\x00OnFocus\x00OnKeyDown\x00OnKeyPress\x00OnKeyUp\x00OnLoad\x00OnMouseDown\x00OnMouseMove\x00OnMouseOut\x00OnMouseOver\x00OnMouseUp\x00OnUnload\x00Onload\x00Oops!  Entered absent arg \x00OpenPunctuation\x00Operation is not supported\x00Ordering\x00OtherLetter\x00OtherNumber\x00OtherPunctuation\x00OtherSymbol\x00PUBLICACIONES\x00ParagraphSeparator\x00ParamResult\x00Parent\x00ParseError\x00ParseError \x00Path\x00PatternMatchFail\x00PerchM\x00Photography\x00Prelude.\x00Prelude.Enum.().pred: bad argument\x00Prelude.Enum.().succ: bad argument\x00Prelude.Enum.().toEnum: bad argument\x00Prelude.Enum.Bool.toEnum: bad argument\x00Prelude.chr: bad argument: \x00Prelude.read: ambiguous parse\x00Prelude.read: no parse\x00Prepend\x00PrimMVar\x00PrivateUse\x00Projects\x00Proxy#\x00Punc \x00RENDER\x00RS\x00Radio\x00RadioId\x00Ratio has zero denominator\x00RealWorld\x00RecConError\x00RecSelError\x00RecUpdError\x00Recorridos en el metro cotidiano donde se  descubre a los dem\xe1s , los recovecos de las vidas privadas en la distancia , las penas del coraz\xf3n , las desdichas ,  el agotamiento vital , el paso de una emoci\xf3n, cuyas razones y objetos se nos escapan  . La c\xe1mara desempe\xf1a el papel de un vidrio de aumento  que nos  acerca a la humanidad cotidiana y evidencia  la soledad sin aislamiento de una  una colectividad , soledades en plural, en el car\xe1cter limite de aglomeraci\xf3n de pasajeros , lectura y cartograf\xeda humana de seres diferentes pero nunca radicalmente extra\xf1os o incomprensibles. Alteridad inmediata de los semejantes pr\xf3ximos. El trabajo se ha realizado ccon tel\xe9fono m\xf3vil\x00Ref\x00RemoteStatus\x00Ricky D\xe1vila, Eduardo Nave, David Jim\xe9nez, Laia Abril, Mat\xedas Costa, Javier\x00RoundtripFailure\x00RuntimeRep\x00SDone\x00SETDATA ALTERNATIVE\x00SError\x00SI\x00SLast\x00SMore\x00SO\x00SOH\x00SP\x00STM\x00STX\x00SUB\x00SYN\x00Show\x00SmallArray#\x00SmallMutableArray#\x00SomeAsyncException\x00SomeException\x00Space\x00SpacingCombiningMark\x00SrcLoc {\x00StableName#\x00StablePtr#\x00State#\x00Statement\x00StreamData\x00String \x00Surrogate\x00Symbol\x00Symbol \x00System.Posix.Internals\x00TRAYECTO\x00TROPOS\x00TVar\x00TVar#\x00TYPE\x00Text.Read.Lex\x00Text\/ParserCombinators\/ReadP.hs:(134,3)-(157,52)|function <|>\x00ThreadBlocked \x00ThreadDied\x00ThreadFinished\x00ThreadId\x00ThreadId \x00ThreadId#\x00ThreadRunning\x00ThreadStatus\x00TitlecaseLetter\x00ToElem\x00TransIO\x00Transactional invariant violation\x00Transient.Internals\x00TransliterateCodingFailure\x00True\x00TypeError\x00US\x00UTF-8\x00UTF-8BOM\x00Una ficci\xf3n de la vida contempor\xe1nea y la realidad social que muestra  la existencia cotidiana  en la ciudad. El Trabajo son una serie de fotograf\xedas en blanco y negro  usando figuras arquitect\xf3nicos, Tropos, met\xe1foras de las grandes empresas tecnol\xf3gicas que gestionan nuestros datos  en beneficio de una econom\xeda parasitaria  y no democr\xe1tica. Se construye una heterotop\xeda de las que habla Foucault, un lugar cargado de amenazas, con grandes torres de vigilancia, de poder y control tecnol\xf3gico, y se muestra la  visi\xf3n antropol\xf3gica de este presente alienante con fotograf\xedas de figuras humanas en un espacio p\xfablico, que como parias digitales desarraigados vagan perdidas en esta realidad. Las fotograf\xedas investigan el paisaje cultural  cotidiano contempor\xe1neo, ofreciendo una imagen seductora e inquietante de  los entornos urbanos, bajo la mirada afectiva del fot\xf3grafo.\x00Unit\x00UpdateMethod\x00UppercaseLetter\x00VALIDATED\x00VT\x00Validated\x00Validated \x00Vallhonrat, Aleix Plademunt, Ricardo Cases\u2026\x00Var\x00Var \x00VecCount\x00VecElem\x00Void#\x00WARNING: previous trace message had null bytes\x00Wait\x00WasParallel\x00WasRemote\x00Weak#\x00Widget\x00Word#\x00Word16X16#\x00Word16X32#\x00Word16X8#\x00Word32#\x00Word32X16#\x00Word32X4#\x00Word32X8#\x00Word64#\x00Word64X2#\x00Word64X4#\x00Word64X8#\x00Word8X16#\x00Word8X32#\x00Word8X64#\x00Works\x00WouldBlockException\x00[\x00[]\x00\\\x00\\\"\x00\\&\x00\\DEL\x00\\SO\x00\\\\\x00\\a\x00\\b\x00\\f\x00\\n\x00\\n\"\x00\\n\\\x00\\r\x00\\t\x00\\v\x00_'\x00a\x00abbr\x00address\x00align\x00allocation limit exceeded\x00already exists\x00area\x00arithmetic overflow\x00arithmetic underflow\x00array index out of range\x00article\x00aside\x00audio\x00axiom-0.4.7-G6Xj9LjR1icLTuFxO47i4J\x00b\x00base\x00bdo\x00bind (>>=) invocation in the Perch monad creating DOM elements\x00bio\x00bio.jpg\x00blockquote\x00body\x00body1\x00br\x00button\x00b\xfasqueda .Me interesan las construcciones sociales que articulan la realidad \x00can't read \"\x00cannot flush the read buffer: underlying device is not seekable\x00canvas\x00caption\x00checkbox\x00checked\x00checking\x00cite\x00class\x00closed\x00code\x00codec_state\x00col\x00colgroup\x00color\x00color:black\x00color:red\x00command\x00compaction failed: \x00contact\x00containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5\x00copyright\x00cycle\x00datalist\x00dd\x00del\x00denormal\x00details\x00dfn\x00div\x00divide by zero\x00dl\x00do not exist, creating elem\x00does not exist\x00dt\x00edit\x00edited\x00editw\x00elaboraci\xf3n de mis trabajos fotogr\xe1ficos siempre surge la pregunta de si es \x00elemBySeq\x00em\x00embed\x00encountered an exception while trying to report an exception.One possible reason for this is that we failed while trying to encode an error message. Check that your locale is configured properly.\x00end of file\x00error\x00escuelas de fotograf\xeda, Blank Paper, Lens. PIC.A de PhotoEspa\xf1a y Efti. \x00evData = \x00evName = \x00event\x00evidencia, pero se intuye.\x00exist adding event to current element\x00exit: not the type expected\x00failed\x00fdType\x00fieldset\x00figcaption\x00figure\x00fileSize\x00fileType\x00files\x00files\/logotipoA.jpg\x00float:left\x00foldl1\x00foldl1'\x00foldl1: empty structure\x00foldr1\x00foldr1: empty structure\x00font\x00font-weight:bold;text-align:center\x00footer\x00for\x00form\x00fotos.css\x00fromList\x00fromList \x00gallery\x00ghc-prim\x00ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn\x00ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi\x00ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z\x00gunfold\x00h1\x00h2\x00h3\x00h4\x00h5\x00h6\x00hFlush\x00hGetPosn\x00hLookAhead\x00hSetBuffering\x00handle is closed\x00handle is finalized\x00handle is not open for reading\x00handle is not open for writing\x00handle is not seekable\x00handle is semi-closed\x00handleToFd\x00hardware fault\x00head\x00header\x00heap overflow\x00height\x00hgroup\x00highlighted\x00hr\x00href\x00html\x00http:\/\/js.nicedit.com\/nicEdit-latest.js\x00i\x00id\x00iframe\x00illegal buffer size \x00illegal operation\x00img\x00inappropriate type\x00init\x00input\x00inputNL\x00inputNL = \x00ins\x00interrupted\x00invalid argument\x00invalid byte sequence\x00invalid character\x00is a directory\x00justify\x00kbd\x00keygen\x00kill this thread:\x00la realidad resulta al final una forma de superar la insidia entre la existencia y \x00la verdad, de alcanzar un fundamento vital.\x00label\x00laboral en la Administraci\xf3n Publica. Ha asistido a diversos cursos en varias \x00landscape\x00last\x00left\x00leftpane\x00legend\x00li\x00link\x00list-style: none;\x00looking for \x00loss of precision\x00mailto:mariajtalonso@gmail.com\x00main\x00malloc\x00mallocForeignPtr: size must be >= 0\x00mallocForeignPtrAlignedBytes: size must be >= 0\x00mallocForeignPtrBytes: size must be >= 0\x00mallocPlainForeignPtrAlignedBytes: size must be >= 0\x00mallocPlainForeignPtrBytes: size must be >= 0\x00map\x00margin-top:0px\x00margin: 0 0 0 -2.5%\x00margin: 2.5% 0 0 -2.5%\x00mariajtalonso@gmail.com\x00mark\x00maximum\x00menu\x00menuitem\x00meta\x00meter\x00minimum\x00misterioso, al doble sentido de las cosas y la realidad oculta que no se \x00n0p0\x00name\x00nav\x00nic\x00no threads to run:  infinite loop or deadlock?\x00noid\x00noscript\x00not a file descriptor\x00not a file handle\x00not found: \x00object\x00ol\x00onclick\x00oneThread\x00openBinaryFile\x00openFile\x00optgroup\x00option\x00other\x00out of memory\x00output\x00outputNL\x00outputNL = \x00p\x00panel\x00param\x00password\x00permission denied\x00portrait\x00posible llegar a compartir la realidad con alguien. Compartir el acto de mirar y \x00pre\x00progress\x00projects\x00protocol error\x00q\x00radio\x00read error trying to read type: \"\x00read-writable\x00readable\x00reading \x00recoverDecode\x00recoverEncode\x00red\x00rel\x00reset\x00resource busy\x00resource exhausted\x00resource vanished\x00right\x00rp\x00rt\x00ruby\x00samp\x00script\x00second serial\x00section\x00seek\x00select\x00selected\x00semi-closed\x00set IdLine\x00setDataAL1\x00setRadio out of getRadio\x00sigaddset\x00sigemptyset\x00sigprocmask\x00since the template has been generated by your code\x00size\x00small\x00source\x00span\x00src\x00src\/GHCJS\/HPlay\/View.hs\x00src\/Internal\/Perch.hs\x00src\/Internal\/Perch.hs:66:10-23|fmap\x00src\/Internal\/Perch.hs:68:10-27|pure\x00src\/Transient\/Internals.hs\x00src\/Transient\/Internals.hs:(937,5)-(939,23)|function fmap\x00src\/Transient\/Internals.hs:1294:14-31|[(x, \"\")]\x00src\/Transient\/Internals.hs:359:9-38|(v, left) : _\x00src\/Transient\/Internals.hs:926:11-37|[(s, r)]\x00srcLocEndCol = \x00srcLocEndLine = \x00srcLocFile = \x00srcLocModule = \x00srcLocPackage = \x00srcLocStartCol = \x00srcLocStartLine = \x00stack overflow\x00statement\x00stimes: positive multiplier expected\x00strong\x00style\x00stylesheet\x00sub\x00submit\x00summary\x00sup\x00supongo que dentro de mi hay una atracci\xf3n hacia la oscuridad y lo \x00system error\x00table\x00tail\x00tbody\x00tcSetAttr\x00td\x00text\x00text-align:center\x00text\/javascript\x00textarea\x00tfoot\x00th\x00thead\x00this should not happen\x00thread blocked indefinitely in an MVar operation\x00thread blocked indefinitely in an STM transaction\x00thread killed\x00thread would block\x00time\x00timeout\x00title\x00toEnum{GeneralCategory}: tag (\x00top\x00tr\x00track\x00transient-0.6.4-HIurDnpty3FGRRsgZCG9tO\x00true\x00type\x00ul\x00undefined\x00undefined array element\x00unknown file type\x00unsatisfied constraints\x00unsupported operation\x00user error\x00user interrupt\x00val\x00valDig: Bad base\x00value\x00vital cotidiana y sus consecuencias en la existencia del hombre. En la \x00w3-animate-left\x00w3-animate-right\x00wait\x00wbr\x00width\x00width:100%\x00width:20%;height:20%;float:left;margin-right:5%;margin-bottom:200%\x00width:80%\x00withElem: not found\x00work\x00works\x00writable\x00writable (append)\x00{\x00{handle: \x00|\x00}\x00~\x00~#\x00~P#\x00~R#\x00\xa9 Maria Torija 2017")();
+var h$$b = h$pstr("\n\x00\n  \x00 \x00  \x00 (\x00 <--\x00 L\x00 P\x00 at position \x00 dead\x00 in \x00 | \x00!!: index too large\x00!!: negative index\x00\"\x00\" as type \x00\" in:   <\x00#\x00#bio\x00#contact\x00#gallery\x00#init\x00#nav\x00#projects\x00#statement\x00#works\x00%s\x00%s\n\x00'\"\x00'(##)\x00'(#,#)\x00'(#,,#)\x00'(#,,,#)\x00'(#,,,,#)\x00'(#,,,,,#)\x00'(#,,,,,,#)\x00'(#,,,,,,,#)\x00'(#,,,,,,,,#)\x00'(#,,,,,,,,,#)\x00'(#,,,,,,,,,,#)\x00'(#,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00'()\x00'(,)\x00':\x00'AddrRep\x00'Alive\x00'AllocationLimitExceeded\x00'AlreadyExists\x00'Alternative\x00'Append\x00'BackPoint\x00'Backtrack\x00'BlockedIndefinitelyOnMVar\x00'BlockedIndefinitelyOnSTM\x00'BlockedOnBlackHole\x00'BlockedOnException\x00'BlockedOnForeignCall\x00'BlockedOnMVar\x00'BlockedOnOther\x00'BlockedOnSTM\x00'C#\x00'C:Attributable\x00'C:Exception\x00'C:IsEvent\x00'C:Show\x00'C:ToElem\x00'CFinalizers\x00'Char\x00'CheckBoxes\x00'Click\x00'Current\x00'Dead\x00'Deadlock\x00'Denormal\x00'DivideByZero\x00'DoubleElemRep\x00'DoubleRep\x00'EOF\x00'EQ\x00'ErrorCallWithLocation\x00'ErrorOnCodingFailure\x00'Event\x00'EventData\x00'EventF\x00'EventSet\x00'Exec\x00'ExecEvent\x00'Exit\x00'ExitFailure\x00'ExitSuccess\x00'FD\x00'Finish\x00'FloatElemRep\x00'FloatRep\x00'ForeignPtr\x00'GT\x00'HardwareFault\x00'HaskellFinalizers\x00'HeapOverflow\x00'IDynamic\x00'IDyns\x00'IOError\x00'IdLine\x00'Ident\x00'IgnoreCodingFailure\x00'IllegalOperation\x00'InappropriateType\x00'IndexOutOfBounds\x00'Insert\x00'Int16ElemRep\x00'Int32ElemRep\x00'Int64ElemRep\x00'Int64Rep\x00'Int8ElemRep\x00'IntRep\x00'Interrupted\x00'InvalidArgument\x00'JSException\x00'JSVal\x00'Key\x00'LT\x00'Landscape\x00'LiftedRep\x00'Listener\x00'Log\x00'LossOfPrecision\x00'MFOption\x00'MallocPtr\x00'MkDecimal\x00'MkNumber\x00'Mouse\x00'MouseOut\x00'MyWeak\x00'NoData\x00'NoFinalizers\x00'NoMethodError\x00'NoParam\x00'NoRemote\x00'NoSuchThing\x00'NotValidated\x00'Number\x00'OnBlur\x00'OnChange\x00'OnClick\x00'OnDblClick\x00'OnFocus\x00'OnKeyDown\x00'OnKeyPress\x00'OnKeyUp\x00'OnLoad\x00'OnMouseDown\x00'OnMouseMove\x00'OnMouseOut\x00'OnMouseOver\x00'OnMouseUp\x00'OnUnload\x00'OtherError\x00'Overflow\x00'Parent\x00'ParseError\x00'Path\x00'PatternMatchFail\x00'Perch\x00'PermissionDenied\x00'PlainForeignPtr\x00'PlainPtr\x00'Portrait\x00'Prepend\x00'ProtocolError\x00'Punc\x00'Radio\x00'RadioId\x00'RatioZeroDenominator\x00'RecConError\x00'RecSelError\x00'RecUpdError\x00'Ref\x00'ResourceBusy\x00'ResourceExhausted\x00'ResourceVanished\x00'RoundtripFailure\x00'SDone\x00'SError\x00'SLast\x00'SMore\x00'STM\x00'SomeException\x00'StackOverflow\x00'String\x00'SumRep\x00'Symbol\x00'SystemError\x00'TVar\x00'ThreadBlocked\x00'ThreadDied\x00'ThreadFinished\x00'ThreadId\x00'ThreadKilled\x00'ThreadRunning\x00'TimeExpired\x00'Transient\x00'TransliterateCodingFailure\x00'TupleRep\x00'TypeError\x00'UndefinedElement\x00'Underflow\x00'Unit\x00'UnliftedRep\x00'UnsatisfiedConstraints\x00'UnsupportedOperation\x00'UserError\x00'UserInterrupt\x00'Validated\x00'Var\x00'Vec16\x00'Vec2\x00'Vec32\x00'Vec4\x00'Vec64\x00'Vec8\x00'VecRep\x00'Wait\x00'WasParallel\x00'WasRemote\x00'Widget\x00'Word16ElemRep\x00'Word32ElemRep\x00'Word64ElemRep\x00'Word64Rep\x00'Word8ElemRep\x00'WordRep\x00'[]\x00'\\''\x00(##)\x00(#,#)\x00(#,,#)\x00(#,,,#)\x00(#,,,,#)\x00(#,,,,,#)\x00(#,,,,,,#)\x00(#,,,,,,,#)\x00(#,,,,,,,,#)\x00(#,,,,,,,,,#)\x00(#,,,,,,,,,,#)\x00(#,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00(#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#)\x00()\x00(,)\x00(,,)\x00(->)\x00)\x00) is outside of enumeration's range (0,\x00,\x00, \x00, called at \x00,;()[]{}`\x00---------Threads-----------\x00--path\x00->\x00-p\x00..\x00..\/\x00.\/\x00.\/Data\/JSString.hs\x00.\/Data\/Map\/Internal.hs\x00.\/Foreign\/Marshal\/Alloc.hs\x00.\/GHC\/ForeignPtr.hs\x00.\/GHC\/Unicode.hs\x00.html\x00\/\x00\/\/IGNORE\x00\/\/ROUNDTRIP\x00\/\/TRANSLIT\x00001P.jpg\x00002P.jpg\x00003P.jpg\x00004P.jpg\x00005P.jpg\x00006P.jpg\x0001.jpg\x00010P.jpg\x000111P.jpg\x000112P.jpg\x000113P.jpg\x000114P.jpg\x00012P.jpg\x00014P.jpg\x00015P.jpg\x0002.jpg\x00026.jpg L\x00027.jpg L\x00028.jpg L\x00029.jpg L\x0003.jpg\x00030.jpg L\x00031.jpg L\x00032.jpg L\x00033.jpg L\x00034.jpg L\x00035.jpg L\x00036.jpg L\x00037.jpg L\x0004.jpg\x0005.jpg\x0006.jpg\x0007.jpg\x0008.jpg\x0009.jpg\x001.jpg\x0010.jpg\x0011.jpg\x0012.jpg\x002\x002.jpg\x002.jpg L\x002017 Showroom , exposicion colectiva \"Archipielago\"\x002017-Finalista Beca Master BASE escuela LENS\x002017-Finalista XVII Seminario de Fotograf\xeda y Periodismo de la Fundaci\xf3n Sta Mar\xeda de Albarrac\xedn, Teruel\x002017-Seleccionada Descubrimientos PhotoEspa\xf1a\x002018 Exposici\xf3n colectiva 16 CUADERNOS VALLECANOS en CASA MADRID\x002018- Seleccionada PhotoAlicante 2018\x002018-Becada IX edici\xf3n Nuevos Talentos encuentros fotogr\xe1ficos de Gij\xf3n\x002018-Finalista 5\xaa Edici\xf3n del Festival de Fotograf\xeda BFOTO, Barbastro\x002018-Finalista XVIII Seminario de Fotograf\xeda y Periodismo de la Fundaci\xf3n Sta Mar\xeda de Albarrac\xedn, Teruel\x002018-Seleccionada Transeuropa PhotoEspa\xf1a\x002018-Tercer premio OnPhoto Soria\x002019- Exposiciones individual en OPEN Festival BFOTO, espacio \"B\xe1sico Mobiliario\", Barbastro\x002019-Exposicion Colectiva \"Retratos\" en la casa de las asociaciones, Ayuntamiento Alcobendas\x002019-Exposicion colectiva \"Graduaci\xf3n\" en CASA MADRID\x002019-Seleccionada OPEN exposiciones Festival BFOTO, Barbastro\x003.jpg L\x004.jpg\x005.jpg\x006.jpg\x007.jpg\x008.jpg\x009.jpg\x00:\x00: \x00: can't read, skip\x00: empty input\x00: empty list\x00::\x00<\x00<-\x00<<<<\x00<<deadlock>>\x00<<loop>>\x00<file descriptor: \x00<iframe\x00<iframe src='https:\/\/player.vimeo.com\/video\/255194885' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>\x00<iframe src='https:\/\/player.vimeo.com\/video\/349335684' width='640' height='524' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe>\x00<stderr>\x00<stdout>\x00=\x00=>\x00>\x00> \x00>>>>\x00@\x00ACK\x00ACTIVIDADES\x00ALTERNATIVE\x00Add content, styles, layout\x00AdditionalOperators\x00Addr#\x00Alive\x00AllocationLimitExceeded\x00AlternativeBranch\x00Alumna de talleres con reconocidos fot\xf3grafos, Lurdes R, Basoli, Jes\xfas Mico \x00Append\x00ArithException\x00Array#\x00ArrayArray#\x00ArrayException\x00AsyncException\x00Attributable\x00BCO#\x00BEL\x00BS\x00BackPoint\x00Backtrack\x00Bio\x00BlockBuffering\x00BlockBuffering \x00BlockReason\x00BlockedIndefinitelyOnMVar\x00BlockedIndefinitelyOnSTM\x00BlockedOnBlackHole\x00BlockedOnException\x00BlockedOnForeignCall\x00BlockedOnMVar\x00BlockedOnOther\x00BlockedOnSTM\x00Book dummy\x00BrowserEvent\x00Busca sintonizar con el  misterio , con el insondable enigma del universo  a trav\xe9s del paisaje , las im\xe1genes aluden a un paisaje en construcci\xf3n , que utiliza los desechos y residuos de la actividad humana , una f\xe1brica  de Hormig\xf3n , para construir escenarios que aluden a lo intangible y lo abstracto , a lo aparente , a lo que asombra , sin escalas, sin tama\xf1os  y   sin dimensiones  concretas  que hacen transcender  las im\xe1genes de su contexto original y que ha sido creado por la construcci\xf3n humana Im\xe1genes, que a modo de presencias, quietas, silenciosas,   se asemejan  a  formas esenciales de la geometr\xeda plana , un circulo , un tri\xe1ngulo y un rect\xe1ngulo, pero tambi\xe9n abrazan lo simb\xf3lico y sugieren ese todo invisible que es el Universo  expresado en un c\xf3digo de geometr\xedas  , o lo que es lo mismo  , la vida y  la muerte , origen y fin , lleno y vac\xedo. Fotograf\xedas que nos hablan de la transitoriedad, de la impermanencia  de la actividad humana  y a la vez de la creaci\xf3n de un paisaje lleno de significados  en sus formas. Al hacer las im\xe1genes me enfoqu\xe9 en las cualidades formales para dejar al espectador desorientado en este paisaje disperso y simb\xf3lico, que es una caligraf\xeda de una cosmovisi\xf3n, un extra\xf1o c\xf3digo que asombra.\x00ByteArray#\x00CAN\x00CFLock\x00CGroup\x00CLconv\x00CPasswd\x00CR\x00CRLF\x00CSigaction\x00CSigset\x00CStat\x00CTermios\x00CTm\x00CTms\x00CUtimbuf\x00CUtsname\x00CallStack (from -prof):\x00CallStack (from HasCallStack):\x00Char\x00Char \x00Char#\x00Charla \"Conversaciones con Fot\xf3grafas\". Universidad Rey Juan Carlos 2018\x00CheckBoxes\x00Click \x00ClosePunctuation\x00CodingFailureMode\x00Compact#\x00Concibo mis fotograf\xedas como un trabajo a largo plazo y en permanente \x00ConnectorPunctuation\x00Constraint\x00Contact\x00Control\x00Control.Concurrent.STM.atomically was nested\x00Control.Exception.Base\x00CostCentre\x00CostCentreStack\x00CurrencySymbol\x00Current\x00C\xd3DIGO\x00DC1\x00DC2\x00DC3\x00DC4\x00DEL\x00DLE\x00DashPunctuation\x00Data.Foldable.maximum (for Data.Map): empty map\x00Data.Foldable.minimum (for Data.Map): empty map\x00Data.JSString\x00Data.JSString.\x00Data.JSString.Internal.Type\x00Data.Map.Internal\x00Data.Map.Internal.Map\x00Data.Maybe\x00Dead\x00Deadlock\x00Debug.Trace\x00DecimalNumber\x00Double#\x00DoubleX2#\x00DoubleX4#\x00DoubleX8#\x00EM\x00ENQ\x00EOF\x00EOT\x00EQ\x00ESC\x00ETB\x00ETX\x00EVENT\x00EXECTEMPLATE\x00EXPOSICIONES\x00Edit this template\x00En mis proyectos personales no muestro fotograf\xedas de realidades explicitas, \x00EnclosingMark\x00ErrorCall\x00ErrorOnCodingFailure\x00EvData\x00Event\x00EventData\x00EventData {\x00EventF\x00EventSet\x00Except this header, don't delete anything unless you know what you do\x00Exception\x00Exec\x00ExecEvent\x00ExecMode\x00Executing: \x00Exhibition\x00Exit\x00ExitCode\x00ExitFailure\x00ExitFailure \x00ExitSuccess\x00FATHER:\x00FD\x00FF\x00FS\x00Failure in Data.Map.balance\x00Failure in Data.Map.balanceL\x00Failure in Data.Map.balanceR\x00False\x00FinalQuote\x00Finalizers\x00Finish\x00Finish \x00Float#\x00FloatX16#\x00FloatX4#\x00FloatX8#\x00Foreign.Marshal.Alloc\x00ForeignPtr\x00ForeignPtrContents\x00Format\x00Fotolibro colectivo  Barrios Project , escuela PICA\x00Fot\xf3grafa de Madrid, licenciada en Veterinaria y Derecho, con una trayectoria \x00GETMULTI\x00GHC.Conc.Sync\x00GHC.Exception\x00GHC.ForeignPtr\x00GHC.ForeignPtr: attempt to add a finalizer to a plain pointer\x00GHC.ForeignPtr: attempt to mix Haskell and C finalizers in the same ForeignPtr\x00GHC.IO.Encoding.Failure\x00GHC.IO.Encoding.UTF8\x00GHC.IO.Exception\x00GHC.IO.FD\x00GHC.IO.FD.close\x00GHC.IO.FD.dup\x00GHC.IO.FD.dup2\x00GHC.IO.FD.fdRead\x00GHC.IO.FD.fdReadNonBlocking\x00GHC.IO.FD.fdWrite\x00GHC.IO.FD.fdWriteNonBlocking\x00GHC.IO.FD.ready\x00GHC.IO.FD.setSize\x00GHC.IO.Handle.FD\x00GHC.IO.Handle.Internals\x00GHC.IORef\x00GHC.Prim\x00GHC.Show\x00GHC.Stack.CCS\x00GHC.TopHandler\x00GHC.Tuple\x00GHC.Types\x00GHC.Unicode\x00GHC\/List.hs:414:34-55|qs@(q : _)\x00GHCJS.HPlay.View\x00GHCJS.Prim\x00GS\x00GT\x00HT\x00IDynamic\x00IOErrorType\x00IOException\x00IORef\x00IdLine\x00IdLine not defined\x00IdLine not set\x00Ident \x00If you can read this, shutdownHaskellAndExit did not exit.\x00IgnoreCodingFailure\x00InitialQuote\x00Insert\x00Int\x00Int#\x00Int16X16#\x00Int16X32#\x00Int16X8#\x00Int32#\x00Int32X16#\x00Int32X4#\x00Int32X8#\x00Int64#\x00Int64X2#\x00Int64X4#\x00Int64X8#\x00Int8X16#\x00Int8X32#\x00Int8X64#\x00Internal.Perch\x00Irrefutable pattern failed for pattern\x00IsEvent\x00JSException\x00JSString\x00JSVal\x00JavaScript exception: \x00Just \x00KILLEVENT1 \x00Key \x00Kill children\x00LF\x00LT\x00LetterNumber\x00Lexeme\x00LifeCycle\x00LineBuffering\x00LineSeparator\x00Listener\x00Log\x00Log \x00LogElem\x00LowercaseLetter\x00MAIN\x00MARIA TORIJA\x00MENCIONES Y PREMIOS\x00MFOption\x00MVar#\x00Main\x00Map.!: given key is not an element in the map\x00Map.deleteFindMax: can not return the maximal element of an empty map\x00Map.elemAt: index out of range\x00Map.findIndex: element is not in the map\x00Map.findMax: empty map has no maximal element\x00Map.findMin: empty map has no minimal element\x00Mar\xeda Torija\x00MathSymbol\x00Maybe.fromJust: Nothing\x00Missing field in record construction\x00MkDecimal \x00MkNumber \x00ModifierLetter\x00ModifierSymbol\x00Mouse \x00MouseOut\x00Multimedia\x00Multimedia \x00MutVar#\x00MutableArray#\x00MutableArrayArray#\x00MutableByteArray#\x00MyWeak\x00NAK\x00NOTHING\x00NOTVALIDATED\x00NUL\x00Nat\x00Navigate the links and save the edition for each link\x00NewlineMode\x00NewlineMode {\x00No instance nor default method for class operation\x00No match in record selector \x00NoBuffering\x00NoData\x00NoMethodError\x00NoParam\x00NoRemote\x00Non-exhaustive guards in\x00Non-exhaustive patterns in\x00NonSpacingMark\x00NonTermination\x00NotAssigned\x00NotValidated\x00NotValidated \x00Nothing\x00Number\x00Number \x00OnBlur\x00OnChange\x00OnClick\x00OnDblClick\x00OnFocus\x00OnKeyDown\x00OnKeyPress\x00OnKeyUp\x00OnLoad\x00OnMouseDown\x00OnMouseMove\x00OnMouseOut\x00OnMouseOver\x00OnMouseUp\x00OnUnload\x00Onload\x00Oops!  Entered absent arg \x00OpenPunctuation\x00Operation is not supported\x00Ordering\x00OtherLetter\x00OtherNumber\x00OtherPunctuation\x00OtherSymbol\x00PUBLICACIONES\x00ParagraphSeparator\x00ParamResult\x00Parent\x00ParseError\x00ParseError \x00Path\x00PatternMatchFail\x00PerchM\x00Photography\x00Prelude.\x00Prelude.Enum.().pred: bad argument\x00Prelude.Enum.().succ: bad argument\x00Prelude.Enum.().toEnum: bad argument\x00Prelude.Enum.Bool.toEnum: bad argument\x00Prelude.chr: bad argument: \x00Prelude.read: ambiguous parse\x00Prelude.read: no parse\x00Prepend\x00PrimMVar\x00PrivateUse\x00Projects\x00Proxy#\x00Punc \x00RENDER\x00RS\x00Radio\x00RadioId\x00Ratio has zero denominator\x00RealWorld\x00RecConError\x00RecSelError\x00RecUpdError\x00Recorridos en el metro cotidiano donde se  descubre a los dem\xe1s , los recovecos de las vidas privadas en la distancia , las penas del coraz\xf3n , las desdichas ,  el agotamiento vital , el paso de una emoci\xf3n, cuyas razones y objetos se nos escapan  . La c\xe1mara desempe\xf1a el papel de un vidrio de aumento  que nos  acerca a la humanidad cotidiana y evidencia  la soledad sin aislamiento de una  una colectividad , soledades en plural, en el car\xe1cter limite de aglomeraci\xf3n de pasajeros , lectura y cartograf\xeda humana de seres diferentes pero nunca radicalmente extra\xf1os o incomprensibles. Alteridad inmediata de los semejantes pr\xf3ximos. El trabajo se ha realizado ccon tel\xe9fono m\xf3vil\x00Ref\x00RemoteStatus\x00Ricky D\xe1vila, Eduardo Nave, David Jim\xe9nez, Laia Abril, Mat\xedas Costa, Javier\x00RoundtripFailure\x00RuntimeRep\x00SDone\x00SETDATA ALTERNATIVE\x00SError\x00SI\x00SLast\x00SMore\x00SO\x00SOH\x00SP\x00STM\x00STX\x00SUB\x00SYN\x00Show\x00SmallArray#\x00SmallMutableArray#\x00SomeAsyncException\x00SomeException\x00Space\x00SpacingCombiningMark\x00SrcLoc {\x00StableName#\x00StablePtr#\x00State#\x00Statement\x00StreamData\x00String \x00Surrogate\x00Symbol\x00Symbol \x00System.Posix.Internals\x00TRAYECTO\x00TROPOS\x00TVar\x00TVar#\x00TYPE\x00Text.Read.Lex\x00Text\/ParserCombinators\/ReadP.hs:(134,3)-(157,52)|function <|>\x00ThreadBlocked \x00ThreadDied\x00ThreadFinished\x00ThreadId\x00ThreadId \x00ThreadId#\x00ThreadRunning\x00ThreadStatus\x00TitlecaseLetter\x00ToElem\x00TransIO\x00Transactional invariant violation\x00Transient.Internals\x00TransliterateCodingFailure\x00True\x00TypeError\x00US\x00UTF-8\x00UTF-8BOM\x00Una ficci\xf3n de la vida contempor\xe1nea y la realidad social que muestra  la existencia cotidiana  en la ciudad. El Trabajo son una serie de fotograf\xedas en blanco y negro  usando figuras arquitect\xf3nicos, Tropos, met\xe1foras de las grandes empresas tecnol\xf3gicas que gestionan nuestros datos  en beneficio de una econom\xeda parasitaria  y no democr\xe1tica. Se construye una heterotop\xeda de las que habla Foucault, un lugar cargado de amenazas, con grandes torres de vigilancia, de poder y control tecnol\xf3gico, y se muestra la  visi\xf3n antropol\xf3gica de este presente alienante con fotograf\xedas de figuras humanas en un espacio p\xfablico, que como parias digitales desarraigados vagan perdidas en esta realidad. Las fotograf\xedas investigan el paisaje cultural  cotidiano contempor\xe1neo, ofreciendo una imagen seductora e inquietante de  los entornos urbanos, bajo la mirada afectiva del fot\xf3grafo.\x00Unit\x00UpdateMethod\x00UppercaseLetter\x00VALIDATED\x00VT\x00Validated\x00Validated \x00Vallhonrat, Aleix Plademunt, Ricardo Cases\u2026\x00Var\x00Var \x00VecCount\x00VecElem\x00Void#\x00WARNING: previous trace message had null bytes\x00Wait\x00WasParallel\x00WasRemote\x00Weak#\x00Widget\x00Word#\x00Word16X16#\x00Word16X32#\x00Word16X8#\x00Word32#\x00Word32X16#\x00Word32X4#\x00Word32X8#\x00Word64#\x00Word64X2#\x00Word64X4#\x00Word64X8#\x00Word8X16#\x00Word8X32#\x00Word8X64#\x00Works\x00WouldBlockException\x00[\x00[]\x00\\\x00\\\"\x00\\&\x00\\DEL\x00\\SO\x00\\\\\x00\\a\x00\\b\x00\\f\x00\\n\x00\\n\"\x00\\n\\\x00\\r\x00\\t\x00\\v\x00_'\x00a\x00abbr\x00address\x00align\x00allocation limit exceeded\x00already exists\x00area\x00arithmetic overflow\x00arithmetic underflow\x00array index out of range\x00article\x00aside\x00audio\x00axiom-0.4.7-G6Xj9LjR1icLTuFxO47i4J\x00b\x00base\x00bdo\x00bind (>>=) invocation in the Perch monad creating DOM elements\x00bio\x00bio.jpg\x00blockquote\x00body\x00body1\x00br\x00button\x00b\xfasqueda .Me interesan las construcciones sociales que articulan la realidad \x00can't read \"\x00cannot flush the read buffer: underlying device is not seekable\x00canvas\x00caption\x00checkbox\x00checked\x00checking\x00cite\x00class\x00closed\x00code\x00codec_state\x00col\x00colgroup\x00color\x00color:black\x00color:red\x00command\x00compaction failed: \x00contact\x00containers-0.5.10.2-9DI272UIy6s2SQuD3F70c5\x00copyright\x00cycle\x00datalist\x00dd\x00del\x00denormal\x00details\x00dfn\x00div\x00divide by zero\x00dl\x00do not exist, creating elem\x00does not exist\x00dt\x00edit\x00edited\x00editw\x00elaboraci\xf3n de mis trabajos fotogr\xe1ficos siempre surge la pregunta de si es \x00elemBySeq\x00em\x00embed\x00encountered an exception while trying to report an exception.One possible reason for this is that we failed while trying to encode an error message. Check that your locale is configured properly.\x00end of file\x00error\x00escuelas de fotograf\xeda, Blank Paper, Lens. PIC.A de PhotoEspa\xf1a y Efti. \x00evData = \x00evName = \x00event\x00evidencia, pero se intuye.\x00exist adding event to current element\x00exit: not the type expected\x00failed\x00fdType\x00fieldset\x00figcaption\x00figure\x00fileSize\x00fileType\x00files\x00files\/logotipoA.jpg\x00float:left\x00foldl1\x00foldl1'\x00foldl1: empty structure\x00foldr1\x00foldr1: empty structure\x00font\x00font-weight:bold;text-align:center\x00footer\x00for\x00form\x00fotos.css\x00fromList\x00fromList \x00gallery\x00ghc-prim\x00ghcjs-base-0.2.0.0-EwimgP3khysJKQCfziBtOn\x00ghcjs-perch-0.3.3.3-BDCF5GCI6apyjJtCwtXxi\x00ghcjs-prim-0.1.1.0-Lw1qzAJ9IR31NFzWC6t27Z\x00gunfold\x00h1\x00h2\x00h3\x00h4\x00h5\x00h6\x00hFlush\x00hGetPosn\x00hLookAhead\x00hSetBuffering\x00handle is closed\x00handle is finalized\x00handle is not open for reading\x00handle is not open for writing\x00handle is not seekable\x00handle is semi-closed\x00handleToFd\x00hardware fault\x00head\x00header\x00heap overflow\x00height\x00hgroup\x00highlighted\x00hr\x00href\x00html\x00http:\/\/js.nicedit.com\/nicEdit-latest.js\x00i\x00id\x00iframe\x00illegal buffer size \x00illegal operation\x00img\x00inappropriate type\x00init\x00input\x00inputNL\x00inputNL = \x00ins\x00interrupted\x00invalid argument\x00invalid byte sequence\x00invalid character\x00is a directory\x00justify\x00kbd\x00keygen\x00kill this thread:\x00la realidad resulta al final una forma de superar la insidia entre la existencia y \x00la verdad, de alcanzar un fundamento vital.\x00label\x00laboral en la Administraci\xf3n Publica. Ha asistido a diversos cursos en varias \x00landscape\x00last\x00left\x00leftpane\x00legend\x00li\x00link\x00list-style: none;\x00looking for \x00loss of precision\x00mailto:mariajtorija@gmail.com\x00main\x00malloc\x00mallocForeignPtr: size must be >= 0\x00mallocForeignPtrAlignedBytes: size must be >= 0\x00mallocForeignPtrBytes: size must be >= 0\x00mallocPlainForeignPtrAlignedBytes: size must be >= 0\x00mallocPlainForeignPtrBytes: size must be >= 0\x00map\x00margin-top:0px\x00margin: 0 0 0 -2.5%\x00margin: 2.5% 0 0 -2.5%\x00mariajtorija@gmail.com\x00mark\x00maximum\x00menu\x00menuitem\x00meta\x00meter\x00minimum\x00misterioso, al doble sentido de las cosas y la realidad oculta que no se \x00n0p0\x00name\x00nav\x00nic\x00no threads to run:  infinite loop or deadlock?\x00noid\x00noscript\x00not a file descriptor\x00not a file handle\x00not found: \x00object\x00ol\x00onclick\x00oneThread\x00openBinaryFile\x00openFile\x00optgroup\x00option\x00other\x00out of memory\x00output\x00outputNL\x00outputNL = \x00p\x00panel\x00param\x00password\x00permission denied\x00portrait\x00posible llegar a compartir la realidad con alguien. Compartir el acto de mirar y \x00pre\x00progress\x00projects\x00protocol error\x00q\x00radio\x00read error trying to read type: \"\x00read-writable\x00readable\x00reading \x00recoverDecode\x00recoverEncode\x00red\x00rel\x00reset\x00resource busy\x00resource exhausted\x00resource vanished\x00right\x00rp\x00rt\x00ruby\x00samp\x00script\x00second serial\x00section\x00seek\x00select\x00selected\x00semi-closed\x00set IdLine\x00setDataAL1\x00setRadio out of getRadio\x00sigaddset\x00sigemptyset\x00sigprocmask\x00since the template has been generated by your code\x00size\x00small\x00source\x00span\x00src\x00src\/GHCJS\/HPlay\/View.hs\x00src\/Internal\/Perch.hs\x00src\/Internal\/Perch.hs:66:10-23|fmap\x00src\/Internal\/Perch.hs:68:10-27|pure\x00src\/Transient\/Internals.hs\x00src\/Transient\/Internals.hs:(937,5)-(939,23)|function fmap\x00src\/Transient\/Internals.hs:1294:14-31|[(x, \"\")]\x00src\/Transient\/Internals.hs:359:9-38|(v, left) : _\x00src\/Transient\/Internals.hs:926:11-37|[(s, r)]\x00srcLocEndCol = \x00srcLocEndLine = \x00srcLocFile = \x00srcLocModule = \x00srcLocPackage = \x00srcLocStartCol = \x00srcLocStartLine = \x00stack overflow\x00statement\x00stimes: positive multiplier expected\x00strong\x00style\x00stylesheet\x00sub\x00submit\x00summary\x00sup\x00supongo que dentro de mi hay una atracci\xf3n hacia la oscuridad y lo \x00system error\x00table\x00tail\x00tbody\x00tcSetAttr\x00td\x00text\x00text-align:center\x00text\/javascript\x00textarea\x00tfoot\x00th\x00thead\x00this should not happen\x00thread blocked indefinitely in an MVar operation\x00thread blocked indefinitely in an STM transaction\x00thread killed\x00thread would block\x00time\x00timeout\x00title\x00toEnum{GeneralCategory}: tag (\x00top\x00tr\x00track\x00transient-0.6.4-HIurDnpty3FGRRsgZCG9tO\x00true\x00type\x00ul\x00undefined\x00undefined array element\x00unknown file type\x00unsatisfied constraints\x00unsupported operation\x00user error\x00user interrupt\x00val\x00valDig: Bad base\x00value\x00vital cotidiana y sus consecuencias en la existencia del hombre. En la \x00w3-animate-left\x00w3-animate-right\x00wait\x00wbr\x00width\x00width:100%\x00width:20%;height:20%;float:left;margin-right:5%;margin-bottom:200%\x00width:80%\x00withElem: not found\x00work\x00works\x00writable\x00writable (append)\x00{\x00{handle: \x00|\x00}\x00~\x00~#\x00~P#\x00~R#\x00\xa9 Maria Torija 2017")();
 function h$ghczmprimZCGHCziTypesziKindRepTYPE_con_e()
 {
   return h$rs();
@@ -32161,7 +32161,7 @@ function h$$eW()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23312, h$$b, a);
+  h$l3(23310, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$eX()
@@ -32176,7 +32176,7 @@ function h$$eY()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22914, h$$b, a);
+  h$l3(22912, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$eZ()
@@ -32190,7 +32190,7 @@ function h$$e0()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23617, h$$b, a);
+  h$l3(23615, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$e1()
@@ -32218,7 +32218,7 @@ function h$$e4()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23613, h$$b, a);
+  h$l3(23611, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$e5()
@@ -34827,7 +34827,7 @@ function h$$ma()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22064, h$$b, a);
+  h$l3(22062, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$mb()
@@ -34842,14 +34842,14 @@ function h$$mc()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22054, h$$b, a);
+  h$l3(22052, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$md()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22838, h$$b, a);
+  h$l3(22836, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$me()
@@ -34864,7 +34864,7 @@ function h$$mf()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22076, h$$b, a);
+  h$l3(22074, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$mg()
@@ -35305,7 +35305,7 @@ function h$baseZCSystemziPosixziInternalsziioezuunknownfiletype1_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23218, h$$b, a);
+  h$l3(23216, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$baseZCSystemziPosixziInternalszifileType2_e()
@@ -35742,7 +35742,7 @@ function h$$m7()
 function h$baseZCGHCziUnicodezizdwlvl_e()
 {
   h$p1(h$$m7);
-  h$l4(h$c1(h$$m8, h$r2), 23088, h$$b, h$r1.d1);
+  h$l4(h$c1(h$$m8, h$r2), 23086, h$$b, h$r1.d1);
   return h$ap_2_3_fast();
 };
 function h$$nm()
@@ -40001,7 +40001,7 @@ function h$$sD()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21258, h$$b, a);
+  h$l3(21256, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$sE()
@@ -40016,7 +40016,7 @@ function h$$sF()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21225, h$$b, a);
+  h$l3(21223, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$sG()
@@ -40030,7 +40030,7 @@ function h$$sH()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22827, h$$b, a);
+  h$l3(22825, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$sI()
@@ -43193,7 +43193,7 @@ function h$baseZCGHCziIOziFDzizdfIODeviceFD17_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21974, h$$b, a);
+  h$l3(21972, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$wS()
@@ -44523,21 +44523,21 @@ function h$$xV()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21905, h$$b, a);
+  h$l3(21903, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$xW()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23074, h$$b, a);
+  h$l3(23072, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$xX()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23260, h$$b, a);
+  h$l3(23258, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$xY()
@@ -44572,35 +44572,35 @@ function h$$x2()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21741, h$$b, a);
+  h$l3(21739, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$x3()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22808, h$$b, a);
+  h$l3(22806, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$x4()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23236, h$$b, a);
+  h$l3(23234, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$x5()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23282, h$$b, a);
+  h$l3(23280, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$x6()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21610, h$$b, a);
+  h$l3(21608, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$x7()
@@ -44621,14 +44621,14 @@ function h$$x9()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21886, h$$b, a);
+  h$l3(21884, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$ya()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21872, h$$b, a);
+  h$l3(21870, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$yb()
@@ -44960,7 +44960,7 @@ function h$$yu()
 };
 function h$$yt()
 {
-  h$l4(h$c1(h$$yu, h$r1.d1), 23615, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
+  h$l4(h$c1(h$$yu, h$r1.d1), 23613, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
   return h$ap_2_3_fast();
 };
 function h$$ys()
@@ -44980,7 +44980,7 @@ function h$$yr()
 };
 function h$$yq()
 {
-  h$l4(h$c1(h$$yr, h$r1.d1), 23615, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
+  h$l4(h$c1(h$$yr, h$r1.d1), 23613, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
   return h$ap_2_3_fast();
 };
 function h$$yp()
@@ -44998,12 +44998,12 @@ function h$$yo()
   h$sp -= 2;
   if((a.f.a === 1))
   {
-    h$l4(h$c2(h$$ys, b, a.d1), 23603, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
+    h$l4(h$c2(h$$ys, b, a.d1), 23601, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
     return h$ap_2_3_fast();
   }
   else
   {
-    h$l4(h$c2(h$$yp, b, a.d1), 23603, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
+    h$l4(h$c2(h$$yp, b, a.d1), 23601, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
     return h$ap_2_3_fast();
   };
 };
@@ -45203,7 +45203,7 @@ function h$baseZCGHCziIOziExceptionzizdfExceptionBlockedIndefinitelyOnSTM1_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22986, h$$b, a);
+  h$l3(22984, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$yR()
@@ -45315,7 +45315,7 @@ function h$baseZCGHCziIOziExceptionzizdfExceptionBlockedIndefinitelyOnMVar1_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22937, h$$b, a);
+  h$l3(22935, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$yZ()
@@ -47915,7 +47915,7 @@ function h$baseZCGHCziIOziEncodingziFailurezirecoverEncode6_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21844, h$$b, a);
+  h$l3(21842, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$baseZCGHCziIOziEncodingziFailurezirecoverEncode4_e()
@@ -47937,7 +47937,7 @@ function h$baseZCGHCziIOziEncodingziFailurezirecoverDecode6_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21830, h$$b, a);
+  h$l3(21828, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$baseZCGHCziIOziEncodingziFailurezirecoverDecode4_e()
@@ -48404,7 +48404,7 @@ function h$$AO()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(20994, h$$b, a);
+  h$l3(20993, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$baseZCGHCziForeignPtrzimallocForeignPtrBytes2_e()
@@ -50160,7 +50160,7 @@ function h$$Dc()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21358, h$$b, a);
+  h$l3(21356, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$Dd()
@@ -51411,7 +51411,7 @@ function h$baseZCForeignziMarshalziAlloczimalloc3_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(20903, h$$b, a);
+  h$l3(20902, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$baseZCForeignziMarshalziAlloczimalloc1_e()
@@ -51426,7 +51426,7 @@ function h$baseZCForeignziMarshalziAlloczicalloc3_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(21545, h$$b, a);
+  h$l3(21543, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$EN()
@@ -54175,12 +54175,12 @@ function h$ghcjszmprimZCGHCJSziPrimzizdfExceptionWouldBlockExceptionzuzdctoExcep
 };
 function h$ghcjszmprimZCGHCJSziPrimzizdfShowWouldBlockExceptionzuzdcshowsPrec_e()
 {
-  h$l3(23050, h$$b, h$r1.d1);
+  h$l3(23048, h$$b, h$r1.d1);
   return h$ap_2_3_fast();
 };
 function h$ghcjszmprimZCGHCJSziPrimzizdfShowWouldBlockException1_e()
 {
-  h$l4(h$r3, 23050, h$$b, h$r1.d1);
+  h$l4(h$r3, 23048, h$$b, h$r1.d1);
   return h$ap_2_3_fast();
 };
 function h$ghcjszmprimZCGHCJSziPrimzizdfShowWouldBlockExceptionzuzdcshowList_e()
@@ -54257,7 +54257,7 @@ function h$ghcjszmprimZCGHCJSziPrimzizdfExceptionWouldBlockException1_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23050, h$$b, a);
+  h$l3(23048, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$ghcjszmprimZCGHCJSziPrimzizdfExceptionWouldBlockExceptionzuzdcshow_e()
@@ -56793,7 +56793,7 @@ function h$$JJ()
 function h$$J2()
 {
   h$bh();
-  h$l3(21539, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21537, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$J1()
@@ -56954,7 +56954,7 @@ function h$$Km()
 function h$$Kl()
 {
   h$bh();
-  h$l3(23568, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(23566, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Kk()
@@ -57321,7 +57321,7 @@ function h$$K2()
 function h$$K1()
 {
   h$bh();
-  h$l3(21923, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21921, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$K0()
@@ -57562,7 +57562,7 @@ function h$$L1()
 function h$$L0()
 {
   h$bh();
-  h$l3(23455, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(23453, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$LZ()
@@ -57743,7 +57743,7 @@ function h$$LB()
   --h$sp;
   if((a.f.a === 1))
   {
-    h$l3(21628, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+    h$l3(21626, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
     return h$ap_1_2_fast();
   }
   else
@@ -57759,7 +57759,7 @@ function h$$LA()
   h$sp -= 2;
   if(a)
   {
-    h$l3(21628, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+    h$l3(21626, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
     return h$ap_1_2_fast();
   }
   else
@@ -57994,7 +57994,7 @@ function h$$MF()
 function h$$ME()
 {
   h$bh();
-  h$l3(21350, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21348, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$MD()
@@ -58020,7 +58020,7 @@ function h$$MB()
 function h$$MA()
 {
   h$bh();
-  h$l3(21539, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21537, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Mz()
@@ -58241,7 +58241,7 @@ function h$$MJ()
 function h$$Nd()
 {
   h$bh();
-  h$l3(21196, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21195, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Nc()
@@ -58341,7 +58341,7 @@ function h$$Nj()
 function h$$Ni()
 {
   h$bh();
-  h$l3(22856, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(22854, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Nh()
@@ -58438,7 +58438,7 @@ function h$$NH()
 function h$$NG()
 {
   h$bh();
-  h$l3(21350, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21348, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$NF()
@@ -58464,7 +58464,7 @@ function h$$ND()
 function h$$NC()
 {
   h$bh();
-  h$l3(21539, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21537, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$NB()
@@ -58624,7 +58624,7 @@ function h$$N2()
 function h$$N1()
 {
   h$bh();
-  h$l3(22645, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(22643, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$N0()
@@ -58699,7 +58699,7 @@ function h$$OF()
 function h$$OE()
 {
   h$bh();
-  h$l3(21266, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21264, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$OD()
@@ -58711,7 +58711,7 @@ function h$$OD()
 function h$$OC()
 {
   h$bh();
-  h$l3(22739, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringUtf8zh);
+  h$l3(22737, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringUtf8zh);
   return h$ap_1_2_fast();
 };
 function h$$OB()
@@ -58790,7 +58790,7 @@ function h$$Oq()
 function h$$Op()
 {
   h$bh();
-  h$l3(21637, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21635, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Oo()
@@ -58814,7 +58814,7 @@ function h$$Om()
 function h$$Ol()
 {
   h$bh();
-  h$l3(23335, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(23333, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Ok()
@@ -58974,7 +58974,7 @@ function h$$O3()
 function h$$O2()
 {
   h$bh();
-  h$l3(21350, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21348, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$O1()
@@ -59000,7 +59000,7 @@ function h$$OZ()
 function h$$OY()
 {
   h$bh();
-  h$l3(21539, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21537, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$OX()
@@ -59286,7 +59286,7 @@ function h$$Rt()
 function h$$Rs()
 {
   h$bh();
-  h$l3(21153, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21152, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Rr()
@@ -59388,7 +59388,7 @@ function h$$Rd()
 function h$$Rc()
 {
   h$bh();
-  h$l3(21153, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21152, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Rb()
@@ -59570,7 +59570,7 @@ function h$$QL()
 function h$$QK()
 {
   h$bh();
-  h$l3(21153, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21152, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$QJ()
@@ -59852,7 +59852,7 @@ function h$$P4()
 function h$$P3()
 {
   h$bh();
-  h$l3(21173, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21172, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$P2()
@@ -59980,7 +59980,7 @@ function h$$PJ()
 function h$$PI()
 {
   h$bh();
-  h$l3(21153, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21152, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$PH()
@@ -60042,7 +60042,7 @@ function h$$Pz()
 function h$$Py()
 {
   h$bh();
-  h$l3(23466, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(23464, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Px()
@@ -60108,7 +60108,7 @@ function h$$RF()
 function h$$Sf()
 {
   h$bh();
-  h$l3(21350, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21348, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Se()
@@ -60133,7 +60133,7 @@ function h$$Sc()
 function h$$Sb()
 {
   h$bh();
-  h$l3(23533, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(23531, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Sa()
@@ -60344,7 +60344,7 @@ function h$$RG()
 function h$$TO()
 {
   h$bh();
-  h$l3(23630, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringUtf8zh);
+  h$l3(23628, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringUtf8zh);
   return h$ap_1_2_fast();
 };
 function h$$TN()
@@ -60381,7 +60381,7 @@ function h$$TJ()
 function h$$TI()
 {
   h$bh();
-  h$l3(21350, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21348, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$TH()
@@ -60419,7 +60419,7 @@ function h$$TD()
 function h$$TC()
 {
   h$bh();
-  h$l3(21628, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21626, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$TB()
@@ -60555,7 +60555,7 @@ function h$$Th()
 function h$$Tg()
 {
   h$bh();
-  h$l3(22645, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(22643, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Tf()
@@ -60699,7 +60699,7 @@ function h$$SU()
 function h$$ST()
 {
   h$bh();
-  h$l3(21732, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21730, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$SS()
@@ -60873,7 +60873,7 @@ function h$$Ss()
 function h$$Sr()
 {
   h$bh();
-  h$l3(21138, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21137, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Sq()
@@ -62007,7 +62007,7 @@ function h$$V5()
 function h$$V4()
 {
   h$bh();
-  h$l3(21539, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21537, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$V3()
@@ -62072,7 +62072,7 @@ function h$$VV()
   --h$sp;
   if((a.f.a === 1))
   {
-    h$l3(21628, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+    h$l3(21626, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
     return h$ap_1_2_fast();
   }
   else
@@ -62523,7 +62523,7 @@ function h$$Xd()
 function h$$Xc()
 {
   h$bh();
-  h$l3(22705, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(22703, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$Xb()
@@ -62535,7 +62535,7 @@ function h$$Xb()
 function h$$Xa()
 {
   h$bh();
-  h$l3(21862, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
+  h$l3(21860, h$$b, h$ghczmprimZCGHCziCStringziunpackCStringzh);
   return h$ap_1_2_fast();
 };
 function h$$W9()
@@ -62600,7 +62600,7 @@ function h$mainZCMainzileftst_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23407, h$$b, a);
+  h$l3(23405, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$Xi()
@@ -62662,7 +62662,7 @@ function h$mainZCMainzirightst_e()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(23423, h$$b, a);
+  h$l3(23421, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$Xu()
@@ -63166,7 +63166,7 @@ function h$$abp()
   var a = h$r1.d1;
   h$bh();
   h$p1(h$$abq);
-  h$l3(21952, h$$b, a);
+  h$l3(21950, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$abu()
@@ -63547,9 +63547,9 @@ function h$transientzm0zi6zi4zmHIurDnpty3FGRRsgZZCG9tOZCTransientziInternalsziru
   h$bh();
   var b = new h$MutVar(a);
   var c = b;
-  var d = h$strlen(h$$b, 23119);
+  var d = h$strlen(h$$b, 23117);
   var e = d;
-  h$r1 = h$c5(h$bytestringzm0zi10zi8zi2zmJNdgga9938ECdWPoxsaK2AZCDataziByteStringziInternalziPS_con_e, h$$b, 23119,
+  h$r1 = h$c5(h$bytestringzm0zi10zi8zi2zmJNdgga9938ECdWPoxsaK2AZCDataziByteStringziInternalziPS_con_e, h$$b, 23117,
   h$c1(h$baseZCGHCziForeignPtrziPlainForeignPtr_con_e, c), 0, (e | 0));
   return h$rs();
 };
@@ -66796,7 +66796,7 @@ function h$$agS()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22190, h$$b, a);
+  h$l3(22188, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$agT()
@@ -67375,7 +67375,7 @@ function h$ghcjszmperchzm0zi3zi3zi3zmBDCF5GCI6apyjJtCwtXxiZCInternalziPerchzizdf
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22212, h$$b, a);
+  h$l3(22210, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$ghcjszmperchzm0zi3zi3zi3zmBDCF5GCI6apyjJtCwtXxiZCInternalziPerchzizdfFunctorPerchMzuzdczlzd_e()
@@ -67387,7 +67387,7 @@ function h$ghcjszmperchzm0zi3zi3zi3zmBDCF5GCI6apyjJtCwtXxiZCInternalziPerchzizdf
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22248, h$$b, a);
+  h$l3(22246, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$ghcjszmperchzm0zi3zi3zi3zmBDCF5GCI6apyjJtCwtXxiZCInternalziPerchzizdfApplicativePerchMzuzdczlztzg_e()
@@ -70516,7 +70516,7 @@ function h$$alo()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22827, h$$b, a);
+  h$l3(22825, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$alq()
@@ -70827,14 +70827,14 @@ function h$$alZ()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22018, h$$b, a);
+  h$l3(22016, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$al0()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22007, h$$b, a);
+  h$l3(22005, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$al1()
@@ -70874,7 +70874,7 @@ function h$$al3()
 function h$$al2()
 {
   h$p1(h$$al3);
-  h$l4(h$c1(h$$al4, h$r2), 21459, h$$b, h$r1.d1);
+  h$l4(h$c1(h$$al4, h$r2), 21457, h$$b, h$r1.d1);
   return h$ap_2_3_fast();
 };
 function h$$al6()
@@ -71228,7 +71228,7 @@ function h$$amP()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l3(22166, h$$b, a);
+  h$l3(22164, h$$b, a);
   return h$ap_1_2_fast();
 };
 function h$$amQ()
@@ -71668,7 +71668,7 @@ function h$$anv()
 function h$axiomzm0zi4zi7zmG6Xj9LjR1icLTuFxO47i4JZCGHCJSziHPlayziViewzizdwlvl_e()
 {
   h$p1(h$$anv);
-  h$l4(h$c1(h$$anw, h$r2), 23543, h$$b, h$r1.d1);
+  h$l4(h$c1(h$$anw, h$r2), 23541, h$$b, h$r1.d1);
   return h$ap_2_3_fast();
 };
 function h$$anx()
@@ -74042,7 +74042,7 @@ function h$$aq1()
 {
   var a = h$r1.d1;
   h$bh();
-  h$l4(h$c1(h$$aq2, a), 21459, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
+  h$l4(h$c1(h$$aq2, a), 21457, h$$b, h$ghczmprimZCGHCziCStringziunpackAppendCStringzh);
   return h$ap_2_3_fast();
 };
 function h$$aq0()
@@ -87449,7 +87449,7 @@ h$axiomzm0zi4zi7zmG6Xj9LjR1icLTuFxO47i4JZCGHCJSziHPlayziViewzinorender_e,
 h$axiomzm0zi4zi7zmG6Xj9LjR1icLTuFxO47i4JZCGHCJSziHPlayziViewzibuildHandler_e, h$$aEz,
 h$axiomzm0zi4zi7zmG6Xj9LjR1icLTuFxO47i4JZCGHCJSziHPlayziViewzieventName_e, h$$aEA], h$staticDelayed, [],
 "!!%! #&# !!%! $$! !#'! #%$ !!%! ### !!%! $$! !#'! #!$ !'3! #!* !#'! #!$ !!'! #!$ #$! ##! #!! #%! !!#! #!! ##! #!! !!%! #!# #!! !#'! ##$ !!%! #!# !!%! $$! !+7! #!, !*5! #!+ !)3! #!* !(1! #!) !'\/! #!( !&-! #!' !%+! #!& !$)! #!% !#'! #!$ #!! !#'!!U$$# $$$ $$% $$% $$! !$)!#Vs$$$ $$% $$% $$! !#'! $$# $$$ !#'! $$# $$$ !$*# $$! !#(# $$! !)3! #!* !!%!#VY!#(#!V!#(#!Y!#'! #!$ !!%! $$! !#'! !#'!!a$$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !#)! !!&&  $ !!'! !!&%  $ !!'! !!&%  $  $  $  $ !!%! !#'!%x|-K|-L|#-$$# $$$ $$% $$$  $!x!$)!&yx|#F|-L|-K$$$ $$& $$$ $$% $$$ $$$ !#($#|-K|-L$$% $$% $$$ !!&#%9|#H|#bz!!&# $$# !!&$!9$$$  #!|#H!!&# $$# !!&$ !!&#!|#b!!&# !!&# $$#  #!z!#(##{7!!&%!{$$% $$& $$& $!%!{!!&$  $!7 #!7!!&# $$! !!&$&| #| %|#f| $|##!!&#&| #| %|#f| $|##$$! !!&$$| #| %|#f$$! !!&% !!&# !!&# !!&#&|#G|#U|#%|#*|-p!!&# $$# !!&# $$#  #'|#^|#G|#U|#%|#*|-p$$# !!&# $$# !!&# $$#  #%|#G|#U|#%|#*$$! !!&##|#G|#U ##|#G|#U!!&#&|#G|#U|-p|#%|#*$$! !!&$$|#G|#U|-p $$|#G|#U|-p$$# $$! !!&# !!%!#|#)|#(!!&$ $$$  #!|#) #!|#(!!&$!| t$$! !!&#  #!| t!!&$!| v$$! !!&#  #!| v!!&$!| x$$! !!&#  #!| x!!&$!| {$$! !!&#  #!| {!!&$!|!#$$! !!&#  #!|!#!!&$!|!&$$! !!&#  #!|!&!!&$!|!)$$! !!&#  #!|!)!!&$!|!,$$! !!&#  #!|!,!!&$!|!\/$$! !!&#  #!|!\/!!&$!|!2$$! !!&#  #!|!2!!&$!|!5$$! !!&#  #!|!5!!&$!|!8$$! !!&#  #!|!8!!&$!|!;$$! !!&#  #!|!;!!&$!|!>$$! !!&#  #!|!>!!&$!|!A$$! !!&#  #!|!A!!&$!|!D$$! !!&#  #!|!D!!&$!|!G$$! !!&#  #!|!G!!&$!|!J$$! !!&#  #!|!J!!&$!|!M$$! !!&#  #!|!M!!&$!|!P$$! !!&#  #!|!P!!&$!|!S$$! !!&#  #!|!S!!&$!|!V$$! !!&#  #!|!V!!&$!|!Y$$! !!&#  #!|!Y!!&$!|!]$$! !!&#  #!|!]!!&$!|!`$$! !!&#  #!|!`!!&$!|!c$$! !!&#  #!|!c!!&$!|!f$$! !!&#  #!|!f!!&$!|!i$$! !!&#  #!|!i!!&$!|!l$$! !!&#  #!|!l!!&$!|!o$$! !!&#  #!|!o!!&$!|!r$$! !!&#  #!|!r!!&$!|!u$$! !!&#  #!|!u!!&% $$! !!&$!|!{$$! !!&#  #!|!{!!&$!|!x$$! !!&#  #!|!x #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  # !!&# $$! !!%!#|#%|#*!!&# $$#  ##|#%|#*$$! !!&# !!&# $$! !!%!$|#)|#*|#(!!&# $$# !!&$ $$$  ##|#)|#*$$! !!&#!|#) ##|#(|#*$$! !!&#!|#(!#'!$7|#+|+;!!&$!|+;!$*$#7|#+$$& $$' $$' $!'!7$!'!7 #!7 #!7 #!7 #!7 #!7 #!7$$& !!&#  ' !!&$  #!7!!&# $$#  $  #  $  #  #  #  #  #  #  #  #  #  #  # !!%!!|#D$$! !!&%  # !!&#Q6| j|#`|!v|# |!s|!p|!m|!j|!g|!y|!N|!K|!H|!E|!B|!?|!<|!9|!6|!3|!0|!-|!*|!'|!$|! | y| &| '|#f|+#|-r| s|-o|#U|#*|-s| r| p| n|!d|!a|!^|!Z|!W|!T|!Q!!&, $$,  *H6| j|#`|#^|!v|# |!s|!p|!m|!j|!g|!y|!N|!K|!H|!E|!B|!?|!<|!9|!6|!3|!0|!-|!*|!'|!$|! | y| &| '|#f|+#|-r| s|-o|#U|#*|-s$$*  *>6| j|#`|#^|!v|# |!s|!p|!m|!j|!g|!y|!N|!K|!H|!E|!B|!?|!<|!9|!6|!3|!0|!-|!*|!'|!$|! | y!!&# $$#  #$6| j|#`!!&#!6!!&# $$# !!&B  #!|!v #!|#  #!|!s #!|!p #!|!m #!|!j #!|!g #!|!y #!|!N #!|!K #!|!H #!|!E #!|!B #!|!? #!|!< #!|!9 #!|!6 #!|!3 #!|!0 #!|!- #!|!* #!|!' #!|!$ #!|!  #!| y!!&#)|+#|-r6| s|-o|#U|#*|-s$$! !!&$'|+#|-r6| s|-o|#U$$# $$$  ##|+#|-r$$!  #!|-s$$!  #!| r #!| p #!| n #!|!d #!|!a #!|!^ #!|!Z #!|!W #!|!T #!|!Q #  # !!&#1|#C|#e|  |#&|#f|#B[|&M|#V7|#Im|+;{|#H|#L!!&# $$#  #1|#C|#e|#^|  |#&|#f|#B[|&M|#V7|#Im|+;{|#H!!&# $$#  #0|#C|#e|#^|  |#&|#f|#B[|&M|#V7|#Im|+;{!!&# $$#  #.|#C|#e|#^|  |#&|#f|#B[|&M|#V7|#Im!!&#%7|#Im|&M$$$  #+|#C|#e|#^|  |#&|#f|#B[|&M|#V!!&#&|#B[|&M|#V|#e$$$ $$! !!&$$|#B[|&M$$$  #'|#C|#e|#^|  |#&|#f!!&##|#C|#e$$# $!$#|#C|#e$$! !!&$  #$|  |#&|#f$$!  ##|+;{!!&$ $$$ !!&# $$#  $  #!|#H!!&# $$# !#(# $$$ !!&# $$# $$# !!&# $$#  $  #!|#L#(! !!%! #'# !!%! #&# !!%! #%# !!%! #$# !!%! ### !!%! #!# !$)! ##% !#'! #!$ !#($#y|&G$$$  #!|&G$$! !!&%#|#J|$;$$# $$! $$$ $$! !!%!!|#W$$! $$# $$$  #!|#W!!&#!|#b!!&#!|#b!!&#  #  # !#'!!|#]$$#  $!|#]$$# $$# $$# !#'!%|#]|+%|#^|#c$$$  $!|#^$$% !!&$!|#^$$#  $ $!$%|#]|+%|#^|#c$$#  $!|#^$$#  $!|+%!!&$#|#]|+% %#|#]|+% $!|#]$$# !!&$#|+%|#] %#|+%|#] $!|#]!!&$#|+%|#] %#|+%|#]$$$ $$# $!$%|#^|#c|+%|#]!!&$#|+%|#] %#|+%|#]$$# !!&$!|#^$$#  $ !!&$!|#^$$# !!&$!|#^ $ !#'!%|+%|#]|#^|#_$$# $$! !!&$#|+%|#]$$$ $$% $$$ $$#  $ $$#  $!|#_!!&$!|#_$$# !!&$!|#_$$# !!%!$|#^|#`|#g$$! $$# !!&$!|#^$$#  $  #!|#`!#(#!|#a!!&#  $!|#a!#'!#|#bR$$# $$$ !!&#  $!|#b!!&#  $!|#b!!&#  $!|#b!!&#  $!|#b # !#'! !!&% !$*$ $$& $$& $$' $$' !!&#  & !#'!!7!!&$ !#($!7$$% $$& !!&#  & !!&$ !$)!$|#a|#_|#h!!&% !%,$#|#a|#_$$' !!&$!|#_$$& $$' $$&  #!|#h!!%! !!&# !!%! #&# !#'! #%$ #$! !!%! ### !!%! #!# !!&# !#&$  # !#&$  #  # !#&$  # !!&# !!%! $$! !$(#!R!#&#!R$$# $$% !$(#!R!#&#!R$$# $$& $$%!R$$$ !$($)|#t|#s|#v|+p|#q|#o|$,|+h!#&$*|#t|#s|#v|+p|#q|#o|$,|+n|+h$$$ $$' $!')|#t|#s|#v|+p|#q|#o|$,|+n!#&')|#t|#s|#v|+p|#q|#o|$,|+n!#&('|#t|#s|#v|+p|#q|#o$$( $$* $$' $$% !!$& !!$% !#%! $$!  #  #  $ !#&$)|){|$#|* |*!|*#|$ |#n|+p!#&#)|){|$#|* |*!|*#|$ |#n|+p$$# $$$ !!$% $$! !!&#  # !#&$&|-k|$'|$&|$%|+p!#&#&|-k|$'|$&|$%|+p$$# $$$  $!|-k!!$% $$!  !  !  ! !#+! !!'! #!$  $  $ $&!  #  #  #  #  # !!&# !!&#%|$:|*k|$\/|$v$$!  ##|$\/|$v$&! !#&##|$F|$?!!$##|$F|$?!#&# !$($2|$D|'Z|$E|+ |(g|,(|*c|$B|+o|$C|(p|$H|*\/|$@|$A|),|$M$$$ $$$ $$$ $$$ $!! $!$,|$D|'Z|$E|+ |(g|,(|*c|$B|+o|$C|(p$$# $$& $$& $$$ $$#  &(|$D|'Z|$E|+ |(g|,(|*c$$% $$% $$% $$$ $$& $$% $$% $$% $$$ $$% $$% $!$#|$E|+ !!$$#|$E|+ $$$ $$# !!$$#|$E|+ $$$ $$# !!$$#|$E|+ $$$ $$# !!$$#|$E|+ $$$ $$# !!$$#|$E|+ $$$ $$# !!$$#|$E|+ $$$ $$# !#&#(|$E|$B|+o|$C|(g|,(|*c$$# $$$ $$$ $$# !#&#$|$E|$B|+o!#&$!|$E$$$ $$%  #  # !#%!!|$G$$! !#%!#|$H|*\/$!!  # !#&# !#&# !!$# !!$& !#%!!R$$! !!$& !#&# !#&# !%)!!R$$$ $$% $$% !$'! $$# $$$ !!%!!|$R$$!  #!|$R!!%! #$# !$)! ##% #!! !(1! #!) !$*$)|+%|$Z|$[|$X|$Y|$W|$]|+$$$' $$( $$' $$( $$( $!('|+%|$Z|$[|$X|$Y|$W %&|+%|$Z|$[|$X|$Y $%|+%|$Z|$[|$X ##|$X|+% #  # !!$$!R!!$# !#(# !#'!$t|$a|%e$$# $$$  $!|$a $!|$a!#'!$|%x|$b|$j$$# $$$  $!|$b!#'!$|%x|$c|$j$$# $$$  $!|$c!$*# !#(# !#'!&|$d|$f|-r|$p|-l$$# $&$ $$% $&!  %$|$d|$f|-r$$$ $&!  $!|$f!#'!#|$g|-l$$# $&$  $!|$g!#(#'|$g|$t|-l|$h|-L7$$$ $$$ $&# $&$ $$&  $!|$g $!|$g $  # !#($ !$*#!|&% #!|&% #  #  #!6!#($(|$d|$f|-r|$e|-l|$q|$h$$$ $$# $&# $&$ $$%  %$|$d|$f|-r$$$ $&!  $!|$f$$$  $!|$f!#($$|$r|-p|%c$$$  $#|$r|-p$$# $&! !$*%#|%q|%m$$$  $#|$s|%q$&! !$*$!|%q $#|%d|%q$&! !#(%!|%e $#|%e|$y!$)!!|$w$$#  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  # !#($  #!|$`$&!  $!|$`$&!  $!|$`$&! !#(%$|&#|&d|%d $#t|%d$&!  #!t$$! $$#  #!t$$! $$#  ##|&#|&d # !!%!%|$z|%e|$y|%f$$!  ##|$z|%e!$)!$|%k|+%|%j$$# !!%!#|%k|%j$$!  #  # !#'!(|%k|+%|%j|%x|%w|%vt$$#  %&|%k|+%|%j|%x|%w$$#  $&|%k|+%|%j|%x|%w!!&$%|%k|+%|%j|%x$$$  %$|%k|+%|%j$$$  $  $ !#(#!|$a $#|$a|%n!$)!#|%t|+%$$# !!%!!|%t$$!  # !#'!'|%t|+%|%x|%w|%vt$$#  %%|%t|+%|%x|%w$$$  $%|%t|+%|%x|%w!!&$$|%t|+%|%x$$$  %#|%t|+%$$$  $ !!%!$|$l|$m|&%!!&# !!&#!|$l!#(#!|$m #!|&%!$)! #!% !$)!%|%x|%w|%vt$$$  &#|%x|%w %#|%x|%w!!&%!|%x$$%  &  $ !!%! $$! !!%! $$! !!%! $$! !#%! $$! !!%! #!# !!%!!|-s$$!  # !!%!#|#b|#K!!&#!|#b!!&#  #!|#K!!&# $$# !#(# $$! !#($  $ !!%!%|#^|#b|#K|&\/!!&#$|#^|#b|#K!!&#!|#b $ !!&#  #!|#K!!&# $$#  #!|&\/!$)!$|#^|&3|&2!#(#!|&2$$! !!&$#|#^|&3!!&%#|#^|&3$$#  %!|&3$$!  $ !$)! !!&% !$*$ $$& $$' $!& !!&#  & !!&# !$)!#|&2|#[!!&# $$#  %#|&2|#[!!&$!|&2$$! !#(# !!&# $$#  $ !!&#*6|#[|#^9|&+|+$|#K|#b7!#($)6|#[|#^9|&+|+$|#K|#b!!&#!|#b!!&#  %(6|#[|#^9|&+|+$|#K!!&##|&+|+$$$# $$#  %%6|#[|#^9$$#  %#6|#[!!&$!6!!&$ !#($%|#K67|#b!!&#!|#b!!&#  &$|#K67!!&% $$% $$% $$& $$# $$$ $$#  %!6!!&$!6!!&$  #!7 #!|#[!!'! #!$ !#'! $$# $$# !#'! $$# $$# !#'! $$# $$# !!%! $$! !!%! $$! !!%!$|&<|&;|&=$$! !!&# $$! !(1! #!) !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! #!# !#'!!|&G$$# !#'!!|&H$$# $$%  $!|&H!#'!!|&I$$# $$%  $!|&I!#'!#|&J7$$# $$&  # $$!  # $$!  $!|&J$&! !#'!#|&K7$$# $$&  # $$!  # $$!  $!|&K$&! !#'!!|&L$$# !$)!#|&Ms$$$ $$% !#'!#|&N|&c$$# !!%!!|&t$$!  #  $  #  $  #  #  #  $  #  #  %  #  %  #  $  $  $ !#($  # !!&$#|*j|&Y$$!  ##|&Y|+%!#'!!|&d$$#  $ !#(# $&! !#'!#o|&Q$$# !#($!o$$%  %!o!#'!#p|&S$$# !#($!p$$%  %!p!#'!!|&W!!&$!|&W$$$ $$%  $ !!&#$|&B|&_|&E #!|&B ##|&_|&E!!&#$|&C|&`|&E #!|&C ##|&`|&E!#'!#|&q|&b$$# !$)! !#($ $$% $$& $$$ !$)! !#($ $$%  % !!&# $$! !!%! $$!  $ !!%!!|-k$$! !!'! #!$ !!%! #!# !#'! $$# $$$ !#%! !$'! $$# !#&# !#&# !#'! #!$ !#'! #!$ !#'! $$# !1C! #!2 !1C! $$1 $$1 $$1 $$1 $$1 #!! !!%! #$# ##! #!! #%! #!! !&+!'|'3|)\/|,(|*c|'4|(g$$& $$' !#&''|'3|)\/|,(|*c|'4|(g$!' $$& $$) $$) $$% $$$ $$' $$' $$' $!& !(\/!!|(F (!|(F $ $$# $$!  #  # !&+!!|'3!!$&!|'3$$# $$# $!#  #  $ !&,#(|'K|*)|*-|'I|';|'C|'@!#&#(|'K|*)|*-|'I|';|'C|'@$$# $$* $$* $$* $$# $$* $$, $$) $$+ $$\/ $$\/ $$0 $$( $$(  $ $$#  # $$! $!($|*)|*-|'I$$( $$% $$#  #!|*-$$! $$# !%)!!|'<$$$  #  $  #  $ !-9!*R|'1|'5|*&|*8|'\/|'J|**|+@$$$ $$$ $$& $$% $$% $$%!|+@$$% $$$ $$$ $$$ !$(-)R|'1|'5|*&|*8|'\/|'J|**$$0 $$1 $$1  #!|'5$$! $&0#R|'1$!% $$$  %  1 $$0 $$0  # $$!  # $$!  # $$! !#%!#|*(R$$! $$% $$% $$% $$#  #  $ !#%!'R|)z|*$|-s|'H|*%$$! $$% $$, $$, $$(  $!|-s $ !&+!!|)i$$!  # $$! !$(%!|)i$$% $$& $$( $$& $$& $$# $$# !!&( !!$#,|+@|'R|'26|'0|'N|(E|'X|(A|(@|'D$$! $$!  # !!$#,|+@|'R|'29|'0|'P|(D|'X|(A|(@|'D$$! $$!  # !$'!!|'S$$# !$'!$R|'L|*($$$ $$$ $$* $$* $$* $$( $!'#R|'L$$& $!!  #!|'L$$% $$% $$% $$$ $$$ $$$ $!!  #!|'L$!!  #!|'L$$$ $$$ $$$ $!!  #!|'L$!!  #!|'L %  $#7|'W$$!  # $$!  # $$!  # !#&% !#&# !%,$#|'_R$$& $$&  #  #  #  #  # !'\/!#|+q|+r$$# $$!  # $$! !!$(!|+r$$# !!%! $$!  # !%)!%|'j|'i|+p|*m$$$ $$$%|'j|'i|+p|*m$$!  #!|*m$$! !!$% $$! !%)!!|'k$$$ $$$ !!&#  # !#&%!R$$! !!$# $$! !#%!!|'o$$! !#%! $$! !#%!!|$$$$! $$! $$!  # $$! !!&$  # !%*#%|'t|'s|+pR$&$ $$% $$%%|'t|'s|+pR$$! !!$& $&! !%)!!|'u$$$  ! !!&$  # !#&%!|&u$$!  #!|&u!!$$ $&! !#%!!|'z$$! !#%!!|$($$! !#&$ !$(##|(!R$&# $$! !$'!!|(#$$# !$'!!|#x$$# !#%!#|#{|#z$$! !$'!!|#y$$#  # $$! !#%!!|$$$$! $$! $$! !#&$ !$'!!|()$$# !#%!!|(*$$! !#&$ !%)!!|(,$$$ !$'!!|(-$$# $$$ !$(# !'\/!#|+q|+r$$# $$!  # $$! !!$(!|+r$$#  # !)4$ $$)  * $$) !$'!!|(2$$# $$# !'\/!#|+q|(4!!$(#|+q|(4$$#  # !)4$!|+@$$) $$) !$'!!|(7$$# $$# !$'!!|*- #!|*-$$! !$'!!|'_$$# $$) $$' !#&$ !%+!!|(;$$! $$!  # $$! !!$&!|(;$$! !)4# $$)  * $$) !$'!!|(=$$# $$# !#'! #!$ !#'! $$# $$# !!&# !!&# !!&#  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  # !!%! $$!  # !#'!!|(k$$# !#($  $#7|)X$$! !!%!$|(g|,(|*c$$! $$# $$# $$# !#'!5|(L|+%|(M|(N|(O|(P|(Q|(R|(S|(T|(U|(V|(W|(X|(Y|(Z|([|(]|(^|(_$$#  # !'\/!%|+%t|(i|(j$$$  #!t$$# $$#  $$t|(j|+% #$t|(j|+% ##|(j|+% $$t|(j|+% #$t|(j|+% ##|(j|+% &$|+%t|(i$$%  %$|+%t|(i %$|+%t|(i $#|+%t$$#  $#|+%t #!t $#|+%t$$#  $#|+%t #!t!$)!!|(k$$# !!%!#7|(k$$!  $#7|)U$$! !$)!#|(y|+%$$# !#'!#|(y|+%$$# !#($  $#7|)S$$! !!%!$|(w|,(|*c$$! $$# $$# $$#  # !!%!!|(y$$! !$)!#|)'|+%$$# !#'!#|)'|+%$$# !#($  $#7|)R$$! !!%!$|)%|,(|*c$$! $$# $$# $$#  # !!%!!|)'$$!  $#7|)T$$! !!%!%|)+|,(|*c|)\/$$! $$# $$# $$# $$! $$# $$# $$#  $#7|)V$$!  % !'\/! #!( #4! #3! #2! #1! #0! #\/! #.! #-! #,! #*! #)! #(! #'! #%! #$! ##! #!! #!! #!! !#*#(|(b7|+%|(at|(`|&J$$# $&# $$$ $$% $&#$|+%|(at $$|+%|(at $#|+%|(a ##|(a|+% # !!&% !$'!!|)t$$# $$! !!$# !$'!!|)p$$# $$& !!$# !!$#  # !$'!$|)i|)k|)j$$# $$) !$(0$|)i|)k|)j$!3#|)i|)k$!3#|)i|)k$!4!|)i$!4!|)i$!4!|)i$!3!|)k$!5!|)i$!5!|)i$!5!|)i$!5 $!3#|)i|)k$!5!|)i$!5!|)i$!3!|)k$!4!|)i$!4!|)i$!3!|)k$!6!|)i$!6!|)i$!6 !#&# !$'!$|)j|)i|)k$$# $$) !$(0$|)j|)i|)k$!3!|)j!$)! #!% !&-! #!' #$! ##! #!! !!%! $$!  #  #  $  #  #  $  # $$!  # $$! !!$#!R!!$# !#&#!R # $$! !\/?! #!0 ##! #%! #$! ##! #!! !!%! $$! !!%! $$! !!%! $$! !'\/! #!( !!%! $$! !!%! $$! !!%! $$! !'1! #!) !&-! $$& $$( $$( $$( ##! #!! !#%!$|)W|*e|)Y #$|)W|*e|)Y #!|)Y!%)! $$$ $$$ $$# !!$#  $ !#&$ $$# !!$% $$$ $$$ $$# !!$#  $ !#&$ $$# $$$ $$$ $$# !!$#  $ !#&$ $$# !#&#  #  $ !#'! ##$ !#'! $$# !!%! #!# !!%! $$! #!! !)4##|+@|*- &!|*-$$% !$('!|+@$$& $$& $$( $$% $$% $!% $$$ $$( $$# $$# $$& $$# $$# !%)!-6|*9|+n|*.|*8|+_|+e|+]|+m|&G|)l|*0$$$ !#&$+6|*9|+n|*.|*8|+_|+e|+]|+m|&G$$% !#&&(6|*9|+n|*.|*8|+_|+e$$& $$% !#&&$6|*9|+n!#&(#6|*9$$( $$) $$$ $$$ !!&# $$# !$)!*|+%|+_|+d|*.|*-|*8|*3|)l|*0$$% $$% !#&%(|+%|+_|+d|*.|*-|*8|*3$$& $$'(|+%|+_|+d|*.|*-|*8|*3!#&%$|+%|+_|+d$$% $$$ $$$ $$& $$! $$# $$& $$$ $$% $$#  $!|+%$$# $$# $$$ $$% $$#  $!|+%!#&% !%4# !%3! !#+! #!& !#'! $$# $$$ !$*$#|+R|*A!#&%$|+R|*A|+n$$% !#&$!|+R$$$ !!&#&|*B|+`|+e|+U|+m$$# !#&$$|*B|+`|+e$$$ $$# $$! !!&#  #  # !!&$  #  # !&.#$t7|$v &%|+%t7|$v &%|+%t7|$v$$% $&%  %%|+%t7|$v %%|+%t7|$v$$$ $&$  $#|+%t $#|+%t #!t!!&##|*K|+% #$|*Kt|+%$$!  ##|*Kt #!|*K$$! !#'!#|+%|*V$$#  $#|+%|*V!#'!!|*M$$! !#'!#|+%|*V$$#  $#|+%|*V!!%!!|*O$$! !#($  $#7|*g$$! !!%!$|*T|,(|*c$$! $$# $$# $$# !!%!#|+%|*V$$! $$#  % !#'! #!$ !#'! #!$ !&-! #!' !!%! $$! !!%! $$! !#'!!|*e $!|*e!!%! $$! !#(#-|*L|*I|,3|,4|*J|$R|*H|+'7|&L|*F|*D$$$  %-|*L|*I|,3|,4|*J|$R|*H|+'7|&L|*F|*D $,|*L|*I|,3|,4|*J|$R|*H|+'7|&L|*F$$#  $$|*L|*I|,3$$! !!&$!|*L$$$  #!|*L $ $$!  ##|*I|,3 #&|*H|+'7|&L|*F$$!  #%|*H|+'7|&L$$! $$! !!%!#|*i|*h ##|*i|*h!#'!!|*h $!|*h #  $ !!$# !#%!\/R|*:|)x|*r7|*z|&'|*b|*x|*s|,(|*c|*q|*p$$! $$$ $$$ $$$ !#&#$R|*:|)x$$$ !#&#!R$$# $$$  $)7|*z|&'|*b|*x|*s|,(|*c$$$ $$$ $$# $$! $$#  $ !#%!!R$$!  #  $#7|*w$$!  %  # !#&# $$# !!%! #!#  # $$! !#&# !!&#$|*j7|$v$$!  ##7|$v$&! !#'!!|+$$$# $$$ $$% $$% $$! !#'!!|+%$$#  $!|+%!$)! !!&% $$%  $ !#'!!|+'$$#  $  $!|+'!%)! $$$ $$$  % !$'! $$# !!&# !$'! $$#  $ !$'! $$# !#%! !$'! $$# $$#  $ !%*# !$'! $$# !$'! $$# $$# !&-! #!' !&-! #!' !'\/! #!( !#'! #!$ !$)!  $ !#'! !!&# !$)!#R|+A$$$ !!%! $$! !!%! $$! !!%! ### #!! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! $$! !!%! !%*#!|+I$$$ $$% !%+!!|+J$$% !!&# !!&# !$(#  $ $$# $$$ !%)!!|+S$$$  $ $$# $$$ !$(#  $ $$# $$$ !%)!!|+S$$$  $ $$# $$$ !#&#!|*?$$# $$#  $!|*? # $$! !%.# $$%  # $$! !$'!!|+S$$# !!&# !!&# !$'! $$# $$$ !%)!!R$$$ $$% $$% !#%! $$! !$'!!R$$# $$$ !)3! #!* !!%! $$! !!%! $$! !%*##|+c|+f!$(%#|+c|+f$$# $$% !%)!#|+bR!$(%#|+bR$$& $$%  #  $  # !$'! $$# $$# !%)! $$$ $$$ $$# !%*# !$(# !$(#$R|+^|+m$$$ !#&$!R$$$ !$($!R$$% $$& $$' $$# !%)!#|+p|+r$$% $$& !$'!$|+@|+s|(F $$|+@|+s|(F $#|+@|+s!#&# !%,#!|*;$$( $$& $$! !!%!#|+t7$$! $$#  # $$!  # $$!  # $$!  # $$!  #!|+t$&!  #  # !#&#&R|+v|*:|+u|+t$$# !#&$%R|+v|*:|)x$$% $$$ $$# $$# $$# !#&#!R$$# $$$ !#&#!R$$# $$$  # $$!  #!|+t$&! !#(# $$# $$! !#'!!|*<$$# $$# $$# $$& $$& $$& !#'!!|*=$$# $$# $$# $$& $$& $$& !&\/! ##( !$)! $$$ !%\/! #!( !$)! $$$ $$' !!%! #!# !!%! $$! !!%! $$! $$! !#'!!|+y$$# $$& $$& $$& !!%! $$! !#($!|,)$$$  #!|,) #!|,)!#'!$|*C|,'|+'$$# $$$  ##|,'|+'!!&# $!# !##! #!! #!! !!&# !#(# $!# !#(# !!%! !#'!!|,3$$#  $!|,3!!%!#|+%|,4$$!  #!|,4!$)!#|,5s$$$ $$% $$% !#'! $$! !#($ $$% $$%  %  #  $ !!%!!|,8$$! !$(# !#'! !#'!#|+B|+C!!&%!|+B$$%  $  #!|+C!$)!#|+B|+C!!&&!|+B$$&  $  $  #!|+C!$*# !$*$ $$& !!&% $$# !1C! #!2 !!%! $$! !!%! $$! !!%! $$! !#'! #!$ !#'! #!$ !!%! $$! !!&# !!&# !!&#  #  # !$*# !#($  $#7|,t$$! !!%!$|,S|,(|*c$$! $$# $$# $$# !!%! !$)!#|,^|+%$$# !#'!#|,^|+%$$# !#($  $#7|,o$$! !!%!$|,[|,(|*c$$! $$# $$# $$#  # !!%!!|,^$$! !$*# !#($  $#7|,r$$! !!%!$|,d|,(|*c$$! $$# $$# $$# !!%!  % #!!  $ !!($#|,H|*d$$! !!($#|,J|*d$$! !#%!!R$$! $$! !#%!+R|-&7|*]|&'|*b|->|,(|*c|-0$$! $$$ $$$ $$# $$! $$$ $$$ $$# $$! $$! $$# $$! $$# !#&# !#&# !#&# !#&#  $  $  $ !!%!!|-&$$! $$# !!&# !!&# !$*# !#(# !#($  $#7|-D$$! !!%!$|-0|,(|*c$$! $$# $$# $$#  # !!&# !$)!#t|+%$$#  $!|+%!#'!#t|+%$$#  $!|+%!#($  %  $#7|-G$$! !!%!$|->|,(|*c$$! $$# $$# $$# !!&# !!%!!|-@$$! #!! !#'! #!$ !!%! #!# !!%!!|-J$$! $$# !#'!'|-i|-T|-h|-K|-U|-^$$$ $!$'|-i|-T|-h|-K|-U|-^$$# $$$ $$$ $$$ !#'!&|-a|-d|-L|-p|-T$$# $$$ $!$&|-a|-d|-L|-p|-T$!$%|-a|-d|-L|-p$$$ $!$%|-a|-d|-L|-p$!$%|-a|-d|-L|-p$$$ $!$%|-a|-d|-L|-p$$# $$! $$! $$! $$! $$# $$! $$! $$! $$! $$$  # $$!  # $$!  # $$! !#'!#|-^|-c #!|-c #!|-^!#'!#|-^|-b #!|-b #!|-^ # $$!  !  ! !!%! #$# !!%! $$! !!%! ### !!%! $$! !!%! #!# !!%! !!%! #!#  !  ! !!%!!|-i$$! !!%!!|-h$$! !#($ !!&# !#'! $$# $$# !!'! !!%! !!%! !!%! !!(# !#'!\/|-h|-i|-R|-N|-M|-O|-e|-T|-Q|-`|-P|-S|-^|-p$$$ $$! $!$.|-h|-i|-R|-N|-M|-O|-e|-T|-Q|-`|-P|-S|-^$$# $$$ $!$.|-h|-i|-R|-N|-M|-O|-e|-T|-Q|-`|-P|-S|-^$$#  #!|-h #!|-i #!|-h #!|-i #!|-i #!|-i #!|-i #!|-i #!|-i #!|-i #!|-e #!|-h #!|-h #!|-e$$#  #!|-i #!|-h #!|-i #!|-h #!|-h #!|-h #!|-h #!|-h$$$  #!|-^ #!|-^!#'! $$$ $$% $!$ $$# $$# $$# $$# !#'! $$$ $$% $!$ $$# $$# $$# $$# !#'! $$$ $$% $!$ $$# $$# $$# $$# !!%!#|-V|-W$$! !!%! $$! !!%!!|-j$$! !!&# !#(#!|-f$$$  %'|0M|.O|7`|0R|1j|+= !)|0M|1g|+F|.O|7`|0R|1j|+= !&|0M|1g|+F|.O|7` !#|.O|7` $0|0C|1j|+=|0D|0X|0^|0F|0O|0V|1i|0P|0[7|0e|,+ !%|0[7|0e|,+ !$7|0e|,+ !.|0C|1j|+=|0D|0X|0^|0F|0O|0V|1g|+F|1i|0P !#|1i|0P !,|0C|1j|+=|0D|0X|0^|0F|0O|0V|1g|+F !)|0C|1j|+=|0D|0X|0^|0F|0O !(|0C|1j|+=|0D|0X|0^|0F !'|0C|1j|+=|0D|0X|0^ !&|0C|1j|+=|0D|0X !%|0D|0X|1j|+= %  %  $4|0W|&g|3@|2cu|0E|2f|2Z|7Z|7T|0O|+F|.H|0[7|+D|1j|+=|0N !(|1g|+D7|1j|+=|.H|0N !#|.H|0N !$|1g|+D7!!&!1|0W|&g|3@|2cu|0E|2f|2Z|7Z|7T|0O|1g|+F|.H|0[7$$! $$!  !$|.H|0[7 #.|0W|&g|3@|2cu|0E|2f|2Z|7Z|7T|0O|1g|+F #+|0W|&g|3@|2cu|0E|2f|2Z|7Z|7T #*|0W|&g|3@|2cu|0E|2f|2Z|7Z #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u #-|.G|.F|7^u|2^|7Q|3@|2g|6y|7S|7P|+= !-|.G|.F|7^u|2^|7Q|3@|2g|6y|7S|7P|+= !+|.G|.F|7^u|2^|7Q|3@|2g|6y|7S !#|3@u !!u !)|.G|.F|7^u|2^|7Q|3@|2g !&|.G|.F|7^u|2^ !!u !#|2^u !!u !$|3@u|2g !#|3@u !!u !+|.G|.F|7^u|2^|7Q|3@|2g|6y|7S !#|3@u !!u !)|.G|.F|7^u|2^|7Q|3@|2g !&|.G|.F|7^u|2^ !!u !#|2^u !!u !$|3@u|2g !#|3@u !!u %  %  #)|6y|7S|3@u|0Y|0Q|7P|+= !)|6y|7S|3@u|0Y|0Q|7P|+= !#|3@u !!u !%|0Y|0Q|7P|+=!!%!\/|.J|.I|7^u|2^|7[|2_|.K|7M|+F|7P|+>jq$$! $$! $$!  !(|.J|.I|7^u|2^|7[|2_ !&|.J|.I|7^u|2^ !!u !#|2^u !!u !#|2_u !!u $'7|0e|,+|0N|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7 %  % !!%!&|.L|0[|0S|&@|&D$$! $$!  ##|&@|&D $&|1g|+D7|.L|0N !#|.L|0N !$|1g|+D7!!%!0|.N|.M|7^u|2^|.O|7M|+F|7P|+>jr|&@|&D|0T$$! $$! $$!  !&|.N|.M|7^u|2^ !!u !#|2^u !!u #$|&@|&D|0T #!|0T $'7|0e|,+|0N|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7 %  % !!%!&|.P|0[|0Z|&@|&C$$! $$!  ##|&@|&C $&|1g|+D|0Z|.P|0N !#|.P|0N !$|1g|+D|0Z!!%!H|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y|72|7&|7W|6y|7S|7T|1g|+FR|+D|2x|7Zjr|,?|,Ams|&i|&g|0_|0W$$! $$!  &B|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y|72|7&|7W|6y|7S|7T|1g|+FR|+D|2x|7Zjr|,?|,A$$&  %8|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y|72|7&|7W|6y|7S|7T %7|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y|72|7&|7W|6y|7S !#|3@u !!u %5|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y|72|7&|7W %2|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g|0J|+$|2f|2e|2]|2y $*|0J|,;u|+$|3@|0E|2Z|2f|2e !#|2f|2e $'|0J|,;u|+$|3@|0E $&|0J|,;u|+$|3@ $%|0J|,;u|+$$$$ $$# $$!  !!u !!u # $$!  %,|+%|0L|,;u|0G|3@|2h|0E|2v|2Z|2g %+|+%|0L|,;u|0G|3@|2h|0E|2v|2Z #%|0E|3@|2v|2Z ##|0E|3@ #!|3@ $(|+%|0L|,;u|0G|3@|2h $'|+%|0L|,;u|0G|3@ $&|+%|0L|,;u|0G !!u $&|+%|0L|,;u|0G $%|+%|0L|,;u !!u $%|+%|0L|,;u ##|0L|,; ##|+%u !!u # $$!  !$|3@u|2g !#|3@u !!u !$R|1g|+D #(|2f|2x|3@|7Z|6y|7Su !#|3@u !!u #%|2f|2x|3@|7Z #$|2f|2x|3@ #!|3@ ##|,?|,A !$R|1g|+D #$ms|&i!!&##ms $$|&g|0_|,; ##|0_|,; ##|0W|&g $'7|0e|,+|0N|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7 $6|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|2d|.Q|7Z|7T7|0e|,+|0N|1j|+=|+D !)7|0e|,+|0N|1j|+=|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7!!&!\/|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|2d|.Q|7Z|7T$$! $$!  #.|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|2d|.Q|7Z #-|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|2d|.Q #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !(|2d|2c|3@u|2b|+F|.Q !%|2d|2c|3@u !#|3@u !!u !(|2c|3@u|.Q|2d|2b|+F !#|3@u !!u !%|.Q|2d|2b|+F #0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !#|3@u !!u !.|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g !+|,*7?|,+A|7^|& |%{u|2^ !#|& |%{ !&|,*7?|,+A !$7?|,+ !$7A|,+ !!u !#|2^u !!u !$|3@u|2g !#|3@u !!u $)|.R|2_|2t|3@u|2g|2i|2n !#|2]|2n !$|3@u|2g !#|3@u !!u !(|.R|2_|2t|3@u|2g|2i !'|.R|2_|2t|3@u|2g !#|2_|2t !$|3@u|2g !#|3@u !!u !$|3@u|2i !#|3@u !!u !!u #'|2_|2n|3@u|2gv !#|2_|2n !$|3@u|2g !#|3@u !!u !!v $9|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c|0W|&g|7Z|7TR|+D7|0e|,+|0N|1j|+= !)7|0e|,+|0N|1j|+=|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7!!&!4|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c|0W|&g|7Z|7T|1gR|+D$$! $$!  #1|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c|0W|&g|7Z|7T #0|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c|0W|&g|7Z #\/|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c|0W|&g #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !-|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c !%|2d|2c|3@u !#|3@u !!u !-|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F|2c !#|3@u !!u !,|3@u|0E|2f|2Z|2d|2]|2y|.S|2b|+F !)|3@u|0E|2f|2Z|2d|2]|2y !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !$R|1g|+D #0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !#|3@u !!u !.|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g !+|,*7?|,+A|7^|& |%{u|2^ !#|& |%{ !&|,*7?|,+A !$7?|,+ !$7A|,+ !!u !#|2^u !!u !$|3@u|2g !#|3@u !!u %+|+%uv|.T|2_|2n|2k|3@|2]|2r !-|+%uv|.T|2_|2n|2k|3@|2b|+F|2]|2r !+|+%uv|.T|2_|2n|2k|3@|2b|+F !)|+%uv|.T|2_|2n|2k|3@ !#|2_|2n !$|2ku|3@ !!u !#|3@u !!u !$|+%uv !!v !$|+%uv !!v !$|+%uv !!u !$|+%uv !!v !#|+%u !!u !#|+%u !!u !!u !)|+%uv|.T|2_|2n|2k|3@ !#|2_|2n !$|2ku|3@ !!u !#|3@u !!u !$|+%uv !!v !$|+%uv !!v !#|+%u !!u !!u $9|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c|0W|&g|7Z|7TR|+D7|0e|,+|0N|1j|+= !)7|0e|,+|0N|1j|+=|1g|+D !%7|0e|,+|0N !$7|0e|,+ !$|1g|+D7!!&!4|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c|0W|&g|7Z|7T|1gR|+D$$! $$!  #1|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c|0W|&g|7Z|7T #0|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c|0W|&g|7Z #\/|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c|0W|&g #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !-|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c !%|2d|2c|3@u !#|3@u !!u !-|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F|2c !#|3@u !!u !,|3@u|0E|2f|2Z|2d|2]|2y|.U|2b|+F !)|3@u|0E|2f|2Z|2d|2]|2y !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !$R|1g|+D #0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !0|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g|6y|7S !#|3@u !!u !.|,*7?|,+A|7^|& |%{u|2^|7Q|3@|2g !+|,*7?|,+A|7^|& |%{u|2^ !#|& |%{ !&|,*7?|,+A !$7?|,+ !$7A|,+ !!u !#|2^u !!u !$|3@u|2g !#|3@u !!u $2|.V|2]|2n|3@u|2g|2_|2s|2m|2ov|+%|.W|2k|2v|2Z|2h !'|3@u|2g|2v|2Z|2h !&|3@u|2g|2v|2Z !$|3@u|2g !#|3@u !!u !$|3@u|2h !#|3@u !!u !1|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov|+%|.W|2k !*|+%v|.W|2_|2n|3@u|2g|2k !'|.W|2_|2n|3@u|2g !#|2_|2n !$|3@u|2g !#|3@u !!u !$|2ku|3@ !!u !#|3@u !!u !#|+%v !!v !#|+%v !!v !#|+%v !!v !#|+%v !!v !#|+%v !!v !!v !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !)|.V|2]|2n|3@u|2g|2_|2s !#|2]|2n !$|3@u|2g !#|3@u !!u !$|2_|2su !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !,|2b|+F|2_|2ovu|.V|2]|2m|3@|2g !#|2]|2m !$|3@u|2g !#|3@u !!u !'|2b|+F|2_|2ovu !$|2_|2ou !!u !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ou !!u !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ou !!u !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ov !!v !$|2_|2ou !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !)|.V|2]|2n|3@u|2g|2_|2s !#|2]|2n !$|3@u|2g !#|3@u !!u !$|2_|2su !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !,|2b|+F|2_|2ovu|.V|2]|2m|3@|2g !#|2]|2m !$|3@u|2g !#|3@u !!u !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ov !!v !'|2b|+F|2_|2ovu !$|2_|2ou !!u !'|2b|+F|2_|2ovu !$|2_|2ov !!v !$|2_|2ou !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !)|.V|2]|2n|3@u|2g|2_|2s !#|2]|2n !$|3@u|2g !#|3@u !!u !$|2_|2su !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !)|.V|2]|2m|3@u|2g|2_|2o !#|2]|2m !$|3@u|2g !#|3@u !!u !$|2_|2ou !!u !.|.V|2]|2n|3@u|2g|2_|2s|2b|+F|2m|2ov !)|.V|2]|2n|3@u|2g|2_|2s !#|2]|2n !$|3@u|2g !#|3@u !!u !$|2_|2su !!u !*|.V|2]|2m|3@u|2g|2_|2ov !#|2]|2m !$|3@u|2g !#|3@u !!u !$|2_|2ov !!v ##|3@u !#|3@u !!u $  #9ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W|2d|2b|+F|0E|2f|2]|2y|2c !9ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W|2d|2b|+F|0E|2f|2]|2y|2c !9ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W|2d|2b|+F|0E|2f|2]|2y|2c !#|3@u !!u !8ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W|2d|2b|+F|0E|2f|2]|2y !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u !4ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W|2d|2b|+F !1ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z|2g|0W #\/ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h|2v|2Z #-ms|&i|&g|0_|,;|+%u|0L|0G|3@|2h #,ms|&i|&g|0_|,;|+%u|0L|0G|3@ #+ms|&i|&g|0_|,;|+%u|0L|0G !!u #+ms|&i|&g|0_|,;|+%u|0L|0G #*ms|&i|&g|0_|,;|+%u|0L !!u #*ms|&i|&g|0_|,;|+%u|0L ##|0L|,; #)ms|&i|&g|0_|,;|+%u !!u #'ms|&i|&g|0_|,;$$! !!&##ms #$|&g|0_|,; ##|0_|,; !$|3@u|2g !#|3@u !!u !#|0W|&g !%|2d|2c|3@u !#|3@u !!u #5|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r|0Ev|2p|2h|2v|2Z !5|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r|0Ev|2p|2h|2v|2Z !&|3@u|2h|2v|2Z !$|3@u|2h !#|3@u !!u !2|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r|0Ev|2p !'|.n|2_|2p|3@u|2g !#|2_|2p !$|3@u|2g !#|3@u !!u !!u !1|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r|0Ev !0|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r|0E !'|.o|2]|2r|3@u|2j !#|2]|2r !$|3@u|2j !#|3@u !!u !$|3@u|0E !#|3@u !!u !\/|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r !(|.n|2_|2q|3@u|2g|2j !'|.n|2_|2q|3@u|2g !#|2_|2q !$|3@u|2g !#|3@u !!u !$|3@u|2j !#|3@u !!u !!u !\/|.n|2_|2q|3@u|2g|2j|2b|+F|2w|2l|.o|2]|2r !(|2l|.o|2]|2r|3@u|2j !#|2]|2r !$|3@u|2j !#|3@u !!u !+|.n|2_|2q|3@u|2g|2j|2b|+F|2w !+|.n|2_|2q|3@u|2g|2j|2b|+F|2w !+|.n|2_|2q|3@u|2g|2j|2b|+F|2w !(|.n|2_|2q|3@u|2g|2j !'|.n|2_|2q|3@u|2g !#|2_|2q !$|3@u|2g !#|3@u !!u !$|3@u|2j !#|3@u !!u !!u !+|.n|2_|2q|3@u|2g|2j|2b|+F|2w !(|.n|2_|2q|3@u|2g|2j !'|.n|2_|2q|3@u|2g !#|2_|2q !$|3@u|2g !#|3@u !!u !$|3@u|2j !#|3@u !!u !!u !+|.n|2_|2q|3@u|2g|2j|2w|2b|+F !(|.n|2_|2q|3@u|2g|2j !'|.n|2_|2q|3@u|2g !#|2_|2q !$|3@u|2g !#|3@u !!u !$|3@u|2j !#|3@u !!u !!u !.|2l|.o|2]|2r|3@u|2j|2b|+F|.n|2_|0Ev !)|.o|2]|2r|3@u|2j|2l|0E !'|.o|2]|2r|3@u|2j !#|2]|2r !$|3@u|2j !#|3@u !!u !$|3@u|0E !#|3@u !!u !.|2l|.o|2]|2r|3@u|2j|2b|+F|.n|2_|0Ev !(|2l|.o|2]|2r|3@u|2j !#|2]|2r !$|3@u|2j !#|3@u !!u !(|.n|2_|2r|3@u|0Ev !#|2_|2r !$|3@u|0E !#|3@u !!u !!v ##|,\/u !!|,\/ !!u $  $  #  $  %  %  $  #  %  $  #  $  %  $  #  $  %  $  $  $  $  #  $  $  $  $  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  # !!%!!|01!!%! #!# ##! #!!  #  $  $^|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+<|-u|0W|&g|2c|0E|2f|2Z|2b|.D|0[7s|,6|0L|+'|,9^|0N|.C|2p|2j|.B|.A|,C|7P|+> !3|.C|2_|2p|2j|3@|.B|.A|7^|0W|,?|,C|7P|+=|+>|6y|7Su|7T !2|.C|2_|2p|2j|3@|.B|.A|7^|0W|,?|,C|7P|+=|+>|6y|7Su !#|3@u !!u !\/|.C|2_|2p|2j|3@|.B|.A|7^|0W|,?|,C|7P|+=|+> !#|7P|+= !#|7P|+> !*|.C|2_|2p|2j|3@|.B|.A|7^|0W!!&#)|.C|2_|2p|2j|3@|.B|.A|7^$$# $$$  #)|.C|2_|2p|2j|3@|.B|.A|7^ #&|.C|2_|2p|2j|3@ !#|2_|2p ##|2j|3@ #!|3@ $ !!&!W|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+<|-u|0W|&g|2c|0E|2f|2Z|2b|.D|0[7s|,6|0L|+'|,9^|0N|+G !(|1g|+D7|1j|+=|.D|0N !#|.D|0N !$|1g|+D7!!&#U|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+<|-u|0W|&g|2c|0E|2f|2Z|2b|.D|0[7s|,6|0L|+'|,9^$$# $$#  #$|.D|0[7 $L|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+<|-u|0W|&g|2c|0E|2f|2Z|2b $-|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|7Z|7T $,|0W|&g|3@|2cu|0E|2f|2Z|2b|+F|7Z $+|0W|&g|3@|2cu|0E|2f|2Z|2b|+F #)u|0W|&g|3@|0E|2f|2Z|2c !#|3@u !!u #(u|0W|&g|3@|0E|2f|2Z #&u|0W|&g|3@|0E #%u|0W|&g|3@ #$u|0W|&g$$! $$!  $+|0W|&g|3@|2cu|0E|2f|2Z|2b|+F #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u #)|0W|&g|3@|2cu|0E|2f|2Z #$|0W|&g|3@ ##|0W|&g$$!  !&|3@u|0E|2f|2Z !$|3@u|0E !#|3@u !!u #G|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+<|-u|0W|&g #D|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7]|,?|,B`|1f|+< #$|,?|,B` ##|,?|,B #?|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g|1j|+=|.E|%y|7^|7] #9|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T|1g #8|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S|7T #7|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^|6y|7S !#|3@u !!u #5|.@|2_|2n|2ku|3@|72|7&|7W|7M|+FR|+Dm|,5|7O|%z|7R|7Z|2^$$#  #'m|,5u|7O|%z|7R #$m|,5u !!u ##|7Z|2^ #!|2^ #*|.@|2_|2n|2ku|3@|72|7&|7W #'|.@|2_|2n|2ku|3@ !#|2_|2n !$|2ku|3@ !!u !#|3@u !!u !$R|7M|+D !!u !$R|1g|+D !,R|.E|%y|7^|2^u|6y|7S|3@|7T|7] !+R|.E|%y|7^|2^u|6y|7S|3@|7T !*R|.E|%y|7^|2^u|6y|7S|3@ !#|3@u !!u !'R|.E|%y|7^|2^u !#|2^u !!u ##|0W|&g$$!  #)s|,6|0W|0L|+'|,9m^ $&s|,6|0W|0L|+'!!&$!s !$|0W|0L|+' !#m^ #  $  # !!&#&mn|&O|&H|+D #!|+D !&mn|&O|+9|&H !%mn|&O|+9!!&##mn # !!%! $$! !!&# !!%! $$!  $ !!&$)|,*7|0i|,+|1p|1i|,F|'% #&|,*7|0i|,+|1p #%|,*7|0i|,+ !$7|0i|,+!!&!$|1i|,F|'% #!|'% # !!&#*|,1|,\/u|2k|3@|2u|2Z|2i|7V !*|,1|,\/u|2k|3@|2u|2Z|2i|7V !)|,1|,\/u|2k|3@|2u|2Z|2i !(|,1|,\/u|2k|3@|2u|2Z !&|,1|,\/u|2k|3@ !$|,1|,\/u !!|,\/ !!u !#|3@u !!u !$|3@u|2i !#|3@u !!u $  #  # !!&#&|0_|0W|&g|,?|,A #%|0_|,;|0W|&g ##|0W|&g !#|,?|,A #  #  $  $  # !!%!2|+:R|,:|1i|,F|1g|+G|1p|1j|+=|'&|1h|1o|,*7|0i|,+!!&#.|+:R|,:|1i|,F|1g|+G|1p|1j|+=|'&|1h|1o $)|+:R|,:|1i|,F|1g|+G|1p #!|1p!!&#&|+:R|,:|1i|,F $$|+:R|,: ##|+:R $(|1i|,F|'&|1g|+G|1h|1o #$|1i|,F|'& #!|'&!!&##|1h|1o #%|,*7|0i|,+ !$7|0i|,+!!%! $$!  $ !!%! $$!  $ !#'!&|3Z|0n|3[|3Y|+z$$# $$# $$( $$' $$' !#'!#|0o|+z$$# $$# $$& !%+!&|3Y|0p|3Z|+z|3V$$% $$% $$# $$+ $$' $$) $$& $$' !#'!$|1^|0q|0r$$#  $ !!&#!|0q!#&#  ##|%o|$a$$! !#%!'|1b|1d|+@|1c|1Y|0o$$! $$# $$# !!&# !%*# !!&# !%)! $$# $$#  # $$!  # $$!  # $$! !$*% !%,% !%)! $$# $$#  $ $$#  # $$!  # $$!  # $$! !$(# !%)! $$#  # $$! !$*$ !%)! $$#  # $$!  # $$! !%)! $$#  # $$! !$(# !$'! !$(# !$'!  $ !#%!  # !!&$ !$(# !$(# !%*# !%*# !$(# !$(# !%*#  #  #  # !#'!%|1:|+%|19|18$$# !#%! !$(# !$'!  # $$!  # $$!  $ !%*# !$'! $$# !%*# !$(# !$'! !%*# !!&# !#&#  $ !$*#!|1E!#&$!|1E!$(# !#(##|1H|1^!#&##|1H|1^!$'! !!&# !#(##|1J|1^!#&##|1J|1^!%)!$|+@|1Y|0o$$# $$$ $$% $$& $$& $$% $$% $$% !$'! !!&# !!%!(|1Z|+@|1Y|0o|1M|1^|1O $(|1Z|+@|1Y|0o|1M|1^|1O!#&##|1M|1^!#&#%|1Z|+@|1Y|0o$$! $$# $$$ $$% $$% $$$ $$$ $$$ !#'!,|1c|+@|&t|1]|1r|1^|1Y|0o|0u|0t|+x!#&#!|+@ % $$$ !#&$ !$(%*|1c|+@|&t|1]|1r|1^|1Y|0o|0u % $$$ !#&$ !$(&*|1c|+@|&t|1]|1r|1^|1Y|0o|0u$$& $$& $$#  $#|&t|1]$$# $$#  #!|1r$$' $$' $$% $$%*|1c|+@|&t|1]|1r|1^|1Y|0o|0u$$% $$& $$' $&&*|1c|+@|&t|1]|1r|1^|1Y|0o|0u$$% $$% $$$ $$$ $$$ !#&%*|1c|+@|&t|1]|1r|1^|1Y|0o|0u$$% $$\/ $&$)|1c|+@|&t|1]|1r|1^|1Y|0o$$% $$& $&%'|1c|+@|&t|1]|1r|1^$$& $$& $$& $$& $$& $&%&|&t|1]|1r|1^|+@$$% $$%  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r!$($#|1^|+@$$% !$($#|1]|+@$$%  $ $$# !#&$#|1]|+@$$$ $$$  $  % $$$ !#&#  $  #!|1]$$!  % $$$ !$(%*|1^|+@|&t|1]|1r|1c|1Y|0o|0u$$& $$2 $&')|1^|+@|&t|1]|1r|1c|1Y|0o$$( $$) $&('|1^|+@|&t|1]|1r|1c$$) $$) $$) $$) $$) $&(&|1^|+@|&t|1]|1r$$( $$( $$%  $ $$#  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r!$('!|1^$$( $$%  $ $$# !!&# !#&#  $ !#&$#|1]|+@$$$ $$$  $  % $$$ !#&#  $  #!|1]$$!  ##|0t|+x!$(#  %  $#7|1a$$!  #!|1X$$! !!%!(|1Z|+@|1Y|0o|1P|1^|1O!#&#%|1Z|+@|1Y|0o$$! $$# $$$ $$% $$% $$$ $$$ $$$  $$|1P|1^|1O!#&##|1P|1^!#&# !%)!%|&t|1]|1r|+@$$# $$# $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r % $$$ !%)!#|+@|1^$$$ $$$ $$$  # $$!  $!|+@$$# $$#  # $$! !$(#!|1^!$(# #$! ##! !,9! #!- #!! !!&#&|1{|+F|+D|+G|2 $$#  #!|2 !!&$$|1{|+F|+D %!|1{ $ $$#  # $$!  $!|+D # $$! !$*##|0pR!!&$#|0pR %!|0p$$$  %!|0p # $$! !!&# !#(#&|+G|2 |+D|0o|+@$$$  $$|+G|2 |+D #!|2 !!&#!|+D # $$! !!&%#|+D|0o$$$  ##|+@|+D # $$! !!%! $$! !%,# !!&#  $  # $$!  # $$!  $ !%,# !!&#  # $$! !&.#$|+D|1u|+E %#|1u|+E $ !!&$#|+D|+G $  # $$! !!&$!|+D $ $$#  # $$!  # $$! !'0##|+E|+D &!|+E!!&#  $  # $$!  # $$!  $ !!&$#|+D|+G $  # $$! !!&$!|+D $ $$#  # $$!  # $$! !%+! #!& !!%! $$! !!%! $$! !!%! $$! !!%! $$! !#%!$|,8|2!7$$! $$# $$$  $!|,8 # !!&#  #  #  #  #  #  !  !  !  ! !%)! $$# $$# $$$  !  ! !#&# $$# $$#  !  ! !#&# $$# $$#  !  !  !  ! !%)! $$# $$# !$(#!R$$# $$! !#&$!R$$$ $$$ !%)! $$$ $$#  ! !#%! $$!  ! !#&# $$# $$#  !  !  % !%)! $$$ $$# !%*# !$(# !!%!!|3\/!#&# $$# $$#  #!|3\/$$# $$! !%)! $$$ $$$ $$$ $$% $$% !%+! !#&% $$$ $$$ $$% $$%  $ !%+!!|2P$$$  # !!&#  # !!&# !#(# !#(# !!&# !%*# !%,# !!&# !!&# !!&# !%*# !#&# !%*# !#&# !!&# !!&# !!&# !!&# !#'!!|3A #!|3A!#&# !#'!!|2\/!#&#!|2\/$$$ $$$ $$#  $ !#'!!|24!#&#!|24$$$ $$$ $$#  $ !#'!!|27!#&#!|27$$$ $$$ $$#  $ !#'!!|2<!#&#!|2<$$$ $$$ $$#  $ !#'!!|2=!#&#!|2=$$$ $$$ $$#  $ !#'!!|2A!#&#!|2A$$$ $$$ $$#  $ !#'!!|2E!#&#!|2E$$$ $$$ $$#  $ !#'!!|2F!#&#!|2F$$$ $$$ $$#  $ !#&# !#&# !#&# !%*# !$)! !#&$ $$# $$#  $  !  #  # !#'! #!$ !#'! $$# $$# !!%! ### !!%! $$! #!! !!%! ### !!%! $$! !!%! #!# !!%! $$! !!%!!|3\/$$! $$#  #  #  #  #  # !!&#%|39|*k|30|+%$$!  ##|30|+%!#(#!|$a $#|$a|%n$$# !!&$ $$$  $  $ !!&##|3<|$a ##|3<|$a$$! !!&$ $$$  $  $ !!&# $&! !#'! $$# $$# !!&# !!&# $$# $$! !%+!#|3Z|3B$$% $$$ $$$ $(% $$$ !%+!#|3Y|3C$$% $$$ $$$ $(% $$$  # !!$%  #  # !!$%  #  #  #  #  # ##! !&-! #!' !&-! $$& $$& $$& $$& !%+!#|3V|3D$$% $$$ $$# $$) $$' $$$ $$& $$- $$' $$) $$- $$-!|3V$$- $$- $$& $$% $$* $$\/ $$+ $$\/ $$\/!|3V$$\/ $$\/ $$' !%+!#|3V|3H$$% $$$ $$# $$) $$' $$$ $$' $$) $$& $$) $$- $$-!|3V$$- $$, $$. $$& $$% $$* $$+ $$+ $$\/ $$\/!|3V$$\/ $$. $$0 $$' !#'!%|3Y|3B|3Z|3C$$# $$( $(# $(# !%-! #!' !$)! $$$ $$& $$& !'.#!|+#$$$ $$% $$% !'.#!|+#$$$ $$% $$% !#'!&|62|3u|3%|60|3a$$#  $%|62|3u|3%|60$$%$|3%|62|3u$$% $$% $$$ $$$ $$% $$$ $$$ $$% $$& !%*%#|62|3u$$' $$& $$& $$& $$! $$& $$& $$% $$& $$& $$% $$& $$& $$& $$& $$& $$!  $  #  #!|50$$! !#&%  %  #  % !&+!!|5w$$% !#&#%|4x|+@|1Y|0o$$! $$# $$$ $$% $$% $$$ $$$ $$$  %  !  #  # !#&# !#&# !!&##|4'|$a #$|4'|$a|%n ##|%o|$a$$! !!&##|4(|$a #$|4(|$a|%n!!&##|4-|$a #$|4-|$a|%n!!&##|4.|$a #$|4.|$a|%n ##|%o|$a$$!  !  #  #  % !!&#$|4q|*k|3=$$!  #!|3=$&! !#&#  #  #  % !!$$  ##|%o|$a$$!  $#7|7$$$!  %  %  %  $#7|7$$$!  %  #  %  ##|%o|$a$$!  ##|%o|$a$$!  %  !  $  $  $  $  $  $  $  $  $  $  $  $  $  $  $ !!&##|4^|$a #$|4^|$a|%n!#&#  #  % !!&$  #  #  #  # !#&#%|4x|+@|1Y|0o$$! $$# $$$ $$% $$% $$$ $$$ $$$  % !!$# !!$#  $#7|5%$$!  $#7|6z$$!  $#7|6z$$!  $#7|7!$$!  $#7|7!$$!  $#7|7!$$!  $#7|7!$$!  #!|6)$$!  $#7|7$$$!  $#7|7$$$!  $#7|7$$$!  $#7|7I$$!  $#7|7I$$! !!&# !!&#$|4k|*k|5^$$!  #!|5^ #!|5g$$! !$(#-|1_|51|1h|1o|&t|1r|4w|1]|+@|1Y|0o|4v$$# $$# $$$ $$. $$. $$- $$-  #$|51|1h|1o $!|&t$$#  #!|1r !%|4w|51|1h|1o ##|4w|&t$$!  #!|1r$$- $$-  #$|51|1h|1o $!|&t$$#  #!|1r !%|4w|51|1h|1o ##|4w|&t$$!  #!|1r #!|1r$$- $$-  #$|51|1h|1o $!|&t$$#  #!|1r !%|4w|51|1h|1o ##|4w|&t$$!  #!|1r $&|4v|51|1h|1o|1_$$# !!&#%|51|1h|1o|1_$$#  #$|51|1h|1o!#&$)|6S|17|1q|+@9|1<|3V|1]$!' $$# $$$ $$$ $$$ $$#  # $$!  # $$!  # $$!  #!|5A$$! !$(#'|&t|1]|1r|5u|+@|5s$$! $$! $$#  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r $#|5r|5s$$# !#&#!|5r!%*#B|6T|0n|6S|6GR|4@|4B|+x|6Y|4E|5z|5>|7Y|+%|&I|&Jc|7&|3?|0q9|7#|5+|17|1o|5@|7X|4;|4:|1q|5N|5H|7_$$$ $$$ $$% $$$B|6T|0n|6S|6GR|4@|4B|+x|6Y|4E|5z|5>|7Y|+%|&I|&Jc|7&|3?|0q9|7#|5+|17|1o|5@|7X|4;|4:|1q|5N|5H|7_$$% $$% $$& $$& $$' $$' $$( $$( $$( $$& $$& $$' $$& $$& $$' $$$ $$$ $$#$|6T|0n|6S$$!  # $$!  #$|6T|0n|6S$$! $$!  #$|6T|0n|6S$$#  # $$! !#&$!|5z!$(%#|6G|6Y$$& $$% $$# !$(%#|6G|6Y$$& $$% $$# !!&%%|+%|&I|&JR$$%  &$|+%|&I|&J$&$  $!|&I$$# !!&#!c$$# !!&#!|3?$$# !#&$*|0qR9|7Y|7#|5+|17|1o|5@$$# $$# $$$ $$# $$# $$# $$# $$$ $$!  # $$!  # $$!  # $$!  $ $$# $$# !#(%  # $$!  # $$!  # $$! !#'!4|&t|1r|7?|5C|7G|1]|+@|1Y|0o|5B|5F|5;|7F|59|0p|3x|1^|6F|5:!#&')|&t|1]|1r|+@|5;|7F|59|0p$$# $$# $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r %$|7F|59|0p$$$  #$|7F|59|0p!$(# !#&$,|&t|1r|7?|5C|7G|1]|+@|1Y|0o|5B|5F$$# $$# $$$ $$. $$. $$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r$$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r #!|1r$$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r $!|5F$$# !!&# $$# !#(#$|3x|1]|1^ $#|3x|1]$$# $$# !$(#  #!|6F!#&$!|5;!#&#!|5:!!%! !!&#,|4]|+x|%m|6,|$b|4[|3;|4`|4_t|3>!#&%*|4]|+x|%m|6,|$b|4[|3;|4`|4_$$% $$% $$& $$% $$$ $$$ $$$  # $$!  $%|6,|$b|4[|3;!!&#!|3;$&! !!&#!|3;$&!  ##t|3> #!|3> # $$! $$! !#($  $#7|7($$!  %  !  $#7|7:$$! !#&#%|7H|+@|1Y|0o$$! $$# $$$ $$% $$% $$$ $$$ $$$ !!%!#|5G|-K ##|5G|-K $  ##|5g|+{$$! !!&#%|3\/|%n|%o|$a$$# $$# $$! $$#  ##|%o|$a!$(#(|+%|5L7|$v|5M|$u|5K$$# $$#  # $$!  $'|+%|5L7|$v|5M|$u ##7|$v$$! $$! $&!  ##7|$u$&! !#&##|5N|5H$$#  #'|5g|+{7|5Q|6q|*C$$! $$!  # $$!  # $$!  $#7|5i$$!  $#7|5k$$!  #'|5g|+{|5X|5W|5V|*C$$! $$!  &  $  $ !!%!)|5]|5[|#W|5Z|#]|3\/|5Y|5R $)|5]|5[|#W|5Z|#]|3\/|5Y|5R$$$ $$$ $$# $$! $$! $$! $$#  # !!&$ $$$  $  $ !&,#A|6T|0n|6S|7aR|48|4C|+x|6Y|4F|5z|5>|7Y|+%|&I|&Jc|3?|0q9|7#|5)|17|1o|5@|7X|47|46|1q|5N|5H|7_$$% $$% $$& $$%A|6T|0n|6S|7aR|48|4C|+x|6Y|4F|5z|5>|7Y|+%|&I|&Jc|3?|0q9|7#|5)|17|1o|5@|7X|47|46|1q|5N|5H|7_$$& $$& $$' $$' $$( $$( $$) $$) $$) $$' $$' $$( $$' $$' $$( $$$ $$$ $$#$|6T|0n|6S$$!  # $$!  #$|6T|0n|6S$$! $$!  #$|6T|0n|6S$$#  # $$! !#&$!|5z!$(&#|7a|6Y$$' $$& $$# !$(&#|7a|6Y$$' $$& $$# !!&%%|+%|&I|&JR$$%  &$|+%|&I|&J$&$  $!|&I$$# !!&#!c$$# !!&#!|3?$$# !#&$*|0qR9|7Y|7#|5)|17|1o|5@$$# $$# $$$ $$# $$# $$# $$# $$$ $$!  # $$!  # $$!  # $$!  $ $$# $$# !#(%  # $$!  # $$!  # $$!  # $$!  # $$!  $#7|5i$$!  $#7|5k$$!  $#|5e|5d$$! !!#!!9!$(#Y|6T|0n|6S|5u|2:|22|4+|+-|6H|6U|5,|4*|+x|6(|17|1q|%m|6,|$c|4 7|3;|5.|1o|6XR|6'|6&|3{|+@|&t|1]|1r|$b|4#|5>|%k|%j|4!|4,|5N|5H|7_|3y|3$|4&|55|5O|4%|$o|+%|1;|$n|5#|6-|4H$$$ $$$ $$$ $$% $$% $$% $$$ $$% $$%$|6-|2:|22$$&  # $$!  # $$! $$& $$& $$& $$& $$' $($W|6T|0n|6S|5u|2:|22|4+|+-|6H|6U|5,|4*|+x|6(|17|1q|%m|6,|$c|4 7|3;|5.|1o|6XR|6'|6&|3{|+@|&t|1]|1r|$b|4#|5>|%k|%j|4!|4,|5N|5H|7_|3y|3$|4&|55|5O|4%|$o|+%|1;|$n|5#$$& $$' $$' $$& $$' $$& $$'  # $$!  # $$!  # $$!  # $$!  # $$! $$& $$' $$' $$( $$' $$' $$( $$%.|6'|0n|6&|+x|%m|6,|$c|3y7|3;|5.|17|1o$$&  #$|6'|0n|6&$$! $$!  #$|6'|0n|6&$$#  #&|6,|$c|3y7|3;!!&#!|3;$&!  $$|5.|17|1o # $$!  # $$!  # $$! $$&  # $$!  # $$! $$%L|6T|0n|6S|5u|2:|22|4+|+-|6H|6U|5,|4*|+x|6(|17|1q|%m|6,|$c|4 7|3;|5.|1o|6XR|6'|6&|3{|+@|&t|1]|1r|$b|4#|5>|%k|%j|4!|4,|5N|5H|7_$$& $$& $$& $$' $$& $$& $$& $$% $$#  # $$!  #$|6'|0n|6&$$!  #$|6'|0n|6&$$# $$!  # $$!  #$|6&|17|1o $!|+@$$# $$#  # $$! !$(#%|&t|1]|1r|+@$$# $$# $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r % $$$ !$(# !#&(;|6T|0n|6S|5u|2:|22|4+|+-|6H|6U|5,|4*|+x|6(|17|1q|%m|6,|$c|4 7|3;|5.|1o|6XR$$' $$' $$) $$) $$* $$'  #&|6,|$c|4 7|3;!!&#!|3;$&!  $$|5.|17|1o$$'1|6T|0n|6S|5u|2:|22|4+|+-|6H|6U|5,|4*|+x|6(|17|1q$$' $$' $$( $$$ $$# $$$ $$#  #$|6U|0n|5,$$!  #$|6U|0n|5,$$!  #$|6U|0n|5,$$!  #$|6U|0n|5,$$! $$% $$%  ##|6U|0n$$! $$!  ##|6U|0n$$$ $$$ $$% $$$(|6T|0n|6S|5u|2:|22|4+$$$ $$$ $$$ $$% $$% $$% $$%  #$|6T|0n|6S$$!  #$|6T|0n|6S$$#  # $$!  # $$!  $)|6,|$b|4#|3;7|+x|%m|5> $&|6,|$b|4#|3;7!!&#!|3;$&! !!&#!|3;$&!  # $$!  #!|5> #*|%k|%j|6,|$c|4!7|4,|+x|%m #'|%k|%j|6,|$c|4!7!!&##|%k|%j$$# !!&$ $$$  $ !!&$ $$$  $  # $$!  # $$!  #&|$o|+%7|1;|$n$$!  ##7|1; $ $$# $$# $$! $$!  # $$!  # $$!  % !$'!#|1D|5p$$# !#&#(|&t|1]|1r|1D|5p|+@|5o$$! $$! $$# $$#  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r ##|5n|5o$$! !$(#*|&t|1]|1r|+@|6T|0p|2K|6S|5u$$# $$# $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r $!|5q$$# !$(#&|6T|0p|2K|6S|5u %%|6T|0p|2K|6S$$$  %%|6T|0p|2K|6S$$%  $!|2K!$(#  ! !&+!%|5v|2!R|2?$$% $$$ $$# !#&$!R$$$ $$% $$$ $$$ $$# !#&$$|5v|2!R$$$ $$% $$' $$' $$' $$' $$$ $$$ $$# !$*#0|&t|1]|1r|+@|3f|3h|1L|3e|3l|3d|0p|5\/|7N|1o|3b!$($!|3l!#&$)|&t|1]|1r|+@|3f|3h|1L|3e$$# $$# $$$ $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r $!|3e$$# !!&# $$# !#($&|3d|0p|5\/|7N|1o!#&&#|3d|0p$$# $$#  # $$!  # $$!  # $$!  %#|3d|0p$$$  $#|3d|0p!#&$ $$# $$#  # $$!  # $$!  # $$!  $$|5\/|7N|1o #!|3b$$! !#%!!R$$! !%*#)|6U|0p|+-|6S|17|1q|6T|0n$$$ $$$ $$% $$$)|6U|0p|+-|6S|17|1q|6T|0n$$$ $$% $$% $$& $$%#|6U|0p # $$!  %#|6U|0p$$$ $$%  &#|6U|0p!#&$ $$$ $$$ $$#  $  # $$!  #$|6T|0n|6S$$! $$!  #$|6T|0n|6S$$# !%)!!|6 $$# $$#  # $$!  # $$!  # $$! !$(#'|6T|0p|2K|6SR|+-$$# $$# $$$ !$(#&|6T|0p|2K|6SR %%|6T|0p|2K|6S$$$  %%|6T|0p|2K|6S$$%  $!|2K $#7|6z$$!  $#7|7!$$! !!%!0|6B|6A|6@|6?|6>|6=|6<|6;|6:|69|68|67|66|65|64$$!  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  $#7|7*$$! !!&$&|+#|3*|3%|5K|63$*$$|+#|3*|3%$$' $$& $$& $$& $$$ $&#!|+#$$$ $$$ !(0$#|+#|3*$$) $$( $$( $$' $$& $&%!|+#$$% $$%  ##|5K|63$$!  #!|63$$! !%)!;R|4M|5E|,8|+@6|4I|4J|4K|4L|7E|4N|4O|4P|4Q|7D|4R|4S|4T|7C|4U|7B|4V|7A|4W|7@$$$ $$# $$$ !#&#$R|4I|5E$$# $$! $$# $$$ !#&#$R|4J|5E$$# $$! $$# $$$ !#&#$R|4K|5E$$# $$! $$# $$$ !#&##|7ER$$! $$# $$$ !#&#&R|4M|5E|,8|+@$$# $$$&R|4M|5E|,8|+@$$$ !!&$ $$$%R|4M|5E|,8$$$ $$$ $$! $$# $$$ !#&#&R|4N|5E|,8|+@$$# $$$&R|4N|5E|,8|+@$$$ !!&$ $$$%R|4N|5E|,8$$$ $$$ $$! $$# $$$ !#&#&R|4O|5E|,8|+@$$# $$$&R|4O|5E|,8|+@$$$ !!&$ $$$%R|4O|5E|,8$$$ $$$ $$! $$# $$$ !#&#&R|4P|5E|,8|+@$$# $$$&R|4P|5E|,8|+@$$$ !!&$ $$$%R|4P|5E|,8$$$ $$$ $$! $$# $$$ !#&##|7DR$$! $$# $$$ !#&#&R|4R|5E|,8|+@$$# $$$%R|4R|5E|,8$$$ $$! $$# $$$ !#&#&R|4S|5E|,8|+@$$# $$$%R|4S|5E|,8$$$ $$! $$# $$$ !#&##|7CR$$! $$# $$$ !#&##|7BR$$! $$# $$$ !#&##|7AR$$! $$# $$$ !#&##|7@R$$!  %  # $$!  # $$!  $#7|6N$$!  $#7|6Q$$!  $#|6R|6O$$!  #!|6T$$!  #  !  ! !%*$#|6X|6W$$% $$% $$% $$% $$%  ! !%*#,|,8|6Z|6Y|6U|0p|+-|6S|17|1q|6T|0n$$$ $$$ $$% $$$,|,8|6Z|6Y|6U|0p|+-|6S|17|1q|6T|0n$$$ $$% $$% $$& $$%&|,8|6Z|6Y|6U|0p # $$!  %&|,8|6Z|6Y|6U|0p$$$ $$%  &&|,8|6Z|6Y|6U|0p!#&%$|,8|6Z|6Y$$% $$% $$$ $$% $$% $$% $$% $$%  # $$!  #$|6T|0n|6S$$! $$!  #$|6T|0n|6S$$# !%)! $$#  $ $$# $$#  # $$! !%)! $$#  $ $$# $$#  $  # $$! !&,#!|6^!#&$!|6^!%*#!|6`!#&#!|6`$$!  #!|6`$$! $$!  # $$!  %  $#7|6z$$! !%*#$|6c|17|1o$$$ $$$ $$% $$%  # $$! $$$ $$# $$#  $ $$# $$# $$# $$#  $  # $$!  # $$!  # $$! !%*# !#&# $$!  # $$! $$! !!&#  # $$!  % #$! !!%! #!# !#'! #!$ #!! !#'! #!$ !$)! #!% !#'! #!$ #0! #\/! #.! #-! #,! #+! #*! #)! #(! #'! #&! #%! #$! ##! #!! !!%! #&# !!%! #$# !#'! ##$ #!! !!%! #!# !%*# !$*#$R|3\/|&&!!$$$R|3\/|&&$$! $$# !$*# !$(# !#&# !#&# !$)!4|&t|1r|7?|5C|7G|1]|+@|1Y|0o|5B|5F|5_|7F|59|0p|3w|1^|7b|5:!#&()|&t|1]|1r|+@|5_|7F|59|0p$$# $$# $$$  $$|&t|1]|1r$$#  $#|&t|1]$$# $$#  #!|1r %$|7F|59|0p$$$  #$|7F|59|0p!$(# !#&$,|&t|1r|7?|5C|7G|1]|+@|1Y|0o|5B|5F$$# $$# $$$ $$. $$. $$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r$$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r #!|1r$$- $$-  $!|&t$$#  #!|1r ##|7G|&t$$!  #!|1r $!|5F$$# !!&# $$# !#(#$|3w|1]|1^ $#|3w|1]$$# $$# !$(#  $!|7b!#&%!|5_!#&#!|5: # $$!  # $$! !$(# !%*# !$(# !%,$A|&t|1r|4w|1]|+@|1Y|0o|3n|3m|3o|2;|2F|72|5<|3r|6\/|3%|3v|3a|&a|3$|52|7N|1o|+%|1D|3_|+#|&&|3`|56|+{ #&|3o|2;|2F|72|5<!#&#$|3o|2;|2F$$$ $$$ $$$ $$$ $$% !$($+|&t|1r7|4w|1]|+@|1Y|0o|3n|3m$$# $$# $$$ $$. $$. $$- $$-  $!|&t$$#  #!|1r ##|4w|&t$$!  #!|1r$$- $$-  $!|&t$$#  #!|1r ##|4w|&t$$!  #!|1r #!|1r$$- $$-  $!|&t$$#  #!|1r ##|4w|&t$$!  #!|1r $!|3m$$# !!&# $$# !!&%-|3r|6\/|3%|3v|3a|&a|3$|52|7N|1o|1^|+% #$|52|7N|1o!$(%!|3$$$& $$& $$&  $ $$# !!$#'|3r|6\/|3%|3v|3a|&a$$$$|3r|3%|6\/$$$ $$$ $$# $$$ $$$ $$$ $$% $$$ $$$ $$$ !%*$#|3r|6\/$$& $$& $$% $$& $$& $$% $$& $$! $$& $$& $$& $$& $$% $$& $$& $$% $$&  ##|3a|&a$$!  $!|+%!#&#!|1D %(|3_|+#|3%|&&|3`|56|+{$$$ $$$ $$! $$# $$# $$! $$! $$# $$# $$!  # $$! !!&# !!%! $$! !!%! $$! ",
-" .2,%}!6g.2,%} ZD.2,%} @;.2,%} W<.2,%}!Hd.010!  !# !% !' !) !+ !- !\/ !1 ,3,4,5,6!7 %,:!; $!> !@ !B -!?.&HH+).% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm2-#I.&HI+).% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV2\/#H+).% }!8{}'Wa% }%FP}'_9% }#SK}%A$% }'DT}$EJ2.#H.2,%|m<.&HK.2,%|m5.2,%}!Hd.2,%} W2.0QR!D !F !H !J !L !N !P !R !T ,V+).% }'?^}!pH% }$pB}($m% |66}'Da% }$Xp} ,:SN#O+).% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fXSP#H!W !^ !c !f !i!b!k!a.saf!m !o !r !t !v !w !z !| ! !| % !| ( !| + !| . .ssr+)ntmonqpcd!| 1 !| 4 .swv!| 7 !| 9 !| ; !| = !| ? !| A !| C !| F !| I !| O !| P !| V !| b!|#i!| p!| *!| y!| -!| {#|#0|#5!|!&!|+K!|!'!|+K!|!(!|#i!|!=!|#0!|!> !|!C#|!%|#o*! | 3!|!G#|!'|#o*!!| )| 5!|!K#|!*|#o*!!| +| 7!|!O#|!-|#o*!!| -| 9!|!S#|!0|#o*!!| \/| ;!|!W#|!3|#o*!!| 1| =!|![#|!6|#o*!!| 3| ?!|!`#|!9|#o*!!| 5| A!|!d#|!<|#o*!!| 7| C!|!h#|!?|#o*!!| 9| E!|!l#|!B|#o*!!| ;| G!|!p#|!E|#o*!!| =| I!|!t#|!H|#o*!!| ?| K!|!x#|!K|#o*!!| A| M!|# #|!N|#o*!!| C| O!|#%#|!Q|#o*!!| E| Q!|#)#|!T|#o*!!| G| S!|#-#|!W|#o*!!| I| U!|#1#|!Z|#o*!!| K| W!|#5#|!^|#o*!!| M| Y!|#9#|!a|#o*!!| O| [!|#=#|!d|#o*!!| Q| ^!|#A#|!g|#o*!!| S| `!|#E#|!j|#o*!!| U| b!|#I#|!m|#o*!!| W| d!|#M#|!p|#o*!!| Y| f!|#Q#|!s|#o*!!| [| h!|#U#|!v|#o*!!| ^| j!|#Y#|!y|#o*!!| `| l!|#^#|# |#o*!!| b| n!|#b#|#$|#o*!!| d| p!|#f#|#'|#o*!!| f| r!|#j$| w| v|#q*!!| h| t!|#l#|#-|#o!|#p#|#*|#o&.U| x!&.U| z!&.U|! !-|<Z% 1}((0&#|#t!| %&#|#u!| %&.U|!(!#|#v!| %&.U|!+!#|#w!| %&.U|!.!#|#x!| %&.U|!1!#|#y!| %&.U|!4!#|#z!| %&.U|!7!#|#{!| %&.U|!:!#|$ !| %&.U|!=!#|$!!| %&.U|!@!#|$#!| %&.U|!C!#|$$!| %&.U|!F!#|$%!| %&.U|!I!#|$&!| %&.U|!L!#|$'!| %&.U|!O!#|$(!| %&.U|!R!#|$)!| %&.U|!U!#|$*!| %&.U|!X!#|$+!| %&.U|![!#|$,!| %&.U|!_!#|$-!| %&.U|!b!#|$.!| %&.U|!e!#|$\/!| %&.U|!h!#|$0!| %&.U|!k!#|$1!| %&.U|!n!#|$2!| %&.U|!q!#|$3!| %&.U|!t!#|$4!| %&.U|!w!#|$5!| %&.U|!z!#|$6!| %&.U|#!!#|$7!| %&.U|#%!#|$8!| %&.U|#(!#|$9!| %&.U|#+!#|$:!| %!|$;!|#\/!|$= &!|$C!|#2!|$E &&!|$P #|$f#|#7|*u#|$g!| %#|$h#|#9|*u#|$i!| %#|$j!| %*! |#:#|$k!| %*!!|#0|#<#|$l!| %*!!|#2|#>#|$m!| %*!!|#4|#@#|$n!| %*!!|#6|#B#|$o!| %*!!|#8|#D#|$p!| %*!!|#:|#F#|$q!| %*!!|#<|#H#|$r!| %*!!|#>|#J#|$s!| %*!!|#@|#L!|$t !|$v$|#Px|&X#|$w!| %-|<Z#-|<Z%7!|$x!|#i#|%V!| %#|%W!| %!|%X!|#i,|&*!|&+ !|&- !|&\/ !|&1 !|&3 !|&5 !|&7 !|&9 !|&;#|&5|+2!|&?$|#Tx|&X!|&D !|&I!|#v#|&L!| %#|&M!| %&!|&N !|&T !|&w !|'+ !|'2!^!|'5 #|'@!|-&!|'A !|'J !|'R !|'[ !|']!|#v!|'^ !|'` ,|'b!|'c !|'e !|'g!|$'!|'h#|#{|, #|'i!| %!|'j#|$!|, #|'k!| %#|'l!| %!|'m#|$%|, #|'n!| %!|'o!|$'!|'p !|'r!|$*!|'v!|$*!|( #|$6|+y!|(. #|(0!| %#|(1!| %#|(2#|$4|(Q!|(3#|$5|+y!|(9!|$'#|(:!| %-|<Z%,!|(;#|$5|+y2|3;|+K|)I|$,|$-|+K|+K#|(B #|(C #|(D !|(E !|(F #|(H#|$;| $#|(I#|$<|%&#|(K!| %#|(L!| %&&&#|(M!| %#|(N!| %#|(O!| %+(|)R|$C|$B|$A|$@|$?|$@|$>\/|)O|$=|$D|$a!|(P!|$G!|(Q!| $!|(U!|$I!|(W!|$H!|(X#|$V|$W&&#|)2!| %#|)3!| %&&!|)4 !|)6 #|)8!| %!|)9!|$I!|):!|$T!|)<%|'P|'f|'g|'H!|)= !|)?%|'P|'e|'g|'H!|)@!|$H!|)A!|$U!|)B !|)F !|)I !|)L !|)N ,|)P!|)Q !|)S#|)q|*F#|)^!| %&&&#|)_!| %!|)`#B|$c!|)a!|$i!|)b!|$k!|)c !|)h !|)l !|)p!|$o!|)q!|$p!|)r !|){ !|*$!|-y*# % |ow}#I2% } 6% #|*,#|$v|&q#|*-!| %!|*.#B|&0!|*\/!|&\/#|*1!| %#|*2!| %-|<Z% } pQ}&BU#|*3!|.$!|*4#|${|-x!|*@#|%$|-x-|<Z#!|*E$|%$|-x|%#!|*I#|%x|%o!|*L$|%q|+0|%)!|*N &*! |%)&#|*P!| %#|*Q!| %#|*R!| %#|*S!| %#|*T!| %#|*U!| %#|*V!| %#|*W!| %#|*X!| %#|*Y!| %#|*Z!| %#|*[!| %#|*]!| %#|*^!| %#|*_!| %#|*`!| %#|*a!| %#|*b!| %#|*c!| %#|*d!| %#|*e!| %#|*f!| %#|*g!| %#|*h!| %#|*i!| %#|*j!| %#|*k!| %#|*l!| %#|*m!| %#|*n!| %#|*o!| %#|*p!| %#|*q!| %*! |%L*!!|%B|%K*!!|%C|%J*!!|%D|%I*!!|%E|%H*!!|%F|%G*!!|%G|%F*!!|%H|%E*!!|%I|%D*!!|%J|%C*!!|%K|%B*!!|%L|%A*!!|%M|%@*!!|%N|%?*!!|%O|%>*!!|%P|%=*!!|%Q|%<*!!|%R|%;*!!|%S|%:*!!|%T|%9*!!|%U|%8*!!|%V|%7*!!|%W|%6*!!|%X|%5*!!|%Y|%4*!!|%Z|%3*!!|%[|%2*!!|%]|%1*!!|%^|%0*!!|%_|%\/*!!|%`|%.*!!|%a|%-&!|*r#|$k|%n!|*y$|+0|%+| $#|+(!| %!|+) !|+, !|+. #|+0!| %#|+1!| %!|+2 &&*! |%y!|+=!|%y&!|+? !|+A #|+C!| %!|+D &&&\/|+T|&!|&#|&%\/|+T|%s|%t|%w!|+N \/|+T|%(|%r|%{!|+S *!!|%b|%,!|+U !|+^ !|+` !|+b !|+d !|+f !|+h #|+j!| %!|+k !|+q!|&7!|+s#|&8|&<#|+t#|&9|&?!|+u !|,# !|,, !|,5 !|,?!|&<!|,] !|,_ !|,b !|,e !|,h !|,j &&&!|,l !|,n!|.!+(|,q|&A|&B|&C|&D|&E|&I|&J!|,p !|,r !|,t !|,v !|,x !|,z !|-  !|-# !|-' !|-+ !|-4 !|-= !|-? !|-B !|-D #|-F!| %#|-G#|&^|&q#|-H!| %#|-I#|&`|&q#|-J!| %#|-K!| %#|-L!| %#|-M#|&d|&q#|-N!| %#|-O!| %#|-P$|&g|&p|+0#|-Q!| %#|-R$|&i|&p|+0#|-S!| %-|<Z$-|<Z##|-T#|&b|&q#|-U#|&[|&q#|-V#|&f|*u!|-W#|&s|&Y#|-X!| %!|-Y#|&p|+0!|-] #|-_#|&h|*u!|-`!|&V!|-b !|-g !|-l !|-q!|' !|-t!|' !|-w !|-y !|.# !|.'!|&R!|.) #|.+#|&a|&q!|., !|.. !|.0 !|.2 !|.5 !|.6 .2,%} X`.2,%}!9M.2,%} VS.0|',|'-+).% }!OF}!Iy% }!&`|`v% }#TG}$eF% }%%U}!'k|'.|'+#I!|.8!|&3!|.9!|')!|.: !|.< !|.> !|.@ !|.B ,|.H!|.I ,|.K,|.L,|.M,|.N.|.;|'7|'7!|.O !|.^ -|.J|+K#|.c!| %#|.d!| %!|.e #|.j!| %2|3;|+K|)RB|'D|+K|+K#|.k#|'E|(Q!|.l!|'C!|\/, #|\/.!| %2|3;|+K|)RB|'I|+K|+K#|\/\/#|'J|(Q#|\/0!| %2|3;|+K|)RB|'L|+K|+K#|\/1#|'M|(Q!|\/2 !|\/P #|\/V!| %2|3;|+K|)RB|'Q|+K|+K#|\/W#|'R|(Q!|\/X #|\/`#|'A|*u!|\/a !|\/m'|)RB|'B|(R|*o|+K!|\/n!|*%#|\/q!| %!|\/r!|*%#|\/u!| %!|\/v -|7u|']!|\/x 0|5g% }$do} ^]% }$@1}#:h% }&j_}$0l% }'!N|0Y#|09$B|,2|+2*!!|'U|'`+).% }$do} ^]% }$@1}#:h% }&j_}$0l% }'!N|0Y|(J|'q#H#|0:#|'b|*N#|0<!|'Z#|0>!|'X#|0@!| %!|0A$|'P|'g|'H!|0B!|'h!|0C#|'o|'p#|0F!| %#|0G!| %#|0H!| %#|0I!| %#|0J!| %!|0K .2,%} M4.2,%}!9M.2,%} T)!|0R #|0T!| %!|0U !|0^ !|0a!|'t#|0b!| %!|0c$|'y|'x|+{!|0g !|0i !|0k !|0q#|('|'(#|0r!| %!|0s!|. !|0z #|1  !|1!#|('|'(#|1#!| %!|1$$|()|((|+{!|1) !|1+ !|1-#|'m|, !|1.!|. !|11 !|13 !|15 !|17 !|1; !|1?#|'k|, !|1@ !|1B !|1D#|'l|, !|1E !|1G !|1J!|*C!|1K #|1R!| %!|1S#|(<|(;!|1W &!|1Z #|1^!| %!|1_#|(A|(@!|1b !|1e !|1h !|1l#|'n|, !|1m !|1t!|(G!|1x .0|'r|'s+\/|4A|'w|'{|( |(!|(&|(+|(,|(\/|(0|(1|(2|(3|(6|(92|4N|(:|(>|(C|(D|(E|(I!|1{ !|2! .|2 %\/#.|2 $#!|2%!|(R1|6N|(r|)D|(Q|(s|(x!|2&!|(T1|6N|)0|)Y|(S|)1|)3!|2'!|(V1|6N|)'|)W|(U|)(|)*#|2(!| %#|2)!| %#|2*!| %#|2+!| %#|2,!| %#|2-!| %#|2.!| %#|2\/!| %#|20!| %#|21!| %#|22!| %#|23!| %#|24!| %#|25!| %#|26!| %#|27!| %#|28!| %#|29!| %#|2:!| %!|2; #|2=!| %&!|2> !|2@#|(n|&\/0|5g% }$Sq|+R% }'!4}'nI% }'5a|]N% }&:]}!15.2,%} XS#|2A#|)?|*N!|2C !|2H #|2J!| %!|2K !|2c !|2e 0|5g% }#Ti}!=Q% |8[}$]C% } Wl}'EC% }&1^} T%.2,%} LX#|2g#|)@|*N.2,%} GM!|2i !|2k !|2m#|)#|&\/0|5g% }&*R}!bY% }%du}#0{% } P=}&:S% }!F+|v?.2,%} .T#|2n#|)=|*N!|2p #|2u!| %!|2v !|2x !|2z !|3 #|),|&\/0|5g% }!FC}!pO% }'X0}#9g% }%`X} )5% }&!;}#Xi.2,%} .:#|3!#|)<|*N!|3$ #|3)!| %!|3* 0|5g% } E6|Zy% |bY}!nG% }!_l}%Fn% }&8:}#23.2,%} -)#|3,#|)>|*N!|3. 0|5g% }#Aq}&8=% } v5|oA% }%ON}#y\/% }$`U}!#1.2,%}!!K#|37#|)A|*N#|39$B|,2|+2*!!|)0|).*!!|)0|)%*!!|)0|)4*!!|)0|(p*!!|)0|(y*!!|)0|)8.2,%}!9M.2,%} Ss\/|+T|(w|(x|(o!|3: ,|3<,|3=,|3>,|3?,|3@,|3A,|3B,|3C,|3D,|3E,|3F,|3G,|3H,|3I,|3J,|3K,|3L\/|+T|)!|)*|)$,|3M\/|+T|)+|)3|)-,|3N!|3O!| &.0|)B|)C+).% }!FC}!pO% }'X0}#9g% }%`X} )5% }&!;}#Xi|)]|)\/#H+).% }&*R}!bY% }%du}#0{% } P=}&:S% }!F+|v?|)]|)&#H+).% } E6|Zy% |bY}!nG% }!_l}%Fn% }&8:}#23|)]|)5#H+).% }#Ti}!=Q% |8[}$]C% } Wl}'EC% }&1^} T%|)]|(z#H+).% }#Aq}&8=% } v5|oA% }%ON}#y\/% }$`U}!#1|)]|)9#H#|3X!|(R+).% }$Sq|+R% }'!4}'nI% }'5a|]N% }&:]}!15|)]|(q#H!|3Y$|)PB|+K!|3Z !|3^!|)n!|3_ !|3b!|)p!|3c!^#|3d!| %!|3e !|4!!^1|4+|)l|)f|)j|)j|)m!|4# 1|4+|)o|)h|)j|)j|)m\/|4)|)k|)g|)i!|4( !|4* ,|4,,|4-,|4.!|4\/ #|41!| %#|42!| %2|3;|+K|)L|)x|)y|+K|+K#|43#|)z|(Q#|44!| %#|45!| %2|3;|+K|)L|* |*!|+K|+K#|46#|*#|(Q#|47!|*'#|49!|*'!|4;!|)q#|4>!|*&!|4@ ,|4B,|4C,|4D,|4E,|4F!|4G !|4I !|4K !|4M !|4O !|4Q !|4S !|4U !|4W ,|4],|4^!|4_ !|4b !|4y!|*:#|4z!| %#|4{#|*=|*u!|5  !|5# !|5% !|5' ,|5)!|5*!|*C!|5; !|5J !|5d!|$8!|5e !|5f !|5h &&!|5k#|*K|+y!|5p!|&R!|5v!|*P1|6N|*`|*i|*O|*a|*c#|5w!| %#|5x!| %!|5y#|*R|+0#|5z!| %#|5{!| %!|6 !|+0!|6-!| $!|63 !|66 !|68 !|6; !|6=#|*[|&\/0|5g% } i+|h+% }#@ }#l3% |W3}%[\/% } E@} &W.2,%} J6#|6>#|*e|*N!|6@ &!|6E #|6H$B|,2|+2*!!|*X|*^.2,%}!9M.2,%} QO&\/|+T|*Y|*c|*]!|6I !|6K !|6M !|6O !|6Q !|6S !|6U .0|*f|*g+).% } i+|h+% }#@ }#l3% |W3}%[\/% } E@} &W|*q|*_#H!|6W!|$j-|)M|$a!|6j !|6l #|6n!| %#|6o#|*w|*u!|6p!|*z!|6q #|7&#|'f|'i!|7' #|7)!| %#|7*#|+&|*N#|7,$B|,2|+20|5g% }($s}!HZ% } xp}$o0% }$rW} 5E% }$<o}%_x*!!|*t|+%+).% }($s}!HZ% } xp}$o0% }$rW} 5E% }$<o}%_x|)]|) #H#|7-!| %!|7.!|+,&!|70 #|72!|*y!|74!|+)!|75!| $!|79 !|7? !|7B !|7F !|7J !|7N !|7P!|*<!|7Q !|7T !|7V !|7W !|7[!|+3!|7] !|7_ .|7i|+6|+7!|7b !|7d 2|7g|+=|+8|+9|+:|+;|+<1|7c|+@|+4|+;|+8|+5!|7f !|7h !|7j !|7l !|7m!|+S!|7n !|7p !|7r !|7t ,|7v!|7w !|7y !|7{ !|8! !|8$ !|8& !|8( !|8* !|8+!^!|8. &!|80!|+V!|81!|+a!|82!|+^!|86 !|8;!|+^!|8? !|8D!|+U!|8J!|+T!|8N &!|8P!|+c!|8Q!|+h!|8R !|8U !|8Y !|8[ &&+)|8`|+b|+b|$]|$[|+d|+e|+f|+g+)|8`|+W|+X|+Y|+Z|+[|+]|+^|+`!|8_ !|8a !|8c !|8e!B!|8i &#|8m!| %#|8n#|+u|(Q#|8o!| %2|3;|+K|)S|+r|+t|+K|+K!|8p !|8s !|8w!|+w!|8x!|+v!|8y!|&R!|9' !|9* !|9-!|, !|9.!|*(!|92 #|9?!| %#|9@!| %!|9A!|*(!|9S!|,'-|7u|,9!|9V !|9^ !|9e !|9g !|9i !|9k !|9n !|9p !|9r !|9u !|9z !|: #B|*N!|:% !|:)!G!|:+ ,|:,!|:.!|,7!|:\/!G!|:1!|,;!|:2 !|:3 !|:6 !|:9 !|:= #|:C!| %#|:D#|,B|*u!|:E !|:G!|'*!|:H !|:I !|:N !|:T!|+F+1|:Z|,G|,H|+1|,I|' |&{|&w|&z|+F|'#|'!|&X|&v|&u|&y|&x!|:Y !|:[ !|:^ !|:` !|:b !|:d !|:f !|:h!|,S1|6N|,_|-#|,R|,`|,a!|:i!|,U1|6N|,o|- |,T|,p|,q!|:j!|,W1|6N|,g|,y|,V|,h|,j#|:k!| %#|:l!| %!|:m!|+0!|:n#|+0|&\/0|5g% }&g_|$V% } E)}&9^% }#_5}%$@% }'=>}&3r.2,%} nN#|:o#|,s|*N!|:q !|:v !|:w !|:y !|:{#|,c|&\/0|5g% } S;}%G1% }#BY}'15% }$ZG}#>]% }!n*}#kc.2,%} iW#|; #|,u|*N!|;# #|;(!| %!|;) !|;+!|+0!|;,#|+0|&\/0|5g% }$y)}#,]% }'6g}%0.% }&G=|8Q% }&UD|XN.2,%} hO#|;-#|,t|*N!|;\/ !|;4 #|;5$B|,2|+2*!!|,g|,]*!!|,g|,m*!!|,g|,e.2,%}!9M.2,%} Cl.0|,v|,w\/|+T|,b|,j|,d+).% } S;}%G1% }#BY}'15% }$ZG}#>]% }!n*}#kc|,x|,f#H,|;6\/|+T|,k|,q|,l+).% }$y)}#,]% }'6g}%0.% }&G=|8Q% }&UD|XN|,x|,n#H\/|+T|,Z|,a|,[+).% }&g_|$V% } E)}&9^% }#_5}%$@% }'=>}&3r|,x|,^#H#|;7#|,{|,V!|;8#|,Y|)[!|;:#|,X|)[!|;< !|;? !|;M!^!|;N!|-(!|;O!|-)!|;P!|-*#|;Q#|)X|(U#|;R#|)Z|(S#|;S#|-P|-4!|;T !|;W!|-31|6N|-I|-Q|-2|-J|-L!|;X!|-51|6N|-;|-N|-4|-<|->!|;Y!| $!|;Z!| $!|;[#|-7|&\/0|5g% }&[F} *a% }!jE}'@{% |D1}!Q#% }!$)}#0o.2,%}!6P#|;]#|-D|*N!|;_ #|;d!| %!|;e!|-=!|;f !|;i !|;l#|-@|&\/0|5g% } di} h;% }%[l} RY% }'U^}!n9% }#f{}'Gh#|;m$B|,2|+2*!!|-8|-9*!!|-8|-B.2,%}!Ig.2,%} X*.2,%} ]T#|;n#|-E|*N!|;p !|;u!| $!|;v .0|-F|-G\/|+T|-6|->|-8+).% }&[F} *a% }!jE}'@{% |D1}!Q#% }!$)}#0o|-M|-:#H,|;x\/|+T|-?|-L|-A+).% } di} h;% }%[l} RY% }'U^}!n9% }#f{}'Gh|-M|-H#H!|;y !|;{ !|<! !|<% !|<, #|<A!|-k#|<C!|-l#|<E!|-k!|<G !|<J #|<M!|-l-|<Z%,-|<Z##|<O -|<Z% }$$) #|<P !|<Q !|<S !|<U !|<W !|<Y !|<[ !|<] #|<_ #|<` !|<a !|<c !|<e#|-i|-p!|<f!|-i!|<g !|<j !|<k !|<l !|<m !|<n!|-r!|<o !|=6 !|=> !|=F !|=N !|=P !|=R !|=T!|-i!|=U!|-U#|=W$|.%|1r|+Q#|=[#|1r|+Q#|=g$BL|,6#|=h$BJ|,6#|=i#|1r|+R#|> !|7`#|>9$BL|,6#|>:$BJ|,6#|>;!|7`!|>@ #|>K#|1u|+H#|>O$BL|,6#|>P$BJ|,6!|>Q #|>U#|1u|+H!|>X #|>c#|1u|+H#|>g$BL|,6#|>h$BJ|,6!|>i #|>m#|1u|+H!|>p #|?O#|1u|+H#|?S#|1r|+R#|?n!|7`#|@##|2h|2g#|@2!|.^#|@8#|1r|+R#|@Y!|7`#|@j$|3'|2m|+Q#|A2#|1r|+R#|AS!|7`#|Ad#|2m|+Q#|C4!|2r#|C7#|2h|3!#|C8!|7f#|C]!|7f#|Dd!|,<#|Dg#|2j|2g#|Dh#|&,|&+#|Di!|,5#|Dj#|2j|2g#|Dk$B|0p|,6#|Dl$B`|,6#|Dm#|&,|&+#|Dn!|,5#|Do$B|0p|,6#|Dp#|&,|&+#|Dq!|,5#|Dr#|1r|+R#|Ds$B|0p|,6#|Dt#|&,|&+#|Du!|,5#|Dv#|1r|+R#|Dw$B|0p|,6#|Dx#|2m|+Q#|Dy#|2j|2g#|Dz#|2h|3!#|D{#|2j|2g#|E !|.b#|E!#|2h|2g#|E##|2j|2g.2,%|LW.2,%} zp.2,%|?O.2,%} DR.2,%|Eo.2,%|K<.2,%} Ob-(#*! |.k.,|'\/|.l*! |.k.,MB.,LB*! |.p.,J|.q*! |.r*!!|.h|.o*!!|.i|.o.,_|.u.2,%} `<.2,%}!T?#|E$#|2j|2g#|E%#|2h|2g#|E&!| %*! |.{#|E'!| %#|E(!| %*! |\/##|E)!| %*!!|.t|\/%#|E*!| %*!!|.v|\/'#|E+!| %*!!|.x|\/)#|E,!| %*!!|.z|\/+#|E-!| %*!!|\/ |\/-#|E.!| %*!!|\/#|\/\/#|E\/!| %*!!|\/%|\/1#|E0!| %*!!|\/'|\/3#|E1!| %*!!|\/)|\/5#|E2!| %*!!|\/+|\/7#|E3!| %*!!|\/-|\/9#|E4!| %*!!|\/\/|\/;#|E5!| %*!!|\/1|\/=#|E6!| &#|E7!| %#|E8!| %*! |\/A#|E9!| %#|E:!| %*! |\/D#|E;!| %*!!|\/:|\/F#|E<!| %*!!|\/<|\/H#|E=!| %*!!|\/>|\/J#|E>!| %*!!|\/@|\/L#|E?!| %*!!|\/B|\/N#|E@!| %*!!|\/D|\/P#|EA!| %*!!|\/F|\/R#|EB!| %*!!|\/H|\/T#|EC!| %*!!|\/J|\/V#|ED!| %*!!|\/L|\/X#|EE!| %*!!|\/N|\/Z#|EF!| &#|EG!| &#|EH!| %*! |\/_#|EI!| %*!!|\/T|\/a#|EJ!| %*!!|\/V|\/c#|EK!| %*!!|\/X|\/e#|EL!| %*!!|\/Z|\/g#|EM!| %*!!|\/]|\/i#|EN!| %#|EO!| %*! |\/l#|EP!| %*!!|\/b|\/n#|EQ!| %*!!|\/d|\/p#|ER!| %*!!|\/f|\/r#|ES!| %*!!|\/h|\/t#|ET!| %*!!|\/j|\/v#|EU!| %*!!|\/l|\/x#|EV!| %*!!|\/n|\/z#|EW!| %#|EX!| %*! |0!#|EY!| %*!!|\/s|0$#|EZ!| %*!!|\/u|0&#|E[!| %*!!|\/w|0(#|E]!| %*!!|\/y|0*#|E^!| %*!!|\/{|0,#|E_!| %*!!|0!|0.#|E`!| %*!!|0$|00#|Ea!| %*!!|0&|02#|Eb!| %*!!|0(|04#|Ec!| %*!!|0*|06#|Ed!| %*!!|0,|08#|Ee!| &#|Ef!| %!|Eg !|Eh ,|Ej0Q|0 B|\/{|0>0Q|\/CB|\/B|0>0Q|\/!B|\/ |0>*! |0A,|Ek0Q|0;|0:|09|0C0Q|\/kB|\/j|0C0Q|\/^|\/]|\/[|0C0Q|\/@|\/?|\/>|0C*!!|07|0G*!!|0=|0@*!!|0>|0F*!!|0?|0E*!!|0@|0?#|El!|.V#|Em#|1r|+Q#|En#|1r|+R#|Fv!|2v#|Fw#|1r|+Q#|Fx!| %!|Fy!|+D#|G#!|.Z!|G$ !|G&!|,=!|G' #|G)#|1r|+R!|G*#|1r|+R#|G0!|7`!|G1!|,Q#|G>#|7X|+R#|G?!|7h#|G@!| %!|GA!|,F#|GE!|7a#|GF!|7`*!!|0A|0D#|GG#|1r|+Q#|GH#|7X|+R#|GI!| %!|GJ !|GW #|GY#|1r|+Q!|GZ .0|.x|.w+).% }&-R} `_% }&%;|OJ% }#z)}#Q\/% }&.>}'S]|0k|.j#H.,|0lB+).% }%PS}'HA% }&{'}$3#% }$Xh}'k8% } ;2}#Ck|0k|.i#|0m+).% |Tz}!a@% |(P|2-% }'4p} u{% |5v}&V.|0k|.h#|0m+).% }##N}%kZ% }(#,}'P2% }%Sh}%wa% }#=f}'o<|0k|.g#H.,|0pB.&|.v|0q+).% } dn|%[% }'gj}$G%% } -t}'mQ% }$rU} 7H|0k|.f#|0r+).% }&0Z|Jc% }%;M}!J(% |h1|5!% }!&*}$C(|0k|.e#I.,|0t|.n.&|.m|0u+).% }!VE}%{u% }'`>}$H%% }'lo}#l9% }'wM} ?A|0k|.d$|0v#|G]#|0a|$Z!|G^ !|Gd !|Gh !|Gq !|Gu!|1h#|Gv!| %*!!|0s|%y!|Gx !|H !|*u!|H!!|1i!|H$ !|H-$|+A|+=|2&!|H.$|+A|+=|2'!|H\/ !|H:!|12!|H; !|H?#|+=|2$!|H@ !|HF !|HJ!|*:!|HK !|HL!^!|HM !|HO #|HP!|*C!|HQ#|1B|2 !|HR!|13!|HS!|14!|HT!|1\/!|HU!|10!|HV!|11.|7i|1.|1-!|HW!|1,!|HX!|1+2|7g|1=|1>|1?|1*|1)|1(1|7c|1@|1:|1;|12|1<0|Ku|1A|15|18|19#|HY!| %#|HZ!| %#|H[!| %!|H] &!|H_ -|7u^!|H`!|1I!|Ha !|Hg!|1'!|Hh !|Hj!|1i!|Hl !|Hm!|1i!|Hq!|1Z-|7u|+F!|Hs!|1R!|Ht!|1Z!|Hv !|Hx!|1Z!|Hz !|I( !|I* !|I6 !|JL!|1X0|5g% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG#|JM$B|,2|+2*!!|1R|1].2,%}!n\/.2,%}!'G.2,%} zt#|JN#|1_|*N-|9o|1c#|JP!|1c-|7uB!|JR !|J_!|+K!|J` !|Jl .0|1`|1a+).% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG|1k|1b#H,|Jy-|7u|1m,|Jz.|7i|1P|1N2|7g|1p|1O|1Z|1Q|1T|1V1|7c|1q|1i|1L|1O|1&0|Ku|1r|1H|1J|1K.|:e|1r|1M1|7e|1q|1h|1W|1Y|1g!|J{ ,|K!.U|1w|16!|K#!|2)!|K\/!|2*!|K6!|17!|K7!|2)!|KC !|KE!|+P!|KM!|2#!|KN!|+F!|KQ!|+R!|K`!|+R!|Kt !|Kv !|Kx !|Kz !|L  !|L# #|L(!|2.!|L)!|*u#|L*!| %#|L+!| %&&&#|L,!| %#|L-!| %#|L.!| %+(|)R|27|26|25|24|23|24|22\/|)O|21|28|$a#|L\/ #|L0 #|L1 #|L2 !|L3 #|L7 #|L8 !|L9!|2@#|L< #|L= !|L>!|2C#|LA #|LB #|LC #|LD !|LE !|LH!|2-!|LN #|LQ !|LR #|LT !|LU!|2N#|LX #|LY .2,%} n`.2,%}!I<.2,%} [q#|LZ$|20|29|*v!|L[ !|L_!|2V!|L`!|+8!|La !|Lh !|Ln !|Lu #|Lw!|-'!|Lx!|2^#|Ly!|-'!|Lz!|2.!|L{!|2.!|M !|2.!|M!!|2..0|2S|2T!|M#!|2Z!|M$!|2]!|M%!| '!|M&!|2Y!|M'!|2Y.|7i|2^|2_2|7g|2k|2`|2a|2b|2c|2d1|7c|2l|2U|2W|2X|2\/!|M(!|2K!|M)!|2M!|M*!|2I!|M+!|+8!|M,!|2;!|M-!|2<!|M.!|2F!|M\/!|2E!|M0 !|M2!|+8!|M3 !|M9 !|M? !|ME !|MK !|MQ !|MW !|M^ !|Md!|2A!|Me!|2D!|Mf!|2O!|Mg!|2>!|Mh #|Mm .2,%} ]a.2,%}!Hm.2,%} FS.0|3,|3-#|Mn!|30#|Mo!|3*!|Mp !|Mr !|Mu !|Mw ,|My!|Mz !|N  !|N# !|N% !|N' #|N*!| %&&&#|N+!| %#|N,!| %#|N-!| %#|N.!| %+(|)R|3B|3A|3@|3>|3=|3>|3<\/|)O|3?|3C|$a!|N\/!| $!|N2!|%y*! |%y!|N9!|%y!|N@!|3H!|NB !|NE!|3L!|NF!|3:!|NI !|NO #|NU!|3P!|NV$|3Q|3a|*v#|NW!| %&#|NX!|3T!|NY$|3U|3_|*v#|NZ!| %&&&#|N[!| %#|N]!| %#|N^!| %#|N_!| %+(|)R|3]|3[|3Z|3W|3X|3W|3V\/|)O|3Y|3^|$a+(|)R|3]|3[|3Z|3R|3X|3R|3V\/|)O|3Y|3`|$a,|N`!|Na !|Nc !|Nh !|O& !|OA !|OF !|OH !|OL!|3j!|OP!|3k!|OT #|Ot#|3n|3E#|Ou!| %#|Ov!|5:!|Ox$|3q|3s|1W#|Oy$|3r|5#|*v#|Oz!| %#|O{$|5:|1B|2 &&&!|P  !|P#!|3y#|P,$|5=|1B|2 #|P- #|P.!| %-|M{|3{-|M{|4 #|P\/!| %-|N$|4#-|M{|4$-|N$|4#!|P0!|6%!|P1!|6%!|P2!|%y#|P4!| %*!!|3z|%y!|P6!|%y!|P8!|%y!|P:!|%y#|P<!| %*!!|4$|%y#|P> #|P?!| %#|P@!| %#|PA$|%z|6b|$l*!!|4)|%y!|PB!| $!|PF!|4h#|PG!| %#|PH!| %#|PI$|4;|4=|,(!|PJ#|7e|&3#|PK!| %*!!|41|%y&&&#|PM#|6w|*N#|PO$|4G|4z|*v#|PP$|53|1B|2 #|PQ$|51|1B|2 #|PR#|6w|*N#|PT$|4G|4x|*v#|PU!| %&&&#|PV$|55|1B|2 #|PW!| %*!!|4A|%y*!!|4A|%y#|PY!| %*!!|4D|%y*!!|4D|%y#|P[$|52|1B|2 #|P] #|P^#|76|6Q#|P_#|77|6Q#|P`#|78|6Q#|Pa#|79|6Q#|Pb#|7:|6Q#|Pc#|7;|6Q#|Pd#|7<|6Q#|Pe#|7=|6Q#|Pf#|7>|6Q#|Pg#|7?|6Q#|Ph#|7@|6Q#|Pi#|7A|6Q#|Pj#|7B|6Q#|Pk#|7C|6Q#|Pl#|7D|6Q&&&!|Pm!|%y!|Po!^#|Pp!| %#|Pq$|58|1B|2 !|Pr#|4t|*v#|Ps!| %&&&#|Pt!| %#|Pu!| %#|Pv!| %+(|)R|4r|4q|4p|4o|4n|4o|4m\/|)O|4l|4s|$a+(|)R|4r|4q|4p|4f|4e|4f|4d\/|)O|4l|4u|$a+(|)R|4r|4q|4p|4J|4I|4J|4H\/|)O|4l|4w|$a+(|)R|4r|4q|4p|4J|4I|4J|4H\/|)O|4l|4y|$a+(|)R|4r|4q|4p|4@|4?|4@|4>\/|)O|4l|4{|$a+(|)R|4r|4q|4p|3v|3u|3v|3t\/|)O|4l|5!|$a&-|Mv|5$!|Pw!|5)-|]jB-|7u|5'#|Q%$|5<|1B|2 !|Q&!|5+-|]HB!|Q'!|5--|<Z##|Q(#|6{|*N0|5g% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG+).% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG|1k|1b#H#|Q*#|7$|*N#|Q,#|7$|*N#|Q.#|6x|*N#|Q0#|6x|*N#|Q2#|6x|*N#|Q4#|6x|*N#|Q6!|63#|Q8#|6w|*N#|Q:#|6w|*N#|Q<#|6w|*N-|9o|5:#|Q>#|6u|*N#|Q@#|6u|*N0|5g% }$eZ}%=7% }$ss}&$E% }'f.}&:$% } `4|P!!|QB!|*u!|QC!| $#|QF!|5q!|QH!|5)!|Qs#|1xB#|R%!|5K!|R'!|6!!|R4!|4R!|S( !|Sc !|Sd!B0|5g% }%U-}$X^% }&K1}(!2% }$j#}$?y% }%k;}&V^#|Sz#|6v|*N-|9o|5K#|T $|5K|1B|2 #|T! 0|5g% } >!}%MH% }!%S|Q!% }!Qh}'X`% }&31}'#1#|T##|7#|*N!|T%!|5M-|<Z$!|T. #|T0#|1B|1y#|T1!|5q!|T3!|5U&&!|T9!|5T!|TE!|7j0|5g% }#+'|eA% }&j'}'<D% }(%4}'(D% }#B;|e@+).% }#+'|eA% }&j'}'<D% }(%4}'(D% }#B;|e@|3.|3+#H#|TG!|5q#|TJ!|5c#|TL!|5d*! |5`*!!|5U|5_#|TN#|6y|*N#|TP#|6z|*N#|TR!|5q#|TU%|#d|#g|&;|&<#|TV#|#e|*u#|TW#|#f|*u!|TX !|Tg!|4D#|UZ!|5o#|U]!|5p*! |5l*!!|5b|5k#|U_#|6y|*N#|Ua#|6z|*N#|Uc#|5n|*N-|9o|5q0|5g% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm+).% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm2-#I0|5g% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV+).% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV2\/#H!|Ue !|Uf!|4:#|Wr$|6_|1s|2 !|Ws -|7u|+8!|Wu!|5y!|X'!|6 !|X9!|6%0|5g% |W;}!MH% }!q,}'#o% }#%v}'=p% }'OZ} EW-|7u^#|X: !|X; !|XO!|6*!|Xz !|Y !|6S!|Y= !|YF!|6S.2,%} nI.2,%} Xf.2,%} Jc.2,%} JU#|YP#|7$|*N-|9o|61#|YR#|6x|*N-|9o|630|5g% }$*&}%P[% } _ }!sR% |<G}%wV% }!la}%G2.2,%} L3*! |& &-|N$|68-|M{|69-|N$|68-|M{|68-|M{|6<!|YT #|YV!| %#|YW!| %#|YX!| %#|YY!| %#|YZ!| %#|Y[!| %#|Y]!| %#|Y^!| %#|Y_!| %#|Y`!| %#|Ya!| %#|Yb!| %#|Yc!| %#|Yd!| %#|Ye!| %0|5g% }%V`}!E?% }!t5}&rp% } kX}$Tt% }'3K}#so.2,%} 0)#|Yf#|7!|*N!|Yh#|68|5%!|Z$ #|[-$|6_|1B|2 #|[.!|6Z#|[0!|6^*! |6U*!!|6K|6T0|5g% }';i}%%q% }%%N}!K%% }% 6}!%r% }$iB}%`F+).% }';i}%%q% }%%N}!K%% }% 6}!%r% }$iB}%`F|2e|2R#I#|[2#|6s|*N0|5g% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fX+).% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fXSP#H#|[4#|6t|*N#|[6#|6W|*N-|9o|6_#|[8!|6_#|[:!| %#|[; #|[< !|[=#|6b|+\/#|[C !|[D!|6S!|[e !|[l !|[t!|6o-|7u|+F!|[v!|6o#|]#$|6n|1B|2 #|]$#|7$|*N!|]&!|6m!|]<!|6o0|5g% }'r |d`% }$4j}'aY% }$y\/}%v'% }!B9}%&h#|]E$B|,2|+2*!!|6g|6X*!!|6g|6[*!!|6g|5>*!!|6g|5J*!!|6g|6$*!!|6g|65*!!|6g|5s*!!|6g|5u*!!|6g|5\/*!!|6g|5[*!!|6g|6N*!!|6g|5O*!!|6g|6q.2,%}!9(.2,%} Wt.2,%} +D.0|7%|7&,|]F+).% }'r |d`% }$4j}'aY% }$y\/}%v'% }!B9}%&h|7(|7'#H!|]G !|]I +).% }$*&}%P[% } _ }!sR% |<G}%wV% }!la}%G2|7(|66#H,|]K+).% |W;}!MH% }!q,}'#o% }#%v}'=p% }'OZ} EW|7(|6.#H!|]L \/|]O|6P|6Q|6R!|]N +).% }%U-}$X^% }&K1}(!2% }$j#}$?y% }%k;}&V^|7(|6\/#H!|]P +).% }%V`}!E?% }!t5}&rp% } kX}$Tt% }'3K}#so|7(|6O#H,|]R,|]S,|]T,|]U,|]V,|]W,|]X,|]Y,|]Z,|][,|]],|]^,|]_,|]`,|]a+).% } >!}%MH% }!%S|Q!% }!Qh}'X`% }&31}'#1|7(|60#H!|]b !|]d !|]f ,|]h.|:c|5P|7I.|]Q|4c|7J.|]Q|4b|7J.|]Q|4a|7J.|]Q|4`|7J.|]Q|4]|7J.|]Q|4W|7J.|]Q|5N|7J.|]Q|5N|7J-|7u|7R+).% }$eZ}%=7% }$ss}&$E% }'f.}&:$% } `4|P!|7(|6-#H!|]i .|7i|6i|6h2|7g|7V|1O|6o|6j|6l|6p1|7c|7W|1i|1L|1O|5?0|Ku|7X|1H|1J|1K.|:e|7X|1M1|7e|7W|1h|1W|1Y|1g!|]k!|6g!|]l!|,Q!|]p!|6(!|]q!|5x!|]r!|5C!|]s!|6)!|]t #|^S!|5*#|^U!|5w!|^W!|5E!|^X!|6+!|^Y!|5B!|^Z#B|1i#|_a!|5,!|_c!|5H!|_d !|_f ");
+" .2,%}!6g.2,%} ZD.2,%} @;.2,%} W<.2,%}!Hd.010!  !# !% !' !) !+ !- !\/ !1 ,3,4,5,6!7 %,:!; $!> !@ !B -!?.&HH+).% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm2-#I.&HI+).% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV2\/#H+).% }!8{}'Wa% }%FP}'_9% }#SK}%A$% }'DT}$EJ2.#H.2,%|m<.&HK.2,%|m5.2,%}!Hd.2,%} W2.0QR!D !F !H !J !L !N !P !R !T ,V+).% }'?^}!pH% }$pB}($m% |66}'Da% }$Xp} ,:SN#O+).% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fXSP#H!W !^ !c !f !i!b!k!a.saf!m !o !r !t !v !w !z !| ! !| % !| ( !| + !| . .ssr+)ntmonqpcd!| 1 !| 4 .swv!| 7 !| 9 !| ; !| = !| ? !| A !| C !| F !| I !| O !| P !| V !| b!|#i!| p!| *!| y!| -!| {#|#0|#5!|!&!|+K!|!'!|+K!|!(!|#i!|!=!|#0!|!> !|!C#|!%|#o*! | 3!|!G#|!'|#o*!!| )| 5!|!K#|!*|#o*!!| +| 7!|!O#|!-|#o*!!| -| 9!|!S#|!0|#o*!!| \/| ;!|!W#|!3|#o*!!| 1| =!|![#|!6|#o*!!| 3| ?!|!`#|!9|#o*!!| 5| A!|!d#|!<|#o*!!| 7| C!|!h#|!?|#o*!!| 9| E!|!l#|!B|#o*!!| ;| G!|!p#|!E|#o*!!| =| I!|!t#|!H|#o*!!| ?| K!|!x#|!K|#o*!!| A| M!|# #|!N|#o*!!| C| O!|#%#|!Q|#o*!!| E| Q!|#)#|!T|#o*!!| G| S!|#-#|!W|#o*!!| I| U!|#1#|!Z|#o*!!| K| W!|#5#|!^|#o*!!| M| Y!|#9#|!a|#o*!!| O| [!|#=#|!d|#o*!!| Q| ^!|#A#|!g|#o*!!| S| `!|#E#|!j|#o*!!| U| b!|#I#|!m|#o*!!| W| d!|#M#|!p|#o*!!| Y| f!|#Q#|!s|#o*!!| [| h!|#U#|!v|#o*!!| ^| j!|#Y#|!y|#o*!!| `| l!|#^#|# |#o*!!| b| n!|#b#|#$|#o*!!| d| p!|#f#|#'|#o*!!| f| r!|#j$| w| v|#q*!!| h| t!|#l#|#-|#o!|#p#|#*|#o&.U| x!&.U| z!&.U|! !-|<Z% 1}((0&#|#t!| %&#|#u!| %&.U|!(!#|#v!| %&.U|!+!#|#w!| %&.U|!.!#|#x!| %&.U|!1!#|#y!| %&.U|!4!#|#z!| %&.U|!7!#|#{!| %&.U|!:!#|$ !| %&.U|!=!#|$!!| %&.U|!@!#|$#!| %&.U|!C!#|$$!| %&.U|!F!#|$%!| %&.U|!I!#|$&!| %&.U|!L!#|$'!| %&.U|!O!#|$(!| %&.U|!R!#|$)!| %&.U|!U!#|$*!| %&.U|!X!#|$+!| %&.U|![!#|$,!| %&.U|!_!#|$-!| %&.U|!b!#|$.!| %&.U|!e!#|$\/!| %&.U|!h!#|$0!| %&.U|!k!#|$1!| %&.U|!n!#|$2!| %&.U|!q!#|$3!| %&.U|!t!#|$4!| %&.U|!w!#|$5!| %&.U|!z!#|$6!| %&.U|#!!#|$7!| %&.U|#%!#|$8!| %&.U|#(!#|$9!| %&.U|#+!#|$:!| %!|$;!|#\/!|$= &!|$C!|#2!|$E &&!|$P #|$f#|#7|*u#|$g!| %#|$h#|#9|*u#|$i!| %#|$j!| %*! |#:#|$k!| %*!!|#0|#<#|$l!| %*!!|#2|#>#|$m!| %*!!|#4|#@#|$n!| %*!!|#6|#B#|$o!| %*!!|#8|#D#|$p!| %*!!|#:|#F#|$q!| %*!!|#<|#H#|$r!| %*!!|#>|#J#|$s!| %*!!|#@|#L!|$t !|$v$|#Px|&X#|$w!| %-|<Z#-|<Z%7!|$x!|#i#|%V!| %#|%W!| %!|%X!|#i,|&*!|&+ !|&- !|&\/ !|&1 !|&3 !|&5 !|&7 !|&9 !|&;#|&5|+2!|&?$|#Tx|&X!|&D !|&I!|#v#|&L!| %#|&M!| %&!|&N !|&T !|&w !|'+ !|'2!^!|'5 #|'@!|-&!|'A !|'J !|'R !|'[ !|']!|#v!|'^ !|'` ,|'b!|'c !|'e !|'g!|$'!|'h#|#{|, #|'i!| %!|'j#|$!|, #|'k!| %#|'l!| %!|'m#|$%|, #|'n!| %!|'o!|$'!|'p !|'r!|$*!|'v!|$*!|( #|$6|+y!|(. #|(0!| %#|(1!| %#|(2#|$4|(Q!|(3#|$5|+y!|(9!|$'#|(:!| %-|<Z%,!|(;#|$5|+y2|3;|+K|)I|$,|$-|+K|+K#|(B #|(C #|(D !|(E !|(F #|(H#|$;| $#|(I#|$<|%&#|(K!| %#|(L!| %&&&#|(M!| %#|(N!| %#|(O!| %+(|)R|$C|$B|$A|$@|$?|$@|$>\/|)O|$=|$D|$a!|(P!|$G!|(Q!| $!|(U!|$I!|(W!|$H!|(X#|$V|$W&&#|)2!| %#|)3!| %&&!|)4 !|)6 #|)8!| %!|)9!|$I!|):!|$T!|)<%|'P|'f|'g|'H!|)= !|)?%|'P|'e|'g|'H!|)@!|$H!|)A!|$U!|)B !|)F !|)I !|)L !|)N ,|)P!|)Q !|)S#|)q|*F#|)^!| %&&&#|)_!| %!|)`#B|$c!|)a!|$i!|)b!|$k!|)c !|)h !|)l !|)p!|$o!|)q!|$p!|)r !|){ !|*$!|-y*# % |ow}#I2% } 6% #|*,#|$v|&q#|*-!| %!|*.#B|&0!|*\/!|&\/#|*1!| %#|*2!| %-|<Z% } pQ}&BU#|*3!|.$!|*4#|${|-x!|*@#|%$|-x-|<Z#!|*E$|%$|-x|%#!|*I#|%x|%o!|*L$|%q|+0|%)!|*N &*! |%)&#|*P!| %#|*Q!| %#|*R!| %#|*S!| %#|*T!| %#|*U!| %#|*V!| %#|*W!| %#|*X!| %#|*Y!| %#|*Z!| %#|*[!| %#|*]!| %#|*^!| %#|*_!| %#|*`!| %#|*a!| %#|*b!| %#|*c!| %#|*d!| %#|*e!| %#|*f!| %#|*g!| %#|*h!| %#|*i!| %#|*j!| %#|*k!| %#|*l!| %#|*m!| %#|*n!| %#|*o!| %#|*p!| %#|*q!| %*! |%L*!!|%B|%K*!!|%C|%J*!!|%D|%I*!!|%E|%H*!!|%F|%G*!!|%G|%F*!!|%H|%E*!!|%I|%D*!!|%J|%C*!!|%K|%B*!!|%L|%A*!!|%M|%@*!!|%N|%?*!!|%O|%>*!!|%P|%=*!!|%Q|%<*!!|%R|%;*!!|%S|%:*!!|%T|%9*!!|%U|%8*!!|%V|%7*!!|%W|%6*!!|%X|%5*!!|%Y|%4*!!|%Z|%3*!!|%[|%2*!!|%]|%1*!!|%^|%0*!!|%_|%\/*!!|%`|%.*!!|%a|%-&!|*r#|$k|%n!|*y$|+0|%+| $#|+(!| %!|+) !|+, !|+. #|+0!| %#|+1!| %!|+2 &&*! |%y!|+=!|%y&!|+? !|+A #|+C!| %!|+D &&&\/|+T|&!|&#|&%\/|+T|%s|%t|%w!|+N \/|+T|%(|%r|%{!|+S *!!|%b|%,!|+U !|+^ !|+` !|+b !|+d !|+f !|+h #|+j!| %!|+k !|+q!|&7!|+s#|&8|&<#|+t#|&9|&?!|+u !|,# !|,, !|,5 !|,?!|&<!|,] !|,_ !|,b !|,e !|,h !|,j &&&!|,l !|,n!|.!+(|,q|&A|&B|&C|&D|&E|&I|&J!|,p !|,r !|,t !|,v !|,x !|,z !|-  !|-# !|-' !|-+ !|-4 !|-= !|-? !|-B !|-D #|-F!| %#|-G#|&^|&q#|-H!| %#|-I#|&`|&q#|-J!| %#|-K!| %#|-L!| %#|-M#|&d|&q#|-N!| %#|-O!| %#|-P$|&g|&p|+0#|-Q!| %#|-R$|&i|&p|+0#|-S!| %-|<Z$-|<Z##|-T#|&b|&q#|-U#|&[|&q#|-V#|&f|*u!|-W#|&s|&Y#|-X!| %!|-Y#|&p|+0!|-] #|-_#|&h|*u!|-`!|&V!|-b !|-g !|-l !|-q!|' !|-t!|' !|-w !|-y !|.# !|.'!|&R!|.) #|.+#|&a|&q!|., !|.. !|.0 !|.2 !|.5 !|.6 .2,%} X`.2,%}!9M.2,%} VS.0|',|'-+).% }!OF}!Iy% }!&`|`v% }#TG}$eF% }%%U}!'k|'.|'+#I!|.8!|&3!|.9!|')!|.: !|.< !|.> !|.@ !|.B ,|.H!|.I ,|.K,|.L,|.M,|.N.|.;|'7|'7!|.O !|.^ -|.J|+K#|.c!| %#|.d!| %!|.e #|.j!| %2|3;|+K|)RB|'D|+K|+K#|.k#|'E|(Q!|.l!|'C!|\/, #|\/.!| %2|3;|+K|)RB|'I|+K|+K#|\/\/#|'J|(Q#|\/0!| %2|3;|+K|)RB|'L|+K|+K#|\/1#|'M|(Q!|\/2 !|\/P #|\/V!| %2|3;|+K|)RB|'Q|+K|+K#|\/W#|'R|(Q!|\/X #|\/`#|'A|*u!|\/a !|\/m'|)RB|'B|(R|*o|+K!|\/n!|*%#|\/q!| %!|\/r!|*%#|\/u!| %!|\/v -|7u|']!|\/x 0|5g% }$do} ^]% }$@1}#:h% }&j_}$0l% }'!N|0Y#|09$B|,2|+2*!!|'U|'`+).% }$do} ^]% }$@1}#:h% }&j_}$0l% }'!N|0Y|(J|'q#H#|0:#|'b|*N#|0<!|'Z#|0>!|'X#|0@!| %!|0A$|'P|'g|'H!|0B!|'h!|0C#|'o|'p#|0F!| %#|0G!| %#|0H!| %#|0I!| %#|0J!| %!|0K .2,%} M4.2,%}!9M.2,%} T)!|0R #|0T!| %!|0U !|0^ !|0a!|'t#|0b!| %!|0c$|'y|'x|+{!|0g !|0i !|0k !|0q#|('|'(#|0r!| %!|0s!|. !|0z #|1  !|1!#|('|'(#|1#!| %!|1$$|()|((|+{!|1) !|1+ !|1-#|'m|, !|1.!|. !|11 !|13 !|15 !|17 !|1; !|1?#|'k|, !|1@ !|1B !|1D#|'l|, !|1E !|1G !|1J!|*C!|1K #|1R!| %!|1S#|(<|(;!|1W &!|1Z #|1^!| %!|1_#|(A|(@!|1b !|1e !|1h !|1l#|'n|, !|1m !|1t!|(G!|1x .0|'r|'s+\/|4A|'w|'{|( |(!|(&|(+|(,|(\/|(0|(1|(2|(3|(6|(92|4N|(:|(>|(C|(D|(E|(I!|1{ !|2! .|2 %\/#.|2 $#!|2%!|(R1|6N|(r|)D|(Q|(s|(x!|2&!|(T1|6N|)0|)Y|(S|)1|)3!|2'!|(V1|6N|)'|)W|(U|)(|)*#|2(!| %#|2)!| %#|2*!| %#|2+!| %#|2,!| %#|2-!| %#|2.!| %#|2\/!| %#|20!| %#|21!| %#|22!| %#|23!| %#|24!| %#|25!| %#|26!| %#|27!| %#|28!| %#|29!| %#|2:!| %!|2; #|2=!| %&!|2> !|2@#|(n|&\/0|5g% }$Sq|+R% }'!4}'nI% }'5a|]N% }&:]}!15.2,%} XS#|2A#|)?|*N!|2C !|2H #|2J!| %!|2K !|2c !|2e 0|5g% }#Ti}!=Q% |8[}$]C% } Wl}'EC% }&1^} T%.2,%} LX#|2g#|)@|*N.2,%} GM!|2i !|2k !|2m#|)#|&\/0|5g% }&*R}!bY% }%du}#0{% } P=}&:S% }!F+|v?.2,%} .T#|2n#|)=|*N!|2p #|2u!| %!|2v !|2x !|2z !|3 #|),|&\/0|5g% }!FC}!pO% }'X0}#9g% }%`X} )5% }&!;}#Xi.2,%} .:#|3!#|)<|*N!|3$ #|3)!| %!|3* 0|5g% } E6|Zy% |bY}!nG% }!_l}%Fn% }&8:}#23.2,%} -)#|3,#|)>|*N!|3. 0|5g% }#Aq}&8=% } v5|oA% }%ON}#y\/% }$`U}!#1.2,%}!!K#|37#|)A|*N#|39$B|,2|+2*!!|)0|).*!!|)0|)%*!!|)0|)4*!!|)0|(p*!!|)0|(y*!!|)0|)8.2,%}!9M.2,%} Ss\/|+T|(w|(x|(o!|3: ,|3<,|3=,|3>,|3?,|3@,|3A,|3B,|3C,|3D,|3E,|3F,|3G,|3H,|3I,|3J,|3K,|3L\/|+T|)!|)*|)$,|3M\/|+T|)+|)3|)-,|3N!|3O!| &.0|)B|)C+).% }!FC}!pO% }'X0}#9g% }%`X} )5% }&!;}#Xi|)]|)\/#H+).% }&*R}!bY% }%du}#0{% } P=}&:S% }!F+|v?|)]|)&#H+).% } E6|Zy% |bY}!nG% }!_l}%Fn% }&8:}#23|)]|)5#H+).% }#Ti}!=Q% |8[}$]C% } Wl}'EC% }&1^} T%|)]|(z#H+).% }#Aq}&8=% } v5|oA% }%ON}#y\/% }$`U}!#1|)]|)9#H#|3X!|(R+).% }$Sq|+R% }'!4}'nI% }'5a|]N% }&:]}!15|)]|(q#H!|3Y$|)PB|+K!|3Z !|3^!|)n!|3_ !|3b!|)p!|3c!^#|3d!| %!|3e !|4!!^1|4+|)l|)f|)j|)j|)m!|4# 1|4+|)o|)h|)j|)j|)m\/|4)|)k|)g|)i!|4( !|4* ,|4,,|4-,|4.!|4\/ #|41!| %#|42!| %2|3;|+K|)L|)x|)y|+K|+K#|43#|)z|(Q#|44!| %#|45!| %2|3;|+K|)L|* |*!|+K|+K#|46#|*#|(Q#|47!|*'#|49!|*'!|4;!|)q#|4>!|*&!|4@ ,|4B,|4C,|4D,|4E,|4F!|4G !|4I !|4K !|4M !|4O !|4Q !|4S !|4U !|4W ,|4],|4^!|4_ !|4b !|4y!|*:#|4z!| %#|4{#|*=|*u!|5  !|5# !|5% !|5' ,|5)!|5*!|*C!|5; !|5J !|5d!|$8!|5e !|5f !|5h &&!|5k#|*K|+y!|5p!|&R!|5v!|*P1|6N|*`|*i|*O|*a|*c#|5w!| %#|5x!| %!|5y#|*R|+0#|5z!| %#|5{!| %!|6 !|+0!|6-!| $!|63 !|66 !|68 !|6; !|6=#|*[|&\/0|5g% } i+|h+% }#@ }#l3% |W3}%[\/% } E@} &W.2,%} J6#|6>#|*e|*N!|6@ &!|6E #|6H$B|,2|+2*!!|*X|*^.2,%}!9M.2,%} QO&\/|+T|*Y|*c|*]!|6I !|6K !|6M !|6O !|6Q !|6S !|6U .0|*f|*g+).% } i+|h+% }#@ }#l3% |W3}%[\/% } E@} &W|*q|*_#H!|6W!|$j-|)M|$a!|6j !|6l #|6n!| %#|6o#|*w|*u!|6p!|*z!|6q #|7&#|'f|'i!|7' #|7)!| %#|7*#|+&|*N#|7,$B|,2|+20|5g% }($s}!HZ% } xp}$o0% }$rW} 5E% }$<o}%_x*!!|*t|+%+).% }($s}!HZ% } xp}$o0% }$rW} 5E% }$<o}%_x|)]|) #H#|7-!| %!|7.!|+,&!|70 #|72!|*y!|74!|+)!|75!| $!|79 !|7? !|7B !|7F !|7J !|7N !|7P!|*<!|7Q !|7T !|7V !|7W !|7[!|+3!|7] !|7_ .|7i|+6|+7!|7b !|7d 2|7g|+=|+8|+9|+:|+;|+<1|7c|+@|+4|+;|+8|+5!|7f !|7h !|7j !|7l !|7m!|+S!|7n !|7p !|7r !|7t ,|7v!|7w !|7y !|7{ !|8! !|8$ !|8& !|8( !|8* !|8+!^!|8. &!|80!|+V!|81!|+a!|82!|+^!|86 !|8;!|+^!|8? !|8D!|+U!|8J!|+T!|8N &!|8P!|+c!|8Q!|+h!|8R !|8U !|8Y !|8[ &&+)|8`|+b|+b|$]|$[|+d|+e|+f|+g+)|8`|+W|+X|+Y|+Z|+[|+]|+^|+`!|8_ !|8a !|8c !|8e!B!|8i &#|8m!| %#|8n#|+u|(Q#|8o!| %2|3;|+K|)S|+r|+t|+K|+K!|8p !|8s !|8w!|+w!|8x!|+v!|8y!|&R!|9' !|9* !|9-!|, !|9.!|*(!|92 #|9?!| %#|9@!| %!|9A!|*(!|9S!|,'-|7u|,9!|9V !|9^ !|9e !|9g !|9i !|9k !|9n !|9p !|9r !|9u !|9z !|: #B|*N!|:% !|:)!G!|:+ ,|:,!|:.!|,7!|:\/!G!|:1!|,;!|:2 !|:3 !|:6 !|:9 !|:= #|:C!| %#|:D#|,B|*u!|:E !|:G!|'*!|:H !|:I !|:N !|:T!|+F+1|:Z|,G|,H|+1|,I|' |&{|&w|&z|+F|'#|'!|&X|&v|&u|&y|&x!|:Y !|:[ !|:^ !|:` !|:b !|:d !|:f !|:h!|,S1|6N|,_|-#|,R|,`|,a!|:i!|,U1|6N|,o|- |,T|,p|,q!|:j!|,W1|6N|,g|,y|,V|,h|,j#|:k!| %#|:l!| %!|:m!|+0!|:n#|+0|&\/0|5g% }&g_|$V% } E)}&9^% }#_5}%$@% }'=>}&3r.2,%} nN#|:o#|,s|*N!|:q !|:v !|:w !|:y !|:{#|,c|&\/0|5g% } S;}%G1% }#BY}'15% }$ZG}#>]% }!n*}#kc.2,%} iW#|; #|,u|*N!|;# #|;(!| %!|;) !|;+!|+0!|;,#|+0|&\/0|5g% }$y)}#,]% }'6g}%0.% }&G=|8Q% }&UD|XN.2,%} hO#|;-#|,t|*N!|;\/ !|;4 #|;5$B|,2|+2*!!|,g|,]*!!|,g|,m*!!|,g|,e.2,%}!9M.2,%} Cl.0|,v|,w\/|+T|,b|,j|,d+).% } S;}%G1% }#BY}'15% }$ZG}#>]% }!n*}#kc|,x|,f#H,|;6\/|+T|,k|,q|,l+).% }$y)}#,]% }'6g}%0.% }&G=|8Q% }&UD|XN|,x|,n#H\/|+T|,Z|,a|,[+).% }&g_|$V% } E)}&9^% }#_5}%$@% }'=>}&3r|,x|,^#H#|;7#|,{|,V!|;8#|,Y|)[!|;:#|,X|)[!|;< !|;? !|;M!^!|;N!|-(!|;O!|-)!|;P!|-*#|;Q#|)X|(U#|;R#|)Z|(S#|;S#|-P|-4!|;T !|;W!|-31|6N|-I|-Q|-2|-J|-L!|;X!|-51|6N|-;|-N|-4|-<|->!|;Y!| $!|;Z!| $!|;[#|-7|&\/0|5g% }&[F} *a% }!jE}'@{% |D1}!Q#% }!$)}#0o.2,%}!6P#|;]#|-D|*N!|;_ #|;d!| %!|;e!|-=!|;f !|;i !|;l#|-@|&\/0|5g% } di} h;% }%[l} RY% }'U^}!n9% }#f{}'Gh#|;m$B|,2|+2*!!|-8|-9*!!|-8|-B.2,%}!Ig.2,%} X*.2,%} ]T#|;n#|-E|*N!|;p !|;u!| $!|;v .0|-F|-G\/|+T|-6|->|-8+).% }&[F} *a% }!jE}'@{% |D1}!Q#% }!$)}#0o|-M|-:#H,|;x\/|+T|-?|-L|-A+).% } di} h;% }%[l} RY% }'U^}!n9% }#f{}'Gh|-M|-H#H!|;y !|;{ !|<! !|<% !|<, #|<A!|-k#|<C!|-l#|<E!|-k!|<G !|<J #|<M!|-l-|<Z%,-|<Z##|<O -|<Z% }$$) #|<P !|<Q !|<S !|<U !|<W !|<Y !|<[ !|<] #|<_ #|<` !|<a !|<c !|<e#|-i|-p!|<f!|-i!|<g !|<j !|<k !|<l !|<m !|<n!|-r!|<o !|=6 !|=> !|=F !|=N !|=P !|=R !|=T!|-i!|=U!|-U#|=W$|.%|1r|+Q#|=[#|1r|+Q#|=g$BL|,6#|=h$BJ|,6#|=i#|1r|+R#|> !|7`#|>9$BL|,6#|>:$BJ|,6#|>;!|7`!|>@ #|>K#|1u|+H#|>O$BL|,6#|>P$BJ|,6!|>Q #|>U#|1u|+H!|>X #|>c#|1u|+H#|>g$BL|,6#|>h$BJ|,6!|>i #|>m#|1u|+H!|>p #|?O#|1u|+H#|?S#|1r|+R#|?n!|7`#|@##|2h|2g#|@2!|.^#|@8#|1r|+R#|@Y!|7`#|@j$|3'|2m|+Q#|A2#|1r|+R#|AS!|7`#|Ad#|2m|+Q#|C4!|2r#|C7#|2h|3!#|C8!|7f#|C]!|7f#|Dd!|,<#|Dg#|2j|2g#|Dh#|&,|&+#|Di!|,5#|Dj#|2j|2g#|Dk$B|0p|,6#|Dl$B`|,6#|Dm#|&,|&+#|Dn!|,5#|Do$B|0p|,6#|Dp#|&,|&+#|Dq!|,5#|Dr#|1r|+R#|Ds$B|0p|,6#|Dt#|&,|&+#|Du!|,5#|Dv#|1r|+R#|Dw$B|0p|,6#|Dx#|2m|+Q#|Dy#|2j|2g#|Dz#|2h|3!#|D{#|2j|2g#|E !|.b#|E!#|2h|2g#|E##|2j|2g.2,%|LW.2,%} zp.2,%|?O.2,%} DR.2,%|Eo.2,%|K<.2,%} Ob-(#*! |.k.,|'\/|.l*! |.k.,MB.,LB*! |.p.,J|.q*! |.r*!!|.h|.o*!!|.i|.o.,_|.u.2,%} `<.2,%}!T>#|E$#|2j|2g#|E%#|2h|2g#|E&!| %*! |.{#|E'!| %#|E(!| %*! |\/##|E)!| %*!!|.t|\/%#|E*!| %*!!|.v|\/'#|E+!| %*!!|.x|\/)#|E,!| %*!!|.z|\/+#|E-!| %*!!|\/ |\/-#|E.!| %*!!|\/#|\/\/#|E\/!| %*!!|\/%|\/1#|E0!| %*!!|\/'|\/3#|E1!| %*!!|\/)|\/5#|E2!| %*!!|\/+|\/7#|E3!| %*!!|\/-|\/9#|E4!| %*!!|\/\/|\/;#|E5!| %*!!|\/1|\/=#|E6!| &#|E7!| %#|E8!| %*! |\/A#|E9!| %#|E:!| %*! |\/D#|E;!| %*!!|\/:|\/F#|E<!| %*!!|\/<|\/H#|E=!| %*!!|\/>|\/J#|E>!| %*!!|\/@|\/L#|E?!| %*!!|\/B|\/N#|E@!| %*!!|\/D|\/P#|EA!| %*!!|\/F|\/R#|EB!| %*!!|\/H|\/T#|EC!| %*!!|\/J|\/V#|ED!| %*!!|\/L|\/X#|EE!| %*!!|\/N|\/Z#|EF!| &#|EG!| &#|EH!| %*! |\/_#|EI!| %*!!|\/T|\/a#|EJ!| %*!!|\/V|\/c#|EK!| %*!!|\/X|\/e#|EL!| %*!!|\/Z|\/g#|EM!| %*!!|\/]|\/i#|EN!| %#|EO!| %*! |\/l#|EP!| %*!!|\/b|\/n#|EQ!| %*!!|\/d|\/p#|ER!| %*!!|\/f|\/r#|ES!| %*!!|\/h|\/t#|ET!| %*!!|\/j|\/v#|EU!| %*!!|\/l|\/x#|EV!| %*!!|\/n|\/z#|EW!| %#|EX!| %*! |0!#|EY!| %*!!|\/s|0$#|EZ!| %*!!|\/u|0&#|E[!| %*!!|\/w|0(#|E]!| %*!!|\/y|0*#|E^!| %*!!|\/{|0,#|E_!| %*!!|0!|0.#|E`!| %*!!|0$|00#|Ea!| %*!!|0&|02#|Eb!| %*!!|0(|04#|Ec!| %*!!|0*|06#|Ed!| %*!!|0,|08#|Ee!| &#|Ef!| %!|Eg !|Eh ,|Ej0Q|0 B|\/{|0>0Q|\/CB|\/B|0>0Q|\/!B|\/ |0>*! |0A,|Ek0Q|0;|0:|09|0C0Q|\/kB|\/j|0C0Q|\/^|\/]|\/[|0C0Q|\/@|\/?|\/>|0C*!!|07|0G*!!|0=|0@*!!|0>|0F*!!|0?|0E*!!|0@|0?#|El!|.V#|Em#|1r|+Q#|En#|1r|+R#|Fv!|2v#|Fw#|1r|+Q#|Fx!| %!|Fy!|+D#|G#!|.Z!|G$ !|G&!|,=!|G' #|G)#|1r|+R!|G*#|1r|+R#|G0!|7`!|G1!|,Q#|G>#|7X|+R#|G?!|7h#|G@!| %!|GA!|,F#|GE!|7a#|GF!|7`*!!|0A|0D#|GG#|1r|+Q#|GH#|7X|+R#|GI!| %!|GJ !|GW #|GY#|1r|+Q!|GZ .0|.x|.w+).% }&-R} `_% }&%;|OJ% }#z)}#Q\/% }&.>}'S]|0k|.j#H.,|0lB+).% }%PS}'HA% }&{'}$3#% }$Xh}'k8% } ;2}#Ck|0k|.i#|0m+).% |Tz}!a@% |(P|2-% }'4p} u{% |5v}&V.|0k|.h#|0m+).% }##N}%kZ% }(#,}'P2% }%Sh}%wa% }#=f}'o<|0k|.g#H.,|0pB.&|.v|0q+).% } dn|%[% }'gj}$G%% } -t}'mQ% }$rU} 7H|0k|.f#|0r+).% }&0Z|Jc% }%;M}!J(% |h1|5!% }!&*}$C(|0k|.e#I.,|0t|.n.&|.m|0u+).% }!VE}%{u% }'`>}$H%% }'lo}#l9% }'wM} ?A|0k|.d$|0v#|G]#|0a|$Z!|G^ !|Gd !|Gh !|Gq !|Gu!|1h#|Gv!| %*!!|0s|%y!|Gx !|H !|*u!|H!!|1i!|H$ !|H-$|+A|+=|2&!|H.$|+A|+=|2'!|H\/ !|H:!|12!|H; !|H?#|+=|2$!|H@ !|HF !|HJ!|*:!|HK !|HL!^!|HM !|HO #|HP!|*C!|HQ#|1B|2 !|HR!|13!|HS!|14!|HT!|1\/!|HU!|10!|HV!|11.|7i|1.|1-!|HW!|1,!|HX!|1+2|7g|1=|1>|1?|1*|1)|1(1|7c|1@|1:|1;|12|1<0|Ku|1A|15|18|19#|HY!| %#|HZ!| %#|H[!| %!|H] &!|H_ -|7u^!|H`!|1I!|Ha !|Hg!|1'!|Hh !|Hj!|1i!|Hl !|Hm!|1i!|Hq!|1Z-|7u|+F!|Hs!|1R!|Ht!|1Z!|Hv !|Hx!|1Z!|Hz !|I( !|I* !|I6 !|JL!|1X0|5g% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG#|JM$B|,2|+2*!!|1R|1].2,%}!n-.2,%}!'G.2,%} zt#|JN#|1_|*N-|9o|1c#|JP!|1c-|7uB!|JR !|J_!|+K!|J` !|Jl .0|1`|1a+).% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG|1k|1b#H,|Jy-|7u|1m,|Jz.|7i|1P|1N2|7g|1p|1O|1Z|1Q|1T|1V1|7c|1q|1i|1L|1O|1&0|Ku|1r|1H|1J|1K.|:e|1r|1M1|7e|1q|1h|1W|1Y|1g!|J{ ,|K!.U|1w|16!|K#!|2)!|K\/!|2*!|K6!|17!|K7!|2)!|KC !|KE!|+P!|KM!|2#!|KN!|+F!|KQ!|+R!|K`!|+R!|Kt !|Kv !|Kx !|Kz !|L  !|L# #|L(!|2.!|L)!|*u#|L*!| %#|L+!| %&&&#|L,!| %#|L-!| %#|L.!| %+(|)R|27|26|25|24|23|24|22\/|)O|21|28|$a#|L\/ #|L0 #|L1 #|L2 !|L3 #|L7 #|L8 !|L9!|2@#|L< #|L= !|L>!|2C#|LA #|LB #|LC #|LD !|LE !|LH!|2-!|LN #|LQ !|LR #|LT !|LU!|2N#|LX #|LY .2,%} n`.2,%}!I<.2,%} [q#|LZ$|20|29|*v!|L[ !|L_!|2V!|L`!|+8!|La !|Lh !|Ln !|Lu #|Lw!|-'!|Lx!|2^#|Ly!|-'!|Lz!|2.!|L{!|2.!|M !|2.!|M!!|2..0|2S|2T!|M#!|2Z!|M$!|2]!|M%!| '!|M&!|2Y!|M'!|2Y.|7i|2^|2_2|7g|2k|2`|2a|2b|2c|2d1|7c|2l|2U|2W|2X|2\/!|M(!|2K!|M)!|2M!|M*!|2I!|M+!|+8!|M,!|2;!|M-!|2<!|M.!|2F!|M\/!|2E!|M0 !|M2!|+8!|M3 !|M9 !|M? !|ME !|MK !|MQ !|MW !|M^ !|Md!|2A!|Me!|2D!|Mf!|2O!|Mg!|2>!|Mh #|Mm .2,%} ]a.2,%}!Hm.2,%} FS.0|3,|3-#|Mn!|30#|Mo!|3*!|Mp !|Mr !|Mu !|Mw ,|My!|Mz !|N  !|N# !|N% !|N' #|N*!| %&&&#|N+!| %#|N,!| %#|N-!| %#|N.!| %+(|)R|3B|3A|3@|3>|3=|3>|3<\/|)O|3?|3C|$a!|N\/!| $!|N2!|%y*! |%y!|N9!|%y!|N@!|3H!|NB !|NE!|3L!|NF!|3:!|NI !|NO #|NU!|3P!|NV$|3Q|3a|*v#|NW!| %&#|NX!|3T!|NY$|3U|3_|*v#|NZ!| %&&&#|N[!| %#|N]!| %#|N^!| %#|N_!| %+(|)R|3]|3[|3Z|3W|3X|3W|3V\/|)O|3Y|3^|$a+(|)R|3]|3[|3Z|3R|3X|3R|3V\/|)O|3Y|3`|$a,|N`!|Na !|Nc !|Nh !|O& !|OA !|OF !|OH !|OL!|3j!|OP!|3k!|OT #|Ot#|3n|3E#|Ou!| %#|Ov!|5:!|Ox$|3q|3s|1W#|Oy$|3r|5#|*v#|Oz!| %#|O{$|5:|1B|2 &&&!|P  !|P#!|3y#|P,$|5=|1B|2 #|P- #|P.!| %-|M{|3{-|M{|4 #|P\/!| %-|N$|4#-|M{|4$-|N$|4#!|P0!|6%!|P1!|6%!|P2!|%y#|P4!| %*!!|3z|%y!|P6!|%y!|P8!|%y!|P:!|%y#|P<!| %*!!|4$|%y#|P> #|P?!| %#|P@!| %#|PA$|%z|6b|$l*!!|4)|%y!|PB!| $!|PF!|4h#|PG!| %#|PH!| %#|PI$|4;|4=|,(!|PJ#|7e|&3#|PK!| %*!!|41|%y&&&#|PM#|6w|*N#|PO$|4G|4z|*v#|PP$|53|1B|2 #|PQ$|51|1B|2 #|PR#|6w|*N#|PT$|4G|4x|*v#|PU!| %&&&#|PV$|55|1B|2 #|PW!| %*!!|4A|%y*!!|4A|%y#|PY!| %*!!|4D|%y*!!|4D|%y#|P[$|52|1B|2 #|P] #|P^#|76|6Q#|P_#|77|6Q#|P`#|78|6Q#|Pa#|79|6Q#|Pb#|7:|6Q#|Pc#|7;|6Q#|Pd#|7<|6Q#|Pe#|7=|6Q#|Pf#|7>|6Q#|Pg#|7?|6Q#|Ph#|7@|6Q#|Pi#|7A|6Q#|Pj#|7B|6Q#|Pk#|7C|6Q#|Pl#|7D|6Q&&&!|Pm!|%y!|Po!^#|Pp!| %#|Pq$|58|1B|2 !|Pr#|4t|*v#|Ps!| %&&&#|Pt!| %#|Pu!| %#|Pv!| %+(|)R|4r|4q|4p|4o|4n|4o|4m\/|)O|4l|4s|$a+(|)R|4r|4q|4p|4f|4e|4f|4d\/|)O|4l|4u|$a+(|)R|4r|4q|4p|4J|4I|4J|4H\/|)O|4l|4w|$a+(|)R|4r|4q|4p|4J|4I|4J|4H\/|)O|4l|4y|$a+(|)R|4r|4q|4p|4@|4?|4@|4>\/|)O|4l|4{|$a+(|)R|4r|4q|4p|3v|3u|3v|3t\/|)O|4l|5!|$a&-|Mv|5$!|Pw!|5)-|]jB-|7u|5'#|Q%$|5<|1B|2 !|Q&!|5+-|]HB!|Q'!|5--|<Z##|Q(#|6{|*N0|5g% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG+).% }$0N}#Wu% }'lW}&Ql% }'c!}$WD% }'5m}!nG|1k|1b#H#|Q*#|7$|*N#|Q,#|7$|*N#|Q.#|6x|*N#|Q0#|6x|*N#|Q2#|6x|*N#|Q4#|6x|*N#|Q6!|63#|Q8#|6w|*N#|Q:#|6w|*N#|Q<#|6w|*N-|9o|5:#|Q>#|6u|*N#|Q@#|6u|*N0|5g% }$eZ}%=7% }$ss}&$E% }'f.}&:$% } `4|P!!|QB!|*u!|QC!| $#|QF!|5q!|QH!|5)!|Qs#|1xB#|R%!|5K!|R'!|6!!|R4!|4R!|S( !|Sc !|Sd!B0|5g% }%U-}$X^% }&K1}(!2% }$j#}$?y% }%k;}&V^#|Sz#|6v|*N-|9o|5K#|T $|5K|1B|2 #|T! 0|5g% } >!}%MH% }!%S|Q!% }!Qh}'X`% }&31}'#1#|T##|7#|*N!|T%!|5M-|<Z$!|T. #|T0#|1B|1y#|T1!|5q!|T3!|5U&&!|T9!|5T!|TE!|7j0|5g% }#+'|eA% }&j'}'<D% }(%4}'(D% }#B;|e@+).% }#+'|eA% }&j'}'<D% }(%4}'(D% }#B;|e@|3.|3+#H#|TG!|5q#|TJ!|5c#|TL!|5d*! |5`*!!|5U|5_#|TN#|6y|*N#|TP#|6z|*N#|TR!|5q#|TU%|#d|#g|&;|&<#|TV#|#e|*u#|TW#|#f|*u!|TX !|Tg!|4D#|UZ!|5o#|U]!|5p*! |5l*!!|5b|5k#|U_#|6y|*N#|Ua#|6z|*N#|Uc#|5n|*N-|9o|5q0|5g% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm+).% }&`z|^U% }$RS} )z% }&Tf}!b-% }%@*} Bm2-#I0|5g% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV+).% }#_Q}#+d% |j(}!zN% } 1Q}$D<% }!GZ}!RV2\/#H!|Ue !|Uf!|4:#|Wr$|6_|1s|2 !|Ws -|7u|+8!|Wu!|5y!|X'!|6 !|X9!|6%0|5g% |W;}!MH% }!q,}'#o% }#%v}'=p% }'OZ} EW-|7u^#|X: !|X; !|XO!|6*!|Xz !|Y !|6S!|Y= !|YF!|6S.2,%} nI.2,%} Xf.2,%} Jc.2,%} JU#|YP#|7$|*N-|9o|61#|YR#|6x|*N-|9o|630|5g% }$*&}%P[% } _ }!sR% |<G}%wV% }!la}%G2.2,%} L3*! |& &-|N$|68-|M{|69-|N$|68-|M{|68-|M{|6<!|YT #|YV!| %#|YW!| %#|YX!| %#|YY!| %#|YZ!| %#|Y[!| %#|Y]!| %#|Y^!| %#|Y_!| %#|Y`!| %#|Ya!| %#|Yb!| %#|Yc!| %#|Yd!| %#|Ye!| %0|5g% }%V`}!E?% }!t5}&rp% } kX}$Tt% }'3K}#so.2,%} 0)#|Yf#|7!|*N!|Yh#|68|5%!|Z$ #|[-$|6_|1B|2 #|[.!|6Z#|[0!|6^*! |6U*!!|6K|6T0|5g% }';i}%%q% }%%N}!K%% }% 6}!%r% }$iB}%`F+).% }';i}%%q% }%%N}!K%% }% 6}!%r% }$iB}%`F|2e|2R#I#|[2#|6s|*N0|5g% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fX+).% } \/z}!oj% } _%|.<% }&8+}$0^% }!oD}!fXSP#H#|[4#|6t|*N#|[6#|6W|*N-|9o|6_#|[8!|6_#|[:!| %#|[; #|[< !|[=#|6b|+\/#|[C !|[D!|6S!|[e !|[l !|[t!|6o-|7u|+F!|[v!|6o#|]#$|6n|1B|2 #|]$#|7$|*N!|]&!|6m!|]<!|6o0|5g% }'r |d`% }$4j}'aY% }$y\/}%v'% }!B9}%&h#|]E$B|,2|+2*!!|6g|6X*!!|6g|6[*!!|6g|5>*!!|6g|5J*!!|6g|6$*!!|6g|65*!!|6g|5s*!!|6g|5u*!!|6g|5\/*!!|6g|5[*!!|6g|6N*!!|6g|5O*!!|6g|6q.2,%}!9(.2,%} Wt.2,%} +D.0|7%|7&,|]F+).% }'r |d`% }$4j}'aY% }$y\/}%v'% }!B9}%&h|7(|7'#H!|]G !|]I +).% }$*&}%P[% } _ }!sR% |<G}%wV% }!la}%G2|7(|66#H,|]K+).% |W;}!MH% }!q,}'#o% }#%v}'=p% }'OZ} EW|7(|6.#H!|]L \/|]O|6P|6Q|6R!|]N +).% }%U-}$X^% }&K1}(!2% }$j#}$?y% }%k;}&V^|7(|6\/#H!|]P +).% }%V`}!E?% }!t5}&rp% } kX}$Tt% }'3K}#so|7(|6O#H,|]R,|]S,|]T,|]U,|]V,|]W,|]X,|]Y,|]Z,|][,|]],|]^,|]_,|]`,|]a+).% } >!}%MH% }!%S|Q!% }!Qh}'X`% }&31}'#1|7(|60#H!|]b !|]d !|]f ,|]h.|:c|5P|7I.|]Q|4c|7J.|]Q|4b|7J.|]Q|4a|7J.|]Q|4`|7J.|]Q|4]|7J.|]Q|4W|7J.|]Q|5N|7J.|]Q|5N|7J-|7u|7R+).% }$eZ}%=7% }$ss}&$E% }'f.}&:$% } `4|P!|7(|6-#H!|]i .|7i|6i|6h2|7g|7V|1O|6o|6j|6l|6p1|7c|7W|1i|1L|1O|5?0|Ku|7X|1H|1J|1K.|:e|7X|1M1|7e|7W|1h|1W|1Y|1g!|]k!|6g!|]l!|,Q!|]p!|6(!|]q!|5x!|]r!|5C!|]s!|6)!|]t #|^S!|5*#|^U!|5w!|^W!|5E!|^X!|6+!|^Y!|5B!|^Z#B|1i#|_a!|5,!|_c!|5H!|_d !|_f ");
 h$staticDelayed = [];
 h$main(h$mainZCZCMainzimain);
 

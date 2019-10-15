@@ -199,7 +199,7 @@ contact= do
                p ! style (fs "text-align:center") $ "María Torija"
                p ! style (fs "font-weight:bold;text-align:center") 
                  $ a ! style (fs "color:black") 
-                     ! href (fs "mailto:mariajtalonso@gmail.com") $ "mariajtalonso@gmail.com"
+                     ! href (fs "mailto:mariajtorija@gmail.com") $ "mariajtorija@gmail.com"
 
 renderGallery= do
    clikableGallery <|>  leftRight
